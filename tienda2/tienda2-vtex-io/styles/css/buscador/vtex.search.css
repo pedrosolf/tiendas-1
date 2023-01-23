@@ -1,0 +1,27 @@
+.tileListItem :global(.vtex-product-summary-2-x-container--vitrinatienda2) {
+  padding: 1rem 0;
+}
+.tileListItem :global(.vtex-product-summary-2-x-element--vitrinatienda2) {
+  margin: 5px;
+  position: relative;
+}
+.tileListList {
+  margin: 0;
+  padding: 0.4rem;
+}
+
+.tileListItem
+  :global(.vtex-product-specification-badges-0-x-groupContainer--tipoVenta),
+.tileListItem
+  :global(.vtex-product-specification-badges-0-x-groupContainer--tipoVentaSearch) {
+  bottom: -14px;
+}
+
+.biggy-autocomplete-wrapper {
+  width: 65vw;
+}
+
+.itemList--suggestion {
+  flex: none;
+  width: auto;
+}

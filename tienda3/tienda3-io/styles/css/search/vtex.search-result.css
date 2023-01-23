@@ -1,0 +1,184 @@
+.searchResultContainer {
+  max-width: 1500px;
+}
+.searchResultContainer :global(.vtex-breadcrumb-1-x-container) {
+  color: #545859;
+}
+.searchResultContainer :global(.vtex-breadcrumb-1-x-homeIcon) {
+  display: none;
+}
+.searchResultContainer :global(.vtex-breadcrumb-1-x-homeLink)::after {
+  content: 'HOME';
+  color: #222426;
+  font-weight: 600;
+}
+:global(.vtex-breadcrumb-1-x-caretIcon) {
+  color: #222426;
+}
+.galleryTitle--layout {
+  color: #222426;
+  text-transform: uppercase;
+  font-size: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.filterPopupTitle {
+  display: flex;
+  text-transform: capitalize;
+}
+.orderByText {
+  display: none;
+}
+.orderByButton {
+  margin-left: 0.2rem;
+  border: 1px solid #d9d9d6;
+  color: #545859;
+  height: 24px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.filterPopupArrowIcon {
+  color: #545859;
+  padding: 0;
+  padding-left: 0.2rem;
+}
+.filtersWrapperMobile .filterPopupTitle {
+  font-size: 0;
+}
+.filtersWrapperMobile .filterPopupTitle::after {
+  font-size: 1rem;
+  content: 'Filtros';
+  color: #222426;
+  font-weight: 600;
+}
+.filtersWrapperMobile .filterIcon {
+  display: none;
+}
+
+.filtersWrapperMobile .filterPopupArrowIcon {
+  background: url('assets/search/chevron-right.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+.filterBreadcrumbsText {
+  font-size: 0;
+}
+.filterBreadcrumbsText::after {
+  font-size: 1rem;
+  content: 'Filtrar por';
+  color: #222426;
+  font-weight: 600;
+}
+.filterBreadcrumbsItemName {
+  font-size: 1rem;
+  color: #222426;
+  font-weight: 600;
+}
+.filterBreadcrumbsItem .caretIcon {
+  color: #222426;
+  padding-right: 0.1rem;
+  padding-left: 0.1rem;
+}
+.filterAccordionBreadcrumbs {
+  display: flex;
+  justify-content: center;
+}
+.accordionFilterContent {
+  color: #545859;
+}
+.accordionFilterItemIcon {
+  padding-left: 0.2rem;
+}
+.filterAccordionItemBox {
+  border: none;
+}
+.filterClearButtonWrapper :global(.vtex-button__label) {
+  color: #222426;
+  font-family: 'Knockout';
+}
+.filterApplyButtonWrapper :global(.vtex-button) {
+  background: #222426;
+}
+.filterApplyButtonWrapper :global(.vtex-button__label) {
+  color: #fff;
+  font-family: 'Knockout';
+}
+
+.filter__container--caliente,
+.filter__container--caliente--hrs-,
+.filter__container--capacidad--lts-,
+.filter__container--frio,
+.filter__container--frio--hrs-,
+.filter__container--helado,
+.filter__container--helado--dias-,
+.filter__container--serie,
+.accordionFilterContainer--caliente,
+.accordionFilterContainer--caliente-hrs,
+.accordionFilterContainer--capacidad-lts,
+.accordionFilterContainer--frio,
+.accordionFilterContainer--frio-hrs,
+.accordionFilterContainer--helado,
+.accordionFilterContainer--helado-dias,
+.accordionFilterContainer--marca,
+.accordionFilterContainer--serie {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .filter__container--title {
+    border: none;
+  }
+  .filterMessage {
+    display: none;
+  }
+  .filterTitleSpan {
+    text-transform: uppercase;
+    font-family: 'Knockout';
+    color: #222426;
+  }
+  .filtersWrapper .caretIcon {
+    color: #222426;
+  }
+  .totalProducts--layout {
+    display: flex;
+    font-style: italic;
+    text-transform: lowercase;
+    color: #545859;
+  }
+  .totalProducts--layout::after {
+    content: 'encontrados';
+    color: #545859;
+    padding-left: 0.2rem;
+  }
+  .galleryTitle--layout {
+    font-weight: 800;
+    font-size: 64px;
+    margin: 0.5rem 0;
+
+  }
+}
+.filterItem :global(.vtex-checkbox__line-container) {
+  align-items: center;
+}
+.galleryTitle--layout {
+  font-family: 'klavika-web-display';
+}
+.orderByOptionItem {
+  font-family: 'klavika-web';
+}
+.filter__container--brand {
+  display: none;
+}
+:global(.vtex-breadcrumb-1-x-container), :global(.vtex-flex-layout-0-x-flexCol--orderByMobileCol){
+  padding-left: 0.5rem;
+}
+.filterButtonsBox {
+  padding-bottom: 9rem;
+}

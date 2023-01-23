@@ -1,0 +1,417 @@
+{
+    "store.custom#sugerencia-reclamo": {
+      "blocks": [
+        "responsive-layout.desktop#sugerencia-reclamo" ,
+          "responsive-layout.tablet#sugerencia-reclamo",
+          "responsive-layout.phone#sugerencia-reclamo"
+      ]
+    },
+    "responsive-layout.desktop#sugerencia-reclamo": {
+      "children": ["flex-layout.row#main-sugerencia-reclamo-desk"]
+    },
+    "responsive-layout.tablet#sugerencia-reclamo": {
+      "children": ["flex-layout.row#sugerencia-reclamo-main-mobile"]
+    },
+    "responsive-layout.phone#sugerencia-reclamo": {
+      "children": ["flex-layout.row#sugerencia-reclamo-main-mobile"]
+    },
+    "flex-layout.row#sugerencia-reclamo-main-mobile":{
+      "children": ["flex-layout.col#sugerencia-reclamo"],
+      "props": {
+        "horizontalAlign": "center"
+      }
+    },
+    //VERSION DESKTOP
+    "flex-layout.row#main-sugerencia-reclamo-desk": {
+      "props": {
+        "blockClass": "main-ayuda",
+        "marginTop": 7,
+        "marginBottom": 9,
+        "preventVerticalStretch": true,
+        "colGap": 7
+      },
+      "children": ["flex-layout.col#nav-column", "flex-layout.col#sugerencia-reclamo"]
+    },
+  
+    "flex-layout.col#sugerencia-reclamo": {
+      "props": {
+        "width": "72%",
+        "blockClass": "",
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "rich-text#sugerencia-reclamo-title",
+        "flex-layout.row#formContainer",
+        "flex-layout.row#sugerencia-reclamo-content-lista"
+        //"flex-layout.row#sugerencia-reclamo-content-7",
+        //"flex-layout.row#sugerencia-reclamo-content-6",
+        //"flex-layout.row#sugerencia-reclamo-content-5",
+        //"flex-layout.row#sugerencia-reclamo-content-4",
+        //"flex-layout.row#sugerencia-reclamo-content-3",
+        //"flex-layout.row#sugerencia-reclamo-content-2",
+        //"flex-layout.row#sugerencia-reclamo-content-1",
+        //"flex-layout.row#sugerencia-reclamo-content1",
+        //"flex-layout.row#sugerencia-reclamo-content2",
+        //"flex-layout.row#sugerencia-reclamo-content3",
+        //"flex-layout.row#sugerencia-reclamo-content4",
+        //"flex-layout.row#sugerencia-reclamo-content5",
+        //"flex-layout.row#sugerencia-reclamo-content6",
+        //"flex-layout.row#sugerencia-reclamo-content7",
+        //"flex-layout.row#sugerencia-reclamo-content8",
+        //"flex-layout.row#sugerencia-reclamo-content9",
+        //"flex-layout.row#sugerencia-reclamo-content10",
+        //"flex-layout.row#sugerencia-reclamo-content11",
+        //"flex-layout.row#sugerencia-reclamo-content12",
+        //"flex-layout.row#sugerencia-reclamo-content13",
+        //"flex-layout.row#sugerencia-reclamo-content14",
+        //"flex-layout.row#sugerencia-reclamo-content15"
+      ]
+    },
+
+    "flex-layout.row#sugerencia-reclamo-content-lista":{
+      "props": {
+        "blockClass": "row-lista-reclamos"
+      },
+      "children": ["lista-reclamos#lista-reclamos-tienda2"]
+    },
+
+    "lista-reclamos#lista-reclamos-tienda2":{
+      "props":{
+        "blockClass": "ul-lista-reclamos"
+      }
+    },
+  
+    "flex-layout.row#sugerencia-reclamo-content-7": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content-7"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content-6": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content-6"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content-5": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content-5"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content-4": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content-4"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content-3": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content-3"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content-2": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content-2"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content-1": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content-1"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content1": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content1"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content2": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content2"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content3": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content3"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content4": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content4"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content5": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content5"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content6": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content6"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content7": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content7"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content8": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content8"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content9": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content9"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content10": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content10"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content11": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content11"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content12": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content12"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content13": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content13"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content14": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content14"]
+    },
+    "flex-layout.row#sugerencia-reclamo-content15": {
+      "props": {
+        "blockClass": "reviewContainer"
+      },
+      "children": ["rich-text#sugerencia-reclamo-content15"]
+    },
+  
+    
+    "rich-text#sugerencia-reclamo-title": {
+      "props": {
+        "blockClass": "ayudaTitle",
+        "text": "**Libro de sugerencias y reclamos**",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content-7": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "19-08-2022\n **Demora en entrega**\n el 17/8 compré Ozempic y después de 2 días aún no llega, me sorprende pq anteriormente llegaba 2 horas después. Cuándo podré recibirla? Gracias\n <br/>Respuesta: Su solicitud está siendo revisada por el equipo de tienda2",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content-6": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "18-07-2022\n **Imposible comunicarse**\n Buenas tardes, mi nombre es Claudia Havliczek hace 2 días intento comunicarme en distintos horarios, sin éxito. Mi isapre me derivó con Uds. para comenzar un tratamiento con el medicamento Simponi.\n <br/>Respuesta: Su solicitud está siendo revisada por el equipo de tienda2",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content-5": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "21-07-2022\n **envio de medicamento sin conservación de frio**\n Estimados hoy recibi mi compra de producto Prolia valor $ 175.990 + despacho boleta N° 97797 lamentablemente producto venia sin la conservación de frio como indica este medicamento, llame a call center para informar situacion , la telefonista muy mal atención tomo datos y no escucha preguntas ni nada , que lastima yo llame para que me cambien producto y además me indicaran como coordinaríamos pero malísimo servicio de la persona que tomo llama. favor necesito cambio de producto.\n <br/>Respuesta: Su solicitud está siendo revisada por el equipo de tienda2",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content-4": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "05-07-2022\n **Mala entrega de medicamento**\n Hoy me pude encontrar recién con mi medicamento, que estaba en bodega de edificio (encomiendas) desde el día 1° de Julio; no fui contactado por la empresa que lo trajo, teniendo a la vista mi Teléfono. Quiero saber si podria estar descompuesta.\n <br/>Respuesta: Su solicitud está siendo revisada por el equipo de tienda2",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content-3": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "16-06-2022\n **Agradecimiento**\n Quiero por este medio agradecer a Andrea Belmar por su excelente atención , era un tema oncologico súper importante para mi. Gracias por eso . Evelyn\n <br/>Respuesta: Su solicitud está siendo revisada por el equipo de tienda2",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content-2": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "10-05-2021\n **Felicitaciones y Agradecimiento**\n Quiero felicitarlos y darles mis agradecimientos por su excelente gestión en la recepción y el despacho de mi medicamento Ibrance 125mg. Desde que Banmedica los tiene como proveedor me a cambiado la vida. En su gestión me he sentido apoyada totalmente en la continuidad de mi tratamiento por parte de ustedes y que les importamos además de potenciales clientes como personas.\n <br/>Respuesta: Su solicitud está siendo revisada por el equipo de tienda2",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content-1": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "17-02-2022\n **No aplica cupon Musa**\n Necesito comprar anticonceptivo Vexa CD y no aplican los códigos de los descuento de programa Musa Chile.\n <br/>Respuesta: Su solicitud está siendo revisada por el equipo de tienda2",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "28-09-2021\n **ERROR EN DIRECCION DE ENVIO DE COMPRA**\n BUENOS DIAS , AYER 27/09/2021 HICE UNA COMPRA DE OZEMPIC 2MG, Y POR ERROR MIO PUSE MAL LA DIRECCION ( PUSE COMUNA DE TALAGANTE) POR LO QUE QUIERO AVISAR PARA QUE MI ENVIO LLEGUE A LA SIGUIENTE DIRECCION , AV. BICENTENARIO N°3.800 PISO 1 COMUNA DE VITACURA, MI TELEFONO ES 987480529, AVISE POR TELEFONO INFORMANDO EL ERROR POR LO QUE QUIERO REITERAR MI PEDIDO PARA QUE ME SEA ENVIADO LO ANTES POSIBLE, DE ANTE MANO MUCHAS GRACIAS .\n <br/>Respuesta: **Ticket resuelto. Se contacta a paciente y se da solución del caso. Se entrega durante el mismo día medicamente a dirección correcta**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content1": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "09-09-2021\n **Reclamo por no devolución de dinero**\n Hola. Me vendieron una caja de Metotrexato de 100 comprimidos que vence en 2 meses. La compra se realizó el viernes pasado, el lunes me dijeron que gestionarían la devolución pero no he tenido respuesta confirmando el día. El número de la boleta es 75511 a nombre de José Miguel Matte. Ruego dar una respuesta al 994541483 o al mailGracias Daniela Lubiano\n <br/>Respuesta: **Ticket resuelto. Clienta fue contactada el mismo día e informada que su devolución de dinero está en orden y lista para su retiro (cobro vía mercado pago).**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content2": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "08-08-2021\n **Mi medicamento oncólogico Alectinib no llega**\n Señores tienda2, el día 24/7/2021 compramos a traves de Vida tres mi medicamento para tratamiento oncologico Alectinib.Dado que este no llegaba llamamos hace una semana y nos contestaron que tenían problema de stock.El día viernes 6 mi marido llamó para pedir una solución y quedaron de delvolver el llamado a la brevedad lo cúal no ocurrio. Encuento el colmo que una empresa que entrega servicios tan delicados como este tipo de medicamentos sea tan irresponsable, ineficiente y con tan poca conciencia, al contrario de lo que informan en su pagina como 'Nuestra Mision' Iniciare todas las acciones legales que correspondan , primero a nivel de Isapre, Ministerio de salud y si es necesario en redes sociales.\n <br/>Respuesta: **Ticket resuelto. Se contacta paciente y se explica caso de quiebre de Stock de laboratorio.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content3": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "08-08-2021\n **No llega mi medicamento Alectinib**\n Hoy se me termina mi medicamento. Llamamos el día viernes par que nos den una solución , quedaron de devolver el llamado y nada\n <br/>Respuesta: **Ticket resuelto. Se contacta paciente y se explica caso de quiebre de Stock de laboratorio.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content4": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "04-07-21\n **No llega producto**\n Hace un mes encargue unos remedios cual han pasado un mes y aun no me llegan necesito que me devuelvan el dinero ya no necesito los remedios se han demorado la vida pésima experiencia!!\n <br/>Respuesta: **Ticket resuelto. Pedido actualmente entregado**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content5": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "04-07-21\n **Reclamo**\n Hace un mes espero un medicamento cual no llega necesito respuesta\n <br/>Respuesta: **Ticket resuelto. Pedido entregado.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content6": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "17-06-2021\n **No ha llegado el medicamento adquirido**\n Buenas tardes el día de ayer compré un remedio que es de extrema urgencia para mi padre, al momento de hacer el pago este señalaba que iba a estar en 4 horas en la casa pero aún no ha llegado, necesito saber que ocurre por favor.Saludos AtentosCARLOS MORA VELOZ 15 727 120-2El medicamento es HIDROXICARBAMIDA de 500 miligramos.\n <br/>Respuesta: **Ticket resuelto. Se explican tiempos de entrega y se logra entrega de medicamento**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content7": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "02-06-2021\n **No envían medicamento a tiempo**\n Encuentro increíble que la salud de uno, dependa de la inoperancia de otro.Llevo más de 6 años con enbrel, y este último tiempo se ha descontinuado mi tratamiento.Todos los meses envío los documentos y bonos pedidos para el despacho a la sra Albina Diaz la cual ya me dejó un mes sin las inyecciones porque perdió el bono, increíble pero esa es su respuesta.En abril olvidó enviarlo y me desfase una semana.Hoy, todavía espero el medicamento de este mes.Todos los meses envío correos sin recibir respuesta alguna.Favor, analizar qué sucede con este caso.\n <br/>Respuesta: **Ticket resuelto. Situación regularizada y medicación entregada; con seguimiento mes a mes.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content8": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "01-06-2021\n **Reclamo**\n Ayer envié bono para solicitar palboclib 125 mg, he llamado muchas veces, no contestan los teléfonos. Medicamento aún no llega. No tengo respuesta y mi tratamiento está interrumpido. No entiendo cómo son tan irresponsables. Espera alguna respuesta.de lo contrario me avisan para solicitar a Isapre que me cambien de farmacia. Muchas gracias\n <br/>Respuesta: **Ticket resuelto. Quiebre de stock del momento.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content9": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "18-05-2021\n **Reclamo**\n Llegó a comprar a la tienda a las 18:05 y me explican que está cerrado. Siendo que la peritas estaban abiertas, por lo cual yo entré. Vi la página y sale que el cierre es a las 19:00 hrs. Me dice el hombre que me atendió que sale en la página el horario de cierre, lo cual yo verifique y no sale. Llevo tres meses comprándoles a uds y encuentro insólito que no me hayan querido vender. Nunca mas con ustedes\n <br/>Respuesta: **Ticket resuelto.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content10": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "06-05-2021\n **Empaque de aluminio peligroso**\n Estimados, les escribo porque es la 3ra vez que me corto los dedos con el empaque de aluminio que trae la amoxicilina + Acido Clavulánico 875/125. es excesivamente grueso ese papel de aluminio que trae el blister, al sacar la pastilla y romperse, queda con un filo bastante agresivo. Ojalá tomen a consideración de mirar esto. Saludos,\n <br/>Respuesta: **Ticket resuelto. Se contacta a laboratorio y se entrega feedback de paciente para que se realice una mejora en el empaque.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content11": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "09-03-2021\n **No contestan**\n Es increíble, llevo mas de 2 hrs llamando a la farmacia y no contestan el teléfono.\n <br/>Respuesta: **Ticket resuelto. Se contacta a paciente**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content12": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "04-03-2021\n **modalidades de pago**\n debieran habilitar medio de pago directo a traves de tarjeta credito o debito, porque cuando deseo comprar remedios carisimos de cas 500.000, y realizar trasferencia el banco limita a un tope de $ 300.000.- quedando pendiente el saldo para otro dia y a la ves pendiente pr parte de ustedes el envio hasta que verifiquen el pago, siendo que a veces necesitamos el remedio para hoy y sobre todo cuando uno es de region el despacho ya es mas demoroso, por favor considerar alternativas, para poder tener el medicamente pronto en nuestro poder\n <br/>Respuesta: **Ticket resuelto. Se considera Sugerencia, y ya contamos con todas las modalidades de pago**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content13": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "12-02-2021\n **reclamo**\n mas de 2 horas sin que nadie responda los teléfonos lo peor que los dejan descolgados por que alguien contesta y cuelgan ,si el personal no tiene ganas de responder y cortan el telefono dígale que hay una fila de extranjeros esperando tomar su pega , una farmacia que vende medicamentos importantes tiene que tener la seriedad de contestar a sus clientes por que esto no es servicio publico\n <br/>Respuesta: **Ticket resuelto. Se trabaja en mejorar los canales de comunicación.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content14": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "03-02-2021\n **Reclamo por falta de atención**\n Hola.Presento un reclamo por la nula respuesta de los canales de atención.Los correos electrónicos que envío no tienen respuesta.Nadie contesta en ninguno de los número publicados. Tuve la suerte que me contestaron una vez la semana pasada donde consulté si tenían un medicamento en stock, fui a comprarlo y me dijeron que aún no había llegado. ¿? Están haciendo un excelente trabajo para perder clientesAtentamente Francisco Gatica\n <br/>Respuesta: **Ticket resuelto.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#sugerencia-reclamo-content15": {
+      "props": {
+        "blockClass": "ayudaContent",
+        "text": "02-02-2021\n **RECLAMO POR DESPACHO INCOMPLETO**\n Mi esposa ha recibido el primer despacho de un medicamento oncológico (Imbruvica) de acuerdo a convenio GES/CAEC de Isapre Banmédica.La cantidad recibida (90 comprimidos) no corresponde a la dosis indicada por el médico tratante en la receta.Se solicita saber cuando se completan los comprimidos faltantes, (30)Guia despacho N° 156304 de fecha 29-01-2021, (F 1235657, Chibra intercity)\n <br/>Respuesta: **Ticket resuelto.**",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    }
+  }
+  

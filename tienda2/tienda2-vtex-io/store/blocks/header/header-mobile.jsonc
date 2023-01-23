@@ -1,0 +1,204 @@
+{
+  "header-layout.mobile": {
+    "children": [     
+      "sticky-layout#mobile",
+      "flex-layout.row#mobile-nav",
+      "flex-layout.row#bottom-header-mobile"
+    ]
+  },
+  "sticky-layout#mobile": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [ /* "toggle-layout#telon", */ "image#goWA", "flex-layout.row#mobile" ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [      
+      "flex-layout.col#mobile-logo",
+      "flex-layout.col#mobile-search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "paddingTop": 3,
+      "paddingBottom": 2,
+      "fullWidth": true
+    }
+  },
+  /* logo */
+  "flex-layout.col#mobile-logo": {
+    "props": {
+      "verticalAlign": "center",
+      "paddingRight": 5,
+      "paddingLeft": 5,
+      "blockClass": "" /* ,
+      "width": "50%" */
+    },
+    "children": ["logo#header"]
+  },
+  /* Buscador */
+  "flex-layout.col#mobile-search-bar": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "paddingRight": 5,
+      "blockClass": "searchBar-container" /* ,
+      "width": "50%" */
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.row#mobile-nav": {
+    "title": "Menu de navegación inferior",
+    "children": [
+      "flex-layout.col#icon-menú",
+      "flex-layout.col#mobile-login",
+      "flex-layout.col#mobile-cart",
+      "flex-layout.col#location"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "blockClass": "bottom-nav",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#icon-menú": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": "item-bottom-nav"
+    },
+    "children": ["drawer#mobile-menu"]
+  },
+  "drawer#mobile-menu": {
+    "children": [
+      "mega-menu#mobile"
+    ],
+    "blocks": [
+      "drawer-header#my-drawer"
+    ]
+  },
+  "drawer-header#my-drawer": {
+    "children": ["flex-layout.row#drawer-header"]
+  },
+  "flex-layout.row#drawer-header": {
+    "children": [
+      "flex-layout.col#logo-menu",
+      "flex-layout.col#mega-menu-go-back-btn"
+    ],
+    "props": {
+      "blockClass": "drawer-header",
+      "fullWidth": true,
+      "marginTop": 5,
+      "marginBottom": 5,
+      "rowGap": 5
+    }
+  },
+  "flex-layout.col#mega-menu-go-back-btn": {
+    "children": [
+      "mega-menu-go-back-btn"
+    ],
+    "props": {
+    }
+  },
+  "flex-layout.col#logo-menu": {
+    "children": [
+      "logo#menu"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "logo#menu": {
+    "props": {
+      "title": "Logo-menu",
+      "href": "/",
+      "url": "assets/header/logo-header-tienda2.png" ,
+      "width": "144",
+      "height": "auto"
+    }
+  },
+  "mega-menu#mobile": {
+    "props": {
+      "title": "",
+      "orientation": "vertical",
+      "defaultDepartmentActive": "",
+      "blockClass": "mobile-menu"
+    }
+  },
+ /*  "category-menu#mobile": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "mobileMode": true,
+      "sortSubcategories": "name",
+      "iconProps": {
+        "id": "hamburguer-menu"
+      }
+    }
+  }, */
+  "flex-layout.col#mobile-login": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": "item-bottom-nav"
+    },
+    "children": ["logo#mobile-login"]
+  },
+  "logo#mobile-login": {
+    "props": {
+      "width": 26,
+      "height": 26,
+      "mobileWidth": 26,
+      "mobileHeight": 26,
+      "url": "assets/header/Login.svg",
+      "blockClass": "login",
+      "href": "/account"
+    }
+  },
+  "flex-layout.col#mobile-cart": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": ["mobile-cart", "item-bottom-nav"]
+    },
+    "children": ["minicart.v2#cart-tienda2"]
+  },
+  "flex-layout.col#location": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": ["location", "item-bottom-nav"]
+    },
+    "children": ["rich-text#location"]
+  },
+  "logo#location": {
+    "props": {
+      "href": "https://www.google.cl/maps/place/P%C3%83%C2%A9rez%20Valenzuela%201077,%20Providencia,%20Regi%C3%83%C2%B3n%20Metropolitana/@-33.4292034,-70.6252107,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5883f9a320f:0x7d87bf94c56e8459!8m2!3d-33.4292034!4d-70.623022",
+      "url": "assets/header/location.svg",
+      "width": 25,
+      "height": 25
+    }
+  },
+  "rich-text#location": {
+    "props": {
+      "text": "[![logo locación](assets/header/location.svg)](https://www.google.cl/maps/place/P%C3%83%C2%A9rez%20Valenzuela%201077,%20Providencia,%20Regi%C3%83%C2%B3n%20Metropolitana/@-33.4292034,-70.6252107,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5883f9a320f:0x7d87bf94c56e8459!8m2!3d-33.4292034!4d-70.623022)",
+      "blockClass": "redes-sociales"
+    }
+  },
+  "image#goWA": {
+    "props": {
+      "link": { "url": "https://wa.me/56969171334" },
+      "src": "assets/home/whatsapp2.png",
+      "blockClass": "whatsGo"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+/* Modal productos cetaphil */
+.headerContainer--modal-cetaphil {
+  position: absolute;
+  right: 10px;
+  border: none;
+  padding: 0;
+}
+.contentContainer--modal-cetaphil {
+  padding: 0;
+}

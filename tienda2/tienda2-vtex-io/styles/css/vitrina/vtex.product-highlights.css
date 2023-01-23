@@ -1,0 +1,40 @@
+/*.productHighlightWrapper--flag-beneficios {
+  width: 22%;
+  position: absolute;
+  z-index: 10;
+  right: 18px;
+  top: 19px;
+}*/
+
+.productHighlightWrapper--flag-beneficios {
+    width: 23%;
+    position: absolute;
+    left: 65%;
+    z-index: 5;
+    top: 3%;
+}
+.productHighlightWrapper--flag-tienda2Plus {
+    left: 50%;
+    transform: translateX(-61%);
+}
+.productHighlightWrapper--descuentosInsuperables {
+    top: 15%;
+}
+
+.productHighlightWrapper--flag-beneficiosSearch {
+    width: 3%;
+    position: absolute;
+    z-index: 1;   
+    margin-left: 10%;
+}
+
+.productHighlightWrapper--flag-beneficiosPDP {
+    position: absolute;
+    z-index: 3;
+    left: 5%;
+    width: 90px;
+}
+
+.pr7 {
+    padding-right: 0;
+}

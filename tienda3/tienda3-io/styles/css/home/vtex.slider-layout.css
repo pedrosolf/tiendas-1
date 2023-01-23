@@ -1,0 +1,111 @@
+.paginationDot--carousel-principal{
+    width: 6rem !important;
+    height: 5px !important;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    opacity: 0.5;
+}
+.paginationDot--carousel-principal--isActive{
+    opacity: 1;
+    background: #fff;
+}
+.paginationDotsContainer--carousel-principal{
+    display: flex;
+    justify-content: center;
+    bottom: 15px;
+    height: 5px;
+}
+.sliderLayoutContainer--refuerzos-home{
+background: #222426;    
+}
+.sliderLayoutContainer--banners-home{
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important; 
+    margin-top: 5rem; 
+    
+}
+.sliderTrack--banners-home{
+    gap: 20px;
+
+}
+.paginationDotsContainer--banners-home, .paginationDotsContainer--carruselEstandar{
+  bottom: -2rem;
+}
+.paginationDot--banners-home--isActive{
+    background: #222426;
+}
+.paginationDot--carruselEstandar--isActive{
+    background: #222426;
+}
+.imageElement--carousel-principal{
+    max-height: none;
+}
+:global(.vtex-store-components-3-x-imageElement--carousel-principal){
+    max-height: none !important;
+}
+@media (min-width: 660px){
+    .slide--carruselEstandar{
+        margin: 0.5rem;
+    }
+    .paginationDotsContainer--carousel-principal{
+        justify-content: flex-end;
+        padding-right: 1rem;
+    }
+    .sliderLayoutContainer--refuerzos-home{
+        margin: auto;
+        margin-top: 1rem;
+        width: 95% !important;
+        
+        
+    }
+    .sliderTrack--banners-home{
+        display: flex;
+        justify-content: space-around;
+        width: 95%;
+        margin: auto;
+        gap: 20px;
+    }
+    .sliderLayoutContainer--carrusel-3{
+        position: relative;
+        right: 5%;
+    }
+
+}
+.sliderLeftArrow--carruselEstandar{
+    left: -2rem;
+}
+.sliderRightArrow--carruselEstandar{
+    right: -2rem;
+}
+.caretIcon--carruselEstandar{
+    color: #545859;
+}
+.sliderTrackContainer--banners-home {
+    padding: 0.5rem;
+}
+@media (min-width: 1400px){
+    .sliderLayoutContainer--carrusel-3{
+        right: unset;
+        left: 10%;
+    }
+    .sliderLayoutContainer--banners-home{
+      
+        margin-top: 7rem; 
+        
+    }
+}
+.sliderLayoutContainer--wishlist-shelf{
+    padding-bottom: 6rem;
+}
+.paginationDotsContainer--wishlist-shelf{
+    bottom: 4rem;
+}
+.paginationDot--wishlist-shelf--isActive{
+    background: #222426;
+}
+.caretIcon--carousel-principal{
+    color: #fff;
+}

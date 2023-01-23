@@ -1,0 +1,22 @@
+{
+  "store.custom#ayuda-contacto": {
+    "blocks": ["tab-layout#ayuda-contacto"]
+  },
+  "tab-layout#ayuda-contacto": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-contacto"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "contacto"
+    }
+  },
+  "tab-content#ayuda-contacto": {
+    "children": [
+      "tab-content.item#contacto"
+    ]
+  }
+}

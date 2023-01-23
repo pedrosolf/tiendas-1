@@ -1,0 +1,636 @@
+/* .container--titulo-1{
+  background: #E5E5E5;
+} */
+
+.paragraph--titulo-1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(84, 89, 119);
+    font-weight: 700;
+    outline-color: rgb(84, 89, 119);
+    margin: 0;
+}
+
+.paragraph--titulo-1-gris {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #545977;
+    font-weight: 700;
+    outline-color: rgb(84, 89, 119);
+    margin: 0;
+}
+
+
+.paragraph--richLogin1 {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+    .paragraph--richLogin1::after {
+        content: "Ingresá o registrate para poder obtener hasta un 15% de descuento en toda la tienda, y mantenete al tanto de todas las promociones, contenidos exclusivos y ¡mucho más!";
+        color: white;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+.paragraph--richLogin1Mobile {
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+/* @media (max-width:360px){
+  .paragraph--richLogin1Mobile{       
+    font-size: 10px;
+    padding-right: 1px;
+  }
+} */
+
+.paragraph--richLogin2 {
+    min-height: 80%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff !important;
+}
+
+.container--richLogin2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container--richLogin3Mobile {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link--richLogin2 {
+    padding: 12px 40px;
+    /* margin-left: 10px; */
+    text-decoration: none !important;
+    list-style: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff !important;
+    box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.link--richLogin2Mobile {
+    background-color: #00833e;
+    padding: 6px 20px;
+    /* margin-left: 10px; */
+    text-decoration: none !important;
+    list-style: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff !important;
+    box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.link--richLogin3 {
+    background-color: #ffffff;
+    padding: 12px 20px;
+    margin-left: 10px;
+    text-decoration: none !important;
+    list-style: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #00833e !important;
+    /* box-shadow: inset 0 0 0 2px #FFFFFF; */
+}
+
+.link--richLogin3Mobile {
+    background-color: #ffffff;
+    padding: 6px 20px;
+    /* margin-left: 10px; */
+    text-decoration: none !important;
+    list-style: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #00833e !important;
+    /* box-shadow: inset 0 0 0 2px #FFFFFF; */
+}
+
+/* .link--richLogin2::before {
+  content: url('/arquivos/boton1Afiliados.png');  
+}  */
+
+.container--richLogin3 {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2px;
+}
+
+.link--richLogin3 {
+    text-decoration: none !important;
+    list-style: none;
+}
+
+/* .link--richLogin3::before {
+  content: url('/arquivos/boton2Afiliados.png');
+}  */
+
+/* .link--richLogin2Mobile::after {
+  content: "Registrarme";
+  background: #FFFFFF !important;
+  color: #000000 !important;
+  margin-left: 2rem;
+}  */
+
+/* .link--richLogin2Mobile::before {
+  content: url('/arquivos/boton1AfiliadosMobile.png');
+} */
+
+/* .link--richLogin3Mobile::before {
+  content: url('/arquivos/boton2AfiliadosMobile.png');
+}  */
+
+/* .link--richLogin3:hover {
+  background-color: rgba(255, 255, 255, 0.87);
+} */
+
+/* :global(.vtex-rich-text-0-x-link--logintext) {
+  font-weight: bold;
+  background-color: #fff;
+  padding: 12px 20px;
+  margin-left: 10px;
+} */
+
+/* .container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  color: #727273;
+  justify-content: center;
+  text-align: center;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 200;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034E;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+}
+ */
+
+.container--ver-mas-home {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph--BannerTelefonos {
+    color: #086eef;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.3rem 0;
+    font-weight: 700;
+    width: 210%;
+    margin: 0;
+}
+
+.paragraph--BannerTelefonosEmergencia {
+    color: #545977;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.3rem 0;
+    font-weight: 700;
+    width: 210%;
+    margin: 0;
+}
+
+.container--BannerTelefonos,
+.wrapper--BannerTelefonos {
+    height: 40px;
+}
+
+/* COMPRA POR CATEGORÍAS */
+.wrapper--categoryDest .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #545977;
+    text-decoration: none;
+}
+
+.wrapper--categoryDest .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #545977;
+    text-decoration: none;
+}
+
+.paragraph--categoryDest {
+    height: 189px;
+    text-align: center;
+    margin: 0 0 1.3rem 0;
+}
+
+.image--categoryDest {
+    width: 170px;
+    height: 170px;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--compra-categoria) {
+    width: 90% !important;
+    margin: 0 auto 5rem auto;
+}
+
+@media (min-width: 1441px) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--compra-categoria) {
+        width: 70% !important;
+        margin: 0 5rem 5rem 5rem auto;
+    }
+}
+
+/* Efecto hover */
+.wrapper--categoryDest .link:hover {
+    color: #00a4e8;
+    font-weight: 700;
+}
+
+.image--categoryDest:first-child {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.wrapper--categoryDest .link:hover .image--categoryDest:first-child {
+    opacity: 1;
+}
+
+@media (max-width: 750px) {
+    .paragraph--titulo-1 {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #545977;
+        margin: 2rem 0;
+    }
+
+    .paragraph--BannerTelefonos {
+        color: #086eef;
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin: 5;
+        width: 100%;
+    }
+
+    .paragraph--BannerTelefonosEmergencia {
+        color: #545977;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container--BannerTelefonos,
+    .wrapper--BannerTelefonos {
+        height: 40px;
+    }
+}
+
+/* Beneficios */
+.container--ref {
+    justify-content: center;
+}
+
+.paragraph--ref {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.link--ref {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #545977;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.image--ref1, .image--ref3 {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.image--ref2 {
+    width: 56px;
+}
+
+.image--ref4 {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .link--ref {
+        flex-direction: column;
+    }
+}
+
+
+/* Cetaphil */
+.paragraph--cetaphil{
+  margin: 0;
+}
+.image--cetaphil{
+  width: 512px;
+}
+
+.strong--titulo-1 {
+    color: #00a4e8;
+}
+
+.container--BannerTelefonosEmergencia{
+    justify-content:center;
+}
+
+
+
+
+/*columnas de secciones*/
+
+.link--btn-humano {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 600;
+}
+
+
+.container--btn-humano {
+  background: #00A4E8;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  margin-left: -150px;
+}
+
+.link--btn-animal {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 600;
+}
+
+.paragraph--btn-humano {
+  color: white;
+  font-weight: 600;
+}
+.paragraph--btn-animal {
+  color: white;
+  font-weight: 600;
+}
+.container--btn-animal {
+  background: #2A9B08;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  margin-left: -150px;
+}
+
+.paragraph--text-humano {
+  width: 180px;
+  margin-top: -240px;
+  position: absolute;
+  margin-left: -250px;
+  color: #1c415b;
+  font-weight: 500;
+}
+
+.link--btn-compra-humano {
+  color: white;
+  text-decoration-line: none;
+  font-weight: 600;
+}
+
+.container--btn-compra-humano {
+  background: #1c415b;
+  width: 150px; 
+  height: 40px;
+  border-radius: 50px;
+  margin-top: -160px;
+  position: absolute;
+  margin-left: -230px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .paragraph--text-humano {
+        width: 180px;
+        margin-top: -190px;
+        position: absolute;
+        margin-left: -200px;
+        color: #1c415b;
+        font-weight: 500;
+      }
+      .container--btn-compra-humano {
+        background: #1c415b;
+        width: 150px;
+        height: 40px;
+        border-radius: 50px;
+        margin-top: -115px;
+        position: absolute;
+        margin-left: -190px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+        .paragraph--text-humano {
+          width: 180px;
+          margin-top: -190px;
+          position: absolute;
+          margin-left: -190px;
+          color: #1c415b;
+          font-weight: 500;
+        }
+        .container--btn-compra-humano {
+          background: #1c415b;
+          width: 150px;
+          height: 40px;
+          border-radius: 50px;
+          margin-top: -115px;
+          position: absolute;
+          margin-left: -170px;
+      }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+      .paragraph--text-humano {
+        width: 180px;
+        margin-top: -170px;
+        position: absolute;
+        margin-left: -150px;
+        color: #1c415b;
+        font-weight: 500;
+      }
+      .container--btn-compra-humano {
+        background: #1c415b;
+        width: 150px;
+        height: 40px;
+        border-radius: 50px;
+        margin-top: -95px;
+        position: absolute;
+        margin-left: -130px;
+    }
+}
+
+@media(min-width: 361px) and (max-width: 639px) {
+  .paragraph--text-humano {
+    width: 180px;
+    margin-top: -180px;
+    position: absolute;
+    margin-left: -170px;
+    color: #1c415b;
+    font-weight: 500;
+  }
+  .container--btn-compra-humano {
+    background: #1c415b;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: -100px;
+    position: absolute;
+    margin-left: -150px;
+}
+}
+
+@media (max-width: 360px) {
+  .paragraph--text-humano {
+    width: 180px;
+    margin-top: -160px;
+    position: absolute;
+    margin-left: -140px;
+    color: #1c415b;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .container--btn-compra-humano {
+    background: #1c415b;
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    margin-top: -90px;
+    position: absolute;
+    font-size: 13px;
+    margin-left: -110px;
+} 
+}
+
+

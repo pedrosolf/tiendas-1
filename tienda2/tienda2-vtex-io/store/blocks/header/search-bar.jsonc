@@ -1,0 +1,12 @@
+{
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#tienda2"],
+    "props": {
+      "maxTopSearches": 5,
+      "maxSuggestedTerms": 5,
+      "blockClass": "auto-busqueda",
+      "maxSuggestedProducts": 3,
+      "__unstableProductOriginVtex": true
+    }
+  }
+}

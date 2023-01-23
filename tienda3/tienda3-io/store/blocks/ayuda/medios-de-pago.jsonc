@@ -1,0 +1,22 @@
+{
+  "store.custom#ayuda-medios-de-pago": {
+    "blocks": ["tab-layout#ayuda-medios-de-pago"]
+  },
+  "tab-layout#ayuda-medios-de-pago": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-medios-de-pago"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "medios-de-pago"
+    }
+  },
+  "tab-content#ayuda-medios-de-pago": {
+    "children": [
+      "tab-content.item#medios-de-pago"
+    ]
+  }
+}

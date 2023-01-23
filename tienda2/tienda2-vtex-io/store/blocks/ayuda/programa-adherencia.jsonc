@@ -1,0 +1,126 @@
+{
+  "store.custom#programa-adherencia": {
+    "blocks": [
+      "responsive-layout.desktop#programa-adherencia",
+      "responsive-layout.tablet#programa-adherencia",
+      "responsive-layout.phone#programa-adherencia"
+    ]
+  },
+  "responsive-layout.desktop#programa-adherencia": {
+    "children": ["flex-layout.row#main-programa-adherencia-desk"]
+  },
+  "responsive-layout.tablet#programa-adherencia": {
+    "children": ["flex-layout.row#programa-adherencia-main-mobile"]
+  },
+  "responsive-layout.phone#programa-adherencia": {
+    "children": ["flex-layout.row#programa-adherencia-main-mobile"]
+  },
+  "flex-layout.row#programa-adherencia-main-mobile": {
+    "children": ["flex-layout.col#programa-adherencia"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-programa-adherencia-desk": {
+    "props": {
+      "blockClass": "main-programa-adherencia",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": ["flex-layout.col#programa-adherencia"]
+  },
+
+  "flex-layout.col#programa-adherencia": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "list-context.image-list#home",
+      "rich-text#programa-adherencia-title",
+      "rich-text#programa-adherencia-content",
+      "rich-text#programa-adherencia-content2"
+    ]
+  },
+
+  "flex-layout.row#programa-adherencia-image": {
+    "props": {},
+    "children": []
+  },
+  "list-context.image-list#home": {
+    "children": ["slider-layout#home-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/ayuda/banner-programa-adherencia.png",
+          "mobileImage": "assets/ayuda/500x500-Mobile_Nordisk.png",
+          "link": { "url": "/saxenda-6mg-ml-jeringa-prell-x-3-unid-104716/p" }
+        },
+        {
+          "image": "assets/ayuda/banner-programa-adherencia2.png",
+          "mobileImage": "assets/ayuda/Bannerartemidamobile.png",
+          "link": { "url": "/161?map=productClusterIds" }
+        },
+        {
+          "image": "assets/ayuda/banner-programa-adherencia3.webp",
+          "mobileImage": "assets/ayuda/PFIZER_mobile03-12.webp",
+          "link": {"url":"/eliquis"}
+        },
+        {
+          "image": "assets/ayuda/banner-programa-adherencia4.webp",
+          "mobileImage": "assets/ayuda/Banners_tienda2_Musa_500x500-2710.webp",
+          "link": {"url":"/169?map=productClusterIds"}
+        }
+      ]
+    }
+  },
+  "slider-layout#home-images": {
+    "props": {
+      "autoplay": {
+        "timeout": 4500,
+        "stopOnHover": true        
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "adherenciaSlider"
+    }
+  },
+  "flex-layout.row#programa-adherencia-content": {
+    "props": {},
+    "children": ["rich-text#programa-adherencia-content"]
+  },
+
+  "rich-text#programa-adherencia-title": {
+    "props": {
+      "blockClass": ["ayudaTitle", "programa-adherencia"],
+      "text": "#### **Programas de adherencia**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#programa-adherencia-content": {
+    "props": {
+      "blockClass": ["ayudaContent", "programa-adherencia"],
+      "text": "En tienda2 contamos con programas de adherencia para que obtengas el precio más conveniente en tu compra.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#programa-adherencia-content2": {
+    "props": {
+      "blockClass": ["ayudaContent", "programa-adherencia"],
+      "text": "¿Cómo adquirir el descuento?\n 1. Inscríbete en el programa de adherencia que desees, en la página web del programa respectivo.\n 2. Obtén tu cupón de descuento.\n 3. Ingresa el cupón al producto que deseas comprar y obtendrás el descuento automáticamente.<br/><br/>¡Ingresa a cada banner y podrás ver los productos asociados a cada programa!",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "footer-row#copyright-desk": {
+    "title": "Derechos",
+    "props": {
+      "inverted": false,
+      "fullWidth": true,
+      "blockClass": "copyright"
+    },
+    "children": [
+      "flex-layout.row#copyright-vtex"
+    ]
+  },
+  "footer-row#copyright-mobile": {
+    "title": "Derechos",
+    "props": {
+      "inverted": false,
+      "fullWidth": true,
+      "blockClass": "copyright"
+    },
+    "children": ["flex-layout.row#copyright-vtex"]
+  },
+
+  "flex-layout.row#copyright-vtex": {
+    "props": {
+      "preventHorizontalStretch": false,
+      "fullWidth": true,
+      "blockClass": "copyright-vtex-container",
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.col#copyright-vtex"
+    ]
+  },
+  "flex-layout.col#copyright-vtex": {
+    "props": {
+      "blockClass": "",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#mvtex",
+      "rich-text#footer-copyright"
+    ]
+  },
+  
+  "rich-text#mvtex": {
+    "props": {
+      "text": "[![logo de vtex](assets/footer/vtex.svg)](https://vtex.com/ar-es/?target=_blank)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "miniatura-3"
+    }
+  },
+  "rich-text#footer-copyright": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Autorizado por ISP Res Ex. 2122 del 17.05.2021 <br/>Todos los derechos reservados © 2022",
+      "blockClass": "copyright",
+      "font": "t-mini"
+    }
+  }
+}

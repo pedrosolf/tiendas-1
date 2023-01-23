@@ -1,0 +1,275 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer-container-desk"]
+  },
+  "flex-layout.row#footer-container-desk": {
+    "children": ["flex-layout.row#footer-desk", "flex-layout.row#footer-copy"],
+    "props": {
+      "blockClass": "footer-desk"
+    }
+  },
+  "flex-layout.row#footer-desk": {
+    "children": [
+      "flex-layout.col#footer-logo",
+      "flex-layout.col#acerca",
+      "flex-layout.col#informacion",
+      "flex-layout.col#ayuda",
+      "flex-layout.col#ubicacion"
+    ],
+    "props": {
+      "blockClass": "footer-top"
+    }
+  },
+  "flex-layout.col#footer-logo": {
+    "children": ["image#logo-footer", "flex-layout.row#redes"]
+  },
+  "image#logo-footer": {
+    "props": {
+      "src": "assets/footer/logo.svg",
+      "blockClass": "logo-stanley"
+    }
+  },
+  "flex-layout.row#redes": {
+    "children": [
+      "image#facebook-footer",
+      "image#instagram-footer",
+      "image#spotify-footer",
+      "image#youtube-footer"
+    ],
+    "props": {
+      "blockClass": "redes-footer"
+    }
+  },
+  "image#facebook-footer": {
+    "props": {
+      "src": "assets/footer/facebook.jpg",
+      "link": {
+        "url": "https://www.facebook.com/tienda3i/",
+        "newTab": true
+      },
+      "blockClass": "redes-footer"
+    }
+  },
+  "image#instagram-footer": {
+    "props": {
+      "src": "assets/footer/Instagram.jpg",
+      "link": {
+        "url": "https://www.instagram.com/stanley_arg/",
+        "newTab": true
+      },
+      "blockClass": "redes-footer"
+    }
+  },
+  "image#spotify-footer": {
+    "props": {
+      "src": "assets/footer/Spotify.jpg",
+      "link": {
+        "url": "https://open.spotify.com/user/fp2cef030qhaopx3n136qp2jx?si=856b1791ce5a4eb7",
+        "newTab": true
+      },
+      "blockClass": "redes-footer"
+    }
+  },
+  "image#youtube-footer": {
+    "props": {
+      "src": "assets/footer/YouTube.jpg",
+      "link": {
+        "url": "https://www.youtube.com/watch?v=536gZ6Qjk4Q",
+        "newTab": true
+      },
+      "blockClass": "redes-footer"
+    }
+  },
+  "flex-layout.col#acerca": {
+    "children": ["rich-text#acerca"],
+    "props": {
+      "blockClass": "col-footer"
+    }
+  },
+  "rich-text#acerca": {
+    "props": {
+      "text": "**ACERCA DE STANLEY**\n[¿Quiénes somos?](/ayuda/quienes-somos)\n[Preguntas frecuentes](/ayuda/preguntas-frecuentes)\n[Términos y condiciones](/ayuda/terminos-y-condiciones)",
+      "blockClass": "texto-footer"
+    }
+  },
+  "flex-layout.col#informacion": {
+    "children": ["rich-text#informacion"],
+    "props": {
+      "blockClass": "col-footer"
+    }
+  },
+  "rich-text#informacion": {
+    "props": {
+      "text": "**INFORMACIÓN**\n[Contacto](/ayuda/contacto)\n<a class='vtex-rich-text-0-x-link vtex-rich-text-0-x-link--texto-footer' href='https://wa.me/5491139178980' target='_blank'>11-39178980</a>\n[sac@stanley-pmi.com.ar](mailto:sac@stanley-pmi.com.ar)\n**VENTA MAYORISTA**\n[ventamayorista@stanley-pmi.com.ar](mailto:ventamayorista@stanley-pmi.com.ar)",
+      "blockClass": ["texto-footer", "informacion-footer"]
+    }
+  },
+  "flex-layout.col#ayuda": {
+    "children": ["rich-text#ayuda"],
+    "props": {
+      "blockClass": "col-footer"
+    }
+  },
+  "rich-text#ayuda": {
+    "props": {
+      "text": "**AYUDA**\n[Medios de pago](/ayuda/medios-de-pago)\n[Políticas de envío](/ayuda/politicas-de-envios)\n[Políticas de privacidad](/ayuda/politica-de-privacidad)\n[Cambios y devoluciones](/ayuda/cambios-y-devoluciones)\n[Garantía](/ayuda/garantia)\n[Puntos de venta](/ayuda/puntos-de-venta)",
+      "blockClass": ["texto-footer", "ayuda-footer"]
+    }
+  },
+  "flex-layout.col#ubicacion": {
+    "children": [
+      "rich-text#ubicacion",
+      "flex-layout.row#logos-compra-segura",
+      "rich-text#arrepentimiento-footer"
+    ],
+    "props": {
+      "blockClass": "col-footer"
+    }
+  },
+  "rich-text#ubicacion": {
+    "props": {
+      "text": "**COMPRA 100% SEGURA**",
+      "blockClass": ["texto-footer", "ultima-columna"]
+    }
+  },
+  "flex-layout.row#logos-compra-segura": {
+    "children": ["flex-layout.col#logos-mp-cace", "image#data-fiscal"],
+    "props": {
+      "paddingBottom": 6,
+      "preventHorizontalStretch": true,
+      "blockClass": "logos-compra-segura"
+    }
+  },
+  "flex-layout.col#logos-mp-cace": {
+    "children": ["image#mercado-pago", "image#cace"],
+    "props": {
+      "horizontalAlign": "left"
+    }
+  },
+  "image#mercado-pago": {
+    "props": {
+      "src": "assets/footer/mercado-pago.png",
+      "maxHeight": 20,
+      "link": {
+        "url": "/ayuda/medios-de-pago"
+      },
+      "blockClass": "logo-footer"
+    }
+  },
+  "image#cace": {
+    "props": {
+      "src": "assets/footer/cace.png",
+      "maxHeight": 28,
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "logo-footer"
+    }
+  },
+  "image#data-fiscal": {
+    "props": {
+      "src": "assets/footer/data-fiscal.png",
+      "link": {
+        "url": "http://qr.afip.gob.ar/?qr=JzI5gRzgBF3rzu2RTlZMZg,,",
+        "newTab": true
+      },
+      "blockClass": "logo-footer"
+    }
+  },
+  "rich-text#arrepentimiento-footer": {
+    "props": {
+      "text": "[Botón de arrepentimiento](/ayuda/arrepentimiento-de-compra)",
+      "blockClass": "arrepentimiento-footer"
+    }
+  },
+  "flex-layout.row#footer-copy": {
+    "children": ["rich-text#copy-footer", "flex-layout.row#footer-logos"],
+    "props": {
+      "blockClass": "bottom-footer"
+    }
+  },
+  "rich-text#copy-footer": {
+    "props": {
+      "text": "© 2022 Todos los derechos reservados",
+      "blockClass": "copy-footer"
+    }
+  },
+  "flex-layout.row#footer-logos": {
+    "children": ["image#web", "image#pci", "image#vtex"],
+    "props": {
+      "blockClass": "logos-footer"
+    }
+  },
+  "image#web": {
+    "props": {
+      "src": "assets/footer/web.svg",
+      "link": {
+        "url": "https://web.net/",
+        "newTab": true
+      },
+      "blockClass": "logo-footer"
+    }
+  },
+  "image#pci": {
+    "props": {
+      "src": "assets/footer/vtex-pci.jpg",
+      "link": {
+        "url": "https://secure.vtex.com/?an=stanley-pmi.com.ar/",
+        "newTab": true
+      },
+      "blockClass": "logo-footer"
+    }
+  },
+  "image#vtex": {
+    "props": {
+      "src": "assets/footer/vtex.svg",
+      "link": {
+        "url": "https://vtex.com/ar-es/",
+        "newTab": true
+      },
+      "blockClass": "logo-footer"
+    }
+  },
+  //FOOTER MOBILE
+
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer-container-mobile"]
+  },
+  "flex-layout.row#footer-container-mobile": {
+    "children": [
+      "flex-layout.col#acerca-mobile",
+      "flex-layout.col#informacion",
+      "flex-layout.col#ayuda",
+      "flex-layout.col#ubicacion-mobile",
+      "flex-layout.col#footer-logo",
+      "flex-layout.row#footer-copy"
+    ],
+    "props": {
+      "blockClass": "footer-mobile"
+    }
+  },
+  "flex-layout.col#acerca-mobile": {
+    "children": ["rich-text#acerca", "rich-text#arrepentimiento-footer"],
+    "props": {
+      "blockClass": ["col-footer", "acerca-mobile"]
+    }
+  },
+  "flex-layout.col#ubicacion-mobile": {
+    "children": ["rich-text#ubicacion", "flex-layout.row#logos-compra-segura-mobile"],
+    "props": {
+      "blockClass": "col-footer"
+    }
+  },
+  "flex-layout.row#logos-compra-segura-mobile": {
+    "children": ["image#data-fiscal", "image#mercado-pago", "image#cace"],
+    "props": {
+      "colGap": 6,
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props":{
+      "context": {
+        "maxItemsPerPage":24,
+        /* "hideUnavailableItems":true, */
+        "skusFilter": "ALL" 
+        // "orderByField":"OrderByPriceASC" <-- Para ordenar por precio mas bajo al mas alto
+      }
+    }
+  },
+
+  "flex-layout.row#accesos-showcase":{
+    "children": [
+      "condition-layout.category#bar",
+      "condition-layout.category#cafe",
+      "condition-layout.category#camping",
+      "condition-layout.category#hidratacion",
+      "condition-layout.category#mate"
+
+
+
+
+
+
+    ]
+  },
+  "condition-layout.category#bar": {
+       "props": {
+           "conditions": [
+             {
+               "subject": "department",
+               "arguments": {
+                 "ids": ["3"]
+               }
+             },
+             {
+              "subject": "category",
+              "arguments": {
+                "ids": ["14", "13", "17", "16", "15"]
+              }
+            }
+           
+            
+           ],  
+           "matchType": "any",
+           "Then": "rich-text#accesos-bar",
+           "Else": "rich-text#vacio"
+         }
+      
+  },
+  "condition-layout.category#cafe": {
+    "props": {
+        "conditions": [
+          {
+            "subject": "department",
+            "arguments": {
+              "ids": ["2"]
+            }
+          },
+          {
+            "subject": "category",
+            "arguments": {
+              "ids": ["9", "10", "11", "12", "20"]
+            }
+          }
+         
+        ],
+        "matchType": "any",
+        "Then": "rich-text#accesos-cafe",
+        "Else": "rich-text#vacio"
+      }
+   
+},
+"condition-layout.category#camping": {
+  "props": {
+      "conditions": [
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["5"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["23", "24"]
+          }
+        }
+       
+      ],
+      "matchType": "any",
+      "Then": "rich-text#accesos-camping",
+      "Else": "rich-text#vacio"
+    }
+ 
+},
+"condition-layout.category#hidratacion": {
+  "props": {
+      "conditions": [
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["4"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["18", "19", "20", "21", "22"]
+          }
+        }
+       
+      ],
+      "matchType": "any",
+      "Then": "rich-text#accesos-hidratacion",
+      "Else": "rich-text#vacio"
+    }
+ 
+},
+"condition-layout.category#mate": {
+  "props": {
+      "conditions": [
+        {
+          "subject": "department",
+          "arguments": {
+            "ids": ["1"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["8"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["7"]
+          }
+        },
+        {
+          "subject": "category",
+          "arguments": {
+            "ids": ["6"]
+          }
+        }
+       
+      ],
+      "matchType": "any",
+      "Then": "rich-text#accesos-mate",
+      "Else": "rich-text#vacio"
+    }
+ 
+},
+  "rich-text#vacio":{
+    "props": {
+      "text": "",
+      "blockClass": "display-none"
+    }
+  },
+  "rich-text#accesos-bar":{
+    "props": {
+      "text": "[PETACA](/bar/petaca?initialMap=c&initialQuery=bar&map=category-1,category-2)[VASO PINTA](/bar/vaso-pinta?initialMap=c&initialQuery=bar&map=category-1,category-2)[VASO CON DESTAPADOR](/bar/vaso-con-destapador?initialMap=c&initialQuery=bar&map=category-1,category-2)[CHOPS](/bar/chops?initialMap=c&initialQuery=bar&map=category-1,category-2)",
+      "blockClass": "accesos-showcase"
+    }
+  },
+  "rich-text#accesos-cafe":{
+    "props": {
+      "text": "[MUG SWITCHBACK](/Hidratacion/Mug-Switchback)[TAZAS DE CAFÉ](/cafe/tazas-de-cafe?initialMap=c&initialQuery=cafe&map=category-1,category-2)[NEVERLEAK TM MUG](/cafe/neverleak-tm-mug?initialMap=c&initialQuery=cafe&map=category-1,category-2)[VASO ONE HAND](/cafe/vaso-one-hand?initialMap=c&initialQuery=cafe&map=category-1,category-2)",
+      "blockClass": "accesos-showcase"
+
+    }
+  },
+  "rich-text#accesos-camping":{
+    "props": {
+      "text": "[COOLER ADVENTURE](/camping/cooler-adventure?initialMap=c&initialQuery=camping&map=category-1,category-2)[TERMO PARA ALIMENTOS](/camping/termo-para-alimentos?initialMap=c&initialQuery=camping&map=category-1,category-2)",
+      "blockClass": "accesos-showcase"
+
+    }
+  },
+  "rich-text#accesos-hidratacion":{
+    "props": {
+      "text": "[VASO EVERYDAY](/hidratacion/vaso-everyday?initialMap=c&initialQuery=hidratacion&map=category-1,category-2)[FLIP STRAW TUMBLE](/hidratacion/flip-straw-tumble?initialMap=c&initialQuery=hidratacion&map=category-1,category-2)[FLIP STRAW BOTTLE](/hidratacion/flip-straw-bottle?initialMap=c&initialQuery=hidratacion&map=category-1,category-2)",
+      "blockClass": "accesos-showcase"
+
+    }
+  },
+  "rich-text#accesos-mate":{
+    "props": {
+      "text": "[BOMBILLAS](/mate/bombillas)[MATES](/mate/mates)[TERMOS](/mate/termos)",
+      "blockClass": "accesos-showcase"
+
+    }
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  // VERSION DESKTOP
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#searchbread-desktop",
+      "flex-layout.row#searchtitle",
+      "flex-layout.row#result"
+    ],
+    "props": {
+    
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+
+  
+
+  // MIGA DE PAN - desktop
+  "flex-layout.row#searchbread-desktop": {
+    "children": [
+      "flex-layout.col#searchbread"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false
+    }
+  },
+  "flex-layout.col#searchbread":{
+    "props":{
+      "marginLeft":9,
+      "blockClass":"search-bread"
+    },
+    "children":["breadcrumb.search"]
+  },
+  "breadcrumb.search": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+  // miga de pan mobile
+  "flex-layout.row#searchbread-mobile": {
+    "children":["breadcrumb.search"]
+  },//FIN MIGA DE PAN
+
+  // TITULO DESKTOP
+  "flex-layout.row#searchtitle": {
+    "children": [
+      "flex-layout.col#searchtitle"
+    ],
+    "props": {
+      "blockClass": "title-search"
+    }
+  },
+  "flex-layout.col#searchtitle":{
+    "props":{
+      "marginLeft":9,
+      "blockClass":"searchtitle"
+    },
+    "children":["search-title.v2"]
+  },//FIN TITULO
+
+  // FILTRO + CONTENIDO DE BUSQUEDA
+  
+  "flex-layout.row#result": {
+    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
+    "props": {
+      "blockClass": "result",
+      "fullWidth": true,
+      "marginTop":6,
+      "marginBottom":4
+    }
+  },
+  // FILTRO
+  "flex-layout.col#filter": {
+    "children": ["filter-navigator.v3","image#cat", "image#cat2"],
+    "props": {
+      "width":"25%",
+      "blockClass": "filterCol",
+      "preventVerticalStretch": true,
+      "marginLeft":10
+    }
+  },
+  // CONTENIDO
+  "flex-layout.col#content": {
+    "children": [
+     //"flex-layout.row#searchtitle", //<-- TITULO DE LA CONSULTA
+     "condition-layout.category#bar",
+      "condition-layout.category#cafe",
+      "condition-layout.category#camping",
+      "condition-layout.category#hidratacion",
+      "condition-layout.category#mate",
+      "flex-layout.row#searchinfo", //<-- TRAE LA CANTIDAD DE PRODUCT + ORDENAR POR
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products", //<-- TRAE LOS PRODUCTOS DE LA CONSULTA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width":"75%",
+      "preventVerticalStretch": true,
+      "marginRight":10
+    }
+  },
+  // CONTADOR + ORDERNAR POR
+  "flex-layout.row#searchinfo": {
+    "children": ["flex-layout.col#productCount", "flex-layout.col#orderby"],
+    "props": {
+      "blockClass": "search-info"
+    }
+  },
+  
+  // CONTADOR
+  "flex-layout.col#productCount": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountCol"
+    }
+  },
+  "total-products.v2":{
+    "props":{
+      "blockClass":"total-producto"
+    }
+  },
+  // ORDERNAR POR
+  "flex-layout.col#orderby": {
+    "children": ["rich-text#ordenar","order-by.v2"],
+    "props": {
+      "blockClass": "orderByCol"
+    }
+  },
+  // SWITCHER
+  "flex-layout.col#switcherDesktop": {
+    "children": ["gallery-layout-switcher"],
+    "props": {
+      "verticalAlign": "middle",
+      "width":"5%",
+      "blockClass":"switcherDesktop"
+    }
+  },
+  // MENOS Y MAS PRODUCTOS
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "marginTop": 3,
+      "marginBottom":8
+    },
+    "children": ["search-fetch-more"]
+  },
+  "flex-layout.row#products": {
+    "children": ["search-content"],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  // CONTENIDO GALLERIA DE PRODUCT + VACIO
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+  "image#cat": {
+    "props": {
+      "width": "100%",
+      "src": "",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"banner-showcase"
+    }
+  },
+
+  "image#cat2": {
+    "props": {
+      "width": "100%",
+      "src": "",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"banner-showcase"
+    }
+  },
+  //FIN VERSION DESKTOP
+
+  // VERSION MOBILE
+  "search-result-layout.mobile": {
+    "children": [
+      "flex-layout.row#searchbread-mobile", //<-- MIGA DE PAN
+      "flex-layout.row#searchtitle",//<-- TITULO DE LA CONSULTA
+      "condition-layout.category#bar",
+      "condition-layout.category#cafe",
+      "condition-layout.category#camping",
+      "condition-layout.category#hidratacion",
+      "condition-layout.category#mate",
+      /* "flex-layout.row#switcherMobile", */
+      "flex-layout.row#searchinfomobile", //<-- TRAE ORDENAR POR + FILTRO + Switcher
+      /* "flex-layout.row#productCountMobile", */ //<-- TRAE LA CANTIDAD DE PRODUCTOS
+      "flex-layout.row#contentmobile", //<-- CONTENIDO DE LA BUSQUEDA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more", //<-- BOTON MOSTRAR MAS / 2.OPC = 'infinite-scroll'
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  // contenido
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "marginBottom":3
+    }
+  },
+
+  // filtros + orderby + switcher
+  "flex-layout.row#searchinfomobile": {
+    "children": [
+      "flex-layout.col#orderByMobile",
+      "flex-layout.col#filterMobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass":"searchinfomobile",
+      "colSizing": "auto",
+      "colJustify": "around",
+      "marginBottom":7 
+    }
+  },
+  // ordenar por 
+  "flex-layout.col#orderByMobile": {
+    "children": ["rich-text#ordenar","order-by.v2"],
+    "props": {
+      "width":"48%",
+      "blockClass": "orderByMobileCol"
+    }
+  },
+  "rich-text#ordenar":{
+    "props": {
+      "text": "Ordenar por: ",
+      "blockClass": "ordenar-por"
+    }
+  },
+  // SWITCHER
+  /* "flex-layout.row#switcherMobile":{
+    "props":{
+      "horizontalAlign":"right",
+      "marginBottom":3
+    },
+    "children":["flex-layout.col#switcherMobile"]
+  },
+  "flex-layout.col#switcherMobile": {
+    "children": ["gallery-layout-switcher"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign":"right",
+      "width":"5%",
+      "blockClass":"switcherMobile"
+    }
+  },
+  "gallery-layout-switcher": {
+    "children": [
+      
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
+    ]
+  },
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "grid"
+    },
+    "children": [
+      "icon-grid"
+    ]
+  },
+  "gallery-layout-option#list": {
+    "props": {
+      "name": "list"
+    },
+    "children": [
+      "icon-inline-grid"
+    ]
+  }, */
+  // "responsive-layout.desktop#textOptionGrid": {
+  //   "children": [
+  //     "rich-text#option-grid"
+  //   ]
+  // },
+  // "responsive-layout.desktop#textOptionList": {
+  //   "children": [
+  //     "rich-text#option-list"
+  //   ]
+  // },
+  // "rich-text#option-grid": {
+  //   "props": {
+  //     "text": "Grid",
+  //     "textColor": "c-auto",
+  //     "blockClass": "layout-option"
+  //   }
+  // },
+  // "rich-text#option-list": {
+  //   "props": {
+  //     "text": "List",
+  //     "textColor": "c-auto",
+  //     "blockClass": "layout-option"
+  //   }
+  // },
+  // cantidad de productos
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "width":"25%",
+      "blockClass": "productCountMobileRow"
+    }
+  },
+
+
+  // filtro
+  "flex-layout.col#filterMobile": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "width":"48%",
+      "blockClass": "filterMobileCol"
+    }
+  }, 
+
+  //FIN VERSION MOBILE
+
+  // FORMATO PARA MOSTRAR PRODUCTOS
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1600px)": 4,
+            "(min-width:1367px)": 4,
+            "(min-width:1025px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf",
+      "GridSummary": "product-summary.shelf"
+    }
+  },
+
+  //FILTRO NAVIGATOR
+  "filter-navigator.v3": {
+    "blocks":["sidebar-close-button"],
+    "props": {
+      "closeOnOutsideClick": true,
+      "initiallyCollapsed": true,
+      "navigationTypeOnMobile": "collapsible"
+    }
+  },
+
+
+  // BUSQUEDA VACIA
+  "search-not-found-layout": {
+    "children": [
+      "flex-layout.row#searchbread-desktop",
+      "flex-layout.row#notfound"
+    ]
+  },
+  
+  "flex-layout.row#notfound": {
+    "props":{
+      "marginTop":7,
+      "marginBottom":9,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true,
+      "blockClass":"not-found"
+    },
+    "children": [
+      "flex-layout.col#notfound"
+    ]
+  },
+  "flex-layout.col#notfound":{
+    "props":{
+      /* "paddingLeft":10, */
+      /* "paddingRight":5, */
+      "horizontalAlign":"center",
+      "blockClass":"build-container-search"
+    },
+    "children":["not-found"]
+  }
+
+ 
+}
+  
+
+ 

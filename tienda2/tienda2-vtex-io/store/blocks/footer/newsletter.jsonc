@@ -1,0 +1,73 @@
+{
+  "newsletter-form#tienda2": {
+    "children": ["flex-layout.row#newslwtterContainer"]
+  },
+  "flex-layout.row#newslwtterContainer": {
+    "props": {
+      "blockClass": "newslwtterContainer",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#newsletterLegend",
+      "flex-layout.col#newsletterForm"
+    ]
+  },
+  "flex-layout.col#newsletterLegend": {
+    "props": {
+      "width": "45%",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "blockClass": "newsletterLegend",
+      "paddingLeft": 5,
+      "paddingRight": 5
+    },
+    "children": ["rich-text#newsletterLegend"]
+  },
+  "rich-text#newsletterLegend": {
+    "props": {
+      "blockClass": "newsletterLegend",
+      "text": "![alt email](assets/footer/ICONO_EMAIL.png)**¡No te pierdas las Ofertas y Noticias de tienda2!**"
+    }
+  },
+  "flex-layout.col#newsletterForm": {
+    "props": {
+      "width": "55%",
+      "verticalAlign": "center",
+      "blockClass": "newslwtterForm",
+      "paddingLeft": 5,
+      "paddingRight": 5,
+      "preventVerticalStretch": true
+    },
+    "children": ["flex-layout.row#newslwtterForm"]
+  },
+  "flex-layout.row#newslwtterForm": {
+    "props": {
+      "blockClass": "newslwtterForm",
+      "colSizing": "auto",
+      "colGap": 5,
+      "rowGap": 5,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "Nombre"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Email"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Enviar"
+    }
+  }
+}

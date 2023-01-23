@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#bottom-header-mobile": {
+    "title": "Menu de navegación superior",
+    "props": {
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "nav-container-mobile",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+        "flex-layout.col#category-2",
+        "flex-layout.col#category-3",
+        "flex-layout.col#category-1"
+    ]
+  }
+}

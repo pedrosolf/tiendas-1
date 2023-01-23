@@ -1,0 +1,219 @@
+{
+    "flex-layout.row#product-guia-de-tallas-desktop": {
+        "children": ["modal-trigger#guia-de-tallas-desktop"]
+    },
+    "modal-trigger#guia-de-tallas-desktop": {
+        "children": [
+        "rich-text#guia-de-tallas-desktop",
+        "modal-layout#guia-de-tallas-desktop"
+        ]
+    },
+    "rich-text#guia-de-tallas-desktop": {
+        "props": {
+        "text": "Guía de tallas",
+        "blockClass": "guia-de-tallas-text"
+        }
+    },
+    "modal-layout#guia-de-tallas-desktop": {
+        "children": [
+        "tab-layout#guia-de-tallas-desktop"
+        ]
+    },
+    "tab-layout#guia-de-tallas-desktop": {
+        "children": [
+        "tab-list#guia-de-tallas-desktop",
+        "tab-content#guia-de-tallas-desktop"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-tab",
+            "defaultActiveTabId": "guia-1"
+        }
+    },
+  
+    "tab-list#guia-de-tallas-desktop": {
+        "children": [
+        "tab-list.item#guia-de-tallas-tab1-desktop",
+        "tab-list.item#guia-de-tallas-tab2-desktop",
+        "tab-list.item#guia-de-tallas-tab3-desktop",
+        "tab-list.item#guia-de-tallas-tab4-desktop",
+        "tab-list.item#guia-de-tallas-tab5-desktop"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-tab1-desktop": {
+        "props": {
+        "tabId": "guia-1",
+        "label": "Trial",
+        "defaultActiveTab": true,
+        "blockClass": "guia-de-tallas-tab"
+        }
+    },
+    "tab-list.item#guia-de-tallas-tab2-desktop": {
+        "props": {
+        "tabId": "guia-2",
+        "label": "Perry Ellis",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab"
+        }
+    },
+    "tab-list.item#guia-de-tallas-tab3-desktop": {
+        "props": {
+        "tabId": "guia-3",
+        "label": "Canadienne",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab"
+        }
+    },
+    "tab-list.item#guia-de-tallas-tab4-desktop": {
+        "props": {
+        "tabId": "guia-4",
+        "label": "Florsheim",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab"
+        }
+    },
+    "tab-list.item#guia-de-tallas-tab5-desktop": {
+        "props": {
+        "tabId": "guia-5",
+        "label": "Boss",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab"
+        }
+    },
+    "tab-content#guia-de-tallas-desktop": {
+        "children": [
+        "tab-content.item#guia-1-desktop",
+        "tab-content.item#guia-2-desktop",
+        "tab-content.item#guia-3-desktop",
+        "tab-content.item#guia-4-desktop",
+        "tab-content.item#guia-5-desktop"
+        ]
+    },
+    "tab-content.item#guia-1-desktop": {
+        "children": [
+            "responsive-layout.desktop#tallas-trial",
+            "responsive-layout.tablet#tallas-trial",
+            "responsive-layout.phone#tallas-trial"
+        ],
+        "props": {
+        "tabId": "guia-1"
+        }
+    },
+    "tab-content.item#guia-2-desktop": {
+        "children": [
+            "tab-layout#guia-de-tallas-inner-perryellis-desktop"
+        ],
+        "props": {
+        "tabId": "guia-2"
+        }
+    },
+    "tab-content.item#guia-3-desktop": {
+        "children": [
+            "tab-layout#guia-de-tallas-inner-canadienne-desktop"
+        ],
+        "props": {
+        "tabId": "guia-3"
+        }
+    },
+    "tab-content.item#guia-4-desktop": {
+        "children": [
+            "responsive-layout.desktop#tallas-florsheim",
+            "responsive-layout.tablet#tallas-florsheim",
+            "responsive-layout.phone#tallas-florsheim"
+        ],
+        "props": {
+        "tabId": "guia-4"
+        }
+    },
+    "tab-content.item#guia-5-desktop": {
+        "children": [
+            "responsive-layout.desktop#tallas-hugoboss",
+            "responsive-layout.tablet#tallas-hugoboss",
+            "responsive-layout.phone#tallas-hugoboss"
+        ],
+        "props": {
+        "tabId": "guia-5"
+        }
+    },
+
+
+    "responsive-layout.desktop#tallas-trial": {
+        "children": ["tab-layout#guia-de-tallas-inner-trial-desktop"]
+    },
+    "responsive-layout.tablet#tallas-trial": {
+        "children": ["tab-layout#guia-de-tallas-inner-trial-tablet"]
+    },
+    "responsive-layout.phone#tallas-trial": {
+        "children": ["tab-layout#guia-de-tallas-inner-trial-phone"]
+    },
+
+
+    "responsive-layout.desktop#tallas-perryellis": {
+    "children": ["tab-layout#guia-de-tallas-inner-perryellis-desktop"]
+    },
+    "responsive-layout.tablet#tallas-perryellis": {
+        "children": ["tab-layout#guia-de-tallas-inner-perryellis-tablet"]
+    },
+    "responsive-layout.phone#tallas-perryellis": {
+        "children": ["tab-layout#guia-de-tallas-inner-perryellis-phone"]
+    },
+
+
+    "responsive-layout.desktop#tallas-canadienne": {
+        "children": ["tab-layout#guia-de-tallas-inner-canadienne-desktop"]
+    },
+    "responsive-layout.tablet#tallas-canadienne": {
+        "children": ["tab-layout#guia-de-tallas-inner-canadienne-tablet"]
+    },
+    "responsive-layout.phone#tallas-canadienne": {
+        "children": ["tab-layout#guia-de-tallas-inner-canadienne-phone"]
+    },
+
+
+
+    "responsive-layout.desktop#tallas-florsheim": {
+        "children": ["image#guia-4-desktop"]
+    },
+    "responsive-layout.tablet#tallas-florsheim": {
+        "children": ["image#guia-4-mobile"]
+    },
+    "responsive-layout.phone#tallas-florsheim": {
+        "children": ["image#guia-4-mobile"]
+    },
+
+    "responsive-layout.desktop#tallas-hugoboss": {
+        "children": ["image#guia-5-desktop"]
+    },
+    "responsive-layout.tablet#tallas-hugoboss": {
+        "children": ["image#guia-5-mobile"]
+    },
+    "responsive-layout.phone#tallas-hugoboss": {
+        "children": ["image#guia-5-mobile"]
+    },
+    
+    "image#guia-4-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/florsheim/florsheim_desk.jpg"
+        }
+    },
+    "image#guia-5-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/hugoboss/boss_desk.jpg"
+        }
+    },
+    "image#guia-4-mobile": {
+        
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/florsheim/florsheim_mobile.jpg"
+        }
+    },
+    "image#guia-5-mobile": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/hugoboss/boss_mobile.jpg"
+        }
+    }
+
+}

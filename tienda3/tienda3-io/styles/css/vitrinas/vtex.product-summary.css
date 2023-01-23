@@ -1,0 +1,296 @@
+.element {
+  height: auto;
+  padding-bottom: 0;
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+.productBrand {
+  display: block;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: 'Knockout';
+  color: #222426;
+  font-size: 20px;
+  min-height: 45px;
+}
+.container {
+  background: #fff;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  position: relative;
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer) {
+  display: flex;
+  justify-content: flex-end;
+}
+:global(.vtex-product-price-1-x-savings--savings-flag) {
+  font-size: 1rem;
+  font-style: italic;
+}
+.imageNormal {
+  z-index: 2;
+}
+:global(.vtex-reviews-and-ratings-3-x-inlineContainer) {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 0;
+}
+:global(.vtex-reviews-and-ratings-3-x-star--empty) {
+  color: #d9d9d6;
+}
+:global(.vtex-reviews-and-ratings-3-x-star--filled) {
+  color: #fde568;
+}
+:global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-family: 'Knockout';
+}
+.skuSelectorInternalBox,
+.frameAround {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+:global(.vtex-wish-list-1-x-fill) {
+  background: url('assets/vitrinas/favorite-fill.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button__label) {
+  border: none;
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button) {
+  outline: none;
+  border: 1px solid transparent;
+}
+.SKUSelectorContainer {
+  min-height: 56px;
+  padding-left: 0rem;
+}
+.SKUSelectorContainer :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
+  padding-left: 0;
+}
+/*Colores sku-selector*/
+.skuSelectorItemImageValue {
+  display: none;
+}
+.skuSelectorItem {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 2px solid #fff;
+  width: 20px;
+  height: 20px;
+}
+.skuSelectorItem--verde {
+  background: #708573;
+}
+.skuSelectorItem--verde .frameAround {
+  border-color: #708573;
+}
+.skuSelectorItem--negro {
+  background: #000000;
+}
+.skuSelectorItem--negro .frameAround {
+  border-color: #000000;
+}
+.skuSelectorItem--naranja {
+  background: #cf8837;
+}
+.skuSelectorItem--naranja .frameAround {
+  border-color: #cf8837;
+}
+.skuSelectorItem--rojo {
+  background: #b2424d;
+}
+.skuSelectorItem--rojo .frameAround {
+  border-color: #b2424d;
+}
+.skuSelectorItem--azul-oscuro {
+  background: #1b365d;
+}
+.skuSelectorItem--azul .frameAround {
+  border-color: #1b365d;
+}
+.skuSelectorItem--azul {
+  background: #1b365d;
+}
+.skuSelectorItem--azul-oscuro .frameAround {
+  border-color: #1b365d;
+}
+.skuSelectorItem--blanco {
+  background: #f1f2f1;
+}
+.skuSelectorItem--blanco .frameAround {
+  border-color: #f1f2f1;
+}
+.skuSelectorItem--polar {
+  background: #f1f2f1;
+  border: 1px solid #d9d9d6;
+}
+.skuSelectorItem--polar .frameAround {
+  border-color: #f1f2f1;
+}
+.skuSelectorItem--plateado {
+  background: #d2d2d2;
+}
+.skuSelectorItem--plateado .frameAround {
+  border-color: #d2d2d2;
+}
+.skuSelectorItem--gris {
+  background: #d2d2d2;
+}
+.skuSelectorItem--gris .frameAround {
+  border-color: #d2d2d2;
+}
+.skuSelectorItem--coral {
+  background: #f88379;
+}
+.skuSelectorItem--coral .frameAround {
+  border-color: #f88379;
+}
+.skuSelectorItem--abyss {
+  background: #30636f;
+}
+.skuSelectorItem--abyss .frameAround {
+  border-color: #30636f;
+}
+.skuSelectorItem--wine {
+  background: #41221f;
+}
+.skuSelectorItem--wine .frameAround {
+  border-color: #41221f;
+}
+.skuSelectorItem--marino-claro {
+  background: #8da09a;
+}
+.skuSelectorItem--marino-claro .frameAround {
+  border-color: #8da09a;
+}
+.skuSelectorItem--cobre {
+  background: #935d3b;
+}
+.skuSelectorItem--cobre .frameAround {
+  border-color: #935d3b;
+}
+.skuSelectorItem--celeste {
+  background: #5e93a4;
+}
+.skuSelectorItem--celeste .frameAround {
+  border-color: #5e93a4;
+}
+.skuSelectorItem--maple {
+  background: #bb9351;
+}
+.skuSelectorItem--maple .frameAround {
+  border-color: #bb9351;
+}
+.skuSelectorItem--nightfall {
+  background: #19212a;
+}
+.skuSelectorItem--nightfall .frameAround {
+  border-color: #19212a;
+}
+
+.skuSelectorItem--pool {
+  background-color: #8ccdde;
+}
+
+.skuSelectorItem--pool .frameAround {
+  border-color: #8ccdde;
+}
+
+.skuSelectorItem--grapefruit {
+  background-color: #ef9d8f;
+}
+
+.skuSelectorItem--grapefruit .frameAround {
+  border-color: #ef9d8f;
+}
+
+.skuSelectorItem--charcoal {
+  background-color: #929196;
+}
+
+.skuSelectorItem--charcoal .frameAround {
+  border-color: #929196;
+}
+
+.skuSelectorInternalBox {
+  border: none;
+}
+.skuSelectorItem {
+  border: 1px solid #fff;
+}
+:global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-size: 20px;
+}
+.productNameContainer {
+  text-align: left;
+}
+@media (min-width: 1024px) {
+  .productNameContainer {
+    min-height: 45px;
+  }
+
+  :global(.vtex-reviews-and-ratings-3-x-inlineContainer) {
+    padding-bottom: 0.5rem;
+  }
+
+  .nameContainer {
+    min-height: 62px;
+  }
+
+  .SKUSelectorContainer {
+    margin-top: 0.5rem;
+  }
+}
+.image {
+  transition: 3000ms all ease-in-out;
+  -webkit-transition: 3000ms all ease-in-out;
+  -moz-transition: 3000ms all ease-in-out;
+  -ms-transition: 3000ms all ease-in-out;
+  -o-transition: 3000ms all ease-in-out;
+}
+/* IMAGEN 1 */
+.mainImageHovered {
+  display: block !important;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverEffect:hover .mainImageHovered {
+  opacity: 0;
+}
+
+/* IMAGEN 2 */
+.hoverImage {
+  display: block !important;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.imageContainer:hover .hoverImage {
+  opacity: 1;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrackContainer--wishlist-shelf) {
+  padding: 0 30px;
+}
+@media (max-width: 1500px){
+  .image{
+    max-width: 250px;
+    max-height: 250px;
+}
+
+}

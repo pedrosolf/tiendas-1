@@ -1,0 +1,436 @@
+.imageElement--image-refuerzoConfianza1Mobile {
+  /* margin-top: -2%; */
+  margin-bottom: -4px;
+}
+
+.imageElementLink--sliderMarcas {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.inputGroup--newsletter-footer :global(.vtex-button) {
+  background: linear-gradient(135deg, #008344 0%, #77bb44 100%);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 0.5rem;
+}
+
+.inputGroup--newsletter-footer {
+  width: 110%;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .inputGroup--newsletter-footer {
+    display: inline-block;
+    align-items: center;
+  }
+
+  .inputGroup--newsletter-footer :global(.vtex-button) {
+    width: 90%;
+    margin-left: -0.5rem;
+  }
+
+  .inputGroup--newsletter-footer {
+    width: 87%;
+  }
+}
+
+@media (max-width: 767px) {
+  .form--newsletter-footer {
+    flex-wrap: wrap;
+  }
+
+  .newsletter--newsletter-footer {
+    margin-top: -1rem;
+  }
+
+  .inputGroup--newsletter-footer :global(.vtex-button) {
+    width: 90%;
+    margin-left: -0.5rem;
+  }
+
+  .inputGroup--newsletter-footer {
+    width: 103%;
+  }
+}
+
+.label--newsletter-footer {
+  font-size: 15px;
+}
+
+.imageElement--icono-redes {
+  width: 30px;
+  height: 30px;
+}
+
+/* @media (min-width:1280px) and (max-width:2560px){ */
+.inputGroup--newsletter-footer {
+  display: flex;
+  align-items: center;
+}
+
+.inputGroup--newsletter-footer .buttonContainer {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.inputGroup--newsletter-footer :global(.vtex-input-prefix__group) {
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: lighter;
+  height: 2.2rem;
+}
+
+/* @media (max-width: 767px){
+  .inputGroup--newsletter-footer .buttonContainer{
+    padding-left: 0;
+    padding-top: 0;
+  }
+} */
+/* .notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #03054e;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--store.sellingPricent {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+ */
+
+.imageElement--image-bannerPromocional1 {
+  transition: 0.5s all ease-in-out;
+  height: 100%;
+}
+
+.imageElement--image-bannerPromocional1:hover {
+  transform: scale(1.05);
+}
+
+.imageElement--image-bannerPromocional1Mobile {
+  transition: 0.5s all ease-in-out;  
+}
+
+.imageElement--image-bannerPromocional1Mobile:hover {
+  transform: scale(1.05);
+}
+
+.sellingPrice {
+  display: block;
+  width: 100%;
+  height: 35px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.productBrand {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #545977;
+}
+
+.productBrandContainer {
+  color: #545977;
+  font-size: 100%;
+  font-family: "Poppins";
+  width: 90%;
+}
+
+.productBrandContainer::before {
+  content: "Laboratorio: ";
+}
+
+:global(.vtex-numeric-stepper__input),
+:global(.vtex-numeric-stepper__minus-button),
+:global(.vtex-numeric-stepper__plus-button) {
+  border: solid 1px #545977;
+  text-align: center;
+  font-size: 1rem;
+  outline: 0;
+}
+
+:global(.vtex-numeric-stepper__minus-button) {
+  border-right: 0;
+}
+
+:global(.vtex-numeric-stepper__plus-button) {
+  border-left: 0;
+}
+
+.imageElement--carouselPrincipal {
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+:global(.vtex-store-components-3-x-imageElement--whatsGo) {
+  position: fixed;
+  bottom: 10px;
+  right: 0px;
+  width: 215px;
+  height: 160px;
+  border: none;
+  z-index: 214748299;
+  margin: 0px 0px;
+}
+
+@media(max-width: 965px) {
+  :global(.vtex-store-components-3-x-imageElement--whatsGo) {
+    position: fixed;
+    bottom: 80px;
+    right: 0px;
+    width: 215px;
+    height: 160px;
+    border: none;
+    z-index: 214748299;
+    margin: 0px -26px;
+  }
+}
+
+.imageElement--stateIndicator {
+  width: 20px;
+}
+
+.specificationsTitle--prodEspecificacion {
+  display: none;
+}
+
+.specificationsTablePropertyHeading--prodEspecificacion,
+.specificationsTableSpecificationHeading--prodEspecificacion {
+  display: none;
+}
+
+.specificationItemProperty--prodEspecificacion,
+.specificationItemSpecifications--prodEspecificacion {
+  border: none;
+  padding: 0;
+  font-weight: bold;
+  color: #5f5f5f;
+}
+
+.specificationItemSpecifications--prodEspecificacion {
+  font-weight: 400;
+}
+
+.specificationItemSpecifications--prodEspecificacion::before {
+  content: ":";
+  margin-right: 20px;
+}
+
+.specificationsTablePropertyHeading--prodEspecificacion::before,
+.specificationItemProperty--prodEspecificacion::before {
+  vertical-align: middle;
+  content: "\2022";
+  color: #00a4e8;
+  font-size: 30px;
+  margin-right: 0.5rem;
+  padding: 0;
+}
+
+.specificationsTableContainer--prodEspecificacion {
+  padding-left: 1rem;
+}
+@media(max-width: 640px){
+  .specificationsTableContainer--prodEspecificacion{
+    margin-top: 0;
+  }
+}
+.productNameContainer--productName {
+  width: 90%;
+  line-height: 24px;
+}
+
+/* Tamaño de las imágenes de las vitrinas */
+:global(.vtex-product-summary-2-x-imageWrapper--vitrinatienda2Discount)
+  .discountContainer,
+:global(.vtex-product-summary-2-x-element--vitrinatienda2TeProtege)
+  .discountContainer {
+  width: 100%;
+}
+:global(.vtex-product-summary-2-x-imageWrapper--vitrinatienda2Discount)
+  .discountContainer
+  :global(.vtex-product-summary-2-x-imageStackContainer){
+  max-width: 200px;
+  height: 200px;
+}
+
+:global(.vtex-product-summary-2-x-element--vitrinatienda2TeProtege)
+  .discountContainer
+  :global(.vtex-product-summary-2-x-imageStackContainer) {
+  max-width: 200px;
+  height: 153px;
+}
+
+
+/* Banner 3 tienda2 te protege */
+.imageElement--tienda2TeProtegeBanner{
+  height: 480px;
+  width: 100%;
+}
+
+.label--linkSuscripciones {
+    font-size: 12px;    
+}
+
+ 
+
+
+
+
+
+.imageElement--imgHumano {
+  border-radius: 40px;
+  width: 590px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.imageElement--imgAnimal {
+  border-radius: 40px;
+  width: 590px;
+  margin-bottom: 440px;
+  margin-top: 20px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .imageElement--imgHumano {
+    border-radius: 40px;
+    width: 460px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  
+  .imageElement--imgAnimal {
+    border-radius: 40px;
+    width: 460px;
+    margin-bottom: 440px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .imageElement--imgHumano {
+    border-radius: 40px;
+    width: 400px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  
+  .imageElement--imgAnimal {
+    border-radius: 40px;
+    width: 400px;
+    margin-bottom: 440px;
+    margin-top: 20px;
+  }
+}
+
+.imageElement--bioequivalente {
+  width: 21px;
+  margin-bottom: 5px;
+}
+
+ 

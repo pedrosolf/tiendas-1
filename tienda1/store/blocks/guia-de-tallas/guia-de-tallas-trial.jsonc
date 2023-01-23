@@ -1,0 +1,305 @@
+{
+    "tab-layout#guia-de-tallas-inner-trial-desktop": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-trial-desktop",
+        "tab-content#guia-de-tallas-inner-trial-desktop"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-trial-desktop"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-trial-desktop": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-trial-desktop",
+            "tab-list.item#guia-de-tallas-inner-tab2-trial-desktop",
+            "tab-list.item#guia-de-tallas-inner-tab3-trial-desktop",
+            "tab-list.item#guia-de-tallas-inner-tab4-trial-desktop"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-trial-desktop": {
+        "props": {
+        "tabId": "guia-1-inner-trial-desktop",
+        "label": "Formal",
+        "defaultActiveTab": true,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-trial-desktop": {
+        "props": {
+        "tabId": "guia-2-inner-trial-desktop",
+        "label": "Formal - Tallas Especiales Largas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-trial-desktop": {
+        "props": {
+        "tabId": "guia-3-inner-trial-desktop",
+        "label": "Formal - Tallas Especiales Cortas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab4-trial-desktop": {
+        "props": {
+        "tabId": "guia-4-inner-trial-desktop",
+        "label": "Casual",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-content#guia-de-tallas-inner-trial-desktop": {
+        "children": [
+        "tab-content.item#guia-1-inner-trial-desktop",
+        "tab-content.item#guia-2-inner-trial-desktop",
+        "tab-content.item#guia-3-inner-trial-desktop",
+        "tab-content.item#guia-4-inner-trial-desktop"
+        ]
+    },
+    "tab-content.item#guia-1-inner-trial-desktop": {
+        "children": ["image#guia-1-inner-trial-desktop"],
+        "props": {"tabId": "guia-1-inner-trial-desktop"}
+    },
+    "tab-content.item#guia-2-inner-trial-desktop": {
+        "children": ["image#guia-2-inner-trial-desktop"],
+        "props": {"tabId": "guia-2-inner-trial-desktop"}
+    },
+    "tab-content.item#guia-3-inner-trial-desktop": {
+        "children": ["image#guia-3-inner-trial-desktop"],
+        "props": {"tabId": "guia-3-inner-trial-desktop"}
+    },
+    "tab-content.item#guia-4-inner-trial-desktop": {
+        "children": ["image#guia-4-inner-trial-desktop"],
+        "props": {"tabId": "guia-4-inner-trial-desktop"}
+    },
+
+    "image#guia-1-inner-trial-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_desk_formal.jpg"
+        }
+    },
+
+    "image#guia-2-inner-trial-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_desk_formal-largas.jpg"
+        }
+    },
+    "image#guia-3-inner-trial-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_desk_formal-cortas.jpg"
+        }
+    },
+    "image#guia-4-inner-trial-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_desk_casual.jpg"
+        }
+    },
+
+    "tab-layout#guia-de-tallas-inner-trial-tablet": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-trial-tablet",
+        "tab-content#guia-de-tallas-inner-trial-tablet"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-trial-tablet"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-trial-tablet": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-trial-tablet",
+            "tab-list.item#guia-de-tallas-inner-tab2-trial-tablet",
+            "tab-list.item#guia-de-tallas-inner-tab3-trial-tablet",
+            "tab-list.item#guia-de-tallas-inner-tab4-trial-tablet"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-trial-tablet": {
+        "props": {
+        "tabId": "guia-1-inner-trial-tablet",
+        "label": "Formal",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-trial-tablet": {
+        "props": {
+        "tabId": "guia-2-inner-trial-tablet",
+        "label": "Formal - Tallas Especiales Largas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-trial-tablet": {
+        "props": {
+        "tabId": "guia-3-inner-trial-tablet",
+        "label": "Formal - Tallas Especiales Cortas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab4-trial-tablet": {
+        "props": {
+        "tabId": "guia-4-inner-trial-tablet",
+        "label": "Casual",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-content#guia-de-tallas-inner-trial-tablet": {
+        "children": [
+        "tab-content.item#guia-1-inner-trial-tablet",
+        "tab-content.item#guia-2-inner-trial-tablet",
+        "tab-content.item#guia-3-inner-trial-tablet",
+        "tab-content.item#guia-4-inner-trial-tablet"
+        ]
+    },
+    "tab-content.item#guia-1-inner-trial-tablet": {
+        "children": ["image#guia-1-inner-trial-tablet"],
+        "props": {"tabId": "guia-1-inner-trial-tablet"}
+    },
+    "tab-content.item#guia-2-inner-trial-tablet": {
+        "children": ["image#guia-2-inner-trial-tablet"],
+        "props": {"tabId": "guia-2-inner-trial-tablet"}
+    },
+    "tab-content.item#guia-3-inner-trial-tablet": {
+        "children": ["image#guia-3-inner-trial-tablet"],
+        "props": {"tabId": "guia-3-inner-trial-tablet"}
+    },
+    "tab-content.item#guia-4-inner-trial-tablet": {
+        "children": ["image#guia-4-inner-trial-tablet"],
+        "props": {"tabId": "guia-4-inner-trial-tablet"}
+    },
+
+    "image#guia-1-inner-trial-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_mob_formal.jpg"
+        }
+    },
+
+    "image#guia-2-inner-trial-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_mob_formal-largas.jpg"
+        }
+    },
+    "image#guia-3-inner-trial-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_mob_formal-cortas.jpg"
+        }
+    },
+    "image#guia-4-inner-trial-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_mob_casual.jpg"
+        }
+    },
+
+    "tab-layout#guia-de-tallas-inner-trial-phone": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-trial-phone",
+        "tab-content#guia-de-tallas-inner-trial-phone"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-trial-phone"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-trial-phone": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-trial-phone",
+            "tab-list.item#guia-de-tallas-inner-tab2-trial-phone",
+            "tab-list.item#guia-de-tallas-inner-tab3-trial-phone",
+            "tab-list.item#guia-de-tallas-inner-tab4-trial-phone"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-trial-phone": {
+        "props": {
+        "tabId": "guia-1-inner-trial-phone",
+        "label": "Formal",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-trial-phone": {
+        "props": {
+        "tabId": "guia-2-inner-trial-phone",
+        "label": "Formal - Tallas Especiales Largas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-trial-phone": {
+        "props": {
+        "tabId": "guia-3-inner-trial-phone",
+        "label": "Formal - Tallas Especiales Cortas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab4-trial-phone": {
+        "props": {
+        "tabId": "guia-4-inner-trial-phone",
+        "label": "Casual",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-content#guia-de-tallas-inner-trial-phone": {
+        "children": [
+        "tab-content.item#guia-1-inner-trial-phone",
+        "tab-content.item#guia-2-inner-trial-phone",
+        "tab-content.item#guia-3-inner-trial-phone",
+        "tab-content.item#guia-4-inner-trial-phone"
+        ]
+    },
+    "tab-content.item#guia-1-inner-trial-phone": {
+        "children": ["image#guia-1-inner-trial-phone"],
+        "props": {"tabId": "guia-1-inner-trial-phone"}
+    },
+    "tab-content.item#guia-2-inner-trial-phone": {
+        "children": ["image#guia-2-inner-trial-phone"],
+        "props": {"tabId": "guia-2-inner-trial-phone"}
+    },
+    "tab-content.item#guia-3-inner-trial-phone": {
+        "children": ["image#guia-3-inner-trial-phone"],
+        "props": {"tabId": "guia-3-inner-trial-phone"}
+    },
+    "tab-content.item#guia-4-inner-trial-phone": {
+        "children": ["image#guia-4-inner-trial-phone"],
+        "props": {"tabId": "guia-4-inner-trial-phone"}
+    },
+
+    "image#guia-1-inner-trial-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_mob_formal.jpg"
+        }
+    },
+
+    "image#guia-2-inner-trial-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_mob_formal-largas.jpg"
+        }
+    },
+    "image#guia-3-inner-trial-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_mob_formal-cortas.jpg"
+        }
+    },
+    "image#guia-4-inner-trial-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/trial/trial_mob_casual.jpg"
+        }
+    }
+
+}

@@ -1,0 +1,210 @@
+{
+  // TRIGGER MODALES DE LOGISTICA
+  "flex-layout.row#metodosEnvios": {
+    "children": [
+      "modal-trigger#retiroSucursal",
+      "modal-trigger#envioSucursal"
+    ],
+    "props": {
+      "blockClass": "metEnvios"
+    }
+  },
+  "flex-layout.col#envioDomicilio": {
+    "children": [
+      "rich-text#envioDomicilio"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#envioDomicilio": {
+    "props": {
+      "text": "Calcular Envio",
+      "blockClass": "linkRetiro"
+    }
+  },
+
+  "flex-layout.col#envioSucursal": {
+    "children": [
+      "rich-text#envioSucursal"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#envioSucursal": {
+    "props": {
+      "text": "Ver puntos de retiro",
+      "blockClass": "linkRetiro"
+    }
+  },  
+  // PRIMER MODAL ENVIO
+  "modal-trigger#retiroSucursal": {
+    "children": [
+      "flex-layout.col#envioDomicilio",
+      "modal-layout#envioDomicilio"
+    ]
+  },
+  "modal-layout#envioDomicilio": {
+    "children": [
+      "modal-header#envio",
+      "image#envios",
+      "shipping-simulator"
+    ],
+    "props": {
+      "blockClass": "modalEnvios"
+    }
+  },
+  "modal-header#envio": {
+    "children": [
+      "rich-text#modal-content-tittle"
+    ],
+    "props": {
+      "blockClass": "headerModalChico"
+    }
+  },
+  "rich-text#modal-content-tittle": {
+    "props": {
+      "text": "Calcular costo de envío",
+      "font": "t-heading-4",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tittleModal"
+    }
+  },
+
+  "image#envios": {
+    "props": {
+     // "src": "assets/product/BackgroundEnvios.svg",
+      "height": "300px"
+    }
+  },
+
+  // SEGUNDO MODAL SUCURSALES
+  "modal-trigger#envioSucursal": {
+    "children": [
+      "flex-layout.col#envioSucursal",
+      "modal-layout#envioSucursal"
+    ]
+  },
+  "modal-layout#envioSucursal": {
+    "children": [
+      "modal-header#retiro",
+      "flex-layout.row#mapaSucursales"
+    ]
+  },
+  "modal-header#retiro": {
+    "children": [
+      "rich-text#modal-content-tittle-envio"
+    ],
+    "props": {
+      "blockClass": "headerModalGrande"
+    }
+  },
+  "rich-text#modal-content-tittle-envio": {
+    "props": {
+      "text": "VER PUNTOS DE RETIRO",
+      "font": "t-heading-5",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tittleModal"
+    }
+  },
+  "flex-layout.row#mapaSucursales": {
+    "children": [
+      //"store-list"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "mapaRetiro"
+    }
+  },
+  "flex-layout.col#imagenMapa": {
+    "children": [
+      "image#mapa"
+    ],
+    "props": {
+      "width": "65%"
+    }
+  },
+  "image#mapa": {
+    "props": {
+      //"src": "assets/product/mapaNoniNoni.jpg",
+      "height": "auto"
+    }
+  },
+  "flex-layout.col#direccionesSucursales": {
+    "children": [
+      "flex-layout.row#sucursal1",
+      "flex-layout.row#sucursal2",
+      "flex-layout.row#sucursal3",
+      "flex-layout.row#sucursal4",
+      "flex-layout.row#sucursal5"
+    ]
+  },
+  "flex-layout.row#sucursal1": {
+    "children": [
+      "rich-text#sucursal1Direccion"
+    ]
+  },
+  "rich-text#sucursal1Direccion": {
+    "props": {
+      //"text": "![alt img](assets/ayuda/sucursal_icon.svg) **CÓRDOBA I**\n Av. Fuerza Aérea 3924\nTel/Fax (0351) 466 9280 - Cel 351-5175018\n**Lunes a viernes**: 08:30 a 18:30 Hs.\n**Sábado**: 08:30 a 13:00 Hs.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "direcciones"
+    }
+  },
+  "flex-layout.row#sucursal2": {
+    "children": [
+      "rich-text#sucursal2Direccion"
+    ]
+  },
+  "rich-text#sucursal2Direccion": {
+    "props": {
+      //"text": "![alt img](assets/ayuda/sucursal_icon.svg) **CÓRDOBA II**\n Av. Circunvalación Agustín Tosco 4460\nTel/Fax (0351) 5704468 - Cel 351-3487241\n**Lunes a viernes**: 08:30 a 18:30 Hs.\n**Sábado**: 08:30 a 13:00 Hs.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "direcciones"
+    }
+  },
+  "flex-layout.row#sucursal3": {
+    "children": [
+      "rich-text#sucursal3Direccion"
+    ]
+  },
+  "rich-text#sucursal3Direccion": {
+    "props": {
+      //"text": "![alt img](assets/ayuda/sucursal_icon.svg) **CARLOS PAZ I**\n Av. San Martín 1255 esq. La Pampa\nTel/Fax (03541) 439455 - Cel 3541-679577\n**Lunes a viernes**: 08:30 a 18:30 Hs.\n**Sábado**: 08:30 a 13:00 Hs.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "direcciones"
+    }
+  },
+  "flex-layout.row#sucursal4": {
+    "children": [
+      "rich-text#sucursal4Direccion"
+    ]
+  },
+  "rich-text#sucursal4Direccion": {
+    "props": {
+      //"text": "![alt img](assets/ayuda/sucursal_icon.svg) **CARLOS PAZ II**\nAv. San Martín 1771\nTel/Fax (03541) 43 9450 - Cel 3541-621512\n**Lunes a viernes**: 08:30 a 18:30 Hs.\n**Sábado**: 08:30 a 13:00 Hs.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "direcciones"
+    }
+  },
+  "flex-layout.row#sucursal5": {
+    "children": [
+      "rich-text#sucursal5Direccion"
+    ]
+  },
+  "rich-text#sucursal5Direccion": {
+    "props": {
+      //"text": "![alt img](assets/ayuda/sucursal_icon.svg) **ESTANCIA VIEJA**\nRuta Nacional 20 km.745 - Empalme Tanti\nTel/Fax (03541) 43 9452 - Cel 351-2158674\n**Lunes a viernes**: 08:30 a 18:30 Hs.\n**Sábado**: 08:30 a 13:00 Hs.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "direcciones"
+    }
+  }
+}

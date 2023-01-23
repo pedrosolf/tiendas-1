@@ -1,0 +1,367 @@
+.searchResultContainer {
+  padding-top: 0;
+  max-width: 100%;
+}
+.searchResultContainer :global(.vtex-store-components-3-x-container) {
+  max-width: 100%;
+  padding-left: 0.8rem;
+}
+.searchResultContainer
+  :global(.vtex-product-specification-badges-0-x-badgeText--tipoVentaSearch--receta-simple) {
+  top: 20px;
+}
+
+.gallery--grid {
+  padding-left: 1rem;
+}
+
+/* Cantidad de productos encontrados */
+.totalProducts--layout {
+  display: flex;
+  gap: 5px;
+  padding-left: 1rem;
+}
+
+.totalProductsMessage--total-producto {
+  font-size: 0;
+}
+
+.totalProducts--layout::before {
+  content: "Productos encontrados: ";
+  font-size: 0.7rem;
+  color: #545977;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.totalProducts--layout:last-child {
+  font-size: 0.7rem;
+  color: #00a4e8;
+  font-weight: 800;
+}
+
+/* Order por */
+.filterPopupTitle {
+  font-size: 0.7rem;
+  text-transform: none;
+}
+
+.orderByText {
+  font-size: 0;
+  position: relative;
+}
+
+.orderBy--layout,
+.orderByDropdown {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  gap: 3px;
+}
+
+.orderByDropdown {
+  width: 145px;
+  margin-left: auto;
+}
+
+.orderByDropdown::before {
+  content: "Ordenar por";
+  font-size: 0.7rem;
+  color: #545977;
+}
+
+.orderByButton {
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  border: solid 1px #545977;
+  background-color: #fff;
+  width: 100%;
+  margin-left: auto;
+}
+
+.filterPopupArrowIcon {
+  padding-right: 0;
+}
+
+.orderByOptionsContainer {
+  border: solid 1px #545977;
+  background-color: #fff;
+  top: 52px;
+  min-width: 145px;
+}
+
+.orderByOptionItem {
+  padding: 0.3rem 0.4rem;
+  font-size: 0.7rem;
+  min-width: 100%;
+  color: #545977;
+}
+
+.orderByOptionItem--selected {
+  background: #fff;
+}
+
+.orderByOptionItem:hover {
+  background-color: #007aff;
+  color: #fff;
+}
+
+/* Filtros */
+.filterTemplateOverflow {
+  max-height: fit-content !important;
+}
+
+.filter__container--selectedFilters,
+.filter__container--title {
+  display: none;
+}
+
+.galleryTitle--layout {
+  padding-top: 1rem;
+  /* padding-bottom: 1rem; */
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  text-transform: uppercase;
+  color: #545977;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.galleryTitle--layout::before {
+  content: "";
+  background-image: url("assets/showcase/palomilla.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  display: block;
+  height: 34px;
+  width: 30px;
+}
+
+.filter__container {
+  border: none;
+}
+
+.filterAvailable {
+  padding: 0.6rem 0;
+}
+
+.filterTitle {
+  color: #545977;
+  border-top: solid 1px #5f5f5f;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+.filter__container :global(.vtex-checkbox__label) {
+  font-size: 0.8rem;
+}
+
+.filter__container :global(.vtex-checkbox__label):hover {
+  font-size: 0.8rem;
+  color: #00a4e8;
+}
+
+.filter__container :global(.vtex-checkbox__box-wrapper) {
+  align-items: center;
+}
+
+.filter__container :global(.vtex-checkbox__box-wrapper)::before {
+  content: "";
+  display: block;
+  height: 60%;
+  width: 60%;
+  border: 2px solid #5f5f5f;
+  border-radius: 1px;
+}
+
+.filter__container :global(.vtex-checkbox__inner-container) {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.filter__container
+  :global(.vtex-checkbox__line-container):hover
+  :global(.vtex-checkbox__box-wrapper)::before {
+  background-image: url(assets/showcase/check.png);
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position: 0.4px 1.5px;
+}
+
+.filterIcon {
+  width: 8px;
+  color: #5f5f5f;
+}
+
+/* Estilos de filtros seleccionados */
+.filterItem--selected :global(.vtex-checkbox__box-wrapper)::before {
+  border: 2px solid #00a4e8;
+  border-radius: 1px;
+}
+
+.filterItem--selected :global(.vtex-checkbox__label) {
+  font-size: 0.8rem;
+  color: #00a4e8;
+}
+
+.filterItem--selected
+  :global(.vtex-checkbox__line-container):hover
+  :global(.vtex-checkbox__box-wrapper)::before {
+  background-image: none;
+}
+
+.filterItem--selected :global(.vtex__icon-check) {
+  color: #00a4e8;
+  margin-right: 0.21rem;
+}
+
+/* .filtersWrapperMobile .filterPopupButton {
+  display: none;
+}
+ */
+:global(.vtex-flex-layout-0-x-flexCol--filterMobileCol) .filters--layout {
+  width: 82%;
+  height: 35px;
+  border-radius: 30px;
+  background-color: #545977;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+.filterPopupButton .filterPopupTitle {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+}
+.filterPopupButton .filterPopupArrowIcon {
+  display: none;
+}
+/* Boton ver más */
+.buttonShowMore :global(.vtex-button) {
+  border: none;
+  background: #fff;
+  color: #5f5f5f;
+  border-radius: 0px;
+  text-transform: none;
+}
+
+.buttonShowMore {
+  margin: 1.5rem 0;
+}
+.buttonShowMore :global(.vtex-button__label) {
+  padding: 0;
+  background: white;
+  font-size: 0;
+  display: block;
+  width: 105%;
+}
+.buttonShowMore :global(.vtex-button__label)::before {
+  content: "Mostrar más resultados";
+  font-size: 20px;
+  color: #28292b;
+}
+.buttonShowMore :global(.vtex-button__label)::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-image: linear-gradient(90deg, #00a4e8 0%, #545977 100%);
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+/* Filtros en mobile */
+.sidebar {
+  width: min(300px, 75%);
+}
+.accordionFilterContainer {
+  min-height: 2rem;
+  padding: 0 1rem 0 1rem;
+}
+.accordionFilterItemOptions {
+  padding-top: 0;
+}
+.filterAccordionItemBox {
+  padding: 0;
+  min-height: 2.5rem;
+}
+.accordionFilterContent {
+  padding: 1.5rem 0;
+  border-top: solid 1px #5f5f5f;
+}
+.accordionFilterItemTitle {
+  color: #545977;
+  font-weight: 600;
+}
+.filterAccordionItemBox :global(.vtex-checkbox__inner-container) {
+  font-size: 0.8rem;
+  background-color: #fff;
+  border-color: #00a4e8;
+}
+.filterAccordionItemBox
+  :global(.vtex-checkbox__box)
+  :global(.vtex__icon-check) {
+  color: #00a4e8;
+  top: 1px;
+  right: 2.5px;
+  position: absolute;
+}
+.filterButtonsBox {
+  display: none;
+}
+.filterApplyButtonWrapper :global(.vtex-button__label) {
+  color: #00a4e8;
+}
+
+/* Vitrinastienda2 */
+.searchResultContainer
+  :global(.vtex-product-summary-2-x-element--vitrinatienda2) {
+  margin: 13px;
+}
+.galleryItem--grid {
+  padding: 0;
+}
+
+/* Flags */
+.gallery--grid :global(.vtex-product-summary-2-x-element--vitrinatienda2) {
+  position: relative;
+}
+.gallery--grid
+  :global(.vtex-product-highlights-2-x-productHighlightWrapper--flag-beneficiosSearch) {
+  width: 26%;
+  position: absolute;
+  z-index: 1;
+  margin-left: 0;
+  right: 3%;
+  top: 3%;
+}
+
+
+.gallery--grid :global(.vtex-product-summary-2-x-imageContainer) {
+  position: relative;
+}
+.gallery--grid :global(.vtex-store-components-3-x-discountContainer) {
+  position: revert;
+}
+.gallery--grid :global(.vtex-store-components-3-x-discountInsideContainer) {
+  left: 0 !important;
+  top: 0 !important;
+}
+
+
+/* Filtros del showcase custom */
+
+.container--layout--filterCustomContainer :global(.vtex-flex-layout-0-x-flexCol--filterCol) {
+  padding-top: 17rem;
+  margin-top: 0;
+}
+.container--layout--filterCustomContainer :global(.vtex-flex-layout-0-x-flexColChild--filterCol){
+  position: sticky;
+  top: 18%;
+}

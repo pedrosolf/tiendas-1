@@ -1,0 +1,91 @@
+.backdrop--calcular-envio {
+  background-color: #d9d9d6;
+}
+
+.paper--calcular-envio {
+  height: 60%;
+  min-height: 440px;
+  width: 50%;
+  min-width: 320px;
+  background-image: url('assets/pdp/calcular-envio.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.paper--calcular-envio .headerContainer {
+  border: none;
+}
+
+.paper--calcular-envio .contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 30px;
+}
+
+.paper--calcular-envio .closeIcon {
+  color: #fff;
+}
+
+@media (max-width: 639px) {
+  .paper--calcular-envio {
+    width: 80%;
+  }
+}
+.paper--medios-de-pago{
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  font-family: "Klavika-web" !important;
+}
+.paper--medios-de-pago .headerContainer{
+  background: #222426;
+  padding: 0.5rem 1rem;
+}
+.paper--medios-de-pago .headerContainer :global(.vtex-rich-text-0-x-paragraph){
+  color: #fff;
+  font-family: "Knockout";
+  font-size: 20px;
+}
+.paper--medios-de-pago .headerContainer .closeIcon{
+  color: #fff;
+}
+
+@media (min-width: 1024px){
+  .container--medios-de-pago .paperScrollContent{
+    width: 60%;
+    min-width: 60%;
+    height: 80%;
+    min-height: 80%;
+  }
+}
+.container--medios-de-pago .contentContainer::-webkit-scrollbar {
+  width: 5px;    
+  height: 5px;    
+}
+
+.container--medios-de-pago .contentContainer::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+
+.container--medios-de-pago .contentContainer::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.container--medios-de-pago .contentContainer::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.container--medios-de-pago .contentContainer::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+.container--medios-de-pago .contentContainer::-webkit-scrollbar-track:hover,
+.container--medios-de-pago .contentContainer::-webkit-scrollbar-track:active {
+background: #d4d4d4;
+}

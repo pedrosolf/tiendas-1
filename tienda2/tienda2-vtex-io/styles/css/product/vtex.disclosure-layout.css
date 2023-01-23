@@ -1,0 +1,4 @@
+.trigger--questionDescripcion :global(.vtex-flex-layout-0-x-flexRowContent) {
+  display: flex;
+  justify-content: space-between;
+}

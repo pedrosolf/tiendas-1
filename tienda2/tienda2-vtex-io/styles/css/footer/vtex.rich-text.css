@@ -1,0 +1,28 @@
+.wrapper--section-title-footer .paragraph {
+  font-size: 1.1rem;
+  color: #545977;
+  margin-bottom: 0rem;
+  font-weight: 700;
+}
+.wrapper--redes-sociales-title .paragraph {
+  color: #545977;
+  font-weight: 600;
+  margin: 2.5rem 0 .3rem 0;
+}
+.wrapper--redes-sociales .paragraph {
+  margin: 0;
+}
+.image--redes-sociales{
+  width: 25px;
+}
+.paragraph--copyright{
+  color: #00a4e8;
+  font-size: .7rem;
+  line-height: 2.3;
+}
+
+@media (max-width: 1024px){
+  .wrapper--section-title-footer .paragraph {
+    margin: .8rem 0;
+  }
+}

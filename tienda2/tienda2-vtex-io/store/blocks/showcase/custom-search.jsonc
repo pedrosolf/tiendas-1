@@ -1,0 +1,127 @@
+{
+  "store.custom#custom-search": {
+    "blocks": ["search-result-layout.customQuery"]
+  },
+  "search-result-layout.customQuery": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 16,
+        "hideUnavailableItems": false
+    },
+      "blockClass": "filterCustomContainerPedro"
+    },
+    "blocks": [
+      "search-result-layout.desktop#custom",
+      "search-result-layout.mobile#custom",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#custom": {
+    "children": [
+      "flex-layout.row#searchbread-desktop",
+      "flex-layout.row#resultCustom"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "hiddenFacets": {
+        "priceRange": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            { "name": "Departamento" },
+            { "name": "Sub-Categoría" },/* 
+            { "name": "Categoría" }, 
+            { "name": "Marca" },*/
+            { "name": "Concatenacion" },
+            { "name": "Concentración" },
+            { "name": "Tipo de Piel" },
+            { "name": "Tipo" }//,
+           // { "name": "Principio Activo" }
+          ]
+        }
+      }
+    }
+  },
+  "flex-layout.row#resultCustom": {
+    "children": ["flex-layout.col#filter", "flex-layout.col#contentCustom"],
+    "props": {
+      "fullWidth": true,
+      "marginBottom": 8,
+      "marginTop": 8,
+      "colJustify": "center"
+    }
+  },
+  "flex-layout.col#contentCustom": {
+    "children": [
+      "flex-layout.row#filtrosSearch",
+      "flex-layout.row#searchinfo", //<-- TRAE LA CANTIDAD DE PRODUCT + ORDENAR POR
+      "flex-layout.row#products", //<-- TRAE LOS PRODUCTOS DE LA CONSULTA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "80%",
+      "preventVerticalStretch": true,
+      "marginRight": 7,
+      "paddingLeft": 3
+    }
+  },
+  "flex-layout.row#filtrosSearch": {
+    "children": ["image#descuentostienda2Plus", "image#beneficiosPorSuscripción", "image#descuentosInsuperables"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false,
+      "colSizing": "auto",
+      "blockClass": "filterContainer"
+    }
+  },
+  "image#descuentostienda2Plus": {
+    "props": {
+      "src": "assets/ayuda/filtro-tienda2plus.png",
+      "blockClass": "imgFiltros",
+      "link": {"url":"1211?map=productClusterIds"}
+    }
+  },
+  "image#beneficiosPorSuscripción": {
+    "props": {
+      "src": "assets/ayuda/filtro-suscripcion.png",
+      "blockClass": "imgFiltros",
+      "link": {"url":"1187?map=productClusterIds"}
+    }
+  },
+  "image#descuentosInsuperables": {
+    "props": {
+      "src": "assets/ayuda/filtro-insuperable.png",
+      "blockClass": "imgFiltros",
+      "link": {"url":"1201?map=productClusterIds"}
+    }
+  },
+
+
+  /* Mobile version */
+  "search-result-layout.mobile#custom": {
+    "children": [
+      //"flex-layout.row#searchbread-mobile", //<-- MIGA DE PAN
+      /* "flex-layout.row#searchtitle",*/ //<-- TITULO DE LA CONSULTA
+      /*"flex-layout.row#switcherMobile",*/
+      /* "list-context.image-list#showcase", */
+      "breadcrumb.search",
+      "flex-layout.row#filtrosSearch",
+      "flex-layout.row#searchinfomobile", //<-- TRAE ORDENAR POR + FILTRO + Switcher
+      "flex-layout.row#contentmobile", //<-- CONTENIDO DE LA BUSQUEDA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more", //<-- BOTON MOSTRAR MAS / 2.OPC = 'infinite-scroll'
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  }
+
+}

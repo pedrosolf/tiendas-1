@@ -1,0 +1,266 @@
+{
+  "store.custom#campaña-invierno": {
+    "blocks": [
+      "responsive-layout.desktop#campaña-invierno",
+      "responsive-layout.tablet#campaña-invierno",
+      "responsive-layout.phone#campaña-invierno"
+    ]
+  },
+  "responsive-layout.desktop#campaña-invierno": {
+    "children": ["flex-layout.row#main-campaña-invierno-desk"]
+  },
+  "responsive-layout.tablet#campaña-invierno": {
+    "children": ["flex-layout.row#campaña-invierno-main-mobile"]
+  },
+  "responsive-layout.phone#campaña-invierno": {
+    "children": ["flex-layout.row#campaña-invierno-main-mobile"]
+  },
+  "flex-layout.row#campaña-invierno-main-mobile": {
+    "children": ["flex-layout.col#campaña-invierno-moble"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-campaña-invierno-desk": {
+    "props": {
+      "blockClass": "main-campaña-invierno",
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#campaña-invierno"]
+  },
+
+  "flex-layout.col#campaña-invierno": {
+    "props": {
+      "blockClass": "inviernoCol",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#campaña-invierno-image",
+      "flex-layout.row#tituloVitrina1",
+      "flex-layout.row#campaña-invierno-content",
+      "flex-layout.row#banners"
+    ]
+  },
+  "flex-layout.row#campaña-invierno-image": {
+    "props": {
+      "blockClass": "BannerContainerInvierno"
+    },
+    "children": ["image#campaña-invierno"]
+  },
+  "image#campaña-invierno": {
+    "props": {
+      "src": "assets/ayuda/invierno-desktop.png"
+    }
+  },
+  "flex-layout.row#campaña-invierno-content": {
+    "props": {},
+    "children": ["list-context.product-list#catdest-1"]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#campaña-invierno-title": {
+    "props": {
+      "blockClass": ["ayudaTitle", "campaña-invierno"],
+      "text": "**tienda2 Plus**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.row#banners": {
+    "props": {
+      "blockClass": "row-bannerPromocional1",
+      "fullWidth": false,
+      "colSizing": "auto",
+      "colJustify": "center"
+    },
+    "children": [
+      "flex-layout.col#bannersLeft",
+      "flex-layout.col#bannersMiddle",
+      "flex-layout.col#bannersRight"
+    ]
+  },
+  "flex-layout.col#bannersLeft": {
+    "props": {
+      "preventHorizontalStretch": true
+    },
+    "children": ["image#banners1", "image#bannersHome2"]
+  },
+
+  "image#banners1": {
+    "props": {
+      "link": {
+        "url": "1195?map=productClusterIds"
+      },
+      "src": "assets/ayuda/desktop-caluga-inv-01.png",
+      "blockClass": "image-banners1"
+    }
+  },
+  "image#bannersHome2": {
+    "props": {
+      "link": {
+        "url": "1199?map=productClusterIds"
+      },
+      "src": "assets/ayuda/desktop-caluga-inv-02.png",
+      "blockClass": "image-banners1"
+    }
+  },
+  "flex-layout.col#bannersMiddle": {
+    "props": {
+      /* 
+      "width": "40%" */
+    },
+    "children": ["image#bannersHome4"]
+  },
+  "image#bannersHome3": {
+    "props": {
+      "link": {
+        "url": "1196?map=productClusterIds"
+      },
+      "src": "assets/ayuda/desktop-caluga-inv-03.png",
+      "blockClass": "image-banners1"
+    }
+  },
+
+  "flex-layout.col#bannersRight": {
+    "children": ["image#bannersHome3", "image#bannersHome5"]
+  },
+  "image#bannersHome4": {
+    "props": {
+      "link": {
+        "url": "1197?map=productClusterIds"
+      },
+      "src": "assets/ayuda/desktop-caluga-inv-central.png",
+      "blockClass": "image-banners4"
+    }
+  },
+  "image#bannersHome5": {
+    "props": {
+      "link": {
+        "url": "1204?map=productClusterIds"
+      },
+      "src": "assets/ayuda/desktop-caluga-inv-04.png",
+      "blockClass": "image-banners1"
+    }
+  },
+
+  // FIN bannerPromocional1
+
+  /* ********************* VERSION MOBILE ****************/
+  "flex-layout.col#campaña-invierno-moble": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#campaña-invierno-image-mobile",
+      "flex-layout.row#tituloVitrina1",
+      "flex-layout.row#campaña-invierno-content",
+      "flex-layout.row#banners-mobile"
+    ]
+  },
+  "flex-layout.row#campaña-invierno-image-mobile": {
+    "props": {
+      "blockClass": "BannerContainerInvierno"
+    },
+    "children": ["image#campaña-invierno-mobile"]
+  },
+  "image#campaña-invierno-mobile": {
+    "props": {
+      "src": "assets/ayuda/invierno-mobile.png"
+    }
+  },
+  "flex-layout.row#banners-mobile": {
+    "props": {
+      "blockClass": "",
+      "fullWidth": false,
+      "colSizing": "auto",
+      "colJustify": "center",
+      "marginBottom": 5
+    },
+    "children": ["flex-layout.col#banners-mobile"]
+  },
+  "flex-layout.col#banners-mobile": {
+    "props": {
+      "blockClass": "",
+      "fullWidth": false,
+      "colSizing": "auto",
+      "colJustify": "center"
+    },
+    "children": [
+      "flex-layout.row#bannerstop",
+      "flex-layout.row#bannersCenter",
+      "flex-layout.row#bannersBottom"
+    ]
+  },
+  "flex-layout.row#bannerstop": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["image#banners1-mobile", "image#bannersHome2-mobile"]
+  },
+
+  "image#banners1-mobile": {
+    "props": {
+      "link": {
+        "url": "1195?map=productClusterIds"
+      },
+      "src": "assets/ayuda/mobile-caluga-inv-01.png",
+      "blockClass": "mobile-imgBanners"
+    }
+  },
+  "image#bannersHome2-mobile": {
+    "props": {
+      "link": {
+        "url": "1199?map=productClusterIds"
+      },
+      "src": "assets/ayuda/mobile-caluga-inv-02.png",
+      "blockClass": "mobile-imgBanners"
+    }
+  },
+  "flex-layout.row#bannersCenter": {
+    "props": {
+      /* 
+      "width": "40%" */
+    },
+    "children": ["image#bannersHome3-mobile"]
+  },
+  "image#bannersHome3-mobile": {
+    "props": {
+      "link": {
+        "url": "1197?map=productClusterIds"
+      },
+      "src": "assets/ayuda/mobile-caluga-inv-central.png",
+      "blockClass": "mobile-imgBanners"
+    }
+  },
+
+  "flex-layout.row#bannersBottom": {
+    "props": {
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["image#bannersHome4-mobile", "image#bannersHome5-mobile"]
+  },
+  "image#bannersHome4-mobile": {
+    "props": {
+      "link": {
+        "url": "1196?map=productClusterIds"
+      },
+      "src": "assets/ayuda/mobile-caluga-inv-03.png",
+      "blockClass": "mobile-imgBanners"
+    }
+  },
+  "image#bannersHome5-mobile": {
+    "props": {
+      "link": {
+        "url": "1204?map=productClusterIds"
+      },
+      "src": "assets/ayuda/mobile-caluga-inv-04.png",
+      "blockClass": "mobile-imgBanners"
+    }
+  }
+}

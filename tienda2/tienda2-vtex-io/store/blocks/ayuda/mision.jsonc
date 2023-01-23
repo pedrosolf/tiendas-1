@@ -1,0 +1,71 @@
+{
+  "store.custom#mision": {
+    "blocks": [
+      "responsive-layout.desktop#mision" ,
+        "responsive-layout.tablet#mision",
+        "responsive-layout.phone#mision"
+    ]
+  },
+  "responsive-layout.desktop#mision": {
+    "children": ["flex-layout.row#main-mision-desk"]
+  },
+  "responsive-layout.tablet#mision": {
+    "children": ["flex-layout.row#mision-main-mobile"]
+  },
+  "responsive-layout.phone#mision": {
+    "children": ["flex-layout.row#mision-main-mobile"]
+  },
+  "flex-layout.row#mision-main-mobile":{
+    "children": ["flex-layout.col#mision"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-mision-desk": {
+    "props": {
+      "blockClass": "main-ayuda",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": ["flex-layout.col#nav-column", "flex-layout.col#mision"]
+  },
+
+  "flex-layout.col#mision": {
+    "props": {
+      "width": "72%",
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#mision-title",
+      "flex-layout.row#mision-content"
+    ]
+  },
+
+  "flex-layout.row#mision-content": {
+    "props": {
+    },
+    "children": ["rich-text#mision-content"]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#mision-title": {
+    "props": {
+      "blockClass": "ayudaTitle",
+      "text": "**Mision**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#mision-content": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "Garantizar una atención profesional, oportuna y de respeto a nuestros clientes y pacientes a través de un servicio entregado por un equipo humano, preparado y comprometido, siempre preocupado de satisfacer permanentemente las necesidades de nuestros clientes a través de servicios de alta calidad, una entrega oportuna y la continua búsqueda de mejores productos y alternativas.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+}

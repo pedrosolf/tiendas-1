@@ -1,0 +1,264 @@
+{
+  "store.custom#landing-mate": {
+    "blocks": ["flex-layout.row#landing-mate"]
+  },
+
+  "flex-layout.row#landing-mate": {
+    "title": "Contenedor landing",
+    "children": ["flex-layout.col#landing-mate"],
+    "props": {
+      "blockClass": "landing-mate-container"
+    }
+  },
+  "flex-layout.col#landing-mate": {
+    "children": [
+      "flex-layout.row#sliderPrincipalLanding",
+      "flex-layout.row#video-landing",
+      "flex-layout.row#carrusel-landing-container",
+      "flex-layout.row#newsletter-home"
+    ]
+  },
+  //Slider
+
+  "flex-layout.row#sliderPrincipalLanding": {
+    "title": "Slider principal",
+    "children": ["list-context.image-list#sliderPrincipalLanding"],
+    "props": {
+      "fullWidth": false,
+      "horizontalAlign": "center",
+      "blockClass": ["sliderPrincipal"]
+    }
+  },
+
+  "list-context.image-list#sliderPrincipalLanding": {
+    "title": "Slider principal imágenes",
+    "children": ["slider-layout#sliderPrincipalLanding"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/landing-mate/slide-desk.jpg",
+          "mobileImage": "assets/landing-mate/slide-mobile.jpg",
+          "link": { "url": "/mate-system/145?map=productClusterIds" }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#sliderPrincipalLanding": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "carousel-principal"
+    }
+  },
+  //Sección video
+  "flex-layout.row#video-landing": {
+    "children": ["flex-layout.row#video-landing-texto", "flex-layout.row#landing-video-video"],
+    "props": {
+      "blockClass": "seccion-video-contenedor"
+    }
+  },
+  "flex-layout.row#video-landing-texto": {
+    "children": [
+      "rich-text#titulo-video-landing",
+      "flex-layout.row#iconos-landing",
+      "rich-text#vacio-landing"
+    ],
+    "props": {
+      "blockClass": "seccion-video-texto"
+    }
+  },
+  "rich-text#titulo-video-landing": {
+    "props": {
+      "text": "**TERMO MATE SYSTEM 800 ML. 1.2 LT.**\n[La temperatura ideal de principio a fin.](#)\nEl tapón de altísima precisión respeta la inclinación adecuada para verter el agua, sin salpicar y la tapa*, también de acero inoxidable, se convierte en mate, haciendo tu mateada legendaria.\n\n*La tapa no es térmica.",
+      "blockClass": "titulo-video-landing"
+    }
+  },
+  "flex-layout.row#iconos-landing": {
+    "children": [
+      "image#icono-1-landing",
+      "image#icono-2-landing",
+      "image#icono-3-landing",
+      "image#icono-4-landing"
+    ],
+    "props": {
+      "blockClass": "iconos-landing"
+    }
+  },
+  "image#icono-1-landing": {
+    "props": {
+      "src": "assets/landing-mate/icono-1.svg",
+      "alt": "Tapa que se convierte en mate"
+    }
+  },
+  "image#icono-2-landing": {
+    "props": {
+      "src": "assets/landing-mate/icono-2.svg",
+      "alt": "Tapón del alta presición"
+    }
+  },
+  "image#icono-3-landing": {
+    "props": {
+      "src": "assets/landing-mate/icono-3.svg",
+      "alt": "Aislamiento al vacío de doble pared"
+    }
+  },
+  "image#icono-4-landing": {
+    "props": {
+      "src": "assets/landing-mate/icono-4.svg",
+      "alt": "Acero inoxidable 18/8"
+    }
+  },
+  "flex-layout.row#landing-video-video": {
+    "children": ["image#landing-mate"],
+    "props": {
+      "blockClass": "contenedor-video-landing"
+    }
+  },
+  "image#landing-mate": {
+    "props": {
+      "src": "assets/landing-mate/mate-system.png"
+    }
+  },
+  "video#landing": {
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "loop": true,
+      "autoPlay": true,
+      "muted": true,
+      "src": "https://youtu.be/PxH7Uza4T-c",
+      "blockClass": "video-landing"
+    }
+  },
+  //Carrusel landing
+  "rich-text#vacio-landing": {
+    "props": {
+      "text": "",
+      "htmlId": "mate-system"
+    }
+  },
+
+  "flex-layout.row#carrusel-landing-container": {
+    "title": "Carrusel landing",
+    "children": ["stack-layout#carrusel-landing-imagen", "flex-layout.row#carrusel-landing"],
+    "props": {
+      "blockClass": ["carrusel-container", "carrusel-container-3"]
+    }
+  },
+  "stack-layout#carrusel-landing-imagen": {
+    "children": [
+      "flex-layout.row#carrusel-landing-imagen",
+      "flex-layout.row#texto-carrusel-landing"
+    ],
+    "props": {
+      "blockClass": "carrusel-landing-imagen"
+    }
+  },
+  "flex-layout.row#carrusel-landing-imagen": {
+    "children": [
+      "responsive-layout.desktop#carrusel-landing-imagen",
+      "responsive-layout.tablet#carrusel-landing-imagen",
+      "responsive-layout.phone#carrusel-landing-imagen"
+    ],
+    "props": {
+      "preventHorizontalStretch": true
+    }
+  },
+  "responsive-layout.desktop#carrusel-landing-imagen": {
+    "title": "Imagen Desktop",
+    "children": ["image#carrusel-landing"]
+  },
+  "responsive-layout.tablet#carrusel-landing-imagen": {
+    "title": "Imagen Tablet",
+    "children": ["image#carrusel-landing"]
+  },
+  "responsive-layout.phone#carrusel-landing-imagen": {
+    "title": "Imagen Mobile",
+    "children": ["image#carrusel-landing-mobile"]
+  },
+  "image#carrusel-landing": {
+    "props": {
+      "src": "assets/home/Vitrina_WEB_MomentoMate_Navidad.png",
+      "blockClass": "carrusel-landing"
+    }
+  },
+  "image#carrusel-landing-mobile": {
+    "props": {
+      "src": "assets/home/Vitrina_MOB_MomentoMate_Navidad.png",
+      "blockClass": "carrusel-landing"
+    }
+  },
+  "flex-layout.row#texto-carrusel-landing": {
+    "children": ["flex-layout.col#texto-carrusel-landing", "rich-text#link-carrusel-landing"],
+    "props": {
+      "blockClass": "texto-carrusel"
+    }
+  },
+  "flex-layout.col#texto-carrusel-landing": {
+    "children": [
+      "rich-text#titulo-carrusel-landing-top",
+      "rich-text#titulo-carrusel-landing-bottom"
+    ]
+  },
+  "rich-text#titulo-carrusel-landing-top": {
+    "props": {
+      "text": "MATE",
+      "blockClass": "titulo-carrusel"
+    }
+  },
+  "rich-text#titulo-carrusel-landing-bottom": {
+    "props": {
+      "text": "SYSTEM",
+      "blockClass": "titulo-carrusel"
+    }
+  },
+  "rich-text#link-carrusel-landing": {
+    "props": {
+      "text": "[VER PRODUCTOS](/143?map=productClusterIds)",
+      "blockClass": ["link-carrusel", "link-carrusel-3"]
+    }
+  },
+  "flex-layout.row#carrusel-landing": {
+    "children": ["list-context.product-list#carrusel-landing"],
+    "props": {
+      "blockClass": ["row-carrusel", "row-carrusel-3"]
+    }
+  },
+
+  "list-context.product-list#carrusel-landing": {
+    "title": "Productos carrusel landing",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carrusel-landing"],
+    "props": {
+      "collection": "145",
+      "skusFilter": "ALL"
+    }
+  },
+  "slider-layout#carrusel-landing": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": ["carruselEstandar", "carrusel-3"],
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 15
+    }
+  }
+}

@@ -1,0 +1,26 @@
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--vitrinastienda2)
+:global(.vtex-button),
+:global(.vtex-flex-layout-0-x-flexRowContent--main) :global(.vtex-button),
+:global(.vtex-flex-layout-0-x-flexRowContent--newslwtterForm) :global(.vtex-button),
+:global(.vtex-product-summary-2-x-element--vitrinatienda2) :global(.vtex-button) {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 0;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 41px;
+}
+
+:global(.vtex-store-components-3-x-container){
+    padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main) :global(.vtex-button){
+    background-color: #00a4e8;
+}

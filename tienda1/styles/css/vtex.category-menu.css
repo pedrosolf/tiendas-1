@@ -1,0 +1,38 @@
+.container--categories {
+    background-color: transparent;
+}
+
+.departmentLink {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    padding-bottom: .2rem;
+    color: #191919;
+}
+
+@media only screen and (min-width: 640px) {
+    .departmentLink {
+        place-self: flex-start;
+    }
+}
+
+.firstLevelLink {
+    font-size: 0.8rem;
+    /* margin-bottom: 1rem; */
+    text-transform: uppercase;
+    font-weight: 600;    
+}
+
+.secondLevelLink {
+    font-size: 0.8rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.itemContainer--category {
+    max-height: fit-content;
+}
+
+.submenuList {
+    padding-bottom: 20px;
+}

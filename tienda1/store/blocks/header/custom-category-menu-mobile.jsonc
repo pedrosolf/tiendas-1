@@ -1,0 +1,15 @@
+{
+    "vtex.category-menu@2.x:category-menu#store-menu-hombre-mobile": {
+        "props": {
+            "showAllDepartments": false,
+            "showSubcategories": true,
+            "menuDisposition": "left",
+            "blockClass": "categories",
+            "experimentalOptimizeRendering": true,
+            "departments": [
+                { "id": 8 }
+            ]
+        }
+    }
+
+}

@@ -1,0 +1,120 @@
+{
+  // FORMULARIO
+  "flex-layout.row#inputsContainer": {
+    "props": {  
+      "blockClass": "tienda2plusForm" 
+    },
+    "children": [ "form#tienda2plus"]
+  },
+ /* "flex-layout.col#colForm": {
+    "props": {
+      "blockClass": "tienda2plusForm" 
+    },
+    "children": ["rich-text#formTitle", "form#tienda2plus"]
+  },*/
+  "rich-text#formTitle": {
+    "props": {
+      "text": "tienda2 Plus +",
+      "blockClass": "formTitle"
+    }
+  },
+  
+  "form#tienda2plus": {
+    "props": {
+      "entity": "NU",
+      "schema": "Formulario-plus" 
+    },
+    "children": [
+      "rich-text#formTitle",
+      "form-input.text#nombre",
+     // "form-input.text#apellido",
+     "form-input.text#email",
+     // "form-input.text#celular" /* 
+     // "form-input.text#hombre",
+    //  "form-input.text#mujer", */,
+     // "form-input.text#nacimiento", /* 
+     // "form-input.radiogroup#genero", */
+     // "form-field-group#genero",
+      "flex-layout.col#terminos" 
+  
+    ],
+    "blocks": ["form-success#tienda2plus"]
+  },
+  // mensaje enviado correctamente
+  "form-success#tienda2plus": {
+    "children": ["rich-text#successSubmit"]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Tu mensaje fue enviado con éxito!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }, //fin mensaje enviado correctamente
+  "form-input.text#nombre": {
+    "props": {
+      "label": "",
+      "pointer": "#/properties/nombrePlus",
+      "placeholder": "Nombre"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "label": "",
+      "pointer": "#/properties/emailPlus",
+      "placeholder": "tucorreo@correo.cl"
+    }
+  },
+  "form-input.text#celular": {
+    "props": {
+      "label": "",
+      "pointer": "#/properties/celularPlus",
+      "placeholder": "Celular"
+    }
+  },
+  "form-input.text#apellido": {
+    "props": {
+      "label": "",
+      "pointer": "#/properties/apellidoPlus",
+      "placeholder": "Apellido"
+    }
+  },
+  "form-field-group#genero": {
+    "props": {
+      "label": "Seleccione",
+      "pointer": "#/properties/generoPlus"
+    }
+  },
+  "flex-layout.col#terminos": {
+    "props": {
+      "blockClass": "tienda2plusForm",
+      "preventVerticalStretch": "false"
+    },
+    "children": ["form-input.checkbox#terminos", "link#terminos","form-submit#tienda2Plus-submit"]
+  },
+  "link#terminos": {
+    "props": {
+      "label": "Términos y Condiciones.",
+      "href": "/Institucional/politica-privacidad",
+      "blockClass": "linkTerminos"
+    }
+  },
+
+  "form-input.text#nacimiento": {
+    "props": {
+      "label": "",
+      "pointer": "#/properties/nacimientoPlus",
+      "placeholder": "Fecha de Nacimiento (Ej: DD/MM/AAAA)"
+    }
+  },
+  "form-input.checkbox#terminos": {
+    "props": {
+      "pointer": "#/properties/terminosPlus"
+    }
+  },
+  "form-submit#tienda2Plus-submit": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+}

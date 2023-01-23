@@ -1,0 +1,119 @@
+{
+  "store.custom#venta-solo-local": {
+    "blocks": ["search-result-layout.customQuery#venta-solo-local"]
+  },
+  "search-result-layout.customQuery#venta-solo-local": {
+    "props": {
+      "querySchema": {
+        "queryField": "1238",
+        "mapField": "productClusterIds",
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 16,
+        "hideUnavailableItems": false
+      },
+      "blockClass": "filterCustomContainerPedro"
+    },
+    "blocks": [
+      "search-result-layout.desktop#venta-solo-local",
+      "search-result-layout.mobile#venta-solo-local",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.desktop#venta-solo-local": {
+    "children": [
+      "flex-layout.row#searchbread-desktop",
+      "flex-layout.row#venta-solo-local-banner",
+      "flex-layout.row#venta-solo-local-result"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "hiddenFacets": {
+        "priceRange": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            { "name": "Departamento" },
+            { "name": "Sub-Categoría" } /* 
+            { "name": "Categoría" }, 
+            { "name": "Marca" },*/,
+            { "name": "Concatenacion" },
+            { "name": "Concentración" },
+            { "name": "Tipo de Piel" },
+            { "name": "Tipo" } //,
+            // { "name": "Principio Activo" }
+          ]
+        }
+      },
+      "blockClass": "venta-solo-local"
+    }
+  },
+  "flex-layout.row#venta-solo-local-banner": {
+    "children": ["image#venta-solo-local"]
+  },
+  "image#venta-solo-local": {
+    "title": "Banner Desktop",
+    "props": {
+      "src": "https://tienda2cl.vtexassets.com/assets/vtex.file-manager-graphql/images/df5958c6-17b4-4dc2-9400-568302747480___301529cd02e6d43fbcae66ca55edcf6a.png",
+      "blockClass": "venta-solo-local"
+    }
+  },
+  "flex-layout.row#venta-solo-local-result": {
+    "children": ["flex-layout.col#filter", "flex-layout.col#venta-solo-local-content"],
+    "props": {
+      "fullWidth": true,
+      "marginBottom": 8,
+      "marginTop": 8,
+      "colJustify": "center"
+    }
+  },
+  "flex-layout.col#venta-solo-local-content": {
+    "children": [
+      "flex-layout.row#searchinfo", //<-- TRAE LA CANTIDAD DE PRODUCT + ORDENAR POR
+      "flex-layout.row#products", //<-- TRAE LOS PRODUCTOS DE LA CONSULTA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "80%",
+      "preventVerticalStretch": true,
+      "marginRight": 7,
+      "paddingLeft": 3
+    }
+  },
+
+  /* Mobile version */
+  "search-result-layout.mobile#venta-solo-local": {
+    "children": [
+      //"flex-layout.row#searchbread-mobile", //<-- MIGA DE PAN
+      /* "flex-layout.row#searchtitle",*/ //<-- TITULO DE LA CONSULTA
+      /*"flex-layout.row#switcherMobile",*/
+      /* "list-context.image-list#showcase", */
+      "breadcrumb.search",
+      "flex-layout.row#venta-solo-local-banner-mobile",
+      "flex-layout.row#searchinfomobile", //<-- TRAE ORDENAR POR + FILTRO + Switcher
+      "flex-layout.row#contentmobile", //<-- CONTENIDO DE LA BUSQUEDA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more", //<-- BOTON MOSTRAR MAS / 2.OPC = 'infinite-scroll'
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "blockClass": "venta-solo-local"
+    }
+  },
+  "flex-layout.row#venta-solo-local-banner-mobile": {
+    "children": ["image#venta-solo-local-mobile"]
+  },
+  "image#venta-solo-local-mobile": {
+    "title": "Banner Mobile",
+    "props": {
+      "src": "https://tienda2cl.vtexassets.com/assets/vtex.file-manager-graphql/images/55c75fdb-67d8-4cbc-b16a-41715fdc7226___67222752bfaa11839bcd6f6d458013ff.png",
+      "blockClass": "venta-solo-local"
+    }
+  }
+}

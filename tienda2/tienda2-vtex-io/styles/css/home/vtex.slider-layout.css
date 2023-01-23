@@ -1,0 +1,112 @@
+﻿.sliderLayoutContainer--vitrinatienda2Productos {
+  width: 90% !important;
+}
+
+@media (max-width: 767px) {
+  .sliderTrackContainer--carruseltienda2TeProtege {
+    margin-left: 0%;
+  }
+
+  .sliderTrackContainer--vitrinatienda2Productos,
+  .sliderLayoutContainer--carruseltienda2TeProtege {
+    padding: 0px !important;
+  }
+
+  .sliderLayoutContainer--vitrinatienda2Productos {
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+}
+
+/* Progrma de adherencia */
+.caretIcon--adherenciaSlider {
+  color: #00a4e8;
+  font-size: 50px;
+  width: 28px;
+  height: 51px;
+}
+
+.caretIcon--adherenciaSlider:hover {
+  transform: scale(1.1);
+}
+
+.paginationDotsContainer--adherenciaSlider {
+  bottom: 11px;
+}
+
+.paginationDot--adherenciaSlider {
+  background-color: #000;
+  opacity: 0.2;
+}
+
+.paginationDot--adherenciaSlider--isActive {
+  background-color: #007aff;
+  opacity: 1;
+}
+
+/* Compra por categoría */
+.sliderLeftArrow--compra-categoria {
+  left: -31px;
+  top: 70px;
+}
+
+.sliderRightArrow--compra-categoria {
+  right: -31px;
+  top: 70px;
+}
+
+@media (max-width: 640px) {
+  .sliderLeftArrow--compra-categoria {
+    right: 11%;
+    top: 99%;
+  }
+
+  .sliderRightArrow--compra-categoria {
+    right: 35%;
+    top: 99%;
+  }
+}
+
+.caretIcon--compra-categoria {
+  display: none;
+}
+
+.sliderLeftArrow--compra-categoria::before,
+.sliderRightArrow--compra-categoria::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #545977;
+  border-left: 2px solid #545977;
+}
+
+.sliderLeftArrow--compra-categoria::before {
+  transform: rotate(-45deg);
+}
+
+.sliderRightArrow--compra-categoria::before {
+  transform: rotate(136deg);
+}
+
+.sliderLeftArrow--compra-categoria:hover::before,
+.sliderRightArrow--compra-categoria:hover::before {
+  border-top: 3px solid #545977;
+  border-left: 3px solid #545977;
+}
+
+.sliderLeftArrow--vitrinatienda2Productos {
+  left: -3%;
+}
+
+.sliderRightArrow--vitrinatienda2Productos {
+  right: -3%;
+}
+
+/* Flechas de tienda2 te protege */
+.sliderLeftArrow--carruseltienda2TeProtege {
+  left: -67%;
+}
+.sliderRightArrow--carruseltienda2TeProtege {
+  right: -5.5%;
+}

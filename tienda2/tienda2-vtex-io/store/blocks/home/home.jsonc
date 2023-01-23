@@ -1,0 +1,1550 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+    ]
+  },
+  "responsive-layout.desktop": {
+    "children": [
+      "rich-text#toTop",  
+      //"modal-trigger#cetaphil",
+      "toggle-layout#popup",
+      "list-context.image-list#carouselPrincipal",
+      "flex-layout.row#beneficios",
+      "toggle-layout#secciones-medicamentos", //nuevas columnas de secciones humanos y animales
+      "flex-layout.row#tituloVitrina1",
+      "flex-layout.row#cat-dest-1",
+      "flex-layout.row#bannerPromocional1",
+      "flex-layout.row#cat-dest-2",
+      //"flex-layout.row#bannerPromocional3",
+      "stack-layout#form-plus",
+      "flex-layout.row#tituloVitrina3",
+      "flex-layout.row#cat-dest-3",
+      "flex-layout.row#bannerTelefonos",
+      "flex-layout.row#botonera"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        }
+      ]
+    }
+  },
+  "responsive-layout.tablet": {
+    "children": [
+      "rich-text#toTop",
+      //"modal-trigger#cetaphil", 
+      "toggle-layout#popup",
+      "list-context.image-list#carouselPrincipal",
+      "flex-layout.row#beneficios",
+      "toggle-layout#secciones-medicamentos", //nuevas columnas de secciones humanos y animales
+      "flex-layout.row#tituloVitrina1",
+      "flex-layout.row#cat-dest-1",
+      "flex-layout.row#bannerPromocional1Mobile",
+      "flex-layout.row#cat-dest-2",
+     //"flex-layout.row#bannerPromocional3", 
+     "image#tienda2-plus-mobile",
+     "flex-layout.row#inputsContainer",
+      "flex-layout.row#tituloVitrina3",
+      "flex-layout.row#cat-dest-3",
+      "flex-layout.row#bannerTelefonos",
+      "flex-layout.row#botonera"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        }
+      ]
+    }
+  },
+  "responsive-layout.phone": {
+    "children": [
+      "rich-text#toTop",
+      //"modal-trigger#cetaphil",
+      "toggle-layout#popup", 
+      "list-context.image-list#carouselPrincipalMobile",
+      "flex-layout.row#beneficios",
+      "toggle-layout#secciones-medicamentos", //nuevas columnas de secciones humanos y animales
+      "flex-layout.row#tituloVitrina1",
+      "flex-layout.row#cat-dest-1",
+      "flex-layout.row#bannerPromocional1Mobile",
+      "flex-layout.row#tituloVitrina4",
+      "flex-layout.row#cat-dest-2-mobile",
+      //"flex-layout.row#bannerPromocional3Mobile",
+      "image#tienda2-plus-mobile",
+      "flex-layout.row#inputsContainer",
+      "flex-layout.row#tituloVitrina3",
+      "flex-layout.row#cat-dest-3",
+      "flex-layout.row#bannerTelefonos",
+      "flex-layout.row#botonera"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        }
+      ]
+    }
+  },
+  /**DEFINIMOS EL POP UP**/
+  "toggle-layout#popup": {
+    "title": "Pop up de Home",
+    "children": [
+      "modal-trigger#cetaphil"
+    ]
+  },
+  /* To top */
+  "rich-text#toTop": {
+    "props": {
+      "blockClass": "toTop",
+      "htmlId": "top"
+    }
+  },
+  /* FIn de to top */
+  "list-context.image-list#carouselPrincipal": {
+    "title": "Slider Principal",
+    "children": ["slider-layout#carouselPrincipal"],
+    "props": {
+      "blockClass": "carouselPrincipal",
+      "images": [
+        {
+          "image": "assets/home/carouselPrincipal1.png"
+        },
+        {
+          "image": "assets/home/Banerwebinvierno.png",
+          "link": { "url": "/invierno" }
+        },
+        {
+          "image": "assets/home/BANNER_PROGRAMA_ADHERENCIA_desktop16-05..png"
+        },
+        {
+          "image": "assets/home/Bannersuscipcionesweb.png"
+        },
+        {
+          "image": "assets/home/BP_01_despacho-desktop.webp"
+        }
+      ]
+    }
+  },
+  "slider-layout#carouselPrincipal": {
+    "props": {
+      "autoplay": {
+        "timeout": 4500,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "infinite": true,
+      "blockClass": "carouselPrincipal"
+    }
+  },
+
+  "list-context.image-list#carouselPrincipalMobile": {
+    "children": ["slider-layout#carouselPrincipalMobile"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/home/BANNER_MINSAL_MOBILE.png"
+        },
+        {
+          "image": "assets/home/Bannermobileceta15.png"
+        },
+        {
+          "image": "assets/home/Bannermobileinvierno.png"
+        },
+        {
+          "image": "assets/home/Bannersuscripcionesmobile.png"
+        },
+        {
+          "image": "assets/home/LANZAMIENTOMOBILE13.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#carouselPrincipalMobile": {
+    "props": {
+      "autoplay": {
+        "timeout": 4500,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "disabled"
+      },
+      "infinite": true,
+      "showNavigationArrows": "never"
+    }
+  },
+
+  // INICIO Refuerzos de confianza bottom slider
+  "flex-layout.row#beneficios": {
+    "title": "Refuerzo de confianza",
+    "children": [
+      "rich-text#ref1",
+      "rich-text#ref2",
+      "rich-text#ref3",
+      "rich-text#ref4"
+    ],
+    "props": {
+      "blockClass": "beneficios",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#ref1": {
+    "props": {
+      "text": "[![alt refuerzo de confianza 1](assets/home/politicas-de-despacho.png) Políticas de despacho](/institucional/politicas-de-despacho)",
+      "blockClass": ["ref1", "ref", "confianza"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#ref2": {
+    "props": {
+      "text": "[![alt refuerzo de confianza 2](assets/home/suscripciones.png) SUSCRIPCIONES](/suscripciones)",
+      "blockClass": ["ref2", "ref"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#ref3": {
+    "props": {
+      "text": "[![alt refuerzo de confianza 3](assets/home/retiro-en-tienda.png) RETIRO EN TIENDA](/Institucional/retiro-en-tienda)",
+      "blockClass": ["ref3", "ref"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#ref4": {
+    "props": {
+      "text": "[![alt refuerzo de confianza 4](assets/home/pago-en-linea.png) PAGO EN LÍNEA AQUÍ](/paga-tu-compra-telefonica)",
+      "blockClass": ["ref4", "ref"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#beneficiosMobile": {
+    "children": ["list-context.image-list#banbeneficiosMobile"],
+    "props": {
+      "blockClass": "beneficiosMobile"
+    }
+  },
+  "list-context.image-list#banbeneficiosdesktop": {
+    "children": ["slider-layout#banbeneficiosdesktop"],
+    "props": {
+      /* "width": "90%", */
+      "height": "auto",
+      "margin": "auto",
+      "images": [
+        {
+          "image": "assets/home/despacho.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/home/suscribir.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/home/retiro.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/home/pago.png",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "list-context.image-list#banbeneficiosMobile": {
+    "children": ["slider-layout#banbeneficiosMobile"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/home/despacho.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/home/suscribir.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/home/retiro.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/home/pago.png",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  //BANNER BENEFICIOS
+  "flex-layout.col#banbeneficiosdesktop1": {
+    "children": [
+      "image#banbeneficiosdesktopImage1",
+      "rich-text#banbeneficiosdesktopTitulo1"
+    ]
+  },
+  "rich-text#banbeneficiosdesktopTitulo1": {
+    "props": {
+      "blockClass": ["banbeneficiosdesktop"],
+      "text": "Politicas de despacho"
+    }
+  },
+  "image#banbeneficiosdesktopImage1": {
+    "props": {
+      "src": "assets/home/despacho.png"
+    }
+  },
+
+  "slider-layout#banbeneficiosdesktop": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "disabled"
+      },
+      /* "centerModeSlidesGap": 1, */
+      "blockClass": "carouselBeneficios"
+    }
+  },
+  "slider-layout#banbeneficiosMobile": {
+    "props": {
+      "itemsPerPage": {
+        "phone": 4
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "centerMode": {
+        "phone": "disabled"
+      },
+      "blockClass": "carouselBeneficios"
+    }
+  },
+
+  "flex-layout.row#tituloVitrina1": {
+    "title": "Título de Vitrina Destacados",
+    "children": ["rich-text#titulo-1"],
+    "props": {
+      "blockClass": ["titulo-1"]
+    }
+  },
+  "rich-text#titulo-1": {
+    "props": {
+      "blockClass": ["titulo-1"],
+      "text": "Destacados"
+    }
+  },
+
+  // INICIO VITRINA 1
+  "flex-layout.row#cat-dest-1": {
+    "title": "Vitrina Destacados",
+    "children": ["list-context.product-list#catdest-1"],
+    "props": {
+      "fullWidth": false,
+      "width": "90%",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "list-context.product-list#catdest-1": {
+    "props": {
+      "collection": "145"
+    },
+    "blocks": ["product-summary.shelf#tienda2"],
+    "children": ["slider-layout#products-1"]
+  },
+
+  "slider-layout#products-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "disabled"
+      },
+      "colGap": 30,
+      "blockClass": ["vitrinatienda2Productos", "vitrinastienda2"]
+    }
+  },
+  // FIN VITRINA 1
+
+  // INICIO VITRINA 2
+  "flex-layout.row#cat-dest-2": {
+    "title": "Vitrina 2 + banner",
+    "children": [
+      "image#tienda2TeProtege",
+      "list-context.product-list#catdest-2"
+    ],
+    "props": {
+      "blockClass": "carruselTeProtege",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    }
+  },
+  "image#tienda2TeProtege": {
+    "props": {
+      "src": "https://web.vtexassets.com/assets/vtex/assets-builder/tienda2.tienda2/0.1.1/home/teProtege___746cd3d�.webp",
+      "blockClass": "tienda2TeProtegeBanner"
+    }
+  },
+  "list-context.product-list#catdest-2": {
+    "props": {
+      "collection": "155"
+    },
+    "blocks": ["product-summary.shelf#tienda2"],
+    "children": ["slider-layout#products-2"]
+  },
+
+  "slider-layout#products-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "fullWidth": false,
+      "blockClass": ["carruseltienda2TeProtege", "vitrinastienda2"],
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "disabled"
+      }
+    }
+  },
+  /* Mobile */
+  "flex-layout.row#cat-dest-2-mobile": {
+    "title": "Vitrina 2 + banner",
+    "children": ["list-context.product-list#catdest-2"],
+    "props": {
+      "blockClass": "carruselTeProtege",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    }
+  },
+  // FIN VITRINA 2
+
+  // INICIO VITRINA 2 Mobile
+  "flex-layout.row#prods-2Mobile": {
+    "title": "Vitrina Destacados 2",
+    "children": ["list-context.product-list#catdest-2Mobile"],
+    "props": {
+      "paddingBottom": 5,
+      "blockClass": ["prods-1Mobile"]
+    }
+  },
+
+  "flex-layout.row#cat-dest-2Mobile": {
+    "children": ["list-context.product-list#catdest-2Mobile"],
+    "props": {
+      // "fullWidth": true,
+      "horizontalAlign": "center",
+      "width": "90%"
+    }
+  },
+
+  "list-context.product-list#catdest-2Mobile": {
+    //"blocks": [ "product-summary.shelf#tienda2" ],
+    "children": ["slider-layout#products-2Mobile"],
+    "props": {
+      "category": "211"
+    }
+  },
+
+  "slider-layout#products-2Mobile": {
+    "props": {
+      /* "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true        
+      }, */
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "colGap": 0,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": ["carruselDestacadosMobile", "vitrinastienda2"],
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 1
+    }
+  },
+  // FIN VITRINA 2 Mobile
+
+  "flex-layout.row#tituloVitrina3": {
+    "title": "Título de compra por categoría",
+    "children": ["rich-text#titulo-3"],
+    "props": {
+      "marginBottom": "5",
+      "blockClass": ["titulo-1"]
+    }
+  },
+  "rich-text#titulo-3": {
+    "props": {
+      "blockClass": ["titulo-1-gris"],
+      "text": "**Compra por categoría**"
+    }
+  },
+
+  "flex-layout.row#tituloVitrina4": {
+    "title": "Título de vitrina Destacados",
+    "children": ["rich-text#titulo-4"],
+    "props": {
+      "blockClass": ["titulo-1"]
+    }
+  },
+  "rich-text#titulo-4": {
+    "props": {
+      "blockClass": ["titulotienda2", "titulo-1"],
+      "text": "Productos Destacados \n **tienda2**"
+    }
+  },
+
+  // INICIO VITRINA 3
+  "flex-layout.row#cat-dest-3": {
+    "title": "Slider de compra por categoría",
+    "children": ["slider-layout#carouselPorCategoria"],
+    "props": {
+      "horizontalAlign": "center",
+      "fullWidth": true
+    }
+  },
+
+  /* "list-context.image-list#carouselPorCategoria": {
+    "children": [ "slider-layout#carouselPorCategoria" ],
+    "props": {
+      "images": [
+        {
+          "image": "assets/home/Iconos Categorias/antibioticos2.png",
+          "description": "something something"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/obesidad2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/cardiovascular2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/coagulacion2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/btn-categoria-home-4.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/dermatologia2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/fiebre2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/enfermedades-especificas2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/gastrointestinal2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/articulaciones2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/neuropsiquiatria2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/oftalmicos2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/respiratorio2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/salud-femenina2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/salud-masculina2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/vacunas2.png"
+        },
+        {
+          "image": "assets/home/Iconos Categorias/vitaminas2.png"
+        }
+      ]
+    }
+  }, */
+
+  // FIN VITRINA 3
+
+  // INICIO VITRINA 3 Mobile
+  "flex-layout.row#prods-3Mobile": {
+    "children": ["list-context.product-list#catdest-3Mobile"],
+    "props": {
+      "paddingBottom": 5,
+      "blockClass": ["prods-1Mobile"]
+    }
+  },
+
+  "flex-layout.row#cat-dest-3Mobile": {
+    "children": ["list-context.product-list#catdest-3Mobile"],
+    "props": {
+      // "fullWidth": true,
+      "horizontalAlign": "center",
+      "width": "90%"
+    }
+  },
+
+  "list-context.product-list#catdest-3Mobile": {
+    "title": "Vitrina Principal N°3 Mobile",
+    //"blocks": [ "product-summary.shelf#tienda2" ],
+    "children": ["slider-layout#products-3Mobile"],
+    "props": {
+      "category": "125"
+    }
+  },
+
+  "slider-layout#products-3Mobile": {
+    "props": {
+      /* "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true        
+      }, */
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "colGap": 6,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": ["carruselDestacadosMobile", "vitrinastienda2"],
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 1
+    }
+  },
+  // FIN VITRINA 3 Mobile
+
+  // INICIO VITRINA 1 MOBILE
+  "flex-layout.row#prods-1Mobile": {
+    "children": ["list-context.product-list#catdest-1Mobile"],
+    "props": {
+      "paddingBottom": 5,
+      "blockClass": ["prods-1Mobile"]
+    }
+  },
+
+  "flex-layout.row#cat-dest-1Mobile": {
+    "children": ["list-context.product-list#catdest-1Mobile"],
+    "props": {
+      // "fullWidth": true,
+      "horizontalAlign": "center",
+      "width": "90%"
+    }
+  },
+
+  "list-context.product-list#catdest-1Mobile": {
+    "title": "Vitrina Principal N°1 Mobile",
+    //"blocks": [ "product-summary.shelf#tienda2" ],
+    "children": ["slider-layout#products-1Mobile"],
+    "props": {
+      "category": "125"
+    }
+  },
+
+  "slider-layout#products-1Mobile": {
+    "props": {
+      /* "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true        
+      }, */
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "colGap": 6,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "carruselDestacadosMobile",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 1
+    }
+  },
+  // FIN VITRINA 1
+
+  // INICIO bannerPromocional1
+  "flex-layout.row#bannerPromocional1": {
+    "title": "Banners promocionales",
+    "props": {
+      "blockClass": "row-bannerPromocional1",
+      "fullWidth": false,
+      "colGap": "4",
+      "rowGap": "4"
+    },
+    "children": [
+      "flex-layout.col#bannerPromocionalIzq",
+      "flex-layout.col#bannerPromocional",
+      "flex-layout.col#bannerPromocionalDer"
+    ]
+  },
+
+  "flex-layout.row#bannerPromocional1Mobile": {
+    "title": "Vitrina Destacados",
+    "props": {
+      "blockClass": "row-bannerPromocional1",
+      "fullWidth": false,
+      "colGap": "4",
+      "rowGap": "4"
+    },
+    "children": [
+      "flex-layout.col#bannerPromocionalIzqMobile",
+      "flex-layout.col#bannerPromocional",
+      "flex-layout.col#bannerPromocionalDerMobile"
+    ]
+  },
+  "flex-layout.col#bannerPromocionalIzq": {
+    "children": ["image#bannerPromocional1", "image#bannerPromocionalHome2"]
+  },
+  "flex-layout.col#bannerPromocional": {
+    "props": {
+      "width": "40%"
+    },
+    "children": ["image#bannerPromocionalHome4"]
+  },
+  "flex-layout.col#bannerPromocionalDer": {
+    "children": ["image#bannerPromocionalHome3", "image#bannerPromocionalHome5"]
+  },
+  "flex-layout.col#bannerPromocionalIzqMobile": {
+    "props": {
+      "blockClass": "image-bannerPromocionalCol"
+    },
+    "children": [
+      "image#bannerPromocional1Mobile",
+      "image#bannerPromocionalHome2Mobile"
+    ]
+  },
+
+  "flex-layout.col#bannerPromocionalDerMobile": {
+    "props": {
+      "blockClass": "image-bannerPromocionalCol"
+    },
+    "children": [
+      "image#bannerPromocionalHome3Mobile",
+      "image#bannerPromocionalHome5Mobile"
+    ]
+  },
+  "image#bannerPromocional1": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/Promociones/banner1-mobile-tienda2.webp",
+      "blockClass": "image-bannerPromocional1"
+    }
+  },
+  "image#bannerPromocionalHome2": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/Promociones/banner2-mobile-tienda2.webp",
+      "blockClass": "image-bannerPromocional1"
+    }
+  },
+  "image#bannerPromocionalHome3": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/Promociones/banner4-mobile-tienda2.webp",
+      "blockClass": "image-bannerPromocional1"
+    }
+  },
+  "image#bannerPromocionalHome4": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/Promociones/Caluga-desktop.png",
+      "blockClass": "image-bannerPromocional1"
+    }
+  },
+  "image#bannerPromocionalHome5": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/Promociones/Vivunt-desktop.webp",
+      "blockClass": "image-bannerPromocional1"
+    }
+  },
+
+  "image#bannerPromocional1Mobile": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/banner1-mobile-tienda2.webp",
+      "blockClass": "image-bannerPromocional1Mobile"
+    }
+  },
+  "image#bannerPromocionalHome2Mobile": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/banner2-mobile-tienda2.webp",
+      "blockClass": "image-bannerPromocional1Mobile"
+    }
+  },
+  "image#bannerPromocionalHome3Mobile": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/banner4-mobile-tienda2.webp",
+      "blockClass": "image-bannerPromocional1Mobile"
+    }
+  },
+  "image#bannerPromocionalHome5Mobile": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/banner5-mobile-tienda2.webp",
+      "blockClass": "image-bannerPromocional1Mobile"
+    }
+  },
+
+  // FIN bannerPromocional1
+
+  // INICIO bannerPromocional2
+  "flex-layout.row#bannerPromocional2": {
+    "title": "Banner 2",
+    "props": {
+      "blockClass": "row-bannerPromocional2",
+      "paddingTop": 7,
+      "paddingBottom": 8
+    },
+    "children": ["image#bannerPromocional2"]
+  },
+
+  "image#bannerPromocional2": {
+    "title": "Banner promocional 2 Desk",
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/teProtege.webp",
+      "blockClass": "image-bannerPromocional2"
+    }
+  },
+  // FIN bannerPromocional2
+
+  // INICIO bannerPromocional3
+  "flex-layout.row#bannerPromocional3": {
+    "title": "Banner 3",
+    "props": {
+      "blockClass": "row-bannerPromocional3",
+      "paddingTop": 7,
+      "paddingBottom": 8,
+      "fullWidth": true
+    },
+    "children": ["image#bannerPromocional3"]
+  },
+  "flex-layout.row#bannerPromocional3Mobile": {
+    "title": "Banner 3",
+    "props": {
+      "blockClass": "row-bannerPromocional3",
+      "paddingTop": 7,
+      "paddingBottom": 8,
+      "fullWidth": true
+    },
+    "children": ["image#bannerPromocional3Mobile"]
+  },
+  "image#bannerPromocional3": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/plusInterior.webp",
+      "blockClass": "image-bannerPromocional2"
+    }
+  },
+  "image#bannerPromocional3Mobile": {
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "src": "assets/home/tienda2-Plus-Interior_500x500.webp",
+      "blockClass": "image-bannerPromocional2"
+    }
+  },
+  // FIN bannerPromocional3
+
+  // INICIO bannerTelefonos
+  "flex-layout.row#bannerTelefonos": {
+    "title": "Número de información toxicológicas",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "blockClass": "BannerTelefonos"
+    },
+    "children": [
+      "flex-layout.row#bannerTelefonosInformacion",
+      "flex-layout.row#bannerTelefonosEmergencias"
+    ]
+  },
+  "flex-layout.row#bannerTelefonosInformacion": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#Telefonos1"]
+  },
+  "flex-layout.row#bannerTelefonosEmergencias": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#Telefonos2"]
+  },
+
+  "rich-text#Telefonos1": {
+    "props": {
+      "blockClass": "BannerTelefonos",
+      "text": "Información de números telefónicos asociados a información toxicológica de forma gratuita"
+    }
+  },
+  "rich-text#Telefonos2": {
+    "props": {
+      "blockClass": "BannerTelefonosEmergencia",
+      //"text": " [!(assets/home/phone-flip.png)] +56 2 2 635 3800",
+      "text": "Emergencias toxicológicas CITUC \n![alt refuerzo de confianza 1](assets/home/phone-flip.png)  +56 2 2 635 3800"
+    }
+  },
+  // FIN bannerTelefonos
+
+  // INICIO "botonera"
+  "flex-layout.row#botonera": {
+    "title": "Instructivos con información importante",
+    "props": {
+      "blockClass": "botonera",
+      "horizontalAlign": "center",
+      "marginBottom": "10",
+      "colGap": 0
+    },
+    "children": [
+      "flex-layout.col#botonera-boton1",
+      "flex-layout.col#botonera-boton2",
+      "flex-layout.col#botonera-boton3",
+      "flex-layout.col#botonera-boton4"
+    ]
+  },
+  "flex-layout.col#botonera-boton1": {
+    "props": {
+      "horizontalAlign": "center",
+      "width": "15%",
+      "blockClass": "botonera"
+    },
+    "children": ["image#botonera-boton1", "menu-item#Documentacion"]
+  },
+  "image#botonera-boton1": {
+    "props": {
+      "maxHeight": 100,
+      "src": "assets/home/iconDocumentacion.png"
+    }
+  },
+  "flex-layout.col#botonera-boton2": {
+    "props": {
+      "horizontalAlign": "center",
+      "width": "15%",
+      "blockClass": "botonera"
+    },
+    "children": ["image#botonera-boton2", "menu-item#Infografia"]
+  },
+  "image#botonera-boton2": {
+    "props": {
+      "maxHeight": 100,
+      "src": "assets/home/infografia.png"
+    }
+  },
+  "flex-layout.col#botonera-boton3": {
+    "props": {
+      "horizontalAlign": "center",
+      "width": "15%",
+      "blockClass": "botonera"
+    },
+    "children": ["image#botonera-boton3", "menu-item#UsoRacional"]
+  },
+  "image#botonera-boton3": {
+    "props": {
+      "maxHeight": 100,
+      "src": "assets/home/usoRacional.png"
+    }
+  },
+  "flex-layout.col#botonera-boton4": {
+    "props": {
+      "horizontalAlign": "center",
+      "width": "15%",
+      "blockClass": "botonera"
+    },
+    "children": ["image#botonera-boton4", "menu-item#RecetasDigitales"]
+  },
+  "image#botonera-boton4": {
+    "props": {
+      "maxHeight": 100,
+      "src": "assets/home/recetasDigitales.png"
+    }
+  },
+  "menu-item#Documentacion": {
+    "props": {
+      "blockClass": "tienda2",
+      "itemProps": {
+        "href": "#",
+        "text": "Documentacion y\nDecretos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#Documentacion"]
+  },
+  "vtex.menu@2.x:submenu#Documentacion": {
+    "children": ["vtex.menu@2.x:menu#submenuDocumentacion"],
+    "props": {
+      "blockClass": "menu-Documentacion"
+    }
+  },
+  "vtex.menu@2.x:menu#submenuDocumentacion": {
+    "children": [
+      "menu-item#decreto3",
+      "menu-item#reglamentoDeFarmacias",
+      "menu-item#modificacionDecreto",
+      "menu-item#folletosDeInformacionAlPaciente",
+      "menu-item#cartasDeDesabastecimiento",
+      "menu-item#resolucionesSanitarias"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-beneficios"
+    }
+  },
+  "menu-item#decreto3": {
+    "props": {
+      "itemProps": {
+        "href": "#",
+        "text": "Decreto 3"
+      }
+    }
+  },
+  "menu-item#reglamentoDeFarmacias": {
+    "props": {
+      "itemProps": {
+        "href": "#",
+        "text": "Reglamento de Farmacias"
+      }
+    }
+  },
+  "menu-item#modificacionDecreto": {
+    "props": {
+      "itemProps": {
+        "href": "#",
+        "text": "Modificacion Decreto"
+      }
+    }
+  },
+  "menu-item#folletosDeInformacionAlPaciente": {
+    "props": {
+      "itemProps": {
+        "href": "#",
+        "text": "Folletos de Informacion al Paciente"
+      }
+    }
+  },
+  "menu-item#cartasDeDesabastecimiento": {
+    "props": {
+      "itemProps": {
+        "href": "#",
+        "text": "Cartas de desabastecimiento"
+      }
+    }
+  },
+  "menu-item#resolucionesSanitarias": {
+    "props": {
+      "itemProps": {
+        "href": "#",
+        "text": "Resolución sanitaria"
+      }
+    }
+  },
+  "menu-item#Infografia": {
+    "props": {
+      "blockClass": "tienda2",
+      "itemProps": {
+        "href": "#",
+        "text": "Infografia de Medicamentos\nVentas Directa"
+      }
+    }
+  },
+  "menu-item#UsoRacional": {
+    "props": {
+      "blockClass": "tienda2",
+      "itemProps": {
+        "href": "#",
+        "text": "Uso Racional de Medicamentos"
+      }
+    }
+  },
+  "menu-item#RecetasDigitales": {
+    "props": {
+      "blockClass": "tienda2",
+      "itemProps": {
+        "href": "#",
+        "text": "Recetas Digitales"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#RecetasDigitales"]
+  },
+  "vtex.menu@2.x:submenu#RecetasDigitales": {
+    "children": ["vtex.menu@2.x:menu#submenuRecetas"],
+    "props": {
+      "blockClass": "menu-beneficios"
+    }
+  },
+  "vtex.menu@2.x:menu#submenuRecetas": {
+    "children": ["menu-item#Recetas", "menu-item#RecetasDigitalizadas"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-beneficios"
+    }
+  },
+  "menu-item#Recetas": {
+    "props": {
+      "itemProps": {
+        "href": "#",
+        "text": "Instructivo Recetas Graficas"
+      }
+    }
+  },
+  "menu-item#RecetasDigitalizadas": {
+    "props": {
+      "itemProps": {
+        "href": "#",
+        "text": "Recetas Digitalizadas"
+      }
+    }
+  },
+
+  // INICIO bannerPromocional1 Mobile
+  "flex-layout.row#row-bannerPromocional1Mobile": {
+    "children": ["image#image#bannerPromocional1Mobile"],
+    "props": {
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "horizontalAlign": "center",
+      "blockClass": "row-bannerPromocional1Mobile",
+      "fullWidth": false
+    }
+  },
+  "image#image#bannerPromocional1Mobile": {
+    "title": "Banner promocional 1 Mobile",
+    "props": {
+      "link": {
+        "url": "https://api.whatsapp.com/send?text=Hola%20tienda2!&phone=+5493795112405"
+      },
+      "src": "/arquivos/banner_Promocional1Mobile.png",
+      "blockClass": "bannerPromocional1Mobile"
+    }
+  },
+  // FIN bannerPromocional1 Mobile
+
+  // INICIO bannerPromocional1 Mobile
+  "flex-layout.row#row-bannerPromocional2Mobile": {
+    "children": ["image#image#bannerPromocional2Mobile"],
+    "props": {
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "horizontalAlign": "center",
+      "blockClass": "row-bannerPromocional2Mobile",
+      "fullWidth": false
+    }
+  },
+  "image#image#bannerPromocional2Mobile": {
+    "title": "Banner promocional 2 Mobile",
+    "props": {
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "bannerPromocional2Mobile"
+    }
+  },
+  // FIN bannerPromocional1 Mobile
+
+  // INICIO banner titulo slider marcas
+  "flex-layout.row#bannerSliderMarcas": {
+    "props": {
+      "blockClass": "row-bannerSliderMarcas",
+      "paddingTop": 9,
+      "paddingBottom": 3
+    },
+    "children": ["image#bannerSliderMarcas"]
+  },
+
+  "image#bannerSliderMarcas": {
+    "props": {
+      "link": {
+        "url": "/138?map=productClusterIds"
+      },
+      "src": "/arquivos/titulo-slide-marcas.png",
+      "blockClass": "image-bannerSliderMarcas"
+    }
+  },
+  // FIN bannerPromocional1
+
+  // INICIO banner titulo slider marcas
+  "flex-layout.row#bannerSliderMarcasMobile": {
+    "props": {
+      "blockClass": "row-bannerSliderMarcas",
+      "paddingTop": 9,
+      "paddingBottom": 3
+    },
+    "children": ["image#bannerSliderMarcasMobile"]
+  },
+
+  "image#bannerSliderMarcasMobile": {
+    "props": {
+      "link": {
+        "url": "/138?map=productClusterIds"
+      },
+      "src": "/arquivos/titulo-slide-marcasMobile.png",
+      "blockClass": "image-bannerSliderMarcas"
+    }
+  },
+  // FIN bannerPromocional1
+
+  // INICIO SLIDER MARCAS
+  "flex-layout.row#row-sliderMarcas": {
+    "props": {
+      "blockClass": "row-sliderMarcas",
+      "paddingTop": 7,
+      "paddingBottom": 10
+    },
+    "children": ["list-context.image-list#list-sliderMarcas"]
+  },
+  "list-context.image-list#list-sliderMarcas": {
+    "children": ["slider-layout#sliderMarcas"],
+    "props": {
+      "images": [
+        {
+          "image": "/arquivos/marca-atma.png",
+          "link": { "url": "/139?map=productClusterIds" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marca-philips.png",
+          "link": { "url": "/140?map=productClusterIds" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marcaPeabody.png",
+          "link": { "url": "/141?map=productClusterIds" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marcaLiliana.png",
+          "link": { "url": "/142?map=productClusterIds" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marca-samsung.png",
+          "link": { "url": "/143?map=productClusterIds" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marcaLongvie.png",
+          "link": { "url": "/144?map=productClusterIds" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marcaNoblex.png",
+          "link": { "url": "/145?map=productClusterIds" }
+          /* "maxWidth":120 */
+        }
+        /* {
+          "image": "/arquivos/marca-dream.png",
+          "link": {"url":"/herramientas-y-construcción"},
+          "maxWidth":120 
+        }  */
+      ]
+    }
+  },
+  "slider-layout#sliderMarcas": {
+    "props": {
+      "autoplay": {
+        "timeout": 4500,
+        "stopOnHover": true
+      },
+      /* "width":"80%", */
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 3
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "infinite": true,
+      /* "showNavigationArrows": "never", */
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "blockClass": "sliderMarcas"
+    }
+  },
+  // FIN SLIDER MARCAS
+
+  // INICIO SLIDER MARCAS MOBILE
+  "flex-layout.row#row-sliderMarcasMobile": {
+    "props": {
+      "blockClass": "row-sliderMarcasMobile",
+      "paddingTop": 7,
+      "paddingBottom": 8
+    },
+    "children": ["list-context.image-list#list-sliderMarcasMobile"]
+  },
+  "list-context.image-list#list-sliderMarcasMobile": {
+    "children": ["slider-layout#sliderMarcasMobile"],
+    "props": {
+      "images": [
+        {
+          "image": "/arquivos/marca-atma.png",
+          "link": { "url": "/computación" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marca-philips.png",
+          "link": { "url": "#" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marcaPeabody.png",
+          "link": { "url": "/computacion/contectividad-y-redes" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marcaLiliana.png",
+          "link": { "url": "/niños-y-bebés" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marca-samsung.png",
+          "link": { "url": "/niños-y-bebés" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marcaLongvie.png",
+          "link": { "url": "/herramientas-y-construcción" }
+          /* "maxWidth":120 */
+        },
+        {
+          "image": "/arquivos/marcaNoblex.png",
+          "link": { "url": "/herramientas-y-construcción" }
+          /* "maxWidth":120 */
+        }
+        /* {
+          "image": "/arquivos/marca-dream.png",
+          "link": {"url":"/herramientas-y-construcción"},
+          "maxWidth":120 
+        }  */
+      ]
+    }
+  },
+  "slider-layout#sliderMarcasMobile": {
+    "props": {
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "blockClass": "sliderMarcasMobile",
+      "colGap": 6,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 1
+    }
+  },
+
+  "toggle-layout#secciones-medicamentos": {
+    "title": "secciones-medicamentos",
+    "children": ["flex-layout.row#secciones-medicamentos"]
+  },
+
+  "flex-layout.row#secciones-medicamentos": {
+    "children": ["flex-layout.col#humanos",
+                 "flex-layout.col#animales"],
+    "props": {
+      "blockclass": "columnaMedicamentos"
+    }
+  },
+
+  
+
+  "flex-layout.col#humanos": {
+    "children": [
+      "rich-text#btnn-humanos",
+      "image#humano",
+      "rich-text#text-humanos",
+      "rich-text#btnn-comprar-humanos"
+    ],
+    "props": {
+      "blockclass": "humanoColumn",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#btnn-humanos": {
+    "props": {
+      "text": "![alt refuerzo de confianza 1](assets/home/humanos-logo.png) Salud Humana",
+      "blockClass": ["btn-humano"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#humano": {
+    "props": {
+      "src": "assets/home/BANNER_SALUD_HUMANA_A.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "imgHumano"
+    }
+  },
+  "rich-text#text-humanos": {
+    "props": {
+      "text": "Encuentra cientos de productos para la **salud de tu familia**.",
+      "blockClass": ["text-humano"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#btnn-comprar-humanos": {
+    "props": {
+      "text": "[COMPRA AQUÍ](/)",
+      "blockClass": ["btn-compra-humano"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.col#animales": {
+    "children": [
+      "rich-text#btnn-animales",
+      "image#animales",
+      "rich-text#text-animales",
+      "rich-text#btnn-comprar-animales"
+    ],
+    "props": {
+      "blockclass": "animalColumn",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#btnn-animales": {
+    "props": {
+      "text": "![alt refuerzo de confianza 1](assets/home/animales-logo.png) Salud Animal",
+      "blockClass": ["btn-animal"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#animales": {
+    "props": {
+      "src": "assets/home/BANNER_SALUD_ANIMAL_A.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "imgHumano"
+    }
+  },
+  "rich-text#text-animales": {
+    "props": {
+      "text": "Encuentra cientos de productos para la **salud de tu mascota**.",
+      "blockClass": ["text-humano"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#btnn-comprar-animales": {
+    "props": {
+      "text": "[COMPRA AQUÍ](/)",
+      "blockClass": ["btn-compra-humano"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.flexRow--top-header {
+  background-color: #222426;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--top-header {
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.flexRow--header-nav {
+  padding: 0 45px;
+  background-color: #fff;
+}
+
+.flexRowContent--header-nav .stretchChildrenWidth {
+  width: 40% !important;
+}
+
+.flexRowContent--header-nav .stretchChildrenWidth:first-child,
+.flexRowContent--header-nav .stretchChildrenWidth:last-child {
+  width: 30% !important;
+}
+
+.flexCol--header-col-middle,
+.flexColChild--header-col-middle,
+.flexRow--header-col-middle {
+  width: fit-content !important;
+}
+
+.flexRowContent--header-col-middle {
+  position: relative;
+  width: fit-content;
+  padding: 35px 0;
+  gap: 35px;
+}
+
+.flexRowContent--header-col-middle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background-color: #222426;
+}
+
+.flexRowContent--header-col-right {
+  gap: 30px;
+}
+
+.flexRowContent--header-nav .flexRowContent--header-col-middle .stretchChildrenWidth,
+.flexRowContent--header-nav .flexRowContent--header-col-right .stretchChildrenWidth {
+  width: fit-content !important;
+}
+
+.flexRow--minicart-footer {
+  box-shadow: none;
+}
+
+.flexColChild--price-and-remove:first-child,
+.flexColChild--price-and-remove:last-child {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flexRow--header-nav-mobile {
+  background-color: #fff;
+}
+
+.flexRowContent--header-nav-mobile {
+  padding-left: 15px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+@media (max-width: 1440px) and (min-width: 1026px) {
+  .flexRow--header-nav {
+    padding: 0 15px;
+  }
+}

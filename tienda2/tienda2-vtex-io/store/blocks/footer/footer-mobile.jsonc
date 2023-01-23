@@ -1,0 +1,195 @@
+{
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#toTop",
+/*       "newsletter-form#tienda2",
+ */      
+      "flex-layout.row#newNewsletter",
+      "flex-layout.row#footer-mobile",
+      "footer-row#copyright-mobile"
+    ]
+  },
+  //-----------------------------------VERSIÓN MOBILE----------------------
+  "flex-layout.row#footer-mobile": {
+    "props": {
+      "blockClass": "mobile-footer",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "marginTop": 7
+    },
+    "children": [
+      "flex-layout.row#logo-footer-mobile",
+      "flex-layout.col#footer-1-mobile-1",
+      "flex-layout.col#footer-2-mobile-2",
+      "flex-layout.col#footer-3-mobile-3",
+      "flex-layout.col#footer-4-mobile-4"
+    ]
+  },
+
+  //LOGO
+  "flex-layout.row#logo-footer-mobile": {
+    "children": ["flex-layout.col#logo-footer-mobile"],
+    "props": {
+      "blockClass": "",
+      "marginBottom": 7
+    }
+  },
+  "flex-layout.col#logo-footer-mobile": {
+    "children": ["image#logo"],
+    "props": {
+      "blockClass": "",
+      "horizontalAlign": "center"
+    }
+  },
+  //tienda2 EMPRESA
+  "flex-layout.col#footer-1-mobile-1": {
+    "children": ["disclosure-layout#tienda2-empresa"],
+    "props": {
+      "blockClass": "",
+      "paddingLeft": 4,
+      "paddingRight": 7
+    }
+  },
+  //SERVICIO AL CLIENTE
+  "flex-layout.col#footer-2-mobile-2": {
+    "children": ["disclosure-layout#atenc-cliente"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "",
+      "paddingLeft": 4,
+      "paddingRight": 7
+    }
+  },
+  //CONTACTO
+  "flex-layout.col#footer-3-mobile-3": {
+    "children": ["disclosure-layout#contacto-footer-mobile"],
+    "props": {
+      "blockClass": "",
+      "paddingLeft": 4,
+      "paddingRight": 7
+    }
+  },
+  //MEDIOS DE PAGO
+  "flex-layout.col#footer-4-mobile-4": {
+    "children": ["rich-text#medios-pagos-footer", "image#medios-pagos-footer"],
+    "props": {
+      "blockClass": "",
+      "paddingLeft": 4,
+      "paddingRight": 7
+    }
+  },
+
+  // FLECHAS INDICADORES
+  "disclosure-state-indicator#icon": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up"
+    }
+  },
+  // ITEM 1 tienda2 EMPRESA
+  "disclosure-layout#tienda2-empresa": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#tienda2-empresa",
+      "disclosure-content#tienda2-empresa"
+    ]
+  },
+  "disclosure-trigger#tienda2-empresa": {
+    "props": {
+      "blockClass": "item-footer-mobile",
+      "as": "div"
+    },
+    "children": ["rich-text#empresa", "disclosure-state-indicator#icon"]
+  },
+  "disclosure-content#tienda2-empresa": {
+    "props": {
+      "blockClass": "sub-item"
+    },
+    "children": [
+      "link#nuestra-empresa",
+      "link#mision",
+      "link#vision",
+      "flex-layout.row#redes-sociales"
+    ]
+  },
+  //FIN 1 tienda2 EMPRESA
+
+  // ITEM 2 ATENCIÓN AL CLIENTE
+  "disclosure-layout#atenc-cliente": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#atenc-cliente",
+      "disclosure-content#atenc-cliente"
+    ]
+  },
+  "disclosure-trigger#atenc-cliente": {
+    "props": {
+      "blockClass": "item-footer-mobile",
+      "as": "div"
+    },
+    "children": [
+      "rich-text#servicio-cliente",
+      "disclosure-state-indicator#icon"
+    ]
+  },
+  "disclosure-content#atenc-cliente": {
+    "props": {
+      "blockClass": "sub-item"
+    },
+    "children": [
+      "link#despacho",
+      "link#politica-retiro",
+      "link#devolucion",
+      "link#reclamos-sugerencias",
+      "link#politica-privacidad",
+      "link#bases-legales",
+      "link#medicamentos-local"
+    ]
+  },
+  //FIN 2 tienda2 EMPRESA
+
+  // ITEM 2 ATENCIÓN AL CLIENTE
+  "disclosure-layout#contacto-footer-mobile": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#contacto-footer-mobile",
+      "disclosure-content#contacto-footer-mobile"
+    ]
+  },
+  "disclosure-trigger#contacto-footer-mobile": {
+    "props": {
+      "blockClass": "item-footer-mobile",
+      "as": "div"
+    },
+    "children": ["rich-text#contactanos", "disclosure-state-indicator#icon"]
+  },
+  "disclosure-content#contacto-footer-mobile": {
+    "props": {
+      "blockClass": "sub-item"
+    },
+    "children": [
+      "link#direccion",
+      "rich-text#horarios",
+      "link#telefono",
+      "link#whatsapp",
+      "link#email"
+    ]
+  }
+  //FIN 2 tienda2 EMPRESA
+}

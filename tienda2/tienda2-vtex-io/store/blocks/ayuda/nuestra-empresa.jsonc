@@ -1,0 +1,71 @@
+{
+  "store.custom#quienes-somos": {
+    "blocks": [
+      "responsive-layout.desktop#about" ,
+        "responsive-layout.tablet#about",
+        "responsive-layout.phone#about"
+    ]
+  },
+  "responsive-layout.desktop#about": {
+    "children": ["flex-layout.row#main-about-desk"]
+  },
+  "responsive-layout.tablet#about": {
+    "children": ["flex-layout.row#about-main-mobile"]
+  },
+  "responsive-layout.phone#about": {
+    "children": ["flex-layout.row#about-main-mobile"]
+  },
+  "flex-layout.row#about-main-mobile":{
+    "children": ["flex-layout.col#about"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-about-desk": {
+    "props": {
+      "blockClass": "main-ayuda",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": ["flex-layout.col#nav-column", "flex-layout.col#about"]
+  },
+
+  "flex-layout.col#about": {
+    "props": {
+      "width": "72%",
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#about-title",
+      "flex-layout.row#about-content"
+    ]
+  },
+
+  "flex-layout.row#about-content": {
+    "props": {
+    },
+    "children": ["rich-text#about-content"]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#about-title": {
+    "props": {
+      "blockClass": "ayudaTitle",
+      "text": "**Quiénes Somos**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#about-content": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "Somos una farmacia de especialidad, enfocada en proveer tanto medicamentos de uso general como medicinas utilizados en el tratamiento de enfermedades catastróficas, inusuales y crónicas de baja disponibilidad en el mercado abierto y de alto valor comercial.<br/> <br/> El perfil de los pacientes y el tipo de enfermedades tratadas nos exige un manejo comunicacional discreto, confidencial y seguro. Por eso, el despacho a domicilio y regiones es nuestra opción diferenciadora.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+    "tab-layout#guia-de-tallas-inner-perryellis-desktop": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-perryellis-desktop",
+        "tab-content#guia-de-tallas-inner-perryellis-desktop"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-perryellis-desktop"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-perryellis-desktop": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-perryellis-desktop",
+            "tab-list.item#guia-de-tallas-inner-tab2-perryellis-desktop",
+            "tab-list.item#guia-de-tallas-inner-tab3-perryellis-desktop"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-perryellis-desktop": {
+        "props": {
+        "tabId": "guia-1-inner-perryellis-desktop",
+        "label": "Tops Slim Fit",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-perryellis-desktop": {
+        "props": {
+        "tabId": "guia-2-inner-perryellis-desktop",
+        "label": "Tops Very Slim Fit",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-perryellis-desktop": {
+        "props": {
+        "tabId": "guia-3-inner-perryellis-desktop",
+        "label": "Bottoms",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+
+    "tab-content#guia-de-tallas-inner-perryellis-desktop": {
+        "children": [
+        "tab-content.item#guia-1-inner-perryellis-desktop",
+        "tab-content.item#guia-2-inner-perryellis-desktop",
+        "tab-content.item#guia-3-inner-perryellis-desktop"
+        ]
+    },
+    "tab-content.item#guia-1-inner-perryellis-desktop": {
+        "children": ["image#guia-1-inner-perryellis-desktop"],
+        "props": {"tabId": "guia-1-inner-perryellis-desktop"}
+    },
+    "tab-content.item#guia-2-inner-perryellis-desktop": {
+        "children": ["image#guia-2-inner-perryellis-desktop"],
+        "props": {"tabId": "guia-2-inner-perryellis-desktop"}
+    },
+    "tab-content.item#guia-3-inner-perryellis-desktop": {
+        "children": ["image#guia-3-inner-perryellis-desktop"],
+        "props": {"tabId": "guia-3-inner-perryellis-desktop"}
+    },
+
+    "image#guia-1-inner-perryellis-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_desk_top-slim.jpg"
+        }
+    },
+    "image#guia-2-inner-perryellis-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_desk_top-very-slim.jpg"
+        }
+    },
+    "image#guia-3-inner-perryellis-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_desk_bottom.jpg"
+        }
+    },
+
+    "tab-layout#guia-de-tallas-inner-perryellis-tablet": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-perryellis-tablet",
+        "tab-content#guia-de-tallas-inner-perryellis-tablet"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-perryellis-tablet"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-perryellis-tablet": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-perryellis-tablet",
+            "tab-list.item#guia-de-tallas-inner-tab2-perryellis-tablet",
+            "tab-list.item#guia-de-tallas-inner-tab3-perryellis-tablet"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-perryellis-tablet": {
+        "props": {
+        "tabId": "guia-1-inner-perryellis-tablet",
+        "label": "Tops Slim Fit",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-perryellis-tablet": {
+        "props": {
+        "tabId": "guia-2-inner-perryellis-tablet",
+        "label": "Tops Very Slim Fit",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-perryellis-tablet": {
+        "props": {
+        "tabId": "guia-3-inner-perryellis-tablet",
+        "label": "Bottoms",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+
+    "tab-content#guia-de-tallas-inner-perryellis-tablet": {
+        "children": [
+        "tab-content.item#guia-1-inner-perryellis-tablet",
+        "tab-content.item#guia-2-inner-perryellis-tablet",
+        "tab-content.item#guia-3-inner-perryellis-tablet"
+        ]
+    },
+    "tab-content.item#guia-1-inner-perryellis-tablet": {
+        "children": ["image#guia-1-inner-perryellis-tablet"],
+        "props": {"tabId": "guia-1-inner-perryellis-tablet"}
+    },
+    "tab-content.item#guia-2-inner-perryellis-tablet": {
+        "children": ["image#guia-2-inner-perryellis-tablet"],
+        "props": {"tabId": "guia-2-inner-perryellis-tablet"}
+    },
+    "tab-content.item#guia-3-inner-perryellis-tablet": {
+        "children": ["image#guia-3-inner-perryellis-tablet"],
+        "props": {"tabId": "guia-3-inner-perryellis-tablet"}
+    },
+
+    "image#guia-1-inner-perryellis-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_mob_top-slim.jpg"
+        }
+    },
+    "image#guia-2-inner-perryellis-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_mob_top-very-slim.jpg"
+        }
+    },
+    "image#guia-3-inner-perryellis-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_mob_bottom.jpg"
+        }
+    },    
+
+    "tab-layout#guia-de-tallas-inner-perryellis-phone": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-perryellis-phone",
+        "tab-content#guia-de-tallas-inner-perryellis-phone"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-perryellis-phone"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-perryellis-phone": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-perryellis-phone",
+            "tab-list.item#guia-de-tallas-inner-tab2-perryellis-phone",
+            "tab-list.item#guia-de-tallas-inner-tab3-perryellis-phone"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-perryellis-phone": {
+        "props": {
+        "tabId": "guia-1-inner-perryellis-phone",
+        "label": "Tops Slim Fit",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-perryellis-phone": {
+        "props": {
+        "tabId": "guia-2-inner-perryellis-phone",
+        "label": "Tops Very Slim Fit",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-perryellis-phone": {
+        "props": {
+        "tabId": "guia-3-inner-perryellis-phone",
+        "label": "Bottoms",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+
+    "tab-content#guia-de-tallas-inner-perryellis-phone": {
+        "children": [
+        "tab-content.item#guia-1-inner-perryellis-phone",
+        "tab-content.item#guia-2-inner-perryellis-phone",
+        "tab-content.item#guia-3-inner-perryellis-phone"
+        ]
+    },
+    "tab-content.item#guia-1-inner-perryellis-phone": {
+        "children": ["image#guia-1-inner-perryellis-phone"],
+        "props": {"tabId": "guia-1-inner-perryellis-phone"}
+    },
+    "tab-content.item#guia-2-inner-perryellis-phone": {
+        "children": ["image#guia-2-inner-perryellis-phone"],
+        "props": {"tabId": "guia-2-inner-perryellis-phone"}
+    },
+    "tab-content.item#guia-3-inner-perryellis-phone": {
+        "children": ["image#guia-3-inner-perryellis-phone"],
+        "props": {"tabId": "guia-3-inner-perryellis-phone"}
+    },
+
+    "image#guia-1-inner-perryellis-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_mob_top-slim.jpg"
+        }
+    },
+    "image#guia-2-inner-perryellis-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_mob_top-very-slim.jpg"
+        }
+    },
+    "image#guia-3-inner-perryellis-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/perryellis/perry_mob_bottom.jpg"
+        }
+    }
+
+}

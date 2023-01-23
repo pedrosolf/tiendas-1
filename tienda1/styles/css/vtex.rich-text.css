@@ -1,0 +1,215 @@
+.link {
+  text-decoration: none;
+  color: initial;
+}
+
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  color: #191919;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #191919;
+  margin: auto 4rem;
+  align-self: auto;
+  margin-bottom: 10px;
+}
+
+.paragraph--shelfTitle {
+  color: #191919;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 200;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034E;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+
+  .wrapper--rich-text-menu-sale {
+    place-self: flex-start;
+  }
+}
+
+.paragraph--features-topbar2-1 {
+  font-size: smaller;
+  /* min-width: 160px;  */
+  min-width: 10rem;
+  margin: 2px auto;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+
+.paragraph--features-topbar2-2 {
+  /* padding: 5px 0; */
+  font-size: smaller;
+  min-width: 160px; 
+  margin: 2px auto;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+
+
+.paragraph--features-topbar2-3 {
+  /* padding: 5px 0; */
+  font-size: smaller;
+  min-width: 170px; 
+  margin: 2px auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.paragraph--features-text {
+  font-size: smaller;
+  margin-top:0;
+  margin-bottom: 0;
+  margin-left: 5px
+}
+
+.link--features-text {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  .paragraph--features-text {
+    font-size: xx-small;
+  }
+}
+
+.paragraph--guia-de-tallas-text {
+  color: #191919;
+  cursor: pointer;
+  font-size: .8rem;
+  text-decoration: underline;
+}
+
+.container--copyright-desktop {
+  justify-content: center;
+}
+
+.headingLevel2--shelfTitle {
+  font-size: 20px;
+  color: #191919;
+}
+
+.strong--rich-text-menu-sale {
+  color: #ff0049;
+}
+
+.link--rich-text-menu-sale {
+  text-decoration: none;
+}
+
+.container--rich-text-menu-sale {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.wrapper--top-bar-1-text {
+  align-self: center;
+}
+
+.paragraph--top-bar-1-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.paragraph--copyright-desktop {
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.link--texto-nuestras-tiendas {
+  font-size: .6rem;
+}
+
+.container--top-message-desk{
+    background: #000;
+    color: #fff;
+    font-size: 19px;
+}
+
+.container--top-message-cel{
+    background: #000;
+    color: #fff;
+}

@@ -1,0 +1,48 @@
+.flexCol--filterCol {
+  margin-top: 2rem;
+}
+
+/* filtros mobile */
+.flexRowContent--searchinfomobile{
+  flex-direction: row-reverse;
+}
+.flexCol--orderByMobileCol {
+  margin: 0 0 1.2rem;
+  padding-left: 8%;
+}
+.flexColChild--orderByMobileCol {
+  width: 100%;
+}
+.flexColChild--filterMobileCol {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  :global(.vtex-search-result-3-x-orderByDropdown) {
+    margin-left: 0px;
+  }
+}
+
+/* Showcase custom */
+.flexRow--filterContainer {
+  margin-top: 2rem;
+}
+.flexRowContent--filterContainer {
+  justify-content: center;
+  gap: 5%;
+  padding-top: 15px;
+}
+
+.flexRow--filterContainer {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.flexRow--filterContainer::before {
+  content: "Filtrar por categoría";
+  text-align: center;
+  font-size: 20px;
+  color: #545977;
+  font-weight: bold;
+}

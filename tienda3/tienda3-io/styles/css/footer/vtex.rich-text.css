@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.container--texto-footer, .container--texto-footer .link, .container--texto-footer .strong{
+    color: #fff;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.container--ultima-columna{
+    border-right: none !important;
+    border-bottom: none !important;
+ }
+ .container--arrepentimiento-footer{
+    padding-left: 1rem;
+ }
+.container--arrepentimiento-footer .link{
+    background: #545859;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.paragraph--copy-footer{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.container--copy-footer{
+  display: flex;
+  justify-content: center;
+}
+
+.container--texto-footer{
+    padding-left: 1rem;
+
+
+}
+@media (min-width:768px){
+    .container--texto-footer{
+        border-bottom:  none;
+        border-right: 1px solid #D9D9D6;
+        width: 90%;
+        height: 90%;
+        padding-bottom: 0;
+     }
+   
+     .container--copy-footer{
+        justify-content: flex-start;
+      }
+      .paragraph--texto-footer{
+        margin: 0;
+      }
+      
+   
+
+}
+@media (min-width:1400px){
+    .container--texto-footer{
+      padding-left: 2rem;
+     }
+     .container--arrepentimiento-footer{
+        padding-left: 2rem;
+     }
+    }

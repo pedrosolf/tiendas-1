@@ -1,0 +1,8 @@
+.trigger--item-footer-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+:global(.vtex-store-icons-0-x-caretIcon){
+  color: #545977;
+}

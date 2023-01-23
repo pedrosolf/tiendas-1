@@ -1,0 +1,26 @@
+{
+    "vtex.menu@2.x:menu#menu-sale": {
+        "props": {
+        "experimentalOptimizeRendering": true
+        },
+        "children": [
+            "menu-item#sale"
+        ]
+    },
+    "menu-item#sale": {
+        "props": {
+            "id": "menu-item-sale",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/sale",
+                "noFollow": false,
+                "tagTitle": "Sale",
+                "text": "Sale"
+            }
+        },
+        "blocks": []
+    }
+}

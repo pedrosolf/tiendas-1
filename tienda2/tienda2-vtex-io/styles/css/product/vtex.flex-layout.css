@@ -1,0 +1,81 @@
+@media (max-width: 767px) {
+  .flexRow--main {
+    padding: 0 2%;
+  }
+}
+
+.flexRow--buttonSuscripcion :global(.vtex-button__label) {
+  display: none;
+}
+:global(.vtex-product-customizer-2-x-productAssemblyGroupNameRow) :global(.vtex-button__label) {
+  display: none;
+}
+
+.flexRow--buttonSuscripcion :global(.vtex-button)::after {
+  content: 'Suscribete aqui';
+}
+
+:global(.vtex-product-customizer-2-x-productAssemblyGroupNameRow) :global(.vtex-button)::after {
+  content: 'Eliminar suscripción';
+}
+
+.flexRowContent--subpromos {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.flexColChild--buttonSuscripcion {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: -10px;
+}
+
+@media (max-width: 639px) {
+  .flexColChild--buttonSuscripcion {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+.flexRowContent--flagsColeccionContainer {
+  position: absolute;
+  z-index: 9;
+  top: 175px;
+  left: 10px;
+  width: 50%;
+  text-align: left;
+  max-width: 150px;
+}
+
+.flexRowContent--flagsColeccionContainer .flexColChild {
+  flex-direction: column;
+}
+
+.flexRowContent--imagen-main .flexRowContent--flagsColeccionContainer {
+  left: auto;
+  right: 40px;
+  top: 90px;
+}
+
+/*
+.flexRowContent--imagen-main .flexRow--flagsColeccionContainer{
+    position: absolute;
+    right: 80px;
+    z-index: 9;
+    top: 75px; 
+}*/
+
+@media (max-width: 768px) {
+  .flexRowContent--imagen-main .flexRowContent--flagsColeccionContainer {
+    right: 0;
+    top: 45px;
+  }
+}
+
+.flexRow--main .flexRow--subpromos,
+.flexRow--main .flexRow--buttonSuscripcion {
+  display: none;
+}

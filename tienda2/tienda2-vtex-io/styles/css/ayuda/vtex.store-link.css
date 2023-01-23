@@ -1,0 +1,39 @@
+.link--expendiButton {
+  text-decoration: none;
+  height: 60px;
+  color: white;
+  background: #009844;
+  width: 170px !important;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.label--expendiButton {
+  text-align: center;
+}
+
+.link--expendiButton:hover {
+  transform: scale(1.05);
+  transition-duration: 0.4s;
+}
+
+.link--linkTerminos {
+  color: #00a4e8;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+/* Suscripciones links */
+.link--suscripcionesButtons {
+  text-align: center;
+  width: 200px !important;
+  margin: auto;
+  color: white;
+  background-color: #00a0e3;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-bottom: 1px;
+}

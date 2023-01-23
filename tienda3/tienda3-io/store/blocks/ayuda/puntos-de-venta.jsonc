@@ -1,0 +1,31 @@
+{
+    "store.custom#ayuda-puntos-de-venta": {
+      "blocks": ["toggle-layout#puntos-de-venta"]
+    },
+
+    "toggle-layout#puntos-de-venta": {
+      "title": "Puntos de ventas",
+      "children": [
+        "tab-layout#ayuda-puntos-de-venta"
+      ]
+    },
+
+    "tab-layout#ayuda-puntos-de-venta": {
+      "children": [
+        "responsive-layout.desktop#ayuda",
+        "responsive-layout.tablet#ayuda",
+        "responsive-layout.phone#ayuda",
+        "tab-content#ayuda-puntos-de-venta"
+      ],
+      "props": {
+        "blockClass": "ayuda",
+        "defaultActiveTabId": "puntos-de-venta"
+      }
+    },
+    "tab-content#ayuda-puntos-de-venta": {
+      "children": [
+        "tab-content.item#puntos-de-venta"
+      ]
+    }
+  }
+  

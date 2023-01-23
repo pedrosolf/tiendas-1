@@ -1,0 +1,245 @@
+{
+    "tab-layout#guia-de-tallas-inner-canadienne-desktop": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-canadienne-desktop",
+        "tab-content#guia-de-tallas-inner-canadienne-desktop"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-canadienne-desktop"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-canadienne-desktop": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-canadienne-desktop",
+            "tab-list.item#guia-de-tallas-inner-tab2-canadienne-desktop",
+            "tab-list.item#guia-de-tallas-inner-tab3-canadienne-desktop"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-canadienne-desktop": {
+        "props": {
+        "tabId": "guia-1-inner-canadienne-desktop",
+        "label": "Tops",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-canadienne-desktop": {
+        "props": {
+        "tabId": "guia-2-inner-canadienne-desktop",
+        "label": "Bottoms (talla 38 a 48)",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-canadienne-desktop": {
+        "props": {
+        "tabId": "guia-3-inner-canadienne-desktop",
+        "label": "Bottoms (talla XS a XXL)",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+
+    "tab-content#guia-de-tallas-inner-canadienne-desktop": {
+        "children": [
+        "tab-content.item#guia-1-inner-canadienne-desktop",
+        "tab-content.item#guia-2-inner-canadienne-desktop",
+        "tab-content.item#guia-3-inner-canadienne-desktop"
+        ]
+    },
+    "tab-content.item#guia-1-inner-canadienne-desktop": {
+        "children": ["image#guia-1-inner-canadienne-desktop"],
+        "props": {"tabId": "guia-1-inner-canadienne-desktop"}
+    },
+    "tab-content.item#guia-2-inner-canadienne-desktop": {
+        "children": ["image#guia-2-inner-canadienne-desktop"],
+        "props": {"tabId": "guia-2-inner-canadienne-desktop"}
+    },
+    "tab-content.item#guia-3-inner-canadienne-desktop": {
+        "children": ["image#guia-3-inner-canadienne-desktop"],
+        "props": {"tabId": "guia-3-inner-canadienne-desktop"}
+    },
+
+    "image#guia-1-inner-canadienne-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_01.jpg"
+        }
+    },
+    "image#guia-2-inner-canadienne-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_02.jpg"
+        }
+    },
+    "image#guia-3-inner-canadienne-desktop": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_03.jpg"
+        }
+    },
+
+    "tab-layout#guia-de-tallas-inner-canadienne-tablet": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-canadienne-tablet",
+        "tab-content#guia-de-tallas-inner-canadienne-tablet"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-canadienne-tablet"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-canadienne-tablet": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-canadienne-tablet",
+            "tab-list.item#guia-de-tallas-inner-tab2-canadienne-tablet",
+            "tab-list.item#guia-de-tallas-inner-tab3-canadienne-tablet"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-canadienne-tablet": {
+        "props": {
+        "tabId": "guia-1-inner-canadienne-tablet",
+        "label": "Formal",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-canadienne-tablet": {
+        "props": {
+        "tabId": "guia-2-inner-canadienne-tablet",
+        "label": "Formal - Tallas Especiales Largas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-canadienne-tablet": {
+        "props": {
+        "tabId": "guia-3-inner-canadienne-tablet",
+        "label": "Formal - Tallas Especiales Cortas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+
+    "tab-content#guia-de-tallas-inner-canadienne-tablet": {
+        "children": [
+        "tab-content.item#guia-1-inner-canadienne-tablet",
+        "tab-content.item#guia-2-inner-canadienne-tablet",
+        "tab-content.item#guia-3-inner-canadienne-tablet"
+        ]
+    },
+    "tab-content.item#guia-1-inner-canadienne-tablet": {
+        "children": ["image#guia-1-inner-canadienne-tablet"],
+        "props": {"tabId": "guia-1-inner-canadienne-tablet"}
+    },
+    "tab-content.item#guia-2-inner-canadienne-tablet": {
+        "children": ["image#guia-2-inner-canadienne-tablet"],
+        "props": {"tabId": "guia-2-inner-canadienne-tablet"}
+    },
+    "tab-content.item#guia-3-inner-canadienne-tablet": {
+        "children": ["image#guia-3-inner-canadienne-tablet"],
+        "props": {"tabId": "guia-3-inner-canadienne-tablet"}
+    },
+
+    "image#guia-1-inner-canadienne-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_01.jpg"
+        }
+    },
+    "image#guia-2-inner-canadienne-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_02.jpg"
+        }
+    },
+    "image#guia-3-inner-canadienne-tablet": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_03.jpg"
+        }
+    },    
+
+    "tab-layout#guia-de-tallas-inner-canadienne-phone": {
+        "children": [
+        "tab-list#guia-de-tallas-inner-canadienne-phone",
+        "tab-content#guia-de-tallas-inner-canadienne-phone"
+        ],
+        "props": {
+            "blockClass": "guia-de-tallas-inner-tab",
+            "defaultActiveTabId": "guia-1-inner-canadienne-phone"
+        }
+    },
+    "tab-list#guia-de-tallas-inner-canadienne-phone": {
+        "children": [
+            "tab-list.item#guia-de-tallas-inner-tab1-canadienne-phone",
+            "tab-list.item#guia-de-tallas-inner-tab2-canadienne-phone",
+            "tab-list.item#guia-de-tallas-inner-tab3-canadienne-phone"
+        ]
+    },
+    "tab-list.item#guia-de-tallas-inner-tab1-canadienne-phone": {
+        "props": {
+        "tabId": "guia-1-inner-canadienne-phone",
+        "label": "Formal",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab2-canadienne-phone": {
+        "props": {
+        "tabId": "guia-2-inner-canadienne-phone",
+        "label": "Formal - Tallas Especiales Largas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+    "tab-list.item#guia-de-tallas-inner-tab3-canadienne-phone": {
+        "props": {
+        "tabId": "guia-3-inner-canadienne-phone",
+        "label": "Formal - Tallas Especiales Cortas",
+        "defaultActiveTab": false,
+        "blockClass": "guia-de-tallas-tab-inner"
+        }
+    },
+
+    "tab-content#guia-de-tallas-inner-canadienne-phone": {
+        "children": [
+        "tab-content.item#guia-1-inner-canadienne-phone",
+        "tab-content.item#guia-2-inner-canadienne-phone",
+        "tab-content.item#guia-3-inner-canadienne-phone"
+        ]
+    },
+    "tab-content.item#guia-1-inner-canadienne-phone": {
+        "children": ["image#guia-1-inner-canadienne-phone"],
+        "props": {"tabId": "guia-1-inner-canadienne-phone"}
+    },
+    "tab-content.item#guia-2-inner-canadienne-phone": {
+        "children": ["image#guia-2-inner-canadienne-phone"],
+        "props": {"tabId": "guia-2-inner-canadienne-phone"}
+    },
+    "tab-content.item#guia-3-inner-canadienne-phone": {
+        "children": ["image#guia-3-inner-canadienne-phone"],
+        "props": {"tabId": "guia-3-inner-canadienne-phone"}
+    },
+
+    "image#guia-1-inner-canadienne-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_01.jpg"
+        }
+    },
+    "image#guia-2-inner-canadienne-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_02.jpg"
+        }
+    },
+    "image#guia-3-inner-canadienne-phone": {
+        "props": {
+            "blockClass": "img-guia-tallas-inner",
+            "src": "assets/guia-tallas/canadienne/canadienne_desk_03.jpg"
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+.link, .term {
+  font-size: 0.8rem;
+  color: #545977;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.link:hover {
+  color: #00a4e8;
+}
+
+.homeIcon {
+  display: none;
+}
+.homeLink::before {
+  content: "Home";
+  font-size: 0.8rem;
+  color: #545977;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.homeLink:hover::before {
+  color:#00a4e8;
+}
+
+.container {
+    margin: 15px;
+}
+
+
+

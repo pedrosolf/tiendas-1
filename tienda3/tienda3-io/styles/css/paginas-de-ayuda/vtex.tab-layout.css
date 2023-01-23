@@ -1,0 +1,194 @@
+.container--ayuda {
+  display: flex;
+  padding: 50px 50px 80px;
+}
+
+.listContainer--ayuda {
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  margin-right: 100px;
+  padding: 55px 45px;
+  background-color: #fff;
+  border: 1px solid #d9d9d6;
+  z-index: 2;
+}
+
+.listContainer--ayuda .listItem {
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+.listItemChildren--ayuda {
+  margin: 0;
+  padding: 0;
+}
+
+.listItemChildrenActive--ayuda :global(.vtex-rich-text-0-x-link--ayuda) {
+  font-weight: 700;
+}
+
+.listContainer--ayuda .listItem :global(.vtex-button) {
+  min-height: fit-content;
+  background-color: transparent;
+  border: none;
+}
+
+.listContainer--ayuda .listItem :global(.vtex-button__label) {
+  padding: 0 !important;
+  color: #222426;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.listContainer--ayuda .listItemActive :global(.vtex-button__label) {
+  font-weight: 700;
+}
+
+.container--ayuda .contentContainer {
+  max-width: 1000px;
+}
+
+.container--ayuda .contentItem {
+  margin-top: 180px;
+}
+
+.container--ayuda .contentItem :global(.vtex-textarea__label) {
+  margin-top: 16px;
+  margin-bottom: 5px;
+  color: #222426;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container--ayuda .contentItem :global(.vtex-textarea__input) {
+  border: 1px solid #d9d9d6;
+  border-radius: 0;
+}
+
+.container--ayuda
+  .contentItem
+  :global(.vtex-store-form-0-x-formSubmitButton--cambios-y-devoluciones)
+  :global(.vtex-button),
+.container--ayuda
+  .contentItem
+  :global(.vtex-store-form-0-x-formSubmitButton--contacto)
+  :global(.vtex-button),
+.container--ayuda
+  .contentItem
+  :global(.vtex-store-form-0-x-formSubmitButton--arrepentimiento)
+  :global(.vtex-button),
+.container--ayuda
+  .contentItem
+  :global(.vtex-store-form-0-x-formSubmitButton--garantia)
+  :global(.vtex-button) {
+  margin-top: 12px;
+  border: none;
+  border-radius: 0;
+}
+
+.container--ayuda
+  .contentItem
+  :global(.vtex-store-form-0-x-formSubmitButton--cambios-y-devoluciones)
+  :global(.vtex-button__label),
+.container--ayuda
+  .contentItem
+  :global(.vtex-store-form-0-x-formSubmitButton--contacto)
+  :global(.vtex-button__label),
+.container--ayuda
+  .contentItem
+  :global(.vtex-store-form-0-x-formSubmitButton--arrepentimiento)
+  :global(.vtex-button__label),
+.container--ayuda
+  .contentItem
+  :global(.vtex-store-form-0-x-formSubmitButton--garantia)
+  :global(.vtex-button__label) {
+  padding: 15px 90px !important;
+  font-family: 'Knockout';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container--garantia .contentItem {
+  margin-top: 0;
+}
+
+.listContainer--garantia {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.listItemChildren--garantia {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.listItemChildrenActive--garantia :global(.vtex-rich-text-0-x-paragraph--garantia) {
+  padding: 5px 10px;
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 1440px) {
+  .listContainer--ayuda {
+    margin-right: 50px;
+    padding: 45px 35px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .container--ayuda {
+    display: block;
+    padding: 35px 30px 70px;
+  }
+
+  .container--ayuda .contentItem {
+    margin-top: 0;
+  }
+
+  .listItem--ayuda {
+    padding: 0;
+    margin: 0;
+  }
+
+  .listItem--ayuda :global(.vtex-button) {
+    min-height: fit-content;
+    background-color: transparent;
+    border: none;
+  }
+
+  .listItem--ayuda :global(.vtex-button__label) {
+    max-width: 8ch;
+    padding: 0 !important;
+    color: #222426;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: none;
+  }
+
+  .listItemActive--ayuda :global(.vtex-button__label) {
+    font-weight: 700;
+  }
+
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer--carousel-ayuda) {
+    bottom: -30px;
+  }
+
+  :global(.vtex-slider-layout-0-x-paginationDot--carousel-ayuda) {
+    width: 5px !important;
+    height: 5px !important;
+  }
+
+  :global(.vtex-slider-layout-0-x-paginationDot--carousel-ayuda--isActive) {
+    background-color: #222426;
+  }
+
+  .container--garantia .contentItem {
+    margin-top: 50px;
+  }
+}

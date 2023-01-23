@@ -1,0 +1,502 @@
+{
+  /* TABLA 1 */
+  "flex-layout.col#tablaHorarios1": {
+    "props": {
+      "colGap": 0,
+      "colSizing": "auto",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.row#table1Row1",
+      "flex-layout.row#table1Row2",
+      "flex-layout.row#table1Row3",
+      "flex-layout.row#table1Row4"
+    ]
+  },
+  /* row 1 */
+  "flex-layout.row#table1Row1": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#compra",
+      "rich-text#horaDespacho",
+      "rich-text#entrega"
+    ]
+  },
+  /* row 2 */
+  "flex-layout.row#table1Row2": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#horarioCompra1",
+      "rich-text#horaDespacho1",
+      "rich-text#entrega1"
+    ]
+  },
+  /* row 3 */
+  "flex-layout.row#table1Row3": {
+    "props": {
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "trow"
+    },
+    "children": [
+      "rich-text#horarioCompra2",
+      "rich-text#horaDespacho2",
+      "rich-text#entrega2"
+    ]
+  },
+  /* row 4 */
+  "flex-layout.row#table1Row4": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#horarioCompra3",
+      "rich-text#horaDespacho3",
+      "rich-text#entrega3"
+    ]
+  },
+  /* row 5 */
+  "flex-layout.row#row5": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#horarioCompra4",
+      "rich-text#horaDespacho4",
+      "rich-text#entrega4"
+    ]
+  },
+  "rich-text#compra": {
+    "props": {
+      "text": "**COMPRA**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#horarioCompra1": {
+    "props": {
+      "text": "Si compras entre las 08:00 a 10:59",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "row1-3"]
+    }
+  },
+  "rich-text#horarioCompra2": {
+    "props": {
+      "text": "Si compras entre las 11:00 a 13:59",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "td"
+    }
+  },
+  "rich-text#horarioCompra3": {
+    "props": {
+      "text": "Si compras entre las 14:00 a 16:59",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "row1-3"]
+    }
+  },
+  "rich-text#horarioCompra4": {
+    "props": {
+      "text": "Si compras entre las 17:00 a 07:59",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "td"
+    }
+  },
+  "rich-text#horaDespacho": {
+    "props": {
+      "text": "**HORARIO DE DESPACHO**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#horaDespacho1": {
+    "props": {
+      "text": "Sale a despacho a las 12:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "tdCol2", "row1-3"]
+    }
+  },
+  "rich-text#horaDespacho2": {
+    "props": {
+      "text": "Sale a despacho a las 15:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "tdCol2"]
+    }
+  },
+  "rich-text#horaDespacho3": {
+    "props": {
+      "text": "Sale a despacho a las 18:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "tdCol2", "row1-3"]
+    }
+  },
+  "rich-text#horaDespacho4": {
+    "props": {
+      "text": "Sale a despacho a las 09:00 hrs. del día hábil siguiente",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "tdCol2"]
+    }
+  },
+
+  "rich-text#entrega": {
+    "props": {
+      "text": "**ENTREGA**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#entrega1": {
+    "props": {
+      "text": "Será entregado entre las 12:00 a 16:00 hrs. (*)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "row1-3"]
+    }
+  },
+  "rich-text#entrega2": {
+    "props": {
+      "text": "Será entregado entre las 15:00 a 19:00 hrs. (*)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "td"
+    }
+  },
+  "rich-text#entrega3": {
+    "props": {
+      "text": "Será entregado entre las 18:00 a 22:00 hrs. (*)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "row1-3"]
+    }
+  },
+  "rich-text#entrega4": {
+    "props": {
+      "text": "Será entregado entre las 09:00 a 13:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "td"
+    }
+  },
+  /* fin de Columna 3 */
+
+  /* FIN DE TABLA 1 */
+
+  "rich-text#politica-despacho-content2": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "- Para las siguientes comunas de la Región Metropolitana, una vez el pedido sale a despacho, el tiempo de entrega es de máximo 4 horas.\n<br/>**COMUNAS:** Cerrillos - Pudahuel - Cerro Navia - Quilicura - El Bosque - Huechuraba - Renca - La Pintana - Puente Alto - Lo Espejo - Colina - Lo Prado - Lampa - Maipú - San Bernardo.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  /* TABLA 2 */
+  "flex-layout.col#tabla2Horarios1": {
+    "props": {
+      "colGap": 0,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#table2Row1",
+      "flex-layout.row#table2Row2",
+      "flex-layout.row#table2Row3"
+    ]
+  },
+  /* row 1 */
+  "flex-layout.row#table2Row1": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#compra2",
+      "rich-text#hora2Despacho",
+      "rich-text#hora2Despacho"
+    ]
+  },
+  /* row 2 */
+  "flex-layout.row#table2Row2": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#horario2Compra1",
+      "rich-text#hora2Despacho1",
+      "rich-text#2entrega1"
+    ]
+  },
+  /* row 3 */
+  "flex-layout.row#table2Row3": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#horario2Compra2",
+      "rich-text#hora2Despacho2",
+      "rich-text#2entrega2"
+    ]
+  },
+  "rich-text#compra2": {
+    "props": {
+      "text": "**COMPRA**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#horario2Compra1": {
+    "props": {
+      "text": "Si compras entre las 00:00 a 07:59 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "row1-3"]
+    }
+  },
+  "rich-text#horario2Compra2": {
+    "props": {
+      "text": "Si compras entre las 08:00 a 23:59 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "td"
+    }
+  },
+
+  "rich-text#hora2Despacho": {
+    "props": {
+      "text": "**HORARIO DE DESPACHO**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#hora2Despacho1": {
+    "props": {
+      "text": "Sale a despacho a las 09:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "tdCol2", "row1-3"]
+    }
+  },
+  "rich-text#hora2Despacho2": {
+    "props": {
+      "text": "Sale a despacho a las 09:00 hrs. del día hábil siguiente.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "tdCol2"]
+    }
+  },
+
+  "rich-text#2entrega": {
+    "props": {
+      "text": "**ENTREGA**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#2entrega1": {
+    "props": {
+      "text": "Será entregado entre las 09:00 a 13:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "row1-3"]
+    }
+  },
+  "rich-text#2entrega2": {
+    "props": {
+      "text": "Será entregado entre las 09:00 a 13:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "td"
+    }
+  },
+  "rich-text#aclaracionTable2": {
+    "props": {
+      "text": "(*) Todos los plazos descritos precedentemente aplican siempre y cuando las compras hayan sido realizadas en día hábil (Lunes a viernes). En caso contrario (Sábado, domingo y festivos), el horario de entrega es entre las 09:00 a 13:00 hrs. del día hábil siguiente.",
+      "blockClass": "ayudaContent"
+    }
+  },
+
+  /* FIN DE TABLA 2 */
+
+  "rich-text#politica-despacho-content3": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "**II. FUERA DE LA REGIÓN METROPOLITANA**\n - Despachos realizados fuera de la Región Metropolitana, el tiempo de entrega es de máximo 48 horas, contados desde que el pedido sale a despacho.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  /* TABLA 3 */
+  "flex-layout.col#tabla3Horarios1": {
+    "props": {
+      "colGap": 0,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.row#Table3row1",
+      "flex-layout.row#Table3row2",
+      "flex-layout.row#Table3row3"
+    ]
+  },
+  /* row 1 */
+  "flex-layout.row#Table3row1": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#compra3",
+      "rich-text#hora3Despacho",
+      "rich-text#3entrega"
+    ]
+  },
+  /* row 2 */
+  "flex-layout.row#Table3row2": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#horario3Compra1",
+      "rich-text#hora3Despacho1",
+      "rich-text#3entrega1"
+    ]
+  },
+  /* row 3 */
+  "flex-layout.row#Table3row3": {
+    "props": {
+      "blockClass": "trow",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "rich-text#horario3Compra2",
+      "rich-text#hora3Despacho2",
+      "rich-text#3entrega2"
+    ]
+  },
+  "rich-text#compra3": {
+    "props": {
+      "text": "**COMPRA**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#horario3Compra1": {
+    "props": {
+      "text": "Si compras de lunes a jueves antes de las 16:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "row1-3"]
+    }
+  },
+  "rich-text#horario3Compra2": {
+    "props": {
+      "text": "Si compras jueves después de las 16:00 hrs., viernes, sábado, domingo o festivos",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "td"
+    }
+  },
+
+  "rich-text#hora3Despacho": {
+    "props": {
+      "text": "**HORARIO DE DESPACHO**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#hora3Despacho1": {
+    "props": {
+      "text": "Sale a despacho a las 08:00 hrs. del día hábil siguiente",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "tdCol2", "row1-3"]
+    }
+  },
+  "rich-text#hora3Despacho2": {
+    "props": {
+      "text": "Sale a despacho a las 09:00 hrs. del día hábil subsiguiente",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "tdCol2"]
+    }
+  },
+  /* fin de Columna 2 */
+
+  "rich-text#3entrega": {
+    "props": {
+      "text": "**ENTREGA**",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["thead", "td"]
+    }
+  },
+  "rich-text#3entrega1": {
+    "props": {
+      "text": "Será entregado en un tiempo máximo 48 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": ["td", "row1-3"]
+    }
+  },
+  "rich-text#3entrega2": {
+    "props": {
+      "text": "Será entregado en un tiempo máximo 48 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "td"
+    }
+  },
+  "rich-text#aclaracionTable3": {
+    "props": {
+      "text": "(*) Todos los plazos descritos precedentemente aplican siempre y cuando las compras hayan sido realizadas en día hábil (Lunes a viernes). En caso contrario (Sábado, domingo y festivos), el horario de entrega es entre las 09:00 a 13:00 hrs. del día hábil siguiente.",
+      "blockClass": "ayudaContent"
+    }
+  },
+  /* fin de Columna 3 */
+
+  "rich-text#politica-despacho-content4": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "**Condiciones Generales de Política de Despacho:**\n - Comunas dentro de la Región Metropulitana que no se individualizan en el punto “I. Región Metropolitana” precedente, se rigen por la política de despacho establecida en el punto “II. Fuera de la Región Metropolitana”.\n - Las compras de productos refrigerados se despacharán bajo las mismas condiciones.\nAnte dudas que tengas con los tiempos de despacho, puedes comunicarte con nuestro Call Center.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+  /* FIN DE TABLA 3 */
+}

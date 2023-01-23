@@ -1,0 +1,50 @@
+{
+  "vtex.category-menu@2.x:category-menu#store-menu-hombre": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "blockClass": "categories",
+      "experimentalOptimizeRendering": true,
+      "departments": [
+        { "id": 8 }
+      ]
+    }
+  },
+  "vtex.category-menu@2.x:category-menu#store-menu-mujer": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "blockClass": "categories",
+      "experimentalOptimizeRendering": true,
+      "departments": [
+        { "id": 37 }
+      ]
+    }
+  },
+  "vtex.category-menu@2.x:category-menu#store-menu-categorias": {
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "blockClass": "menu-categorias",
+      "experimentalOptimizeRendering": true,
+      "departments": [
+        { "id": 51 }
+      ]
+    }
+  },
+
+  "vtex.category-menu@2.x:category-menu#store-menu-mobile-hombre": {
+    "props": {
+      "mobileMode": true,
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "blockClass": "categorias",
+      "experimentalOptimizeRendering": true
+    }
+  }
+
+}

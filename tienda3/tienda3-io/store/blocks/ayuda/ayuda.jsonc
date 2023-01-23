@@ -1,0 +1,3207 @@
+{
+  "store.custom#ayuda": {
+    "blocks": ["tab-layout#ayuda"]
+  },
+  "tab-layout#ayuda": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "guia-de-compras"
+    }
+  },
+  "responsive-layout.desktop#ayuda": {
+    "children": ["tab-list#ayuda"]
+  },
+  "responsive-layout.tablet#ayuda": {
+    "children": ["flex-layout.row#tab-list-ayuda-mobile"]
+  },
+  "responsive-layout.phone#ayuda": {
+    "children": ["flex-layout.row#tab-list-ayuda-mobile"]
+  },
+  "tab-list#ayuda": {
+    "children": [
+      "rich-text#ayuda-titulo",
+      "tab-list.item.children#guia-de-compras",
+      "tab-list.item.children#quienes-somos",
+      "tab-list.item.children#preguntas-frecuentes",
+      "tab-list.item.children#terminos-y-condiciones",
+      "tab-list.item.children#medios-de-pago",
+      "tab-list.item.children#politicas-de-envios",
+      "tab-list.item.children#politica-de-privacidad",
+      "tab-list.item.children#cambios-y-devoluciones",
+      "tab-list.item.children#contacto",
+      "tab-list.item.children#arrepentimiento-de-compra",
+      "tab-list.item.children#garantia",
+      "tab-list.item.children#puntos-de-venta"
+    ],
+    "props": {
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-titulo": {
+    "props": {
+      "text": "AYUDA",
+      "blockClass": "ayuda-titulo"
+    }
+  },
+  "tab-list.item.children#guia-de-compras": {
+    "children": ["rich-text#ayuda-guia-de-compras"],
+    "props": {
+      "tabId": "guia-de-compras",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-guia-de-compras": {
+    "props": {
+      "text": "[Guía de compras](/ayuda/guia-de-compras)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#quienes-somos": {
+    "children": ["rich-text#ayuda-quienes-somos"],
+    "props": {
+      "tabId": "quienes-somos",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-quienes-somos": {
+    "props": {
+      "text": "[¿Quiénes somos?](/ayuda/quienes-somos)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#preguntas-frecuentes": {
+    "children": ["rich-text#ayuda-preguntas-frecuentes"],
+    "props": {
+      "tabId": "preguntas-frecuentes",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-preguntas-frecuentes": {
+    "props": {
+      "text": "[Preguntas frecuentes](/ayuda/preguntas-frecuentes)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#terminos-y-condiciones": {
+    "children": ["rich-text#ayuda-terminos-y-condiciones"],
+    "props": {
+      "tabId": "terminos-y-condiciones",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-terminos-y-condiciones": {
+    "props": {
+      "text": "[Términos y condiciones](/ayuda/terminos-y-condiciones)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#medios-de-pago": {
+    "children": ["rich-text#ayuda-medios-de-pago"],
+    "props": {
+      "tabId": "medios-de-pago",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-medios-de-pago": {
+    "props": {
+      "text": "[Medios de pago](/ayuda/medios-de-pago)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#politicas-de-envios": {
+    "children": ["rich-text#ayuda-politicas-de-envios"],
+    "props": {
+      "tabId": "politicas-de-envios",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-politicas-de-envios": {
+    "props": {
+      "text": "[Políticas de envíos](/ayuda/politicas-de-envios)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#politica-de-privacidad": {
+    "children": ["rich-text#ayuda-politica-de-privacidad"],
+    "props": {
+      "tabId": "politica-de-privacidad",
+      "blockClass": "ayuda"
+    }
+  },
+
+  "rich-text#ayuda-politica-de-privacidad": {
+    "props": {
+      "text": "[Política de privacidad](/ayuda/politica-de-privacidad)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#cambios-y-devoluciones": {
+    "children": ["rich-text#ayuda-cambios-y-devoluciones"],
+    "props": {
+      "tabId": "cambios-y-devoluciones",
+      "blockClass": "ayuda"
+    }
+  },
+
+  "rich-text#ayuda-cambios-y-devoluciones": {
+    "props": {
+      "text": "[Cambios y devoluciones](/ayuda/cambios-y-devoluciones)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#puntos-de-venta": {
+    "children": ["rich-text#ayuda-puntos-de-venta"],
+    "props": {
+      "tabId": "puntos-de-venta",
+      "blockClass": "ayuda"
+    }
+  },
+
+  "rich-text#ayuda-puntos-de-venta": {
+    "props": {
+      "text": "[Puntos de venta](/ayuda/puntos-de-venta)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#contacto": {
+    "children": ["rich-text#ayuda-contacto"],
+    "props": {
+      "tabId": "contacto",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-contacto": {
+    "props": {
+      "text": "[Contacto](/ayuda/contacto)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#arrepentimiento-de-compra": {
+    "children": ["rich-text#ayuda-arrepentimiento-de-compra"],
+    "props": {
+      "tabId": "arrepentimiento-de-compra",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-arrepentimiento-de-compra": {
+    "props": {
+      "text": "[Arrepentimiento de compra](/ayuda/arrepentimiento-de-compra)",
+      "blockClass": "ayuda"
+    }
+  },
+  "tab-list.item.children#garantia": {
+    "children": ["rich-text#ayuda-garantia"],
+    "props": {
+      "tabId": "garantia",
+      "blockClass": "ayuda"
+    }
+  },
+  "rich-text#ayuda-garantia": {
+    "props": {
+      "text": "[Garantia](/ayuda/garantia)",
+      "blockClass": "ayuda"
+    }
+  },
+  "flex-layout.row#tab-list-ayuda-mobile": {
+    "children": ["flex-layout.col#tab-list-ayuda-mobile"],
+    "props": {
+      "blockClass": "tab-list-ayuda"
+    }
+  },
+  "flex-layout.col#tab-list-ayuda-mobile": {
+    "children": ["rich-text#ayuda-titulo", "slider-layout#slider-ayuda"],
+    "props": {}
+  },
+  "slider-layout#slider-ayuda": {
+    "children": [
+      "tab-list.item.children#guia-de-compras",
+      "tab-list.item.children#quienes-somos",
+      "tab-list.item.children#preguntas-frecuentes",
+      "tab-list.item.children#terminos-y-condiciones",
+      "tab-list.item.children#medios-de-pago",
+      "tab-list.item.children#politicas-de-envios",
+      "tab-list.item.children#politica-de-privacidad",
+      "tab-list.item.children#cambios-y-devoluciones",
+      "tab-list.item.children#contacto",
+      "tab-list.item.children#arrepentimiento-de-compra",
+      "tab-list.item.children#garantia"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "tablet": 3,
+        "phone": 3
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": "carousel-ayuda"
+    }
+  },
+  "tab-content#ayuda": {
+    "children": [
+      "tab-content.item#guia-de-compras",
+      "tab-content.item#quienes-somos",
+      "tab-content.item#preguntas-frecuentes",
+      "tab-content.item#terminos-y-condiciones",
+      "tab-content.item#medios-de-pago",
+      "tab-content.item#politicas-de-envios",
+      "tab-content.item#politica-de-privacidad",
+      "tab-content.item#cambios-y-devoluciones",
+      "tab-content.item#contacto",
+      "tab-content.item#arrepentimiento-de-compra",
+      "tab-content.item#garantia"
+    ]
+  },
+
+  /* GUIA DE COMPRAS */
+  "tab-content.item#guia-de-compras": {
+    "children": ["rich-text#guia-de-compras-titulo", "flex-layout.row#guia-de-compras"],
+    "props": {
+      "tabId": "guia-de-compras"
+    }
+  },
+  "rich-text#guia-de-compras-titulo": {
+    "props": {
+      "text": "## GUÍA DE COMPRAS",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "flex-layout.row#guia-de-compras": {
+    "children": [
+      "flex-layout.col#guia-de-compras-1",
+      "flex-layout.col#guia-de-compras-2",
+      "flex-layout.col#guia-de-compras-3"
+    ],
+    "props": {
+      "blockClass": "guia-de-compras"
+    }
+  },
+  "flex-layout.col#guia-de-compras-1": {
+    "children": [
+      "image#guia-de-compras-1",
+      "rich-text#guia-de-compras-1-titulo",
+      "rich-text#guia-de-compras-1-texto"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "guia-de-compras"
+    }
+  },
+  "image#guia-de-compras-1": {
+    "props": {
+      "src": "assets/ayuda/celu-1.png",
+      "blockClass": "guia-de-compras"
+    }
+  },
+  "rich-text#guia-de-compras-1-titulo": {
+    "props": {
+      "text": "Elegí un producto",
+      "blockClass": ["guia-de-compras-titulo", "1"]
+    }
+  },
+  "rich-text#guia-de-compras-1-texto": {
+    "props": {
+      "text": "**¿Te gustó alguno de nuestros  productos?**\nPara saber más del producto ingresa al mismo mirá los detalles o agregalo directamente a tu carrito.",
+      "blockClass": "guia-de-compras-texto"
+    }
+  },
+  "flex-layout.col#guia-de-compras-2": {
+    "children": [
+      "image#guia-de-compras-2",
+      "rich-text#guia-de-compras-2-titulo",
+      "rich-text#guia-de-compras-2-texto"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "guia-de-compras"
+    }
+  },
+  "image#guia-de-compras-2": {
+    "props": {
+      "src": "assets/ayuda/celu-2.png",
+      "blockClass": "guia-de-compras"
+    }
+  },
+  "rich-text#guia-de-compras-2-titulo": {
+    "props": {
+      "text": "Agregalo al carrito",
+      "blockClass": ["guia-de-compras-titulo", "2"]
+    }
+  },
+  "rich-text#guia-de-compras-2-texto": {
+    "props": {
+      "text": "**¿Ya elegiste un producto?**\nSeleccioná el color y la cantidad que te gustaría comprar, y luego presioná el botón comprar.",
+      "blockClass": "guia-de-compras-texto"
+    }
+  },
+  "flex-layout.col#guia-de-compras-3": {
+    "children": [
+      "image#guia-de-compras-3",
+      "rich-text#guia-de-compras-3-titulo",
+      "rich-text#guia-de-compras-3-texto"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "guia-de-compras"
+    }
+  },
+  "image#guia-de-compras-3": {
+    "props": {
+      "src": "assets/ayuda/celu-3.png",
+      "blockClass": "guia-de-compras"
+    }
+  },
+  "rich-text#guia-de-compras-3-titulo": {
+    "props": {
+      "text": "Ingresá tus datos y finalizá la compra",
+      "blockClass": ["guia-de-compras-titulo", "3"]
+    }
+  },
+  "rich-text#guia-de-compras-3-texto": {
+    "props": {
+      "text": "Finalmente queda concluir la compra, completá los datos de envío y forma de pago. ¡Listo, en breve recibirás tu pedido!",
+      "blockClass": "guia-de-compras-texto"
+    }
+  },
+
+  /* QUIENES SOMOS */
+  "tab-content.item#quienes-somos": {
+    "children": ["rich-text#quienes-somos-titulo", "rich-text#quienes-somos-texto"],
+    "props": {
+      "tabId": "quienes-somos"
+    }
+  },
+  "rich-text#quienes-somos-titulo": {
+    "props": {
+      "text": "## QUIÉNES SOMOS",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "rich-text#quienes-somos-texto": {
+    "props": {
+      "text": "**RECONOCIDO POR GENERACIONES**\n\nLa marca Stanley tiene una historia de más de 100 años. Nacida del creador William Stanley Jr., quien cambió para siempre la forma en que se consumían las bebidas calientes. En 1913 fusionó el aislamiento al vacío y la fuerza del acero en una botella portátil, inventando el termo de acero inoxidable que hoy conocemos y valoramos.\n\nDurante este siglo, el termo evolucionó de concepto a ícono y se ha convertido en una parte esencial de los días de trabajo, los viajes de ruta y las aventuras al aire libre.\n\nHemos sido parte de innumerables aventuras y aún más momentos compartidos. Impulsamos descansos para tomar café diariamente y cientos de comidas en nuestro  equipo de alimentos y bebidas. Con cada año que pasa, seguimos esforzándonos para brindar soluciones atemporales, pero modernas, para la aventura al aire libre de hoy.\n\nNuestra misión es aumentar el tiempo que pases al aire libre, ofreciendo un equipo con el que puedas contar desde el amanecer hasta el atardecer, desde el café para empezar el día hasta que culmine la noche.\n\n**NUESTRO COMPROMISO CON LA SUSTENTABILIDAD**\n\nComo marca de PMI, todos los productos de Stanley se producen con la mayor integridad. Desde los materiales que utilizamos hasta la forma en que fabricamos nuestros productos, trabajamos arduamente para hacer lo correcto por nuestra gente, nuestro planeta, nuestra comunidad y sobre todo, por vos.\n\nTodas nuestras oficinas (Seattle, Shanghái, Ámsterdam y Manila) cumplen con la Guía de Green Office de PMI para ayudar a reducir nuestra huella corporativa, incluyendo el reciclaje, el compostaje y la iluminación de bajo consumo.\n\nLa Cámara de Comercio Estadounidense le otorgó a PMI el galardón de \"Responsabilidad Social Empresarial\" de Shanghai, basado en el gobierno corporativo, el esfuerzo ambiental, el impacto social y las prácticas en el lugar de trabajo. (2006, 2008)\n\nPMI creó eCycle® (nuestra mezcla patentada de plásticos reciclados que contiene un promedio de 25% de contenido postconsumo) en 2006, convirtiéndose en la primera compañía en diseñar y producir envases de comida y bebida reutilizables, hechos con productos reciclados.\n\n**LIDERANDO LA INDUSTRIA POR MÁS DE 100 AÑOS**\n\nDesde 1913, la marca Stanley ha liderado la industria en diseño, innovación y tecnología de acero con aislamiento al vacío. No solo lo lideramos, lo inventamos. Hemos estado creando soluciones para ayudar a mantener tus bebidas calientes y frías durante más de 100 años. Hemos diseñado la mejor opción para satisfacer sus necesidades y superar sus más exigentes demandas. Ya sea preparando la primera taza de café para la mañana, cebando mates en el trabajo o disfrutando una cerveza con amigos, tenemos los productos para ayudar a disfrutarlo al máximo.",
+      "blockClass": "quienes-somos-texto"
+    }
+  },
+
+  /* PREGUNTAS FRECUENTES */
+  "tab-content.item#preguntas-frecuentes": {
+    "children": ["rich-text#preguntas-frecuentes-titulo", "flex-layout.row#preguntas-frecuentes"],
+    "props": {
+      "tabId": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-titulo": {
+    "props": {
+      "text": "## PREGUNTAS FRECUENTES",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "flex-layout.row#preguntas-frecuentes": {
+    "children": ["flex-layout.col#preguntas-frecuentes"],
+    "props": {}
+  },
+  "flex-layout.col#preguntas-frecuentes": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1",
+      "disclosure-layout#preguntas-frecuentes-seccion-1-1",
+      "disclosure-layout#preguntas-frecuentes-seccion-1-2",
+      "disclosure-layout#preguntas-frecuentes-seccion-1-3",
+      "disclosure-layout#preguntas-frecuentes-seccion-1-4",
+      "disclosure-layout#preguntas-frecuentes-seccion-1-5",
+      "disclosure-layout#preguntas-frecuentes-seccion-1-6",
+      "disclosure-layout#preguntas-frecuentes-seccion-1-7",
+      "disclosure-layout#preguntas-frecuentes-seccion-1-8",
+      "rich-text#preguntas-frecuentes-seccion-2",
+      "disclosure-layout#preguntas-frecuentes-seccion-2-1",
+      "disclosure-layout#preguntas-frecuentes-seccion-2-2",
+      "disclosure-layout#preguntas-frecuentes-seccion-2-3",
+      "rich-text#preguntas-frecuentes-seccion-3",
+      "disclosure-layout#preguntas-frecuentes-seccion-3-1",
+      "disclosure-layout#preguntas-frecuentes-seccion-3-2",
+      "disclosure-layout#preguntas-frecuentes-seccion-3-3",
+      "disclosure-layout#preguntas-frecuentes-seccion-3-4",
+      "disclosure-layout#preguntas-frecuentes-seccion-3-5",
+      "disclosure-layout#preguntas-frecuentes-seccion-3-6",
+      "disclosure-layout#preguntas-frecuentes-seccion-3-7",
+      "disclosure-layout#preguntas-frecuentes-seccion-3-8",
+      "rich-text#preguntas-frecuentes-seccion-4",
+      "disclosure-layout#preguntas-frecuentes-seccion-4-1",
+      "disclosure-layout#preguntas-frecuentes-seccion-4-2",
+      "disclosure-layout#preguntas-frecuentes-seccion-4-3",
+      "rich-text#preguntas-frecuentes-seccion-5",
+      "disclosure-layout#preguntas-frecuentes-seccion-5-1",
+      "disclosure-layout#preguntas-frecuentes-seccion-5-2",
+      "rich-text#preguntas-frecuentes-seccion-6",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-1",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-2",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-3",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-4",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-5",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-6",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-7",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-8",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-9",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-10",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-11",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-12",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-13",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-14",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-15",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-16",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-17",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-18",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-19",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-20",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-21",
+      "disclosure-layout#preguntas-frecuentes-seccion-6-22"
+    ],
+    "props": {
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  /* SECCION 1 */
+  "rich-text#preguntas-frecuentes-seccion-1": {
+    "props": {
+      "text": "Comprar en  Stanley-PMI",
+      "blockClass": "preguntas-frecuentes-seccion"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-1-1": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-1-1",
+      "disclosure-content#preguntas-frecuentes-seccion-1-1"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-1-1": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1-1-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-1-pregunta": {
+    "props": {
+      "text": "#### Pasos para comprar online en Stanley-pmi",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-1-1": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-1-1-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-1-respuesta": {
+    "props": {
+      "text": "1. Ingresá en www.stanley-pmi.com.ar\n\n2. Te recomendamos que crees un usuario, podrás elegir/crear tu cuenta a través de Google , Facebook o mediante tu correo electrónico de preferencia. En caso de seleccionar la última opción, podés acceder creando una contraseña específica o recibiendo un código de ingreso en tu cuenta de correo.\n\n3. Elegí tus productos ideales a través de nuestro buscador o a partir de nuestras categorías disponibles. Si querés sumar más unidades de un mismo ítem, simplemente hacé clic en el botón más (+) o modificá el número que quieras recibir.\n\n4. Hacé clic en “Agregar al carrito” para sumar el producto a tu carrito de compras.\n\n5. Repetí los pasos de los puntos 3 y 4 si deseás añadir otros productos a tu carrito.\n\n6. Verificá en tu bolsa de compras que los productos sumados sean correctos. Para avanzar, presioná “Finalizar Compra”. En el caso que haya algo que quieras modificar, podrás editar las cantidades o removerlas\n\n7. Completá el formulario con información de envío, método de entrega y modo de pago. En este último paso deberás seleccionar si querés pagar a través de tu cuenta de Mercado Pago o con algún otro medio: tarjeta de crédito, débito, boleta de Rapipago/Pagofácil.\n\n8. Te llegará un mail con la confirmación de tu compra, seguido de un segundo mail con los datos del envío y ¡Listo! ya compraste en Stanley.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-1-2": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-1-2",
+      "disclosure-content#preguntas-frecuentes-seccion-1-2"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-1-2": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1-2-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-2-pregunta": {
+    "props": {
+      "text": "#### Ya sé qué producto quiero comprar: ¿Cómo lo busco?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-1-2": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-1-2-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-2-respuesta": {
+    "props": {
+      "text": "Encontralo a través de nuestro buscador escribiendo la palabra clave o eligiendo la línea a la cual pertenece. También podrás utilizar nuestro menú y buscar de acuerdo a la categoría del producto aplicando los filtros.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-1-3": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-1-3",
+      "disclosure-content#preguntas-frecuentes-seccion-1-3"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-1-3": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1-3-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-3-pregunta": {
+    "props": {
+      "text": "#### ¿Cómo elimino un producto de mi carrito?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-1-3": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-1-3-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-3-respuesta": {
+    "props": {
+      "text": "Si querés eliminar un producto de tu carrito, deberás desplegar el carrito haciendo clic en la bolsa ubicada en el margen superior derecho y luego presionar el ícono de “tacho de basura” que aparece justo a la derecha del producto.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-1-4": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-1-4",
+      "disclosure-content#preguntas-frecuentes-seccion-1-4"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-1-4": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1-4-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-4-pregunta": {
+    "props": {
+      "text": "#### ¿Es seguro comprar en stanley-pmi?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-1-4": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-1-4-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-4-respuesta": {
+    "props": {
+      "text": "¡Por supuesto! Nos preocupamos mucho por la seguridad de nuestros clientes. Protegemos toda la información ingresada por un sistema SSL (Secure Sockets Layer) que garantiza una transacción 100% segura. Este sistema encripta los datos suministrados y evita su uso desautorizado.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-1-5": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-1-5",
+      "disclosure-content#preguntas-frecuentes-seccion-1-5"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-1-5": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1-5-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-5-pregunta": {
+    "props": {
+      "text": "#### ¿Existe un monto mínimo de compra?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-1-5": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-1-5-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-5-respuesta": {
+    "props": {
+      "text": "No tenemos un requerimiento de monto mínimo, pero sí es necesario contar, al menos, con un producto seleccionado en tu carrito.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-1-6": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-1-6",
+      "disclosure-content#preguntas-frecuentes-seccion-1-6"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-1-6": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1-6-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-6-pregunta": {
+    "props": {
+      "text": "#### ¿Cómo sé que mi compra fue aceptada?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-1-6": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-1-6-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-6-respuesta": {
+    "props": {
+      "text": "Una vez concretada y aprobada la compra recibirás un mail con la confirmación del pedido.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-1-7": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-1-7",
+      "disclosure-content#preguntas-frecuentes-seccion-1-7"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-1-7": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1-7-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-7-pregunta": {
+    "props": {
+      "text": "#### ¿Necesito registrarme para realizar un pedido?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-1-7": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-1-7-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-7-respuesta": {
+    "props": {
+      "text": "No es necesario que te registres para realizar tu compra. De todas formas, te recomendamos hacerlo para que puedas tener un buen seguimiento de tus transacciones y recibir las mejores ofertas y promociones.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-1-8": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-1-8",
+      "disclosure-content#preguntas-frecuentes-seccion-1-8"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-1-8": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-1-8-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-8-pregunta": {
+    "props": {
+      "text": "#### Si me interesa un producto que no tiene stock ¿Qué hago?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-1-8": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-1-8-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-1-8-respuesta": {
+    "props": {
+      "text": "En el producto tendrás la opción de solicitar que te avisemos cuando se reponga el stock. El aviso de ingreso de stock lo recibirás al mismo mail que ingresaste.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+
+  /* SECCION 2 */
+  "rich-text#preguntas-frecuentes-seccion-2": {
+    "props": {
+      "text": "Precios y métodos de pago en Stanley-PMI\n**Los precios dentro del sitio están especificados en pesos argentinos ($), incluyen IVA y están sujetos a modificación sin previo aviso. Las promociones no son acumulativas con otras promociones vigentes.**",
+      "blockClass": "preguntas-frecuentes-seccion"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-2-1": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-2-1",
+      "disclosure-content#preguntas-frecuentes-seccion-2-1"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-2-1": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-2-1-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-2-1-pregunta": {
+    "props": {
+      "text": "#### ¿Cómo puedo pagar en stanley-pmi?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-2-1": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-2-1-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-2-1-respuesta": {
+    "props": {
+      "text": "Actualmente operamos con Mercado Pago, reunimos los mejores medios de pago para que tengas a mano muchas alternativas para pagar tus compras:\n\n- Tarjeta de crédito: Ingresá los datos de tu tarjeta de crédito al pagar y listo. La próxima vez que quieras usar esta tarjeta, solo te pediremos el código de seguridad\n\n- Tarjeta de débito: Ingresá los datos completos una sola vez y en futuras compras solo te pediremos el código de seguridad\n\n- Efectivo: Podrás abonar en efectivo a través de PagoFacil o RapiPago. Al momento de pagar te decimos cómo hacerlo y dónde ir ¡vas a ver que es muy simple!\n\n- Dinero en cuenta Mercado Pago: Podes pagar con tu dinero en cuenta que tengas en Mercado Pago.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-2-2": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-2-2",
+      "disclosure-content#preguntas-frecuentes-seccion-2-2"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-2-2": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-2-2-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-2-2-pregunta": {
+    "props": {
+      "text": "#### ¿Cómo y dónde encuentro ofertas online?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-2-2": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-2-2-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-2-2-respuesta": {
+    "props": {
+      "text": "Podrás encontrar nuestras ofertas online dentro del sitio o entérate mediante nuestras Newsletters.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-2-3": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-2-3",
+      "disclosure-content#preguntas-frecuentes-seccion-2-3"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-2-3": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-2-3-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-2-3-pregunta": {
+    "props": {
+      "text": "#### ¿Puedo pagar en cuotas?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-2-3": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-2-3-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-2-3-respuesta": {
+    "props": {
+      "text": "Sí. La plataforma de pago te permite abonar en cuotas. Para acceder a este beneficio deberás seleccionar el medio de pago y modalidad correspondiente.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+
+  /* SECCION 3 */
+  "rich-text#preguntas-frecuentes-seccion-3": {
+    "props": {
+      "text": "Información sobre mi pedido en Stanley-PMI",
+      "blockClass": "preguntas-frecuentes-seccion"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-3-1": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-3-1",
+      "disclosure-content#preguntas-frecuentes-seccion-3-1"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-3-1": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-3-1-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-1-pregunta": {
+    "props": {
+      "text": "#### ¿CUÁNTO DEMORA EN LLEGAR MI PRODUCTO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-3-1": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-3-1-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-1-respuesta": {
+    "props": {
+      "text": "El tiempo estimado de entrega varía según el método y localidad de envío seleccionados. Las entregas se realizan de lunes a viernes, entre las 9:00 y las 20:00 horas, con excepción de los feriados. Dentro de cada publicación tendrás a disposición el calculador de envío para saber tiempos y costos.\n\nActualmente contamos con envíos a domicilio o retiro en puntos de terceros (Andreani, OCA, Urbano).\n\nPara que tu compra sea procesada, el pago debe estar aprobado. Es importante que estés atento a los datos que el correo puede solicitarse, ya que en algunas oportunidades este puede pedirte alguna verificación de identidad. Esto es por tu propia seguridad. \n\nAl concretar la operación, deberás revisar los productos al momento de recibirlos en el domicilio que selecciones. La firma del remito correspondiente implicará la aceptación de la mercadería adquirida.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-3-2": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-3-2",
+      "disclosure-content#preguntas-frecuentes-seccion-3-2"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-3-2": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-3-2-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-2-pregunta": {
+    "props": {
+      "text": "#### ¿CÓMO SÉ QUE MI COMPRA FUE DESPACHADA?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-3-2": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-3-2-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-2-respuesta": {
+    "props": {
+      "text": "Una vez que el correo tenga tu compra, te enviaremos un correo electrónico con un enlace para que puedas rastrear tu compra.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-3-3": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-3-3",
+      "disclosure-content#preguntas-frecuentes-seccion-3-3"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-3-3": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-3-3-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-3-pregunta": {
+    "props": {
+      "text": "#### ¿CÓMO ASEGURAR LA ENTREGA?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-3-3": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-3-3-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-3-respuesta": {
+    "props": {
+      "text": "Te recomendamos que elijas un domicilio donde sea más seguro encontrarte o que siempre haya alguien para recibirlo. Podés elegir tu trabajo, la casa de algún familiar o de alguien de confianza. Tené en cuenta que no entregamos a menores de 18 años de edad. Asegúrate que tu domicilio esté completo, no olvides aclarar el número de la calle, piso, departamento, oficina, torre o monoblock si fuera necesario. Mientras más datos nos dejes, más fácil será para el correo encontrar tu casa. Dejanos también tu celular o el teléfono de alguien que esté al tanto de tu compra, para que podamos contactarnos fácilmente si fuera necesario re-coordinar la entrega.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-3-4": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-3-4",
+      "disclosure-content#preguntas-frecuentes-seccion-3-4"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-3-4": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-3-4-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-4-pregunta": {
+    "props": {
+      "text": "#### ¿QUIEN REALIZA LA ENTREGA?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-3-4": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-3-4-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-4-respuesta": {
+    "props": {
+      "text": "Todas nuestras entregas se realizan a través de correo privado en todo el país.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-3-5": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-3-5",
+      "disclosure-content#preguntas-frecuentes-seccion-3-5"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-3-5": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-3-5-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-5-pregunta": {
+    "props": {
+      "text": "#### ¿PUEDO ENVIAR A ALGUIEN A RETIRAR MI PEDIDO DE STANLEY POR LA SUCURSAL DEL CORREO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-3-5": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-3-5-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-5-respuesta": {
+    "props": {
+      "text": "Lamentablemente, no. El pedido deberá ser retirado en la sucursal por el titular de la compra y deberá presentarse con DNI y número de retiro del pedido.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-3-6": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-3-6",
+      "disclosure-content#preguntas-frecuentes-seccion-3-6"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-3-6": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-3-6-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-6-pregunta": {
+    "props": {
+      "text": "#### ¿CUÁLES SON LOS COSTOS DE ENVÍO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-3-6": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-3-6-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-6-respuesta": {
+    "props": {
+      "text": "Estos varían según el lugar y forma de entrega. Para ello contamos con un botón para calcular el costo de envío una vez dentro del detalle del producto que quieras adquirir.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-3-7": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-3-7",
+      "disclosure-content#preguntas-frecuentes-seccion-3-7"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-3-7": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-3-7-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-7-pregunta": {
+    "props": {
+      "text": "#### ¿CUÁNTO TIEMPO TARDA EN LLEGAR MI PEDIDO DE STANLEY?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-3-7": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-3-7-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-7-respuesta": {
+    "props": {
+      "text": "Estos varían según el lugar y forma de entrega. Para ello contamos con un botón para calcular el tiempo de envío una vez dentro del detalle del producto que quieras adquirir.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-3-8": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-3-8",
+      "disclosure-content#preguntas-frecuentes-seccion-3-8"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-3-8": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-3-8-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-8-pregunta": {
+    "props": {
+      "text": "#### ¿ES NORMAL QUE MI PEDIDO DE STANLEY TARDE MÁS EN LLEGAR?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-3-8": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-3-8-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-3-8-respuesta": {
+    "props": {
+      "text": "Solo en casos excepcionales. Los tiempos de entrega pueden variar en fechas exclusivamente comerciales como: Hot Sale, Día del Padre, Día de la Madre, CyberMonday, Navidad. En dichas fechas estos plazos se pueden ver extendidos. No hacemos envíos a Tierra del Fuego.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+
+  /* SECCION 4 */
+  "rich-text#preguntas-frecuentes-seccion-4": {
+    "props": {
+      "text": "Cambios y devoluciones en Stanley-PMI",
+      "blockClass": "preguntas-frecuentes-seccion"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-4-1": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-4-1",
+      "disclosure-content#preguntas-frecuentes-seccion-4-1"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-4-1": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-4-1-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-4-1-pregunta": {
+    "props": {
+      "text": "#### ¿Cuál es el plazo para solicitar una devolución?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-4-1": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-4-1-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-4-1-respuesta": {
+    "props": {
+      "text": "El plazo máximo para hacer esta solicitud es de 30 días a partir de la recepción del pedido.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-4-2": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-4-2",
+      "disclosure-content#preguntas-frecuentes-seccion-4-2"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-4-2": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-4-2-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-4-2-pregunta": {
+    "props": {
+      "text": "#### ¿Cuál es el plazo para solicitar un cambio?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-4-2": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-4-2-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-4-2-respuesta": {
+    "props": {
+      "text": "El plazo máximo para hacer esta solicitud es de 30 días a partir de la recepción del pedido.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-4-3": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-4-3",
+      "disclosure-content#preguntas-frecuentes-seccion-4-3"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-4-3": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-4-3-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-4-3-pregunta": {
+    "props": {
+      "text": "#### ¿Cómo y dónde solicito el cambio o devolución?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-4-3": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-4-3-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-4-3-respuesta": {
+    "props": {
+      "text": "El cambio y/o devolución se solicita a nuestro equipo de atención al cliente a través del mail: sac@stanley-pmi.com.ar o por Whatsapp 1139178980  En este canal te comentarán los pasos a seguir.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  /* SECCION 5 */
+  "rich-text#preguntas-frecuentes-seccion-5": {
+    "props": {
+      "text": "Información sobre facturación en Stanley-PMI",
+      "blockClass": "preguntas-frecuentes-seccion"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-5-1": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-5-1",
+      "disclosure-content#preguntas-frecuentes-seccion-5-1"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-5-1": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-5-1-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-5-1-pregunta": {
+    "props": {
+      "text": "#### ¿Qué tipo de factura se entrega con las compras On-Line?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-5-1": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-5-1-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-5-1-respuesta": {
+    "props": {
+      "text": "En nuestra Tienda Online sólo emitimos factura “B” a Consumidor Final. ",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-5-2": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-5-2",
+      "disclosure-content#preguntas-frecuentes-seccion-5-2"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-5-2": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-5-2-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-5-2-pregunta": {
+    "props": {
+      "text": "#### ¿Cómo pido una Factura A en Stanley-pmi?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-5-2": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-5-2-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-5-2-respuesta": {
+    "props": {
+      "text": "Si necesitás una Factura A, te pedimos que por favor te contactes dentro de las primeras 24 hs con nuestro equipo de atención al cliente al mail: sac@stanley-pmi.com.ar o por WhatsApp 1139178980 , indicándonos los siguientes datos:\n\nPedido Nº:\n\nRazón Social:\n\nCUIT:\n\nDirección fiscal:\n\nTeléfono:\n\nMail:",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  /* SECCION 6 */
+  "rich-text#preguntas-frecuentes-seccion-6": {
+    "props": {
+      "text": "Información sobre los productos de Stanley-PMI",
+      "blockClass": "preguntas-frecuentes-seccion"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-1": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-1",
+      "disclosure-content#preguntas-frecuentes-seccion-6-1"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-1": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-1-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-1-pregunta": {
+    "props": {
+      "text": "#### ¿CÓMO SÉ SI MI TERMO ES ORIGINAL?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-1": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-1-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-1-respuesta": {
+    "props": {
+      "text": "Todos los productos comercializados en el sitio son 100% originales Stanley. En la base del termo se encuentran todos los datos de fabricación. Los productos originales Stanley son fabricados en China. No hay fábricas en Brasil.\n\nEl único sitio web oficial de la marca en Argentina es  www.stanley-pmi.com.ar. Ningún sitio web del país está autorizado a utilizar el nombre de Stanley en su URL, así como a autodenominarse sitio web oficial. Tené cuidado al acceder a sitios web que intentan ganar su confianza, utilizando elementos del sitio web oficial, como banners, logotipo, íconos e incluso datos, como los de contacto.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-2": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-2",
+      "disclosure-content#preguntas-frecuentes-seccion-6-2"
+    ],
+    "props": {
+      "animated": true
+    }
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-2": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-2-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-2-pregunta": {
+    "props": {
+      "text": "#### ¿MI PRODUCTO TIENE GARANTÍA?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-2": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-2-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-2-respuesta": {
+    "props": {
+      "text": "La garantía de los productos que se adquieren a través de Parallel S.A. cubre defectos de fabricación o de calidad sólo cuando han sido utilizados para el fin que han sido fabricados. Parallel S.A no cubre defectos de producto por uso indebido o abuso del producto. Para validar la garantía se requiere la factura de compra.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-3": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-3",
+      "disclosure-content#preguntas-frecuentes-seccion-6-3"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-3": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-3-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-3-pregunta": {
+    "props": {
+      "text": "#### ¿COMO ACCEDO A LA GARANTÍA?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-3": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-3-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-3-respuesta": {
+    "props": {
+      "text": "Ingresá a www.stanley-pmi.com.ar/post-venta y completá el formulario con los datos que están en la base de tu termo. Una vez que lo envíes nos estaremos comunicando con vos para darle curso a tu reclamo.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-4": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-4",
+      "disclosure-content#preguntas-frecuentes-seccion-6-4"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-4": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-4-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-4-pregunta": {
+    "props": {
+      "text": "#### ¿CÓMO LE SACO MAYOR PROVECHO A MI TERMO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-4": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-4-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-4-respuesta": {
+    "props": {
+      "text": "Para tener los mejores resultados siempre es mejor pre-calentar o pre-enfriar el interior vertiendo un chorro de agua muy caliente o helada, según el uso que se le quiera dar y tapar el termo hasta que la botella interior adquiera esta temperatura. Luego lo llenamos con agua caliente o fría.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-5": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-5",
+      "disclosure-content#preguntas-frecuentes-seccion-6-5"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-5": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-5-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-5-pregunta": {
+    "props": {
+      "text": "#### ¿CUÁNTO DURA EL AGUA CALIENTE?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-5": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-5-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-5-respuesta": {
+    "props": {
+      "text": "Los termos Stanley cuentan con una curva de temperatura. La misma varía dependiendo del modelo, por lo que vamos a tomar como ejemplo el termo de 1 litro. Si lo llenamos con agua a 100 °C, deberán pasar 24 horas para que la temperatura del líquido llegue a 60° (temperatura mínima de un líquido caliente). Este resultado se obtiene con el termo lleno y sellado herméticamente.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-6": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-6",
+      "disclosure-content#preguntas-frecuentes-seccion-6-6"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-6": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-6-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-6-pregunta": {
+    "props": {
+      "text": "#### ¿QUÉ ES EL TAPÓN CEBADOR?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-6": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-6-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-6-respuesta": {
+    "props": {
+      "text": "Es un tapón que nos permite verter líquido sin importar en qué posición se sostenga el termo. Fabricado exclusivamente para la Argentina, facilita la tarea de cebar mate o verter líquido en general.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-7": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-7",
+      "disclosure-content#preguntas-frecuentes-seccion-6-7"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-7": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-7-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-7-pregunta": {
+    "props": {
+      "text": "#### ¿QUE MODELOS VIENEN CON ESTE TAPÓN?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-7": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-7-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-7-respuesta": {
+    "props": {
+      "text": "Está presente en los termos Classic 750 ml, Classic 950 ml, Classic de 1 lt, Classic de 1.4 lts y Adventure de 1 lt.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-8": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-8",
+      "disclosure-content#preguntas-frecuentes-seccion-6-8"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-8": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-8-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-8-pregunta": {
+    "props": {
+      "text": "#### ¿PUEDO COMPRAR EL TAPÓN POR SEPARADO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-8": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-8-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-8-respuesta": {
+    "props": {
+      "text": "El tapón no está a la venta, solamente se reponen por garantía si el tapón original tuviese algún defecto de fabricación.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-9": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-9",
+      "disclosure-content#preguntas-frecuentes-seccion-6-9"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-9": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-9-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-9-pregunta": {
+    "props": {
+      "text": "#### ¿QUÉ DIFERENCIA LOS TERMOS STANLEY DEL RESTO DE LOS TERMOS DE ACERO INOXIDABLE?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-9": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-9-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-9-respuesta": {
+    "props": {
+      "text": "Los termos Stanley están hechos con doble capa de acero inoxidable de 18/8 ideal para soportar altas temperaturas. Diseñado para durar, su pared exterior de acero grueso puede soportar golpes y caídas mejor que cualquier otro termo del mercado.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-10": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-10",
+      "disclosure-content#preguntas-frecuentes-seccion-6-10"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-10": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-10-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-10-pregunta": {
+    "props": {
+      "text": "#### ¿LOS PRODUCTOS STANLEY SON LIBRES DE BPA?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-10": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-10-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-10-respuesta": {
+    "props": {
+      "text": "Si. Nuestros productos están hechos de acero inoxidable18/8 apto para alimentos (también conocido como acero 304) que naturalmente está libre de BPA. El plástico eCycle® que usamos también está libre de BPA. Cada uno de nuestros productos está aprobado por el INAL.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-11": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-11",
+      "disclosure-content#preguntas-frecuentes-seccion-6-11"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-11": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-11-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-11-pregunta": {
+    "props": {
+      "text": "#### ¿QUÉ ES LA AISLACIÓN POR VACÍO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-11": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-11-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-11-respuesta": {
+    "props": {
+      "text": "La aislación por vacío es el proceso mediante el cual se remueve el aire entre la pared exterior e interior del termo. De esta forma se evita la transferencia de energía térmica por convección.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-12": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-12",
+      "disclosure-content#preguntas-frecuentes-seccion-6-12"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-12": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-12-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-12-pregunta": {
+    "props": {
+      "text": "#### ¿QUÉ ES LA AISLACIÓN DE DOBLE PARED?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-12": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-12-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-12-respuesta": {
+    "props": {
+      "text": "La aislación de doble pared consta de una pared interna y otra externa que componen una cámara de vacío. Las bebidas mantienen su temperatura por más tiempo en comparación a un recipiente de una sola pared. Además, evita la transpiración (aunque algo de condensación puede generarse si atraviesan un cambio extremo de temperatura).",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-13": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-13",
+      "disclosure-content#preguntas-frecuentes-seccion-6-13"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-13": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-13-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-13-pregunta": {
+    "props": {
+      "text": "#### ¿QUÉ TIPO DE ACERO ES UTILIZADO EN LA FABRICACIÓN DE LOS PRODUCTOS?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-13": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-13-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-13-respuesta": {
+    "props": {
+      "text": "Nuestros productos están aprobados por el INAL y todas las superficies de contacto son seguras y libres de BPA. El acero inoxidable que utilizamos es de 18/8, también conocido como acero inoxidable apto para alimentos. Como todos nuestros productos, nuestros artículos de acero inoxidable pasan por rigurosas pruebas de salubridad e higiene antes de llegar al consumidor.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-14": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-14",
+      "disclosure-content#preguntas-frecuentes-seccion-6-14"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-14": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-14-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-14-pregunta": {
+    "props": {
+      "text": "#### ¿PUEDO ALMACENAR LECHE U OTROS LÁCTEOS EN LOS RECIPIENTES TÉRMICOS?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-14": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-14-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-14-respuesta": {
+    "props": {
+      "text": "No recomendamos almacenar leche ni otros productos lácteos por largos periodos de tiempo, ya que las bacterias podrían proliferar a ciertas temperaturas. Comidas y líquidos en fermentación también pueden causar la acumulación de presión dentro del envase.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-15": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-15",
+      "disclosure-content#preguntas-frecuentes-seccion-6-15"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-15": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-15-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-15-pregunta": {
+    "props": {
+      "text": "#### ¿PUEDO PONER HIELO SECO DENTRO DEL RECIPIENTE TÉRMICO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-15": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-15-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-15-respuesta": {
+    "props": {
+      "text": "No se recomienda usar hielo seco en un recipiente cerrado herméticamente. La rápida evaporación del CO2 puede aumentar drásticamente la presión dentro del envase. Proceda bajo su propio riesgo. Le recomendamos utilizar hielo común.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-16": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-16",
+      "disclosure-content#preguntas-frecuentes-seccion-6-16"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-16": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-16-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-16-pregunta": {
+    "props": {
+      "text": "#### ¿QUÉ CEPILLO DEBO USAR PARA LIMPIAR EL INTERIOR DE ACERO INOXIDABLE?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-16": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-16-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-16-respuesta": {
+    "props": {
+      "text": "En caso de usar un cepillo para limpiar el interior del termo este debe ser blando. Un cepillo de metal podría rayar la superficie.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-17": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-17",
+      "disclosure-content#preguntas-frecuentes-seccion-6-17"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-17": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-17-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-17-pregunta": {
+    "props": {
+      "text": "#### ¿CÓMO LIMPIO MI TERMO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-17": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-17-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-17-respuesta": {
+    "props": {
+      "text": "Por favor, chequeá si el producto es apto para lava vajilla. De no ser así recomendamos lavado a mano. Asegurate de lavar el producto antes de su primer uso.\n\n- Llenar con agua tibia y detergente\n\n- Dejar reposar por 5 minutos\n\n- Lavar con una esponja suave\n\n- Enjuagar y secar con una toalla limpia\n\nEl termo puede necesitar una limpieza profunda ocasionalmente. Para esto recomendamos verter agua tibia con un poco de bicarbonato de sodio, dejar reposar por una hora, enjuagar y luego lavar con detergente.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-18": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-18",
+      "disclosure-content#preguntas-frecuentes-seccion-6-18"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-18": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-18-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-18-pregunta": {
+    "props": {
+      "text": "#### ¿CÓMO REMUEVO LAS MANCHAS O EL OLOR DE MI PRODUCTO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-18": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-18-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-18-respuesta": {
+    "props": {
+      "text": "Para limpiar el termo, recomendamos lavarlo con agua tibia y limpiadores de cocina no abrasivos. Enjuagarlo con agua tibia y bicarbonato también puede ayudar. Algunos clientes señalan que enjuagarlo con vinagre o jugo de limón ayuda a remover manchas y olores. Luego de usar un limpiador, siempre debe enjuagarse apropiadamente, como lo indica el instructivo.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-19": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-19",
+      "disclosure-content#preguntas-frecuentes-seccion-6-19"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-19": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-19-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-19-pregunta": {
+    "props": {
+      "text": "#### ¿LOS PRODUCTOS SON APTOS PARA LAVAVAJILLA?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-19": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-19-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-19-respuesta": {
+    "props": {
+      "text": "En la base del termo se indica si es apto para lavavajillas. En caso de que así sea, recomendamos ponerlos en la bandeja superior. Por favor lave a mano los productos que no sean aptos para hacerlo.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-20": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-20",
+      "disclosure-content#preguntas-frecuentes-seccion-6-20"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-20": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-20-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-20-pregunta": {
+    "props": {
+      "text": "#### ¿LOS PRODUCTOS SON APTOS PARA MICROONDAS?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-20": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-20-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-20-respuesta": {
+    "props": {
+      "text": "La mayoría de nuestros productos están hechos de acero inoxidable. Hasta los productos que están compuestos principalmente de otro material, suelen tener detalles o piezas de acero. Por este motivo no es recomendable ponerlos en el microondas. Hacer lo contrario puede resultar en daños tanto para el producto como para el electrodoméstico.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-21": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-21",
+      "disclosure-content#preguntas-frecuentes-seccion-6-21"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-21": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-21-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-21-pregunta": {
+    "props": {
+      "text": "#### ¿PUEDO PONER EL PRODUCTO EN EL FREEZER?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-21": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-21-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-21-respuesta": {
+    "props": {
+      "text": "No recomendamos poner cualquiera de nuestros productos en el freezer. Al congelarse los líquidos se expanden lo que podría causar una deformación en el recipiente, que no volverá a su forma original. Esto también puede afectar la funcionalidad térmica y así como la efectividad de sellado hermético del tapón.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-layout#preguntas-frecuentes-seccion-6-22": {
+    "children": [
+      "disclosure-trigger#preguntas-frecuentes-seccion-6-22",
+      "disclosure-content#preguntas-frecuentes-seccion-6-22"
+    ]
+  },
+  "disclosure-trigger#preguntas-frecuentes-seccion-6-22": {
+    "children": [
+      "rich-text#preguntas-frecuentes-seccion-6-22-pregunta",
+      "disclosure-state-indicator#preguntas-frecuentes"
+    ],
+    "props": {
+      "as": "div",
+      "blockClass": "preguntas-frecuentes"
+    }
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-22-pregunta": {
+    "props": {
+      "text": "#### ¿PUEDO REMOVER EL OXIDO DEL PRODUCTO?",
+      "blockClass": "preguntas-frecuentes-pregunta"
+    }
+  },
+  "disclosure-content#preguntas-frecuentes-seccion-6-22": {
+    "children": ["rich-text#preguntas-frecuentes-seccion-6-22-respuesta"]
+  },
+  "rich-text#preguntas-frecuentes-seccion-6-22-respuesta": {
+    "props": {
+      "text": "Nuestros productos están hechos de acero inoxidable de alta calidad y pueden durar toda la vida con cuidados apropiados. Si notás puntos de corrosión podría tratarse de partículas libres de hierro, tierra u otro residuo que ha contaminado la superficie. Para remover esta suciedad, recomendamos lavarlo con agua tibia y limpiadores de cocina no abrasivos. Enjuagarlo con agua tibia y bicarbonato también puede ayudar. Algunos clientes señalan que enjuagarlo con vinagre o jugo de limón ayuda a remover manchas y olores. Luego de usar un limpiador, siempre debe enjuagarse apropiadamente, como lo indica el instructivo.",
+      "blockClass": "preguntas-frecuentes-respuesta"
+    }
+  },
+  "disclosure-state-indicator#preguntas-frecuentes": {
+    "props": {
+      "Show": "icon-caret#down",
+      "Hide": "icon-caret#up"
+    }
+  },
+  "icon-caret#down": {
+    "props": {
+      "orientation": "down"
+    }
+  },
+  "icon-caret#up": {
+    "props": {
+      "orientation": "up"
+    }
+  },
+
+  /* TERMINOS Y CONDICIONES */
+  "tab-content.item#terminos-y-condiciones": {
+    "children": [
+      "rich-text#terminos-y-condiciones-titulo",
+      "rich-text#terminos-y-condiciones-texto"
+    ],
+    "props": {
+      "tabId": "terminos-y-condiciones"
+    }
+  },
+  "rich-text#terminos-y-condiciones-titulo": {
+    "props": {
+      "text": "## TÉRMINOS Y CONDICIONES",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "rich-text#terminos-y-condiciones-texto": {
+    "props": {
+      "text": "**EL REGISTRO DE LOS USUARIOS SE REALIZA INGRESANDO AL WEBSITE, Y NO TIENE COSTO ALGUNO.**\n\nES OBLIGATORIO COMPLETAR EL FORMULARIO EN TODOS LOS CAMPOS CON DATOS VÁLIDOS Y VERDADEROS, DE MANERA EXACTA Y PRECISA. PARA UN CORRECTO FUNCIONAMIENTO DEL SISTEMA, ES NECESARIO QUE LOS USUARIOS MANTENGAN SUS DATOS ACTUALIZADOS. PARALLEL S.A PODRÁ PROCEDER A VERIFICAR LA IDENTIDAD DEL USUARIO Y/O DE LOS DATOS CONSIGNADOS POR ÉSTE AL CONCRETARSE UNA COMPRA.\n\nPARALLEL S.A. NO SE RESPONSABILIZA POR LA VERACIDAD O CERTEZA DE LOS DATOS PROVISTOS POR LOS USUARIOS. ASIMISMO, PARALLEL S.A SE RESERVA EL DERECHO DE SUSPENDER TEMPORAL O DEFINITIVAMENTE A LOS USUARIOS EN CASO DE INCUMPLIMIENTO DE LOS TÉRMINOS Y CONDICIONES, COMO ASÍ TAMBIÉN DE RECHAZAR SOLICITUDES.\n\nLOS USUARIOS ACCEDERÁN A SU CUENTA PERSONAL (LA “CUENTA”) MEDIANTE UN NOMBRE DE USUARIO Y UNA CLAVE PERSONAL QUE DEBERÁN ESCOGER. EN CASO LA CLAVE SEA OLVIDADA POR EL USUARIO, PARALLEL S.A CUENTA CON UN SERVICIO DE AYUDA PARA RECUPERARLA. PARA ESTO SE DEBERÁ HACER “CLICK” EN LA OPCIÓN CORRESPONDIENTE E INGRESAR EL E-MAIL QUE SE PROPORCIONÓ AL MOMENTO DEL REGISTRO.\n\nASÍ COMO PARALLEL S.A SE COMPROMETE A MANTENER LA CONFIDENCIALIDAD DE LOS DATOS APORTADOS POR LOS USUARIOS PARA SU REGISTRO, LOS USUARIOS SE COMPROMETEN A MANTENER LA CONFIDENCIALIDAD DE SU NOMBRE Y CLAVE DE ACCESO. DE CONFORMIDAD CON LO EXPRESADO EN EL PÁRRAFO ANTERIOR, LOS USUARIOS SON RESPONSABLES DEL USO QUE SE HAGA DE SU CLAVE Y DEBERÁN TENER PRESENTE QUE SI OTRAS PERSONAS TIENEN O PUEDEN TENER EN EL FUTURO ACCESO A LA CUENTA DE E-MAIL CONSIGNADA COMO PROPIA EN EL FORMULARIO DE REGISTRO, ÉSTAS TAMBIÉN PODRÍAN SOLICITAR SU CLAVE DE ACCESO Y NOMBRE DE USUARIO. ES OBLIGACIÓN EXCLUSIVA DEL USUARIO TOMAR LAS MEDIDAS PERTINENTES PARA QUE ESTO NO SUCEDA. EL USUARIO SE\n\nCOMPROMETE A NOTIFICAR INMEDIATAMENTE Y DE MANERA FEHACIENTE A PARALLEL S.A. CUALQUIER USO NO AUTORIZADO DE SU CUENTA DE USUARIO, Y A MANTENERLO INDEMNE EN EL CASO DE QUE SE ESTO PRODUZCA ALGÚN DAÑO A LA EMPRESA O A TERCEROS.\n\n**CAPACIDAD**\n\nPARA UTILIZAR LOS SERVICIOS DEL WEBSITE SE REQUIERE TENER CAPACIDAD LEGAL PARA CONTRATAR. NO PODRÁN ACCEDER A LOS SERVICIOS QUIENES CAREZCAN DE ELLA, LOS QUE HAYAN SIDO SUSPENDIDOS O INHABILITADOS, NI LOS MENORES DE EDAD. LOS PADRES, TUTORES O RESPONSABLES DE LOS MENORES DE EDAD O INCAPACES QUE UTILICEN EL WEBSITE SERÁN RESPONSABLES POR DICHO USO, INCLUYENDO CUALQUIER CARGO, FACTURACIÓN O DAÑO QUE SE DERIVE DE ÉL.\n\n**VERACIDAD DE LA INFORMACION SUMINISTRADA**\n\nEN CASO DE QUE LA INFORMACIÓN O LOS DATOS SUMINISTRADOS POR EL USUARIO NO SEA VERDADERA, ÉSTE SERÁ RESPONSABLE POR LOS DAÑOS QUE ESTE HECHO PUDIERA OCASIONAR\n\n**VERACIDAD DE LA INFORMACION SUMINISTRADA**\n\nTODAS LAS SUGERENCIAS Y COMENTARIOS QUE REALICE EL USUARIO PODRÁN SER TENIDAS EN CUENTA, IMPLEMENTADAS O ADAPTADAS POR PARALLEL S.A. SIN QUE ELLO GENERE DERECHO ALGUNO A FAVOR DE TAL USUARIO.\n\n**COOKIES**\n\nEL WEBSITE PUEDE UTILIZAR UN SISTEMA DE SEGUIMIENTO MEDIANTE \"COOKIES\", PARA QUE EL ACCESO A LA INFORMACIÓN, AL PASAR DE PÁGINA EN PÁGINA, SE REALICE CON MAYOR RAPIDEZ. TAMBIÉN AYUDA EN ALGUNOS CASOS A IDENTIFICAR A LOS USUARIOS, SIN NECESIDAD DE SOLICITARLES LA CLAVE DE ACCESO UNA Y OTRA VEZ.\nESTAS COOKIES SON PEQUEÑOS ARCHIVOS QUE ENVÍA LA PÁGINA VISITADA Y SE ALOJAN EN EL DISCO DURO DEL ORDENADOR, OCUPANDO POCO ESPACIO. SE HACE SABER A LOS USUARIOS QUE UTILIZANDO LAS OPCIONES DE SU NAVEGADOR PODRÁN LIMITAR O RESTRINGIR SEGÚN SU VOLUNTAD EL ALOJAMIENTO DE ESTAS “COOKIES”, AUNQUE ES DESACONSEJABLE RESTRINGIRLAS TOTALMENTE.\nEL SISTEMA PODRÁ RECOGER INFORMACIÓN SOBRE SUS PREFERENCIAS E INTERESES. EN EL CASO DE QUE ESTO OCURRA, LA INFORMACIÓN SERÁ UTILIZADA EXCLUSIVAMENTE CON FINES ESTADÍSTICOS PARA MEJORAR LOS SERVICIOS QUE SE PRESTAN EN EL WEBSITE. PARALLEL S.A. APLICARÁ, EN LA MAYOR MEDIDA EN QUE SEA POSIBLE, PROCEDIMIENTOS DE DISOCIACIÓN DE LA INFORMACIÓN DE MODO QUE LOS TITULARES DE LOS DATOS SEAN INIDENTIFICABLES.\n\n**DISPONIBILIDAD Y PRECIOS DE LOS PRODUCTOS OFRECIDOS**\n\nANTES DE COMPRAR, EL USUARIO DEBERÁ TENER EN CUENTA QUE LOS PRODUCTOS SELECCIONADOS PUEDEN NO ENCONTRARSE EN STOCK. TODA COMPRA SE ENCUENTRA SUJETA A DISPONIBILIDAD. WWW.STANLEY-PMI.COM.AR SOLAMENTE OPERA VÍA INTERNET. POR ESTE MOTIVO, PUEDE OCURRIR QUE, POR MÁS QUE SEA POSIBLE ORDENAR LA COMPRA DEL PRODUCTO EN EL WEBSITE, NO HAYA EXISTENCIAS DE ÉSTE, POR UNA CUESTIÓN DE MOVIMIENTO DIARIO EN LA CADENA DE SUMINISTROS QUE PROVEE A WWW.STANLEY-PMI.COM.AR.\n\n**OPCIONES DEL USUARIO ANTE PRODUCTOS AGOTADOS O DEMORADOS**\n\nEN CONCORDANCIA CON EL PUNTO ANTERIOR, EN CASO DE QUE EL O LOS PRODUCTOS SELECCIONADOS SE ENCONTRAREN AGOTADOS O DEMORADOS, PARALLEL S.A. SE COMUNICARÁ CON EL USUARIO Y LO INVITARÁ A QUE ELIJA UNA DE LAS SIGUIENTES OPCIONES:\n\n- CONTINUAR ESPERANDO LA ENTREGA DEL PRODUCTO ELEGIDO (EN CASO DE DEMORA);\n- OPTAR POR UN PRODUCTO ALTERNATIVO QUE LE OFREZCA PARALLEL S.A PARA EL CASO PARTICULAR (EN CASO DE PRODUCTO AGOTADO)\n\nIMPORTANTE: ANTE LA SITUACIÓN DE PRODUCTO AGOTADO, EL USUARIO TENDRÁ UN PLAZO DE DIEZ DÍAS PARA ELEGIR UNA DE LAS OPCIONES MENCIONADAS. EN CASO DE QUE EL USUARIO GUARDE SILENCIO AL RESPECTO, PARALLEL S.A. PODRÁ PRESUMIR QUE HA OPTADO POR LA CANCELACIÓN DE LA COMPRA, Y PROCEDERÁ A LA DEVOLUCIÓN DEL IMPORTE ABONADO POR EL MEDIO DE PAGO ORIGINAL.\n\n**DEVOLUCIÓN DEL IMPORTE ABONADO**\n\nEN LOS CASOS MENCIONADOS EN EL PUNTO ANTERIOR EN QUE EL USUARIO HAYA OPTADO POR LA DEVOLUCIÓN DEL IMPORTE ABONADO, DEBERÁ TENER EN CUENTA QUE EL REINTEGRO PUEDE DEMORAR ALGUNOS DÍAS, DEBIDO A PLAZOS DE LOS PROVEEDORES DE PAGOS (MERCADO PAGO). LA DEVOLUCION SE HARA UNICAMENTE POR EL MISMO MEDIO QUE SE ADOPTO DURANTE EL PROCESO DE COMPRA.\n\n**VALIDEZ DE LAS PROMOCIONES**\n\nEN EL CASO DE QUE SE REALICEN OFERTAS Y PROMOCIONES DE PRODUCTOS, ÉSTAS TENDRÁN VALIDEZ PARA LAS COMPRAS EFECTUADAS DESDE LA FECHA DE COMIENZO DE LAS MISMAS, HASTA LA DE FINALIZACIÓN DE LA OFERTA. LOS TÉRMINOS Y CONDICIONES DE LAS MISMAS SERÁN COMUNICADOS EN EL WEBSITE, Y ESTARÁN SIEMPRE SUJETAS A LA EXISTENCIA EN STOCK DE LOS PRODUCTOS OFRECIDOS.\n\n**IMPUESTO AL VALOR AGREGADO (IVA)**\n\nTODOS LOS PRECIOS EXPRESADOS EN EL WEBSITE INCLUYEN IVA, SALVO QUE SE INDIQUE LO CONTRARIO.\n\n**GARANTIA DE LOS PRODUCTOS**\n\nLA GARANTÍA DE LOS PRODUCTOS QUE SE ADQUIEREN A TRAVÉS DE PARALLEL S.A. (STANLEY-PMI.COM.AR) CUBRE DEFECTOS DE FABRICACIÓN O DE CALIDAD SÓLO CUANDO HAN SIDO UTILIZADOS PARA EL FIN QUE HAN SIDO FABRICADOS. PARALLEL S.A NO CUBRE DEFECTOS DE PRODUCTO POR USO INDEBIDO O ABUSO  DE DEL PRODUCTO. PARA VALIDAR LA GARANTIA SE REQUIERE LA FACTURA DE COMPRA.\n\n**DERECHO DE ARREPENTIMIENTO, DEVOLUCION DE LOS PRODUCTOS POR FALLA**\n\nEL USUARIO TENDRÁ DERECHO A DEVOLVER LOS PRODUCTOS ADQUIRIDOS EN EL WEBSITE DURANTE EL PLAZO DE DIEZ DÍAS CORRIDOS, CONTADOS A PARTIR DE LA ENTREGA DEL PEDIDO, SIN RESPONSABILIDAD ALGUNA. PARA ESTO DEBERÁ NOTIFICAR DE MANERA FEHACIENTE A PARALLEL S.A DENTRO DEL PLAZO SEÑALADO, Y PONER A SU DISPOSICIÓN EL O LOS PRODUCTOS ADQUIRIDOS. LOS PRODUCTOS DEBERÁN ESTAR EN EL MISMO ESTADO EN QUE FUERON RECIBIDOS, SIN HABER SIDO UTILIZADOS, Y CON EL EMBALAJE ORIGINAL. PARALLEL S.A DEVOLVERÁ AL USUARIO TODOS LOS IMPORTES RECIBIDOS. ESTE DERECHO NO ES APLICABLE A PRODUCTOS PERSONALIZADOS SEGÚN ART 1116 a) DEL CODIGO CIVIL Y COMERCIAL.\nASIMISMO, SI EL O LOS PRODUCTOS PRESENTAREN ALGÚN DEFECTO DE FABRICACIÓN, HUBIEREN SUFRIDO ROTURAS O DETERIOROS EN TRÁNSITO, O FUEREN DESPACHADOS EQUIVOCADAMENTE, EL USUARIO DEBERÁ COMUNICARSE CON EL CENTRO DE ATENCIÓN AL CLIENTE DENTRO DEL PLAZO MENCIONADO EN EL PÁRRAFO ANTERIOR, PARA QUE PARALLEL S.A. PROCEDA, SEGÚN CORRESPONDA, A GESTIONAR EL RE-DESPACHO DE LA COMPRA, O PASAR A RETIRAR LA ORDEN.\nEN CASO DE ARREPENTIMIENTO LOS PRODUCTOS NO DEBEN HABER SIDO UTILIZADOS, Y DEBEN ENCONTRARSE EN LAS MISMAS CONDICIONES EN QUE FUERON RECIBIDOS, CON SUS EMBALAJES Y ETIQUETAS. POR EJEMPLO, Y A MERO TÍTULO ILUSTRATIVO, SI EL PRODUCTO SE ENCUENTRA EN UN ENVOLTORIO (“BLÍSTER”) PLÁSTICO, ÉSTE DEBE SER ABIERTO PROLIJA Y CUIDADOSAMENTE, PUES DE LO CONTRARIO NO PODRÁ REALIZARSE EL CAMBIO.\n\n**MONEDA CORRIENTE**\n\nTODOS LOS PRECIOS EN EL WEBSITE ESTÁN EXPRESADOS EN PESOS ARGENTINOS, MONEDA DE CURSO LEGAL DE LA REPÚBLICA ARGENTINA.\n\n**MEDIOS DE PAGOS**\n\nLOS PAGOS PODRÁN REALIZARSE CON TARJETA DE CRÉDITO Y EN CUOTAS A TRAVES DE MERCADO PAGO, CUANDO ASÍ SE ESPECIFIQUE. PARALLEL S.A PODRÁ HABILITAR OTRAS OPCIONES, PARA FACILITAR LAS COMPRAS DE SUS CLIENTES. TODOS LOS MEDIOS DE PAGO ESTÁN SUJETOS A QUE EL IMPORTE SEA DEBIDAMENTE ACREDITADO Y/O VERIFICADO.\nEN EL CASO DE QUE SE REALICEN OFERTAS Y PROMOCIONES DE PRODUCTOS, ÉSTAS TENDRÁN VALIDEZ PARA LAS COMPRAS EFECTUADAS DESDE LA FECHA DE COMIENZO DE LAS MISMAS, HASTA LA DE FINALIZACIÓN DE LA OFERTA. LOS TÉRMINOS Y CONDICIONES DE LAS MISMAS SERÁN COMUNICADOS EN EL WEBSITE, Y ESTARÁN SIEMPRE SUJETAS A LA EXISTENCIA EN STOCK DE LOS PRODUCTOS OFRECIDOS.\n\n**PAGO CON TARJETAS DE CREDITO**\n\nLOS PAGOS PODRÁN SER REALIZADOS ON-LINE MEDIANTE TARJETAS DE CRÉDITO. TODA LA INFORMACIÓN INGRESADA POR EL USUARIO ESTÁ PROTEGIDA POR EL SISTEMA SSL, CON CERTIFICACION PCI.\n\nLA CONFIRMACIÓN DE LA COMPRA CON TARJETA DE CRÉDITO ESTARÁ SUJETA A LA AUTORIZACIÓN DEL EMISOR DE LA MISMA.\nVALIDACIÓN DE IDENTIDAD:\nLA MARCA PODRÁ SOLICITAR A SUS CLIENTES QUE RESPONDAN UNA SERIE DE PREGUNTAS PROVISTAS POR VERAZ CON EL FIN DE GARANTIZAR LA IDENTIDAD Y SEGURIDAD DE LAS PARTES.\n\nALGUNAS DE LOS MOTIVOS DE SOLICITUD DE DATOS PODRÁN SER:\n- NO COINCIDENCIA DE DATOS DE CLIENTE CON DATOS DE TITULAR DE TARJETA\n- NO COINCIDENCIA DE DOMICILIO DE DESTINO CON DOMICILIO DE FACTURACIÓN DE LA TARJETA\n\nLA MARCA CONTACTARÁ AL COMPRADOR DE MANERA TELEFÓNICA EN CASO DE SER NECESARIO. EN CASO DE NO OBTENER RESPUESTA O NO CONSIDERARSE VÁLIDOS LOS DATOS PROVISTOS SE CANCELARÁ EL PEDIDO Y SE REINTEGRARÁ EL DINERO A LA TARJETA DE CRÉDITO UTILIZADA.\n\n**ENVIOS DE PRODUCTO DENTRO DEL PAIS. TIEMPOS DE ENTREGA.**\n\nLAS ENTREGAS SE REALIZARÁN EN LA DIRECCIÓN QUE EL USUARIO INDIQUE EN EL PROCESO DE COMPRA. LA VALIDEZ DE LA MISMA ES DE SU EXCLUSIVA RESPONSABILIDAD.\n\nEL TIEMPO DE ENTREGA DEPENDERÁ DE LA LA UBICACION DE ENTREGA, DEL MÉTODO DE ENVÍO SELECCIONADO, DEL CÓDIGO POSTAL INDICADO Y DE LA APROBACIÓN DEL MEDIO DE PAGO. LOS DÍAS QUE SE INDIQUEN SON ESTIMATIVOS Y ESTÁN EXPRESADOS EN DÍAS HÁBILES. LOS ENVÍOS SE REALIZAN EN TODA LA REPÚBLICA ARGENTINA, SIN EXCEPCIÓN.\n\nAL REALIZAR UNA COMPRA, EL USUARIO RECIBE EN SU CASILLA DE CORREO ELECTRÓNICO UNA CONFIRMACIÓN DE QUE LA ORDEN DE PEDIDO HA SIDO ACEPTADA, JUNTO A UN NÚMERO DE PEDIDO Y CODIGO DE SEGUIMIENTO.\nPARA ASEGURAR LA MÁXIMA EFICACIA EN LAS ENTREGAS, ÉSTAS SE REALIZAN MEDIANTE EMPRESAS ESPECIALIZADAS.\n\n**EL TIEMPO DE ENVÍO VARÍA SEGÚN EL DESTINO, NACIONAL, DONDE SE SOLICITE LA ENTREGA.**\n\nUNA VEZ DESPACHADO EL ENVÍO, SE REALIZARÁN 2 (DOS) INTENTOS DE ENTREGA EN EL DOMICILIO ESPECIFICADO PARA DICHO FIN AL MOMENTO DE LA COMPRA. EN CASO QUE LA ENTREGA NO PUEDA HACERSE EFECTIVA, EL ENVÍO SERÁ DEVUELTO A PARALLEL SA, QUEDANDO A TOTAL CARGO DEL USUARIO EL COSTO DE REENVÍO.\nEL TIEMPO DE ENTREGA DE LA TOTALIDAD DE LA ORDEN, ASÍ COMO SU COSTO, SERÁ INFORMADO AL USUARIO ANTES DE ACEPTAR LA COMPRA.\nPARALLEL S.A. NO GARANTIZA FRANJAS HORARIAS DE ENTREGA.\n\n**COSTO DE ENVIO**\n\nEL USUARIO SERÁ CLARAMENTE INFORMADO DE LOS COSTOS DE ENTREGA ANTES DE REALIZAR LA COMPRA. ESTOS COSTOS SON CALCULADOS EN FUNCIÓN DEL PESO TOTAL Y/O EL VOLUMEN TOTAL DEL ENVÍO, Y TAMBIÉN DEPENDEN DE LA ZONA DEL DOMICILIO DE ENTREGA.\nLOS COSTOS DE ENVÍO SERÁN DISCRIMINADOS COMO ÍTEM SEPARADO DENTRO DE LA FACTURA. PARALLEL SA ESTÁ SIEMPRE TRABAJANDO PARA MEJORAR LA CALIDAD Y EL COSTO DE ENTREGA PARA SUS CLIENTES. POR ESTE MOTIVO, DICHOS COSTOS Y LAS POLÍTICAS DE ENVÍO SE HALLAN SUJETOS A CAMBIO SIN PREVIO AVISO.\n\n**DIRECCIÓN DE ENTREGA**\n\nLA DIRECCIÓN EN DONDE SE ENTREGARÁ EL PRODUCTO SERÁ LA QUE EL USUARIO INDIQUE DURANTE EL PROCESO DE COMPRA. PODRÁ NO COINCIDIR CON SU DOMICILIO. ES RESPONSABILIDAD DEL USUARIO COMPLETAR Y REVISAR CUIDADOSAMENTE LA INFORMACIÓN RELACIONADA CON LA ENTREGA, PARA QUE EL ENVÍO DE LA COMPRA SE HAGA DE MANERA EFECTIVA Y PUNTUAL. NO SE REALIZAN ENVÍOS A CASILLAS DE CORREO.\n\n**PROHIBICIONES**\n\nSE LES PROHÍBE TERMINANTEMENTE A LOS USUARIOS:\n\n1. ENVIAR ARCHIVOS O CUALQUIER TIPO DE INFORMACIÓN CUYO CONTENIDO SEA ILEGAL, OBSCENO, ABUSIVO, DIFAMATORIO, INJURIOSO O CONTRARIO A LAS BUENAS COSTUMBRES (LA PRESENTE ENUMERACIÓN ES MERAMENTE EJEMPLIFICATIVA)\n2. ENVIAR ARCHIVOS QUE CONTENGAN VIRUS O CUALQUIER OTRA CARACTERÍSTICA CAPAZ DE DAÑAR EL FUNCIONAMIENTO DE UNA COMPUTADORA, DEL WEBSITE O DEL SISTEMA\n3. UTILIZAR EL WEBSITE PARA VIOLAR CUALQUIER TIPO DE NORMA VIGENTE\n4. CONSIGNAR DATOS FALSOS AL MOMENTO DE REGISTRARSE O REALIZAR UNA COMPRA, O CUALQUIER OTRO MOMENTO EN QUE LES SEA REQUERIDA CUALQUIER TIPO DE INFORMACIÓN O DATOS PERSONALES\n5. OFRECER PRODUCTOS O SERVICIOS.\n6. USAR PROGRAMAS, SOFTWARE O APARATOS AUTOMÁTICOS O MANUALES PARA MONITOREAR O COPIAR LA INFORMACIÓN O CUALQUIER TIPO DE CONTENIDO DEL SITIO SIN PREVIO CONSENTIMIENTO DE PARALLEL SA",
+      "blockClass": "terminos-y-condiciones-texto"
+    }
+  },
+
+  /* MEDIOS DE PAGO */
+  "tab-content.item#medios-de-pago": {
+    "children": ["rich-text#medios-de-pago-titulo", "rich-text#medios-de-pago-texto"],
+    "props": {
+      "tabId": "medios-de-pago"
+    }
+  },
+  "rich-text#medios-de-pago-titulo": {
+    "props": {
+      "text": "## MEDIOS DE PAGO",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "rich-text#medios-de-pago-texto": {
+    "props": {
+      "text": "Los pagos serán procesados a través de Mercado Pago .\n\nPor el momento no aceptamos pagos en efectivo, contra entrega, transferencias bancarias, o Pago Facil, Pago mis Cuentas y Rapi Pago.\n\n**PROMOCIONES Y CUOTAS DISPONIBLES**\n\nPodrás consultar las promociones vigentes con Mercado Pago [aquí](https://promociones.mercadopago.com.ar/).\n\n**SEGURIDAD DEL SITIO**\n\nToda la información que ingreses queda automáticamente protegida por el sistema SSL (Secure Sockets Layer) que garantiza una transacción 100% segura. Este sistema encripta los datos suministrados y evita su uso desautorizado.\n\n**FACTURA A**\n\nPor el momento solo entregamos facturas tipo \"B\", para consumidor final.",
+      "blockClass": "medios-de-pago-texto"
+    }
+  },
+
+  /* POLITICA DE ENVIOS */
+  "tab-content.item#politicas-de-envios": {
+    "children": ["rich-text#politicas-de-envios-titulo", "rich-text#politicas-de-envios-texto"],
+    "props": {
+      "tabId": "politicas-de-envios"
+    }
+  },
+  "rich-text#politicas-de-envios-titulo": {
+    "props": {
+      "text": "## POLÍTICAS DE ENVÍOS",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "rich-text#politicas-de-envios-texto": {
+    "props": {
+      "text": "**TIEMPOS Y COSTOS DE ENVIO**\n\nEl tiempo estimado de entrega varía según el método de envío seleccionado y la localidad del envío.\nLas entregas se realizan de lunes a viernes, entre las 9:00 y las 20:00 horas, con excepción de los feriados.\n\n**Contamos con 3 opciones de envÍo:**\n\n- EnvÍo a domicilio express:\n\n- Envío en el día para CABA y GBA (Avellaneda, Hurlinghan, Ituzaingó, La Matanza, Lanús, Lomas de Zamora, Morón, San Fernando, San Isidro, San Martín, Tres de Febrero, Vicente López) Comprá antes de las 14:00 Hrs y te lo entregamos en el día. Si comprás luego de las 14 hs lo entregamos al próximo día hábil. En GBA: Demora de hasta 2 dias hábiles en GBA.\n\n- Envio a domicilio estandar. Demora de hasta 8 dias hábiles en CABA y GBA y hasta 14 días hábiles en el interior del país.\n\n- Retiro en punto PICKIT. Demora de hasta 8 dias hábiles en CABA y GBA y hasta 14 días hábiles en el interior del país.\n\n- Cuando se envía el pedido a un punto Pickit, podrás retirarlo al punto elegido, según los horarios del local.\n\n**¿COMO SÉ QUE MI COMPRA FUE DESPACHADA?**\n\nUna vez que el correo tenga tu compra, te enviaremos un email con un enlace para que puedas rastrear tu compra, una vez que figure \"En Distribución\" es que ese día o el siguiente la recibirás.\n\n**¿COMO ASEGURAR LA ENTREGA?**\n\nTe recomendamos que elijas un domicilio donde sea más seguro encontrarte o que siempre haya alguien para recibir.\nPodés elegir tu trabajo, la casa de algún familiar o de alguien de confianza. Tené en cuenta que no entregamos a menores de edad. Asegurate que tu domicilio este completo, no olvides aclarar el número de la calle, piso, departamento, oficina, torre o monoblock si fuera necesario. Mientras más datos nos dejes, más fácil será para el correo encontrar tu casa. Dejanos también tu celular o el teléfono de alguien que esté al tanto de tu compra, para que podamos contactarnos fácilmente si fuera necesario re-coordinar la entrega.\n\n**¿QUIEN REALIZA LA ENTREGA?**\n\nTodas nuestras entregas se realizan a través de correo privado en todo el país\n\n**TIEMPOS DE ENVIO**\n\nPara que tu compra sea procesada, el pago debe estar aprobado. Estate atento a los correos que te mande Mercado Pago.\nPuede ser que te soliciten alguna verificación de identidad, esto es también por tu propia seguridad, para evitar que se utilicen tarjetas apócrifas en el sitio.\n\nAl concretar la operación, el usuario se está obligando a revisar la mercadería al momento de recibirla en el domicilio que éste consigne. La firma del remito correspondiente implicará la aceptación de la mercadería adquirida, sin perjuicio de los derechos que al usuario le asisten conforme la ley. Dependiendo del tipo de compra que realice el usuario y las condiciones vigentes, la operación podrá tener o no costo de envío.\n\nCualquier costo adicional que se genere como consecuencia de errores en el ingreso de datos por parte del Usuario así como también de problemas que se deban a su exclusiva actuación, serán adicionados a la factura.",
+      "blockClass": "politicas-de-envios-texto"
+    }
+  },
+
+  /* POLITICA DE PRIVACIDAD */
+  "tab-content.item#politica-de-privacidad": {
+    "children": [
+      "rich-text#politica-de-privacidad-titulo",
+      "rich-text#politica-de-privacidad-texto"
+    ],
+    "props": {
+      "tabId": "politica-de-privacidad"
+    }
+  },
+  "rich-text#politica-de-privacidad-titulo": {
+    "props": {
+      "text": "## POLÍTICA DE PRIVACIDAD",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "rich-text#politica-de-privacidad-texto": {
+    "props": {
+      "text": "El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto conforme lo establecido en el artículo 14, inciso 3 de la Ley Nº 25.326.\n\nLa DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES, Órgano de Control de la Ley Nº 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales.\n\nPara contactar a la Dirección Nacional de Protección de Datos Personales:\nSamiento 1118, 5º piso (C1041AAX). Tel: 4383-8510/12/13/15.\nwww.jus.gov.ar/datospersonales - infodnpdp@just.gov.ar",
+      "blockClass": "politica-de-privacidad-texto"
+    }
+  },
+
+  /* CAMBIOS Y DEVOLUCIONES */
+  "tab-content.item#cambios-y-devoluciones": {
+    "children": [
+      "rich-text#cambios-y-devoluciones-titulo",
+      "link#cambios-y-devoluciones-no-disponible"
+      // "flex-layout.row#cambios-y-devoluciones"
+    ],
+    "props": {
+      "tabId": "cambios-y-devoluciones"
+    }
+  },
+  "rich-text#cambios-y-devoluciones-titulo": {
+    "props": {
+      "text": "## CAMBIOS Y DEVOLUCIONES",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "link#cambios-y-devoluciones-no-disponible": {
+    "props": {
+      "label": "11-39178980",
+      "href": "https://wa.me/5491139178980",
+      "target": "_blank",
+      "blockClass": "cambios-y-devoluciones-no-disponible"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones": {
+    "children": ["flex-layout.col#cambios-y-devoluciones"],
+    "props": {}
+  },
+  "flex-layout.col#cambios-y-devoluciones": {
+    "children": ["rich-text#cambios-y-devoluciones-heading", "form#cambios-y-devoluciones"],
+    "props": {
+      "blockClass": "cambios-y-devoluciones"
+    }
+  },
+  "rich-text#cambios-y-devoluciones-heading": {
+    "props": {
+      "text": "Formulario de cambios",
+      "blockClass": "cambios-y-devoluciones-heading"
+    }
+  },
+  "form#cambios-y-devoluciones": {
+    "props": {
+      "entity": "CD",
+      "schema": "CambiosDevoluciones"
+    },
+    "children": [
+      "form-input.radiogroup#cambios-y-devoluciones-motivo",
+      "flex-layout.row#cambios-y-devoluciones-comentarios",
+      "form-input.radiogroup#cambios-y-devoluciones-opcionesDevolucion",
+      "flex-layout.row#cambios-y-devoluciones-datos-personales",
+      "flex-layout.row#cambios-y-devoluciones-datos-pedido1",
+      "form-input.checkbox#cambios-y-devoluciones-agregarProductos2",
+      "flex-layout.row#cambios-y-devoluciones-datos-pedido2",
+      "form-input.checkbox#cambios-y-devoluciones-agregarProductos3",
+      "flex-layout.row#cambios-y-devoluciones-datos-pedido3",
+      "flex-layout.row#cambios-y-devoluciones-datos-direccion",
+      "form-input.textarea#cambios-y-devoluciones-aclaraciones",
+      "form-submit#cambios-y-devoluciones-boton"
+    ],
+    "blocks": ["form-success#cambios-y-devoluciones"]
+  },
+  "form-input.radiogroup#cambios-y-devoluciones-motivo": {
+    "props": {
+      "pointer": "#/properties/motivo"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones-comentarios": {
+    "children": ["form-input.textarea#cambios-y-devoluciones-comentarios"],
+    "props": {
+      "blockClass": "cambios-y-devoluciones-comentarios"
+    }
+  },
+  "form-input.textarea#cambios-y-devoluciones-comentarios": {
+    "props": {
+      "pointer": "#/properties/comentarios"
+    }
+  },
+  "form-input.radiogroup#cambios-y-devoluciones-opcionesDevolucion": {
+    "props": {
+      "pointer": "#/properties/opcionesDevolucion"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones-datos-personales": {
+    "children": [
+      "form-input.text#cambios-y-devoluciones-correoElectronico",
+      "form-input.text#cambios-y-devoluciones-nombre",
+      "form-input.text#cambios-y-devoluciones-telefono"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "cambios-y-devoluciones-datos-personales"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-correoElectronico": {
+    "props": {
+      "pointer": "#/properties/correoElectronico"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-nombre": {
+    "props": {
+      "pointer": "#/properties/nombre"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-telefono": {
+    "props": {
+      "pointer": "#/properties/telefono"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones-datos-pedido1": {
+    "children": [
+      "form-input.text#cambios-y-devoluciones-numeroPedido",
+      "form-input.text#cambios-y-devoluciones-productoComprado1",
+      "form-input.text#cambios-y-devoluciones-productoCambio1"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["cambios-y-devoluciones-pedido", "1"]
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-numeroPedido": {
+    "props": {
+      "pointer": "#/properties/numeroPedido"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-productoComprado1": {
+    "props": {
+      "pointer": "#/properties/productoComprado1"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-productoCambio1": {
+    "props": {
+      "pointer": "#/properties/productoCambio1"
+    }
+  },
+  "form-input.checkbox#cambios-y-devoluciones-agregarProductos2": {
+    "props": {
+      "pointer": "#/properties/agregarProductos2"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones-datos-pedido2": {
+    "children": [
+      "form-input.text#cambios-y-devoluciones-productoComprado2",
+      "form-input.text#cambios-y-devoluciones-productoCambio2"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["cambios-y-devoluciones-pedido", "2"]
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-productoComprado2": {
+    "props": {
+      "pointer": "#/properties/productoComprado2"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-productoCambio2": {
+    "props": {
+      "pointer": "#/properties/productoCambio2"
+    }
+  },
+  "form-input.checkbox#cambios-y-devoluciones-agregarProductos3": {
+    "props": {
+      "pointer": "#/properties/agregarProductos3"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones-datos-pedido3": {
+    "children": [
+      "form-input.text#cambios-y-devoluciones-productoComprado3",
+      "form-input.text#cambios-y-devoluciones-productoCambio3"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["cambios-y-devoluciones-pedido", "3"]
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-productoComprado3": {
+    "props": {
+      "pointer": "#/properties/productoComprado3"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-productoCambio3": {
+    "props": {
+      "pointer": "#/properties/productoCambio3"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones-datos-direccion": {
+    "children": ["flex-layout.col#cambios-y-devoluciones-datos-direccion"],
+    "props": {}
+  },
+  "flex-layout.col#cambios-y-devoluciones-datos-direccion": {
+    "children": [
+      "rich-text#cambios-y-devoluciones-datos-direccion",
+      "flex-layout.row#cambios-y-devoluciones-datos-direccion-row1",
+      "flex-layout.row#cambios-y-devoluciones-datos-direccion-row2"
+    ],
+    "props": {
+      "blockClass": "cambios-y-devoluciones-datos-direccion"
+    }
+  },
+  "rich-text#cambios-y-devoluciones-datos-direccion": {
+    "props": {
+      "text": "**IMPORTANTE:** Te pedimos que selecciones un domicilio donde haya alguien de 9 a 18 hs., no es necesario que sea el mismo de entrega, ej. puede ser el del trabajo.",
+      "blockClass": "cambios-y-devoluciones-datos-direccion"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones-datos-direccion-row1": {
+    "children": [
+      "form-input.text#cambios-y-devoluciones-numero",
+      "form-input.text#cambios-y-devoluciones-calle",
+      "form-input.text#cambios-y-devoluciones-piso"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "cambios-y-devoluciones-datos-direccion"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-numero": {
+    "props": {
+      "pointer": "#/properties/numero"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-calle": {
+    "props": {
+      "pointer": "#/properties/calle"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-piso": {
+    "props": {
+      "pointer": "#/properties/piso"
+    }
+  },
+  "flex-layout.row#cambios-y-devoluciones-datos-direccion-row2": {
+    "children": [
+      "form-input.text#cambios-y-devoluciones-codigoPostal",
+      "form-input.text#cambios-y-devoluciones-ciudad",
+      "form-input.text#cambios-y-devoluciones-provincia"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "cambios-y-devoluciones-datos-direccion"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-codigoPostal": {
+    "props": {
+      "pointer": "#/properties/codigoPostal"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-ciudad": {
+    "props": {
+      "pointer": "#/properties/ciudad"
+    }
+  },
+  "form-input.text#cambios-y-devoluciones-provincia": {
+    "props": {
+      "pointer": "#/properties/provincia"
+    }
+  },
+  "form-input.textarea#cambios-y-devoluciones-aclaraciones": {
+    "props": {
+      "pointer": "#/properties/aclaraciones"
+    }
+  },
+  "form-submit#cambios-y-devoluciones-boton": {
+    "props": {
+      "label": "ENVIAR",
+      "blockClass": "cambios-y-devoluciones"
+    }
+  },
+  "form-success#cambios-y-devoluciones": {
+    "children": ["rich-text#cambios-y-devoluciones-exito"]
+  },
+  "rich-text#cambios-y-devoluciones-exito": {
+    "props": {
+      "text": "#### Te contactaremos a la brevedad para hacerle seguimiento a tu caso",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "cambios-y-devoluciones-exito"
+    }
+  },
+
+  /* CONTACTO */
+  "tab-content.item#contacto": {
+    "children": ["rich-text#contacto-titulo", "flex-layout.row#ayuda-contacto"],
+    "props": {
+      "tabId": "contacto"
+    }
+  },
+  "rich-text#contacto-titulo": {
+    "props": {
+      "text": "## CONTACTO",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "flex-layout.row#ayuda-contacto": {
+    "children": ["flex-layout.col#ayuda-contacto"],
+    "props": {}
+  },
+  "flex-layout.col#ayuda-contacto": {
+    "children": [
+      "flex-layout.row#ayuda-contacto-heading"
+      // "rich-text#contacto-form-heading",
+      // "form#contacto"
+    ],
+    "props": {
+      "blockClass": "ayuda-contacto"
+    }
+  },
+  "flex-layout.row#ayuda-contacto-heading": {
+    "children": [
+      // "flex-layout.col#ayuda-contacto-heading-1",
+      "flex-layout.col#ayuda-contacto-heading-2",
+      "flex-layout.col#ayuda-contacto-heading-3"
+    ],
+    "props": {
+      "blockClass": "contacto-heading"
+    }
+  },
+  "flex-layout.col#ayuda-contacto-heading-1": {
+    "children": ["link#contacto-heading-1"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "link#contacto-heading-1": {
+    "props": {
+      "label": "sac@stanley-pmi.com.ar",
+      "href": "https://wa.me/5491139178980",
+      "target": "_blank",
+      "blockClass": ["contacto-heading", "1"]
+    }
+  },
+  "flex-layout.col#ayuda-contacto-heading-2": {
+    "children": ["flex-layout.row#ayuda-contacto-heading-2-links", "rich-text#contacto-heading-2"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": "contacto-heading-2"
+    }
+  },
+  "flex-layout.row#ayuda-contacto-heading-2-links": {
+    "children": ["link#contacto-heading-2-facebook", "link#contacto-heading-2-instagram"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "link#contacto-heading-2-facebook": {
+    "props": {
+      "label": "",
+      "href": "https://www.facebook.com/tienda3i/",
+      "target": "_blank",
+      "blockClass": ["contacto-heading-2", "facebook"]
+    }
+  },
+  "link#contacto-heading-2-instagram": {
+    "props": {
+      "label": "",
+      "href": "https://www.instagram.com/stanley_arg/",
+      "target": "_blank",
+      "blockClass": ["contacto-heading-2", "instagram"]
+    }
+  },
+  "rich-text#contacto-heading-2": {
+    "props": {
+      "text": "Contactanos en **@stanley_arg**",
+      "blockClass": ["contacto-heading", "2"]
+    }
+  },
+  "flex-layout.col#ayuda-contacto-heading-3": {
+    "children": ["link#contacto-heading-3"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "link#contacto-heading-3": {
+    "props": {
+      "label": "11-39178980",
+      "href": "https://wa.me/5491139178980",
+      "target": "_blank",
+      "blockClass": ["contacto-heading", "3"]
+    }
+  },
+  "rich-text#contacto-form-heading": {
+    "props": {
+      "text": "Envianos un mensaje",
+      "blockClass": "contacto-form-heading"
+    }
+  },
+  "form#contacto": {
+    "props": {
+      "entity": "CO",
+      "schema": "Contacto"
+    },
+    "children": [
+      "form-input.radiogroup#contacto-productoRecibido",
+      "form-input.dropdown#contacto-motivoConsulta",
+      "flex-layout.row#contacto-datos-personales",
+      "flex-layout.row#contacto-numero-pedido",
+      "form-input.textarea#contacto-mensaje",
+      "form-submit#contacto-boton"
+    ],
+    "blocks": ["form-success#contacto"]
+  },
+  "form-input.radiogroup#contacto-productoRecibido": {
+    "props": {
+      "pointer": "#/properties/productoRecibido"
+    }
+  },
+  "form-input.dropdown#contacto-motivoConsulta": {
+    "props": {
+      "pointer": "#/properties/motivoConsulta"
+    }
+  },
+  "flex-layout.row#contacto-datos-personales": {
+    "children": [
+      "form-input.text#contacto-nombre",
+      "form-input.text#contacto-telefono",
+      "form-input.text#contacto-correoElectronico"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "contacto-datos-personales"
+    }
+  },
+  "form-input.text#contacto-nombre": {
+    "props": {
+      "pointer": "#/properties/nombre"
+    }
+  },
+  "form-input.text#contacto-telefono": {
+    "props": {
+      "pointer": "#/properties/telefono"
+    }
+  },
+  "form-input.text#contacto-correoElectronico": {
+    "props": {
+      "pointer": "#/properties/correoElectronico"
+    }
+  },
+  "flex-layout.row#contacto-numero-pedido": {
+    "children": ["form-input.text#contacto-numeroPedido"],
+    "props": {
+      "blockClass": "contacto-numero-pedido"
+    }
+  },
+  "form-input.text#contacto-numeroPedido": {
+    "props": {
+      "pointer": "#/properties/numeroPedido"
+    }
+  },
+  "form-input.textarea#contacto-mensaje": {
+    "props": {
+      "pointer": "#/properties/mensaje"
+    }
+  },
+  "form-submit#contacto-boton": {
+    "props": {
+      "label": "ENVIAR",
+      "blockClass": "contacto"
+    }
+  },
+  "form-success#contacto": {
+    "children": ["rich-text#contacto-exito"]
+  },
+  "rich-text#contacto-exito": {
+    "props": {
+      "text": "#### ¡Gracias por tu mensaje! A la brevedad te estaremos respondiendo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "contacto-exito"
+    }
+  },
+
+  /* ARREPENTIMIENTO DE COMPRA */
+  "tab-content.item#arrepentimiento-de-compra": {
+    "children": [
+      "rich-text#arrepentimiento-de-compra-titulo",
+      "link#arrepentimiento-no-disponible"
+      // "form#arrepentimiento"
+    ],
+    "props": {
+      "tabId": "arrepentimiento-de-compra"
+    }
+  },
+  "rich-text#arrepentimiento-de-compra-titulo": {
+    "props": {
+      "text": "## ARREPENTIMIENTO DE COMPRA",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "link#arrepentimiento-no-disponible": {
+    "props": {
+      "label": "11-39178980",
+      "href": "https://wa.me/5491139178980",
+      "target": "_blank",
+      "blockClass": "arrepentimiento-no-disponible"
+    }
+  },
+  "form#arrepentimiento": {
+    "props": {
+      "entity": "AC",
+      "schema": "ArrepentimientoCompra"
+    },
+    "children": [
+      "flex-layout.row#arrepentimiento",
+      "form-input.textarea#arrepentimiento-motivo",
+      "form-submit#arrepentimiento-boton"
+    ],
+    "blocks": ["form-success#arrepentimiento"]
+  },
+  "flex-layout.row#arrepentimiento": {
+    "children": ["flex-layout.col#arrepentimiento"],
+    "props": {}
+  },
+  "flex-layout.col#arrepentimiento": {
+    "children": [
+      "form-input.text#arrepentimiento-nombre",
+      "form-input.text#arrepentimiento-apellido",
+      "form-input.text#arrepentimiento-correoElectronico",
+      "form-input.text#arrepentimiento-celular",
+      "form-input.text#arrepentimiento-DNI",
+      "form-input.text#arrepentimiento-numeroOrden"
+    ],
+    "props": {
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-input.text#arrepentimiento-nombre": {
+    "props": {
+      "pointer": "#/properties/nombre",
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-input.text#arrepentimiento-apellido": {
+    "props": {
+      "pointer": "#/properties/apellido",
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-input.text#arrepentimiento-correoElectronico": {
+    "props": {
+      "pointer": "#/properties/correoElectronico",
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-input.text#arrepentimiento-celular": {
+    "props": {
+      "pointer": "#/properties/celular",
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-input.text#arrepentimiento-DNI": {
+    "props": {
+      "pointer": "#/properties/DNI",
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-input.text#arrepentimiento-numeroOrden": {
+    "props": {
+      "pointer": "#/properties/numeroOrden",
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-input.textarea#arrepentimiento-motivo": {
+    "props": {
+      "pointer": "#/properties/motivo",
+      "label": "Motivo de la revocación de compra:",
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-submit#arrepentimiento-boton": {
+    "props": {
+      "label": "ENVIAR",
+      "blockClass": "arrepentimiento"
+    }
+  },
+  "form-success#arrepentimiento": {
+    "children": ["rich-text#arrepentimiento-exito"]
+  },
+  "rich-text#arrepentimiento-exito": {
+    "props": {
+      "text": "#### Te contactaremos a la brevedad para hacerle seguimiento a tu caso",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "arrepentimiento-exito"
+    }
+  },
+
+  /* GARANTIA */
+  "tab-content.item#garantia": {
+    "children": ["rich-text#garantia", "flex-layout.row#garantia"],
+    "props": {
+      "tabId": "garantia"
+    }
+  },
+  "rich-text#garantia": {
+    "props": {
+      "text": "## GARANTIA",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "flex-layout.row#garantia": {
+    "children": ["tab-layout#garantia"],
+    "props": {
+      "blockClass": "garantia"
+    }
+  },
+  "tab-layout#garantia": {
+    "children": ["tab-list#garantia", "tab-content#garantia"],
+    "props": {
+      "blockClass": "garantia",
+      "defaultActiveTabId": "garantia-form"
+    }
+  },
+  "tab-list#garantia": {
+    "children": [
+      "rich-text#garantia-tab-list",
+      "tab-list.item.children#garantia-form",
+      "tab-list.item.children#garantia-texto"
+    ],
+    "props": {
+      "blockClass": "garantia"
+    }
+  },
+  "rich-text#garantia-tab-list": {
+    "props": {
+      "text": "País de Compra:",
+      "blockClass": "garantia-tab-list"
+    }
+  },
+  "tab-list.item.children#garantia-form": {
+    "children": ["rich-text#garantia-form-trigger"],
+    "props": {
+      "tabId": "garantia-form",
+      "blockClass": "garantia"
+    }
+  },
+  "rich-text#garantia-form-trigger": {
+    "props": {
+      "text": "Argentina",
+      "blockClass": "garantia"
+    }
+  },
+  "tab-list.item.children#garantia-texto": {
+    "children": ["rich-text#garantia-texto-trigger"],
+    "props": {
+      "tabId": "garantia-texto",
+      "blockClass": "garantia"
+    }
+  },
+  "rich-text#garantia-texto-trigger": {
+    "props": {
+      "text": "Otro",
+      "blockClass": "garantia"
+    }
+  },
+  "tab-content#garantia": {
+    "children": ["tab-content.item#garantia-form", "tab-content.item#garantia-texto"]
+  },
+  "tab-content.item#garantia-form": {
+    "children": ["form#garantia"],
+    "props": {
+      "tabId": "garantia-form"
+    }
+  },
+  "tab-content.item#garantia-texto": {
+    "children": ["rich-text#garantia-texto"],
+    "props": {
+      "tabId": "garantia-texto"
+    }
+  },
+  "rich-text#garantia-texto": {
+    "props": {
+      "text": "Para gestiones de garantías de productos adquiridos fuera del territorio Argentino deberá contactar al vendedor en donde fue adquirido el producto o completar el siguiente formulario:\n\nhttps://www.stanley-pmi.com/warranty-claim\n\nLuego de completar el formulario recibirá los detalles para continuar su gestión por correo electrónico.",
+      "blockClass": "garantia"
+    }
+  },
+  "form#garantia": {
+    "props": {
+      "entity": "GA",
+      "schema": "Garantia"
+    },
+    "children": [
+      "rich-text#garantia-info-personal",
+      "flex-layout.row#garantia-nombre",
+      "flex-layout.row#garantia-cuil-telefono",
+      "flex-layout.row#garantia-correo-direccion",
+      "flex-layout.row#garantia-ciudad-cp-provincia",
+      "rich-text#garantia-info-producto",
+      "form-input.dropdown#garantia-nombreProducto",
+      "flex-layout.row#garantia-fecha-fabricacion-compra",
+      "rich-text#garantia-info-producto-opcional",
+      "flex-layout.row#garantia-info-producto-opcional",
+      "form-input.dropdown#garantia-problema",
+      "flex-layout.row#garantia-imagenProducto",
+      "flex-layout.row#garantia-comprobante",
+      "form-input.textarea#garantia-lugar",
+      "rich-text#garantia-aclaracion",
+      "form-submit#garantia-boton"
+    ],
+    "blocks": ["form-success#garantia"]
+  },
+  "rich-text#garantia-info-personal": {
+    "props": {
+      "text": "Información personal",
+      "blockClass": "garantia-info-personal"
+    }
+  },
+  "flex-layout.row#garantia-nombre": {
+    "children": ["form-input.text#garantia-nombre", "form-input.text#garantia-apellido"],
+    "props": {
+      "colGap": 5,
+      "blockClass": "garantia-nombre"
+    }
+  },
+  "form-input.text#garantia-nombre": {
+    "props": {
+      "pointer": "#/properties/nombre"
+    }
+  },
+  "form-input.text#garantia-apellido": {
+    "props": {
+      "pointer": "#/properties/apellido"
+    }
+  },
+  "flex-layout.row#garantia-cuil-telefono": {
+    "children": ["flex-layout.col#garantia-cuil-telefono"],
+    "props": {
+      "blockClass": "garantia-cuil-telefono"
+    }
+  },
+  "flex-layout.col#garantia-cuil-telefono": {
+    "children": ["form-input.text#garantia-cuil", "form-input.text#garantia-telefono"]
+  },
+  "form-input.text#garantia-cuil": {
+    "props": {
+      "pointer": "#/properties/cuil",
+      "label": "DNI/CUIT/CUIL"
+    }
+  },
+  "form-input.text#garantia-telefono": {
+    "props": {
+      "pointer": "#/properties/telefono"
+    }
+  },
+  "flex-layout.row#garantia-correo-direccion": {
+    "children": ["flex-layout.col#garantia-correo-direccion"],
+    "props": {
+      "blockClass": "garantia-correo-direccion"
+    }
+  },
+  "flex-layout.col#garantia-correo-direccion": {
+    "children": ["form-input.text#garantia-correoElectronico", "form-input.text#garantia-direccion"]
+  },
+  "form-input.text#garantia-correoElectronico": {
+    "props": {
+      "pointer": "#/properties/correoElectronico"
+    }
+  },
+  "form-input.text#garantia-direccion": {
+    "props": {
+      "pointer": "#/properties/direccion"
+    }
+  },
+  "flex-layout.row#garantia-ciudad-cp-provincia": {
+    "children": [
+      "form-input.text#garantia-ciudad",
+      "form-input.text#garantia-codigoPostal",
+      "form-input.dropdown#garantia-provincia"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "garantia-ciudad-cp-provincia"
+    }
+  },
+  "form-input.text#garantia-ciudad": {
+    "props": {
+      "pointer": "#/properties/ciudad"
+    }
+  },
+  "form-input.text#garantia-codigoPostal": {
+    "props": {
+      "pointer": "#/properties/codigoPostal"
+    }
+  },
+  "form-input.dropdown#garantia-provincia": {
+    "props": {
+      "pointer": "#/properties/provincia"
+    }
+  },
+  "rich-text#garantia-info-producto": {
+    "props": {
+      "text": "Información del producto",
+      "blockClass": "garantia-info-producto"
+    }
+  },
+  "form-input.dropdown#garantia-nombreProducto": {
+    "props": {
+      "pointer": "#/properties/nombreProducto"
+    }
+  },
+  "flex-layout.row#garantia-fecha-fabricacion-compra": {
+    "children": [
+      "form-input.dropdown#garantia-fechaFabricacion",
+      "form-input.text#garantia-anoFabricacion",
+      "form-input.text#garantia-fechaCompra"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "garantia-fecha-fabricacion-compra"
+    }
+  },
+  "form-input.dropdown#garantia-fechaFabricacion": {
+    "props": {
+      "pointer": "#/properties/fechaFabricacion"
+    }
+  },
+  "form-input.text#garantia-anoFabricacion": {
+    "props": {
+      "pointer": "#/properties/anoFabricacion"
+    }
+  },
+  "form-input.text#garantia-fechaCompra": {
+    "props": {
+      "pointer": "#/properties/fechaCompra",
+      "placeholder": "dd/mm/aa"
+    }
+  },
+  "rich-text#garantia-info-producto-opcional": {
+    "props": {
+      "text": "Si no encontraste tu producto en el listado completá la siguiente información",
+      "blockClass": "garantia-info-producto-opcional"
+    }
+  },
+  "flex-layout.row#garantia-info-producto-opcional": {
+    "children": [
+      "flex-layout.col#garantia-info-producto-opcional-inputs",
+      "flex-layout.col#garantia-info-producto-opcional-imagen"
+    ],
+    "props": {
+      "colGap": 6,
+      "blockClass": "garantia-info-producto-opcional"
+    }
+  },
+  "flex-layout.col#garantia-info-producto-opcional-inputs": {
+    "children": [
+      "form-input.text#garantia-nombreProductoFuera",
+      "form-input.text#garantia-color",
+      "form-input.text#garantia-capacidad"
+    ],
+    "props": {
+      "width": "40%"
+    }
+  },
+  "form-input.text#garantia-nombreProductoFuera": {
+    "props": {
+      "pointer": "#/properties/nombreProductoFuera"
+    }
+  },
+  "form-input.text#garantia-color": {
+    "props": {
+      "pointer": "#/properties/color"
+    }
+  },
+  "form-input.text#garantia-capacidad": {
+    "props": {
+      "pointer": "#/properties/capacidad"
+    }
+  },
+  "flex-layout.col#garantia-info-producto-opcional-imagen": {
+    "children": ["image#garantia-info-producto-opcional"],
+    "props": {
+      "width": "60%"
+    }
+  },
+  "image#garantia-info-producto-opcional": {
+    "props": {
+      "src": "assets/ayuda/garantia-info-producto.jpg",
+      "blockClass": "garantia-info-producto-opcional"
+    }
+  },
+  "form-input.dropdown#garantia-problema": {
+    "props": {
+      "pointer": "#/properties/problema"
+    }
+  },
+  "flex-layout.row#garantia-imagenProducto": {
+    "children": ["form-input.upload#garantia-imagenProducto"],
+    "props": {
+      "blockClass": "garantia-imagenProducto"
+    }
+  },
+  "form-input.upload#garantia-imagenProducto": {
+    "props": {
+      "pointer": "#/properties/imagenProducto"
+    }
+  },
+  "flex-layout.row#garantia-comprobante": {
+    "children": ["form-input.upload#garantia-comprobante"],
+    "props": {
+      "blockClass": "garantia-comprobante"
+    }
+  },
+  "form-input.upload#garantia-comprobante": {
+    "props": {
+      "pointer": "#/properties/comprobante"
+    }
+  },
+  "form-input.textarea#garantia-lugar": {
+    "props": {
+      "pointer": "#/properties/lugarCompra"
+    }
+  },
+  "rich-text#garantia-aclaracion": {
+    "props": {
+      "text": "Los productos de Stanley se garantizan contra los defectos de la mano de obra o materiales. La garantía no cubre partes incorrectas debido a una alteración, uso indebido o accidente.",
+      "blockClass": "garantia-aclaracion"
+    }
+  },
+  "form-submit#garantia-boton": {
+    "props": {
+      "label": "ENVIAR",
+      "blockClass": "garantia"
+    }
+  },
+  "form-success#garantia": {
+    "children": ["rich-text#garantia-exito"]
+  },
+  "rich-text#garantia-exito": {
+    "props": {
+      "text": "#### Te contactaremos a la brevedad para hacerle seguimiento a tu caso",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "garantia-exito"
+    }
+  },
+
+  /* PUNTOS DE VENTA */
+  "tab-content.item#puntos-de-venta": {
+    "children": ["rich-text#puntos-de-venta-titulo", "flex-layout.row#contendor-puntos-de-venta"],
+    "props": {
+      "tabId": "puntos-de-venta"
+    }
+  },
+  "rich-text#puntos-de-venta-titulo": {
+    "props": {
+      "text": "## PUNTOS DE VENTA",
+      "textPosition": "CENTER",
+      "blockClass": "ayuda-item-titulo"
+    }
+  },
+  "flex-layout.row#contendor-puntos-de-venta": {
+    "children": [
+      "flex-layout.col#box-left-puntos-de-venta",
+      "flex-layout.col#box-right-puntos-de-venta"
+    ],
+    "props": {
+      "blockClass": "contendor-puntos-de-venta"
+    }
+  },
+  "flex-layout.col#box-left-puntos-de-venta": {
+    "children": [
+      "flex-layout.col#info-sucursal-1",
+      "flex-layout.col#info-sucursal-2"
+     // "flex-layout.col#info-sucursal-3",
+      //"flex-layout.col#info-sucursal-4",
+      //"flex-layout.col#info-sucursal-5"
+    ],
+    "props": {
+      "width": "30%",
+      "blockClass": "contendor-left"
+    }
+  },
+  "flex-layout.col#box-right-puntos-de-venta": {
+    "children": [
+      "flex-layout.col#contenedor-mapa"
+    ],
+    "props": {
+      "width": "70%",
+      "blockClass": "contendor-right"
+    }
+  },
+  "flex-layout.col#contenedor-mapa": {
+    "props": {
+      "blockClass": "contenedor-mapa"
+    },
+    "children": ["sandbox#sucursales"]
+  },
+  "sandbox#sucursales": {
+    "title": "Mapa",
+    "props": {
+      "initialContent": "<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12694.560058422823!2d-59.137847750000006!3d-37.30366475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1668454372685!5m2!1ses!2sar' width='600' height='700' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+      "allowCookies": true,
+      "blockClass": "iframe-sucursales"
+    }
+  },
+  "flex-layout.col#info-sucursal-1": {
+    "props": {
+      "blockClass": "info-sucursal",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#sucursal-box-1"
+    ]
+  },
+  "rich-text#sucursal-box-1": {
+    "props": {
+      "blockClass": "sucursal-text-1",
+      "text": "**Mates Publicitarios** \n\n # Direccion: Calle Semilla 1861 \n ## Provincia: Misiones \n ### Localidad: Posadas \n #### Horarios: L a V de 9 a 18hrs. Sabado 9 a 13hrs. Domingo cerrado \n [Ver Mapa](https://goo.gl/maps/EiVQD1DSAkK4cKRM9)"
+    }
+  },
+
+  "flex-layout.col#info-sucursal-2": {
+    "props": {
+      "blockClass": "info-sucursal",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#sucursal-box-2"
+    ]
+  },
+  "rich-text#sucursal-box-2": {
+    "props": {
+      "blockClass": "sucursal-text-1",
+      "text": "**Ejemplo 2** \n\n # Direccion: Calle Semilla 1861 \n ## Provincia: Misiones \n ### Localidad: Posadas \n #### Horarios: L a V de 9 a 18hrs. Sabado 9 a 13hrs. Domingo cerrado"
+    }
+  },
+
+  "flex-layout.col#info-sucursal-3": {
+    "props": {
+      "blockClass": "info-sucursal",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#sucursal-box-3"
+    ]
+  },
+  "rich-text#sucursal-box-3": {
+    "props": {
+      "blockClass": "sucursal-text-1",
+      "text": "**Mates Publicitarios** \n\n # Direccion: Calle Semilla 1861 \n ## Provincia: Misiones \n ### Localidad: Posadas \n #### Horarios: L a V de 9 a 18hrs. Sabado 9 a 13hrs. Domingo cerrado"
+    }
+  },
+
+  "flex-layout.col#info-sucursal-4": {
+    "props": {
+      "blockClass": "info-sucursal",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#sucursal-box-4"
+    ]
+  },
+  "rich-text#sucursal-box-4": {
+    "props": {
+      "blockClass": "sucursal-text-1",
+      "text": "**Mates Publicitarios** \n\n # Direccion: Calle Semilla 1861 \n ## Provincia: Misiones \n ### Localidad: Posadas \n #### Horarios: L a V de 9 a 18hrs. Sabado 9 a 13hrs. Domingo cerrado"
+    }
+  },
+
+  "flex-layout.col#info-sucursal-5": {
+    "props": {
+      "blockClass": "info-sucursal",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#sucursal-box-5"
+    ]
+  },
+  "rich-text#sucursal-box-5": {
+    "props": {
+      "blockClass": "sucursal-text-1",
+      "text": "**Mates Publicitarios** \n\n # Direccion: Calle Semilla 1861 \n ## Provincia: Misiones \n ### Localidad: Posadas \n #### Horarios: L a V de 9 a 18hrs. Sabado 9 a 13hrs. Domingo cerrado"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#toTop",
+      /*       "newsletter-form#tienda2",
+       */ 
+       "flex-layout.row#newNewsletter",
+       "flex-layout.row#logo-footer",
+      "flex-layout.row#footer-desktop",
+      "footer-row#copyright-desk"
+    ]
+  },
+  "flex-layout.row#toTop": {
+    "props": {
+      "blockClass": "to-top"
+    },
+    "children": ["link#toTop" /* , "sandbox#toTop" */]
+  },
+  "rich-text#link-toTop": {
+    "props": {
+      "text": "[Subir](/#top)"
+    }
+  },
+  "link#toTop": {
+    "props": {
+      "label": "Subir",
+      "href": "#top",
+      "blockClass": "to-top"
+    }
+  },
+  "flex-layout.row#footer-desktop": {
+    "props": {
+      "blockClass": "footer-container"
+    },
+    "children": [
+      "flex-layout.col#footer-desktop-1", //about column
+      "flex-layout.col#footer-desktop-2", //help pages column
+      "flex-layout.col#footer-desktop-3", //contact column
+      "flex-layout.col#footer-desktop-4" //medios de pagos
+    ]
+  }
+}

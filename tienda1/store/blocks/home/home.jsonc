@@ -1,0 +1,252 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      //  "__fold__.experimentalLazyAssets",
+       "responsive-layout.desktop",
+       "responsive-layout.tablet",
+       "responsive-layout.phone",
+      //  "__fold__",
+      
+      // "flex-layout.row#shelf-testhome",
+
+      "rich-text#shelf-title-boss",
+      "flex-layout.row#shelf-boss",
+      "rich-text#shelf-title-trial",
+      "flex-layout.row#shelf-trial",
+      "rich-text#shelf-title-perry-ellis",
+      "flex-layout.row#shelf-perry-ellis",
+      "rich-text#shelf-title-canadienne",
+      "flex-layout.row#shelf-canadienne",
+      "rich-text#shelf-title-florsheim",
+      "flex-layout.row#shelf-florsheim"
+      // "flex-layout.row#deals",
+      // "info-card#home",
+      // "rich-text#question",
+      // "rich-text#link",
+      // "newsletter"
+    ]
+  },
+
+  // INICIO SLIDER HOME
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/home/banners/Slider_desk_BB_MSS.jpg",
+          "mobileImage": "assets/home/banners/Slider_mob_BB_MSS.jpg"
+        },
+        {
+          "image": "assets/home/banners/Slider_desk_BB_CanadienneParkas.jpg",
+          "mobileImage": "assets/home/banners/Slider_mob_BB_CanadienneParkas.jpg"
+        },
+        {
+          "image": "assets/home/banners/Slider_desk_BB_TrialParkas.jpg",
+          "mobileImage": "assets/home/banners/Slider_mob_BB_TrialParkas.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "carousel"
+    }
+  },
+  // FIN SLIDER HOME
+
+  // INICIO RESPONSIVE LAYOUTS
+  "responsive-layout.desktop": {
+    "children": [
+      "flex-layout.row#layout2columnas",
+      "flex-layout.row#home-layout-3cols"
+    ]
+  },
+  "responsive-layout.mobile": {
+    "children": [
+      "flex-layout.row#layout2columnas",
+      "flex-layout.row#home-layout-3cols"
+    ]
+  },
+  "responsive-layout.tablet": {
+    "children": [
+      "flex-layout.row#layout2columnas",
+      "flex-layout.row#home-layout-3cols"
+    ]
+  },
+  "responsive-layout.phone": {
+    "children": ["flex-layout.row#layout-1col"]
+  },
+  // FIN RESPONSIVE LAYOUTS
+
+  // INICIO LAYOUT 1 COLUMNA (MOBILE)
+  "flex-layout.row#layout-1col": {
+    "children": [
+      "image#2cols-1",
+      "image#2cols-2",
+      "image#2cols-3",
+      "image#2cols-4",
+      "image#2cols-5"
+    ]
+  },
+  "image#2cols-1": {
+    "props":{
+      "src": "assets/Banner_G_mob_hombre.jpg",
+      "link": {
+        "url": "/hombre"
+      }
+    }
+  },
+  "image#2cols-2": {
+    "props":{
+      "src": "assets/Banner_G_mob_mujer.jpg",
+      "link": {
+        "url": "/mujer"
+      }
+    }
+  },
+  "image#2cols-3": {
+    "props":{
+      "src": "assets/Banner_bottom_mob_camisas.jpg",
+      "link": {
+        "url": "/camisas"
+      }
+    }
+  },
+  "image#2cols-4": {
+    "props":{
+      "src": "assets/Banner_bottom_mob_trajes.jpg",
+      "link": {
+        "url": "/trajes"
+      }
+    }
+  },
+  "image#2cols-5": {
+    "props":{
+      "src": "assets/Banner_bottom_mob_zapatos.jpg",
+      "link": {
+        "url": "/zapatos"
+      }
+    }
+  },
+  // FIN LAYOUT 1 COLUMNA (MOBILE)
+
+
+  // INICIO Layout 2 columnas
+  "flex-layout.row#layout2columnas": {
+      "children":[
+        "flex-layout.col#layoutColumna1",
+        "flex-layout.col#layoutColumna2"
+      ],
+      "props":{
+        "marginTop": 5,
+        "marginBottom": 5
+      }
+  },
+  "flex-layout.col#layoutColumna1":{
+    "children":[
+      "image#columna1"
+    ],
+    "props":{
+      "blockClass": "col-izquierda-2cols"
+    }
+  },
+  "flex-layout.col#layoutColumna2":{
+    "children":[
+      "image#columna2"
+    ],
+    "props":{
+      "blockClass": "col-derecha-2cols"
+    }
+  },
+  "image#columna1":{
+      "props":{
+        "src": "assets/Banner_G_desk_hombre.jpg",
+        "link": {
+          "url": "/hombre"
+        }
+      }
+  },
+  "image#columna2":{
+    "props":{
+      "src": "assets/Banner_G_desk_mujer.jpg",
+      "link": {
+        "url": "/mujer"
+      }
+    }
+  },
+  // FIN Layout 2 columnas
+
+  // INICIO Layout 3 columnas
+  "flex-layout.row#home-layout-3cols": {
+    "children":[
+      "flex-layout.col#home-3cols-col1",
+      "flex-layout.col#home-3cols-col2",
+      "flex-layout.col#home-3cols-col3"
+    ],
+    "props":{
+      "marginTop": 5,
+      "marginBottom": 5
+    }
+  },
+  "flex-layout.col#home-3cols-col1": {
+    "children":[
+      "image#home-3cols-col1-img1"
+    ],
+    "props":{
+      "blockClass": "home-3cols-col1-img1"
+    }
+  },
+  "flex-layout.col#home-3cols-col2": {
+    "children":[
+      "image#home-3cols-col2-img1"
+    ],
+    "props":{
+      "blockClass": "home-3cols-col2-img1"
+    }
+  },
+  "flex-layout.col#home-3cols-col3": {
+    "children":[
+      "image#home-3cols-col3-img1"
+    ],
+    "props":{
+      "blockClass": "home-3cols-col3-img1"
+    }
+  },
+  "image#home-3cols-col1-img1": {
+      "props":{
+        "src": "assets/Banner_bottom_desk_camisas.jpg",
+        "link": {
+          "url": "/camisas"
+        }
+      }
+  },
+  "image#home-3cols-col2-img1":{
+    "props":{
+      "src": "assets/Banner_bottom_desk_trajes.jpg",
+      "link": {
+        "url": "/trajes"
+      }
+    }
+  },
+  "image#home-3cols-col3-img1":{
+    "props":{
+      "src": "assets/Banner_bottom_desk_zapatos.jpg",
+      "link": {
+        "url": "/zapatos"
+      }
+    }
+  }
+  // FIN Layout 3 columnas
+}

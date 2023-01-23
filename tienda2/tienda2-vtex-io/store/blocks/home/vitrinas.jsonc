@@ -1,0 +1,348 @@
+{
+  //VITRINA GENERAL SITIO
+
+
+/* VITRINA ORIGINAL */
+  "product-summary.shelf#tienda2": {
+    "children": [
+      "flex-layout.col#falgsVitrinas",
+      "flex-layout.row#flagsColeccionRow",
+      "product-summary-image#vitrinatienda2",
+      "flex-layout.col#flags-bioequivalente",
+      "product-summary-name#tienda2",
+      "flex-layout.row#vitrinaPrecio", 
+      "condition-layout.product#template-vitrina-btn",
+      "product-specification-badges#tipoVenta"
+    ],
+    "props": {
+      "blockClass": "vitrinatienda2"
+    }
+  },
+
+  "condition-layout.product#template-vitrina-btn":{
+    "props": {
+      "conditions": [
+        {
+           "subject": "productClusters",
+           "arguments": {
+            "id": ["1238"]
+          }
+         }
+       ],
+           "Then":  "rich-text#vitrina-sin-btn",
+           "Else":  "add-to-cart-button#tienda2"
+         }
+       },
+
+
+  "flex-layout.row#flagsColeccionRow": {
+    "props": {
+      "blockClass": "flagsColeccionContainer",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#flagsColeccionCol"
+    ]
+  },
+
+  "flex-layout.col#flagsColeccionCol": {
+    "props": {},
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#flags-coleccion"
+    ]
+  },
+  
+  "vtex.product-highlights@2.x:product-highlights#flags-coleccion": {
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": "flag-coleccion-item"
+    }
+  },
+
+  "flex-layout.col#falgsVitrinas": {
+    "props": {
+      "blockClass": "flagsContainer", //vitrina
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#flagsBeneficiosSuscripcion",
+      "flex-layout.col#flagsdescuentosInsuperables",
+      "flex-layout.col#flagsdescuentostienda2plus" 
+    ]
+  },
+
+  "flex-layout.row#flagsVitrinas": {
+    "props": {
+      "blockClass": "flagsContainer2", //PDP
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#flagsBeneficiosSuscripcion",
+      "flex-layout.col#flagsdescuentosInsuperables",
+      "flex-layout.col#flagsdescuentostienda2plus" 
+      //"flex-layout.col#flags-bioequivalente"
+    ]
+  },
+  "flex-layout.col#flagsBeneficiosSuscripcion": {
+    "props": {"blockClass": "flagsSuscripcion"},
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#flag-beneficios"
+    ]
+  },
+  "flex-layout.col#flagsdescuentosInsuperables": {
+    "props": {},
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#flag-descuentos"
+    ]
+  },
+  "flex-layout.col#flagsdescuentostienda2plus": {
+    "props": {},
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#flag-tienda2Plus"
+    ]
+  },
+
+  "flex-layout.col#flags-bioequivalente": {
+    "props": {},
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#flag-bioequivalente"
+    ]
+  },
+  "product-summary.shelf#tienda2Search": {
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#flag-beneficios",
+      "product-summary-image",
+      "product-summary-name#tienda2",
+      "flex-layout.row#vitrinaPrecio",
+      "add-to-cart-button#tienda2",
+      "product-specification-badges#tipoVentaSearch"
+    ],
+    "props": {
+      "blockClass": "vitrinatienda2"
+    }
+  },
+  "add-to-cart-button#tienda2": {
+    "props": {
+      "blockClass": "vitrinatienda2",
+      "text": "Agregar",
+      "unavailableText": "Próximamente"
+    }
+  },
+  "rich-text#vitrina-sin-btn": {
+    "props": {
+      "text": ""
+    }
+  },
+  "product-summary-image#vitrinatienda2": {
+    "props": {
+      "blockClass": "vitrinatienda2Discount",
+      "showBadge": true,
+      "height": 300
+    }
+  },
+  "product-selling-price#tienda2": {
+    "props": {
+      "blockClass": "vitrinatienda2"
+    }
+  },
+  "product-summary-name#tienda2": {
+    "props": {
+      "tag": "h3",
+      "blockClass": "vitrinatienda2"
+    }
+  },
+  /* "vtex.product-highlights@2.x:product-highlights#flag-beneficios": {
+    "children": ["product-highlight-text#flag-beneficios"]
+  },
+  "product-highlight-text#flag-beneficios": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": "banderatienda2"
+    }
+  }, */
+  "vtex.product-highlights@2.x:product-highlights#flag-beneficios": {
+    "props": {
+      "props": {"blockClass": "flagsSuscripcion"},
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Suscripciones - Completa - Landing"]
+      }
+    },
+    "children": ["product-highlight-wrapper#flag-beneficios"]
+  },
+
+  "product-highlight-wrapper#flag-beneficios": {
+    "props": {
+      "blockClass": "suscripcion"
+    },
+    "children": ["image#flag-beneficios", "product-highlight-text#test"]
+  },
+  "image#flag-beneficios": {
+    "props": {
+      "props": {"blockClass": "flagsSuscripcion"},
+      "src": "assets/home/FLAG_BENEFICIOS_SUSCRIPCION.png"
+    }
+  },
+
+  "product-highlight-text#test": {
+    "props": {
+      "message": ""
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#flag-tienda2Plus": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["tienda2 plus landing"]
+      }
+    },
+    "children": ["product-highlight-wrapper#flag-tienda2Plus"]
+  },
+  "product-highlight-wrapper#flag-tienda2Plus": {
+    "props": {
+      "blockClass": ["", ""]
+    },
+    "children": [
+      "product-highlight-text#flag-tienda2Plus",
+      "image#flag-tienda2Plus"
+    ]
+  },
+  "image#flag-tienda2Plus": {
+    "props": {
+      "src": "assets/home/FLAG_tienda2_PLUS.png"
+    }
+  },
+  "product-highlight-text#flag-tienda2Plus": {
+    "props": {
+      "message": "",
+      "blockClass": ""
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#flag-descuentos": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Caluga Descuentos insuperables"]
+      }
+    },
+    "children": ["product-highlight-wrapper#flag-descuentos"]
+  },
+  "product-highlight-wrapper#flag-descuentos": {
+    "props": {
+      "blockClass": ["", "descuentosInsuperables"]
+    },
+    "children": ["image#flag-descuentos"]
+  },
+  "image#flag-descuentos": {
+    "props": {
+      "src": "assets/home/FLAG_DESCUENTOS_INSUPERABLES.png"
+    }
+  },
+  "product-specification-badges#tipoVenta": {
+    "props": {
+      "blockClass": "tipoVenta",
+      "specificationGroupName": "allSpecifications",
+      "specificationsOptions": [
+        {
+          "specificationName": "Condición de Venta",
+          "displayValue": "SPECIFICATION_VALUE"
+        }
+      ]
+    }
+  },
+  "product-specification-badges#tipoVentaSearch": {
+    "props": {
+      "blockClass": "tipoVentaSearch",
+      "specificationGroupName": "allSpecifications",
+      "specificationsOptions": [
+        {
+          "specificationName": "Condición de Venta",
+          "displayValue": "SPECIFICATION_VALUE"
+        }
+      ]
+    }
+  },
+
+  "product-list-price#tienda2TeProtege": {
+    "props": {
+      "blockClass": "vitrinatienda2TeProtege"
+    }
+  },
+  "product-selling-price#tienda2TeProtege": {
+    "props": {
+      "blockClass": "vitrinatienda2TeProtege"
+    }
+  },
+  "product-summary-name#tienda2TeProtege": {
+    "props": {
+      "blockClass": "vitrinatienda2TeProtege"
+    }
+  },
+
+  "flex-layout.row#vitrinaPrecio": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "vitrinatienda2TeProtege"
+    },
+    "children": [
+      "flex-layout.col#vitrinaPrecioAhorro",
+      "flex-layout.col#vitrinaPrecioTotal"
+    ]
+  },
+  "flex-layout.col#vitrinaPrecioAhorro": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["product-list-price#tienda2TeProtege"]
+  },
+  "flex-layout.col#vitrinaPrecioTotal": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["product-selling-price#tienda2TeProtege"]
+  },
+
+
+
+
+
+  "vtex.product-highlights@2.x:product-highlights#flag-bioequivalente": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Bioequivalentes"]
+      }
+    },
+    "children": ["product-highlight-wrapper#flag-bioequivalente"]
+  },
+
+  "product-highlight-wrapper#flag-bioequivalente": {
+    "props": {
+      "blockClass": "bioequivalente"
+    },
+    "children": ["image#flag-bioequivalente", "product-highlight-text#flag-bioequivalente"]
+  },
+  "image#flag-bioequivalente": {
+    "props": {
+      "src": "assets/home/icono-bioequivalente.png",
+      "blockClass": "bioequivalente"
+    }
+  },
+
+  "product-highlight-text#flag-bioequivalente": {
+    "props": {
+      "message": ""
+    }
+  }
+}

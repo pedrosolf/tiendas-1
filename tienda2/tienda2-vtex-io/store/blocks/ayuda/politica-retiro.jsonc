@@ -1,0 +1,133 @@
+{
+  "store.custom#politica-retiro-tienda": {
+    "blocks": [
+      "responsive-layout.desktop#politica-retiro",
+      "responsive-layout.tablet#politica-retiro",
+      "responsive-layout.phone#politica-retiro"
+    ]
+  },
+  "responsive-layout.desktop#politica-retiro": {
+    "children": ["flex-layout.row#main-politica-retiro-desk"]
+  },
+  "responsive-layout.tablet#politica-retiro": {
+    "children": ["flex-layout.row#politica-retiro-main-mobile"]
+  },
+  "responsive-layout.phone#politica-retiro": {
+    "children": ["flex-layout.row#politica-retiro-main-mobile"]
+  },
+  "flex-layout.row#politica-retiro-main-mobile": {
+    "children": ["flex-layout.col#politica-retiro"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-politica-retiro-desk": {
+    "props": {
+      "blockClass": "main-ayuda",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": [
+      "flex-layout.col#nav-column",
+      "flex-layout.col#politica-retiro"
+    ]
+  },
+
+  "flex-layout.col#politica-retiro": {
+    "props": {
+      "width": "72%",
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#politica-retiro-title",
+      "flex-layout.row#politica-retiro-content"
+    ]
+  },
+
+  "flex-layout.row#politica-retiro-content": {
+    "props": {},
+    "children": ["flex-layout.col#politica-retiro-content"]
+  },
+  "flex-layout.col#politica-retiro-content": {
+    "props": {},
+    "children": [
+      "rich-text#politica-retiro-content",
+      "rich-text#politica-retiro-content2",
+      "rich-text#politica-retiro-content3",
+      "rich-text#politica-retiro-content4",
+      "rich-text#politica-retiro-content5",
+      "rich-text#politica-retiro-content6",
+      "rich-text#politica-retiro-content7"
+    ]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#politica-retiro-title": {
+    "props": {
+      "blockClass": ["ayudaTitle", "retiroContent"],
+      "text": "**Políticas de retiro en tienda**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#politica-retiro-content": {
+    "props": {
+      "blockClass": ["ayudaContent", "retiroContent"],
+      "text": " - Para poder retirar el pedido es necesario recibir un mail que indica que el pedido puede ser retirado. ",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-retiro-content2": {
+    "props": {
+      "blockClass": ["ayudaContent", "retiroContent"],
+      "text": " - Una vez recibido este mail, dispones de 5 días hábiles en los que puedes acudir a la tienda a recibir tu/s producto/s. ",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-retiro-content3": {
+    "props": {
+      "blockClass": ["ayudaContent", "retiroContent"],
+      "text": " - Si la compra no es retirada en el plazo, recibirás un llamado telefónico para obtener otras alternativas de despacho o cancelación.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-retiro-content4": {
+    "props": {
+      "blockClass": ["ayudaContent", "retiroContent"],
+      "text": " - Dirección de retiro: Pérez Valenzuela 1077, Providencia, Santiago. [(Ver mapa aquí)](/https://www.google.cl/maps/place/P%C3%83%C2%A9rez%20Valenzuela%201077,%20Providencia,%20Regi%C3%83%C2%B3n%20Metropolitana/@-33.4292061,-70.625227,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5883f9a320f:0x7d87bf94c56e8459!8m2!3d-33.4292106!4d-70.6230383)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-retiro-content5": {
+    "props": {
+      "blockClass": ["ayudaContent", "retiroContent"],
+      "text": " - Horarios de retiro:<br/>Lunes a jueves: 09:30 a 18:30 hrs. Viernes: 09:30 a 18:00 hrs.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-retiro-content6": {
+    "props": {
+      "blockClass": ["ayudaContent", "retiroContent"],
+      "text": " - Recuerda que:<br/>1. Para realizar el retiro, debes acercarte a la zona de despacho de nuestra farmacia (por Pérez Valenzuela) con el número de boleta y nombre asociado a la boleta.<br/>2. Si un tercero hará el retiro, deberá presentar su carnet, indicar el número de boleta y el nombre asociado en ella.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-retiro-content7": {
+    "props": {
+      "blockClass": ["ayudaContent", "retiroContent"],
+      "text": "**Consultas:**    [![teléfono](assets/footer/ICONO_TELEFONO.png)&nbsp;&nbsp;600 276 0000](/tel:6002760000)&nbsp;&nbsp;&nbsp;&nbsp;[![whatsapp](assets/footer/ICONO_WHATSAPP.png)&nbsp;&nbsp;56 9 69171334](/tel:56969171334)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+}

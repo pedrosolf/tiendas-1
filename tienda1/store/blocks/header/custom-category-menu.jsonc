@@ -1,0 +1,342 @@
+{
+    "vtex.menu@2.x:menu#menu-categorias": {
+        "props": {
+        "experimentalOptimizeRendering": true
+        },
+        "children": [
+        // "menu-item#more",
+        "menu-item#categorias"
+        ]
+    },
+    "menu-item#categorias": {
+        "props": {
+            "blockClass": "menu-primer-nivel-header",
+            "id": "menu-item-categorias",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "CATEGORÍAS",
+                "text": "CATEGORÍAS"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#categorias"
+        ]
+    },
+    "vtex.menu@2.x:submenu#categorias": {
+        "props": {
+            "width": "100%"
+        },
+        "children": [
+            "flex-layout.row#menu-categorias"
+        ]
+    },
+    "flex-layout.row#menu-categorias": {
+        "children": [
+            "flex-layout.col#menu-categorias-1",
+            "flex-layout.col#menu-categorias-2"
+        ],
+        "props": {
+            "blockClass": "row-categorias-custom"
+        }
+    },
+    "flex-layout.col#menu-categorias-1": {
+        "children": [
+            "vtex.menu@2.x:menu#lista-categorias1"
+        ]
+    },
+    "flex-layout.col#menu-categorias-2": {
+        "children": [
+            "vtex.menu@2.x:menu#lista-categorias2"
+        ]
+    },
+    "vtex.menu@2.x:menu#lista-categorias1": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#lista-categorias-1",
+            "menu-item#lista-categorias-2",
+            "menu-item#lista-categorias-3",
+            "menu-item#lista-categorias-4",
+            "menu-item#lista-categorias-5",
+            "menu-item#lista-categorias-6",
+            "menu-item#lista-categorias-7",
+            "menu-item#lista-categorias-8"
+        ]
+    },
+    "vtex.menu@2.x:menu#lista-categorias2": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#lista-categorias-9",
+            "menu-item#lista-categorias-10",
+            "menu-item#lista-categorias-11",
+            "menu-item#lista-categorias-12",
+            "menu-item#lista-categorias-13",
+            "menu-item#lista-categorias-14",
+            "menu-item#lista-categorias-15",
+            "menu-item#lista-categorias-16"
+        ]
+    },
+    "menu-item#lista-categorias-1": {
+        "props": {
+        "id": "menu-item-lista-categorias-1",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Trajes",
+            "text": "Trajes"
+        }
+        }
+    },
+    "menu-item#lista-categorias-2": {
+        "props": {
+        "id": "menu-item-lista-categorias-2",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Chaquetas",
+            "text": "Chaquetas"
+        }
+        }
+    },
+    "menu-item#lista-categorias-3": {
+        "props": {
+        "id": "menu-item-lista-categorias-1",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Camisas",
+            "text": "Camisas"
+        }
+        }
+    },
+    "menu-item#lista-categorias-4": {
+        "props": {
+            "id": "menu-item-lista-categorias-4",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "Pantalones",
+                "text": "Pantalones"
+            }
+        }
+    },
+    "menu-item#lista-categorias-5": {
+        "props": {
+            "id": "menu-item-lista-categorias-5",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/abrigos",
+                "noFollow": false,
+                "tagTitle": "Abrigos",
+                "text": "Abrigos"
+            }
+        }
+    },
+    "menu-item#lista-categorias-6": {
+        "props": {
+            "id": "menu-item-lista-categorias-6",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/parkas",
+                "noFollow": false,
+                "tagTitle": "Parkas",
+                "text": "Parkas"
+            }
+        }
+    },
+    "menu-item#lista-categorias-7": {
+        "props": {
+            "id": "menu-item-lista-categorias-7",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/sweaters",
+                "noFollow": false,
+                "tagTitle": "Sweaters",
+                "text": "Sweaters"
+            }
+        }
+    },
+    "menu-item#lista-categorias-8": {
+        "props": {
+            "id": "menu-item-lista-categorias-8",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/poleras",
+                "noFollow": false,
+                "tagTitle": "Poleras",
+                "text": "Poleras"
+            }
+        }
+    },
+    "menu-item#lista-categorias-9": {
+        "props": {
+            "id": "menu-item-lista-categorias-9",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/botines",
+                "noFollow": false,
+                "tagTitle": "Botines",
+                "text": "Botines"
+            }
+        }
+    },
+    "menu-item#lista-categorias-10": {
+        "props": {
+            "id": "menu-item-lista-categorias-10",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/zapatillas",
+                "noFollow": false,
+                "tagTitle": "Zapatillas",
+                "text": "Zapatillas"
+            }
+        }
+    },
+    "menu-item#lista-categorias-11": {
+        "props": {
+            "id": "menu-item-lista-categorias-11",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/zapatos",
+                "noFollow": false,
+                "tagTitle": "Zapatos",
+                "text": "Zapatos"
+            }
+        }
+    },
+    "menu-item#lista-categorias-12": {
+        "props": {
+            "id": "menu-item-lista-categorias-12",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/mocasines",
+                "noFollow": false,
+                "tagTitle": "Mocasines",
+                "text": "Mocasines"
+            }
+        }
+    },
+    "menu-item#lista-categorias-13": {
+        "props": {
+            "id": "menu-item-lista-categorias-13",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/sandalias",
+                "noFollow": false,
+                "tagTitle": "Sandalias",
+                "text": "Sandalias"
+            }
+        }
+    },
+    "menu-item#lista-categorias-14": {
+        "props": {
+            "id": "menu-item-lista-categorias-14",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/blusas",
+                "noFollow": false,
+                "tagTitle": "Blusas",
+                "text": "Blusas"
+            }
+        }
+    },
+    "menu-item#lista-categorias-15": {
+        "props": {
+            "id": "menu-item-lista-categorias-15",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/vestidos",
+                "noFollow": false,
+                "tagTitle": "Vestidos",
+                "text": "Vestidos"
+            }
+        }
+    },
+    "menu-item#lista-categorias-16": {
+        "props": {
+            "id": "menu-item-lista-categorias-16",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/categorias/accesorios",
+                "noFollow": false,
+                "tagTitle": "Accesorios",
+                "text": "Accesorios"
+            }
+        }
+    },
+    "menu-item#about-us": {
+        "props": {
+        "id": "menu-item-about-us",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": true,
+            "tagTitle": "About us",
+            "text": "About us"
+        }
+        }
+    }
+}

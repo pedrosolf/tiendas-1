@@ -1,0 +1,94 @@
+{
+  "drawer": {
+    "children": ["vtex.menu@2.x:menu#cat-menu"]
+  },
+
+  "menu#drawer": {
+    "children": ["menu-item#cat1"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "flex-layout.col#menu-container": {
+    "children": ["vtex.menu@2.x:menu#cat-menu"]
+  },
+
+  "vtex.menu@2.x:menu#cat-menu": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "center-menu"
+    },
+    "children": ["menu-item#cat1", "menu-item#cat2", "menu-item#cat1", "menu-item#cat1"]
+  },
+  "flex-layout.row#cat1": {
+    "children": ["menu-item#cat1"],
+    "props": {
+      "blockClass": ""
+    }
+  },
+  "menu-item#cat1": {
+    "props": {
+      "id": "menu-item-celular",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "categoryId": 409,
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "",
+        "text": "Categoria 1"
+      }
+    }
+  },
+  "menu-item#cat2": {
+    "props": {
+      "id": "menu-item-celular",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "onMountBehavior": "closed",
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal" /* 
+        "categoryId": 300, */,
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "",
+        "text": "Categoria dos"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#subCat2"]
+  },
+  "vtex.menu@2.x:submenu#subCat2": {
+    "children": ["vtex.menu@2.x:menu#submenusubCat2"]
+  },
+  "vtex.menu@2.x:menu#submenusubCat2": {
+    "props": {
+      "blockClass": "submenu-item-category"
+    },
+    "children": ["menu-item#subCat2"]
+  },
+  "menu-item#subCat2": {
+    "props": {
+      "id": "menu-item-celular",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "categoryId": 16,
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "",
+        "text": "subCat2"
+      }
+    }
+  }/* ,
+  "sandbox.product#mobile-menu": {
+    "props": {
+      "initialContent": "<script>console.log(document.querySelector('.vtex-menu-2-x-menuContainer--submenu-item-category'))</script>"
+    }
+  } */
+}

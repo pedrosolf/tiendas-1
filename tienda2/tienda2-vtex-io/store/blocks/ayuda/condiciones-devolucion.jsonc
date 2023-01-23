@@ -1,0 +1,145 @@
+{
+  "store.custom#condiciones-devolucion": {
+    "blocks": [
+      "responsive-layout.desktop#condiciones-devolucion",
+      "responsive-layout.tablet#condiciones-devolucion",
+      "responsive-layout.phone#condiciones-devolucion"
+    ]
+  },
+  "responsive-layout.desktop#condiciones-devolucion": {
+    "children": ["flex-layout.row#main-condiciones-devolucion-desk"]
+  },
+  "responsive-layout.tablet#condiciones-devolucion": {
+    "children": ["flex-layout.row#condiciones-devolucion-main-mobile"]
+  },
+  "responsive-layout.phone#condiciones-devolucion": {
+    "children": ["flex-layout.row#condiciones-devolucion-main-mobile"]
+  },
+  "flex-layout.row#condiciones-devolucion-main-mobile": {
+    "children": ["flex-layout.col#condiciones-devolucion"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-condiciones-devolucion-desk": {
+    "props": {
+      "blockClass": "",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": [
+      "flex-layout.col#nav-column",
+      "flex-layout.col#condiciones-devolucion"
+    ]
+  },
+
+  "flex-layout.col#condiciones-devolucion": {
+    "props": {
+      "width": "72%",
+      "blockClass": "devolucionColumn",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#condiciones-devolucion-title",
+      "flex-layout.row#condiciones-devolucion-content",
+      "rich-text#condiciones-devolucion-content2",
+      "rich-text#condiciones-devolucion-content3",
+      "rich-text#condiciones-devolucion-content4",
+      "rich-text#condiciones-devolucion-content5",
+      "rich-text#condiciones-devolucion-content6",
+      "rich-text#condiciones-devolucion-content7",
+      "rich-text#condiciones-devolucion-content8",
+      "rich-text#condiciones-devolucion-content9"
+    ]
+  },
+
+  "flex-layout.row#condiciones-devolucion-content": {
+    "props": {},
+    "children": ["rich-text#condiciones-devolucion-content"]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#condiciones-devolucion-title": {
+    "props": {
+      "blockClass": "ayudaTitle",
+      "text": "**Condiciones para la Devolución de Productos**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#condiciones-devolucion-content": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "Farmacia Acceso S.A., en adelante también denominado tienda2, tiene por fin entregar toda la información de manera veraz, completa y oportuna sobre los productos ofrecidos en nuestra página web, como asimismo todas las características relevantes que requieras saber para la seguridad de tu compra.<br/><br/>El consumidor podrá poner término al contrato de compraventa efectuado por medios electrónicos dentro de un plazo de 10 días contados desde la recepción del producto. Lo anterior, no será factible cuando el deterioro del producto sea por consecuencias de algún hecho imputable al consumidor. En este caso, el consumidor deberá restituir en buen estado los elementos del embalaje, como sellos, cajas, elementos de protección o su valor respectivo.<br/><br/>En tienda2 puedes solicitar un cambio o anulación del pedido, previa restitución del producto a nuestra farmacia, si el producto presenta fallas de origen o si no cumple con las características anunciadas en nuestro sitio web. Lo anterior, también procederá en aquellos casos que se presenten deficiencias en la fabricación, elaboración, materiales, piezas, sustancias, ingredientes, estructura, calidad o condiciones sanitarias. En general, cuando el producto no es apto para el uso o consumo al que está destinado o al que fue señalado en nuestra página web. Este derecho de los consumidores deberá ser ejercido dentro del plazo de 6 meses, contados desde la recepción de los productos, siempre que el deterioro de estos no sea por hechos imputables al consumidor.<br/><br/>Para hacer efectiva la garantía legal descrita deberás ponerte en contacto con nuestro Call Center, ya sea por vía telefónica ( 56226360317) o por correo electrónico (compraonline@tienda2.com), donde uno de nuestros ejecutivos te atenderá y orientará en el proceso. Sin perjuicio de lo indicado, en el caso que la devolución o cambios sean medicamentos, estos siempre deberán ser entregados en nuestra farmacia, la cual está ubicada en calle Pérez Valenzuela número 1077, Comuna de Providencia, Santiago.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#condiciones-devolucion-content2": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "Requisitos de satisfacción garantizada:\n1. El producto NO PUEDE haber sido usado.\n2. El producto DEBE estar con sus embalajes originales completos y sellos en perfectas condiciones\n3. El producto debe estar con todos sus accesorios.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#condiciones-devolucion-content3": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "El consumidor deberá tener en cuenta, que, dentro de nuestras políticas de devolución de medicamentos, no están contemplados, y por ende no procede su cambio ni devolución:\n1. Productos refrigerados que requieran cadena de frío; y\n2. Medicamentos controlados.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#condiciones-devolucion-content4": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "Si tu compra es anulada y existiese un pago asociado, se hará una devolución por el monto total del pedido, independiente del medio de pago.<br/><br/>En el caso específico de WebPay, si pagaste con Tarjeta de Crédito, se enviará una anulación directamente al proveedor del servicio para que genere una reversa del monto pagado, a tu tarjeta de crédito.<br/><br/>Si pagaste con Tarjeta de Débito, la devolución será efectuada por transferencia bancaria en un tiempo de hasta 7 días hábiles, para ello debes hacernos llegar a compraonline@tienda2.com la siguiente información:\n1. Número de Pedido.\n2. Nombre Completo.\n3. RUT.\n4. Banco.\n5. Número de Cuenta.\n6. Tipo de Cuenta.\n7. Correo electrónico.\n8. Monto de devolución.\n9. Teléfono de Contacto.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#condiciones-devolucion-content5": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **Garantía Productos** \nEn tienda2, todo producto está bajo la ley de garantías legales.<br/>\n - Garantía Legal: (6 meses desde la emisión de la boleta o desde la recepción del producto en caso de compras por e-Commerce). Es el derecho que tienen todos los consumidores según la Ley del Consumidor (Ley 19.496) y que tienda2 aplica en sus tiendas cuando un producto adquirido por los clientes no cumpla con las características técnicas informadas, se encuentre dañado, incompleto, con fallas, entre otras situaciones que menciona la Ley 19.496. En dichos casos, el consumidor tiene la facultad de cambiar el producto o solicitar la devolución íntegra del dinero, esto durante los “6 meses de haber emitido la Boleta o Factura” (Artículo 21, ley 19.496).Para hacer efectiva la Garantía Legal debes presentar la boleta/factura o cualquier comprobante de pago que acredite la compra en tienda2. En caso de que no tengas ningún comprobante de compra (boleta/factura y/o voucher de pago) la garantía no será efectiva.\n - Garantía de Satisfacción: (10 días de corrido desde la emisión de la boleta o desde la recepción del producto en caso de compras por e-Commerce) .Es una política comercial voluntaria implementada en tienda2 con el fin de satisfacer y fidelizar a sus clientes, permitiéndole al consumidor realizar cambios o solicitar devolución del dinero sin expresión de causa, esto es hasta “10 días de corrido de haber emitido la Boleta o Factura” presentando el producto en perfecto estado, su embalaje original y con todos sus accesorios originales. El cliente debe presentar la boleta/factura para hacer efectiva la Garantía de Satisfacción.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#condiciones-devolucion-content6": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **Quiebres de Stock**\n A pesar de nuestros constantes esfuerzos por mantener actualizado el stock online, tu pedido puede sufrir un quiebre en algún producto solicitado.\nPara resolver este tipo de inconveniente tenemos las siguientes opciones:",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#condiciones-devolucion-content7": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **Anulación de compra y devolución total de dinero.**\nSi tu pedido fue realizado por tarjeta de crédito, sólo con la confirmación de anulación del pedido se realizarán las gestiones con Transbank para la anulación del cobro. Si tu pago fue realizado por débito, requerimos de tus datos personales y de cuenta corriente para gestionar dicha transferencia bancaria, el tiempo estimado para la devolución del dinero es de hasta 7 días hábiles a contar del envío de datos de transferencia.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#condiciones-devolucion-content8": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **Envío parcial y devolución proporcional del dinero por los productos faltantes.**\nPara esto requerimos tus datos personales y de cuenta corriente para gestionar la transferencia bancaria junto con la confirmación de la aceptación del envío parcial de la compra. El envío parcial se realizará una vez hecho esto último.\nLos datos para gestionar\n1. Número de Pedido.\n2. Nombre Completo.\n3. RUT.\n4. Banco.\n5. Número de Cuenta.\n6. Tipo de Cuenta.\n7. Correo electrónico.\n8. Monto de devolución.\n9. Teléfono de Contacto.\nFavor enviar dichos datos a compraonline@tienda2.com.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#condiciones-devolucion-content9": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **Medios de Pago**\nPara pagar las compras en tienda2.com, puedes utilizar tu Tarjeta de Crédito bancaria y Tarjeta de Débito.<br/><br/>**Tarjetas Bancarias** Puedes pagar con Tarjeta de Crédito Mastercard, Visa, American Express, Magna o Dinners Club emitidas en la República de Chile. Si compras con tarjeta de crédito, recuerda que los costos y cargos asociados al uso de la tarjeta, así como el monto de cada cuota dependerá de las condiciones que acordaste con tu banco emisor. El cargo que aceptas a tu tarjeta se realiza por WebPay.<br/>\n**Compras desde el extranjero** Podrás realizar tus compras desde el extranjero, sin embargo, los despachos sólo se efectúan dentro del territorio de la República de Chile. Nuestra tienda online no está habilitada para compras con tarjetas de crédito que no hayan sido emitidas en la República de Chile<br/>\n**Cupones de descuento** ¿Qué es un código promocional o cupón? Es un código que se ingresa al momento de pagar de manera de hacer uso de beneficios u ofertas que están disponibles. Éste puede estar asociado a productos específicos o categorías de productos. Los cupones sólo se pueden hacer efectivos en nuestra tienda física y en www.tienda2.com. El descuento del código promocional o cupón siempre se aplicará sobre el precio normal, porque no es acumulable con otros descuentos y/o promociones.<br/>\nPago en efectivo No se puede pagar en efectivo.<br/>\n**Condiciones** El beneficio del código promocional puede expresarse en un monto fijo de descuento o en un porcentaje de descuento que se aplicará sobre el precio normal.<br/>\nAlgunos cupones pueden requerir de un monto mínimo de compra en la categoría asociada a la promoción para ser válidos y/u otros pueden tener un máximo de monto de descuento.<br/>\nSólo se puede ingresar un código promocional por compra.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+}

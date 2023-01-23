@@ -1,0 +1,157 @@
+.wrapper--textDescripcion {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #16709b;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paragraph--textDescripcion {
+    margin: 0;
+}
+
+.strong--textDescripcion {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #16709b;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .strong--textDescripcion:hover {
+        cursor: pointer;
+        color: #545977;
+    }
+
+.paragraph--subsDescuentos {
+    -webkit-text-size-adjust: 100%;
+    --mainColor: #00a4e8;
+    --secondaryColor: #545977;
+    --tertiaryColor: #2a9b08;
+    --gray-one: #5f5f5f;
+    --gray-two: #acacac;
+    --gray-three: #363636;
+    --gray-four: #d7d7d7;
+    --mainFont: "Poppins";
+    --fontawesome: "Font Awesome\ 5 Free";
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    color: var(--secondaryColor);
+    font-size: 100%;
+    font-family: var(--mainFont);
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+:global(.vtex-shelf-1-x-title--vitrinatienda2) {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.wrapper--subsDescuentosLAb {
+    border-bottom: 1px solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;  
+    text-align: left; 
+}
+
+.paragraph--btn-no-comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.paragraph--btn-no-comprar::before {
+    content: "";
+    background-image: url(/arquivos/logo-tienda-pdp-verde.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.link--btn-no-comprar {
+    color: #000;
+    font-weight: 600;
+    display: contents;
+}
+
+@media (max-width: 413.98px) {
+    .paragraph--btn-no-comprar {
+        width: 100%;
+        font-size: 13px;
+        display: block !important;
+    }
+    .paragraph--btn-no-comprar::before {
+        display: block;
+        margin: auto;
+        background-size: contain;
+        width: 50px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) {  
+    .paragraph--btn-no-comprar {
+        width: 100%;
+        font-size: 13px;
+        display: block !important;
+    }
+    .paragraph--btn-no-comprar::before {
+        display: block;
+        margin: auto;
+        background-size: contain;
+        width: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container--subsDescuentos {
+        margin-bottom:20px;
+    }
+}
+
+/* @media (max-width: 1200px) {
+    .paragraph--btn-no-comprar::before {
+        width: 69px;
+        height: 23px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .paragraph--btn-no-comprar::before {
+        width: 75px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .paragraph--btn-no-comprar::before {
+        width: 75px;
+        height: 30px;
+    }
+} */
+
+

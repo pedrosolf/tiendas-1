@@ -1,0 +1,182 @@
+{
+    "store.custom#convenio-help": {
+      "blocks": [
+        "responsive-layout.desktop#convenio-help",
+        "responsive-layout.tablet#convenio-help",
+        "responsive-layout.phone#convenio-help"
+      ]
+    },
+    "responsive-layout.desktop#convenio-help": {
+      "children": ["flex-layout.row#main-convenio-help-desk"]
+    },
+    "responsive-layout.tablet#convenio-help": {
+      "children": ["flex-layout.row#convenio-help-main-mobile"]
+    },
+    "responsive-layout.phone#convenio-help": {
+      "children": ["flex-layout.row#convenio-help-main-mobile"]
+    },
+    "flex-layout.row#convenio-help-main-mobile": {
+      "children": ["flex-layout.col#convenio-help-mobile"],
+      "props": {
+        "horizontalAlign": "center"
+      }
+    },
+    //VERSION DESKTOP
+    "flex-layout.row#main-convenio-help-desk": {
+      "props": {
+        "blockClass": "main-convenio-help",
+        "marginTop": 7,
+        "marginBottom": 9,
+        "preventVerticalStretch": true,
+        "colGap": 7
+      },
+      "children": ["flex-layout.col#convenio-help"]
+    },
+  
+    "flex-layout.col#convenio-help": {
+      "props": {
+        "blockClass": "",
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "flex-layout.row#convenio-help-image",
+        "rich-text#convenio-help-title",
+        "flex-layout.row#convenio-help-content",
+        "flex-layout.row#convenio-help-image-2",
+        "flex-layout.row#convenio-help-content2",
+        "flex-layout.row#download-buttons-container"
+      ]
+    },
+    "flex-layout.col#convenio-help-mobile": {
+      "props": {
+        "blockClass": "",
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "image#convenio-help-mobile",
+        "rich-text#convenio-help-title",
+        "flex-layout.row#convenio-help-content",
+        "flex-layout.row#convenio-help-image-2",
+        "flex-layout.row#convenio-help-content2",
+        "flex-layout.row#download-buttons-container"
+      ]
+    },
+  
+    "flex-layout.row#convenio-help-image": {
+      "props": {},
+      "children": ["image#convenio-help"]
+    },
+    "image#convenio-help": {
+      "props": {
+        "blockClass": "imagenBanner",
+        "src": "assets/ayuda/convenio-help-desktop1.jpg"
+      }
+    },
+    "image#convenio-help-mobile": {
+      "props": {
+        "src": "assets/ayuda/convenio-help-mobile1.webp"
+      }
+    },
+    "flex-layout.row#convenio-help-content": {
+      "props": {
+        "blockClass": "convenioContent"
+      },
+      "children": ["rich-text#convenio-help-content"]
+    },
+  
+    //FIN DE VERSION DESKTOP
+    "rich-text#convenio-help-title": {
+      "props": {
+        "blockClass": ["ayudaTitle", "convenio-help"],
+        "text": "**Convenio Help**",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    },
+    "rich-text#convenio-help-content": {
+      "props": {
+        "blockClass": "convenio-help-content",
+        "text": "Hemos ampliado nuestros beneficios para acercarte a una mejor salud, por eso te ofrecemos:",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    },
+    "flex-layout.row#convenio-help-image-2": {
+      "props": {
+        "blockClass": "convenioImgContainer",
+        "colGap": 5,
+        "rowGap": 5,
+        "marginTop": 8
+      },
+      "children": ["image#12porcientohelp", "image#envio-gratis", "image#convenio"]
+    },
+    "image#12porcientohelp": {
+      "props": {
+        "src": "assets/ayuda/12porcientohelp.png"/* ,
+        "maxHeight": 24 */
+      }
+    },
+    "image#envio-gratis": {
+      "props": {
+        "src": "assets/ayuda/envio-gratis-convenio-help_opt.webp"/* ,
+        "maxHeight": 24 */
+      }
+    },
+    "image#convenio": {
+      "props": {
+        "src": "assets/ayuda/convenio-02.png"/* ,
+        "maxHeight": 24 */
+      }
+    },
+    "flex-layout.row#convenio-help-content2": {
+      "props": {
+        "blockClass": "convenioContent2"
+      },
+      "children": ["flex-layout.col#convenio-help-content2"]
+    },
+    "flex-layout.col#convenio-help-content2": {
+      "props": {
+        "blockClass": ""
+      },
+      "children": ["rich-text#convenio-help-content2", "rich-text#convenio-help-content3"]
+    },
+    "rich-text#convenio-help-content2": {
+      "props": {
+        "blockClass": ["ayudaContent", "convenio-help"],
+        "text": "##### **¡Compra ahora siguiendo estos pasos!**\n**Solo debes:**\n 1. Busca y selecciona tus medicamentos.\n 2. En la bolsa de compra, haz click en 'ir a pagar' y luego 'Finalizar compra'.\n 3. Ingresa tu correo electrónico (previamente registrado) y tus datos personales.\n 4. Finalmente, selecciona 'Ir a entrega' donde tu descuento Help aparecerá aplicado y podrás terminar el proceso de compra.)",
+        "textPosition": "LEFT",
+        "textAlignment": "LEFT"
+      }
+    },
+    "rich-text#convenio-help-content3": {
+      "props": {
+        "blockClass": ["ayudaContent", "convenio-help"],
+        "text": "##### **Para actualizar tu correo electrónico registrado<br/> llama al Call Center de Help al<br/>600 6310 310**<br/>\nDescuento válido solo para beneficiarios incorporados a Help con contrato vigente. Para recibir el beneficio a través del sitio web de tienda2, el correo electrónico del beneficiario debe estar previamente registrado con Help. Descuento no aplica sobre medicamentos y productos excluidos por tienda2 indicados en www.tienda2.com/convenio-help y sobre copagos de seguros que consideren bonificación de medicamentos. Solo los tres primeros envíos de medicamentos tendrán despacho sin costo. Las condiciones y restricciones sobre el tiempo y valor del despacho están sujetas a cambio y debe consultarse en tienda2.com. La venta de los medicamentos quedará sujeta a la disponibilidad única y exclusiva de tienda2. La dispensa y transporte al domicilio del medicamento es responsabilidad exclusiva de tienda2. NO SE AUTOMEDIQUE. Todo medicamento debe ser prescrito por un médico y su dispensación se realizará en conformidad a la ley. No acumulable con otras ofertas, descuentos y/o promociones. El descuento se realizará al momento del pago del medicamento y es de exclusiva responsabilidad de tienda2. El pago con tarjetas de crédito puede tener costos asociados según sea la entidad emisora y administradora de la tarjeta. Ud. debe consultar al emisor para mayor información. Para productos con expendio únicamente en farmacias físicas y exclusiones, consultar en 'www.tienda2.com/convenio-help'.",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER"
+      }
+    },
+    "flex-layout.row#download-buttons-container": {
+      "props": {
+        "preserveLayoutOnMobile": true
+      },
+      "children": ["link#expendio", "link#exclusiones"]
+    },
+    "link#expendio":{
+      "props":{
+        "href": "https://www.tienda2.com/arquivos/expendio-convenio.pdf?v=637644751679570000",
+        "label": "Ver expendio en farmacia física",
+        "blockClass": "expendiButton",
+        "target": "_blank"
+      }
+    },
+    "link#exclusiones":{
+      "props":{
+        "href": "https://www.tienda2.com/arquivos/Exclusiones-help-03-2022.pdf?v=637828780784130000",
+        "label": "Ver exclusiones aquí",
+        "blockClass": "expendiButton",
+        "target": "_blank"
+      }
+    }
+  }
+  

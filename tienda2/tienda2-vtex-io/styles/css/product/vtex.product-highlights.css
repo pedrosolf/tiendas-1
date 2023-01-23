@@ -1,0 +1,132 @@
+.productHighlightText--flag-coleccion-item{
+    display: none;
+    position: relative;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="Tapsin Flag"]{
+    display: block;
+    background: #00a4e8;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0;
+    border-radius: 5px;
+    max-width: 85px;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="Tapsin Flag"]::before{
+    content: "3 x $1.190";
+    font-size: 14px;
+    padding: 12px 10px;
+    display: block;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="Eliquis flag"]{
+    display: block;
+    background: #00a4e8;
+    color: #fff;
+    font-size: 0;
+    border-radius: 5px;
+    padding: 8px 10px;
+    line-height: 1;
+    max-width: 62px;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="Eliquis flag"]::before{
+    content: "hasta";
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="lleva 1 gratis"]{
+    display: block;
+    background: #00a4e8;
+    color: #fff;
+    font-size: 0;
+    border-radius: 5px;
+    padding: 8px 10px;
+    line-height: 1;
+    max-width: 92px;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="lleva 1 gratis"]::before{
+    content: "LLEVA 1 GRATIS";
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="promo 3x2"]{
+    display: block;
+    background: #00a4e8;
+    color: #fff;
+    font-size: 0;
+    border-radius: 5px;
+    padding: 8px 10px;
+    line-height: 1;
+    max-width: 62px;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="promo 3x2"]::before{
+    content: "3x2";
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="Eliquis flag"]::after{
+    content: "30% dcto";
+    font-size: 13px;
+    display: table;
+    font-weight: 500;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="Antabus Flag"]{
+    display: block;
+    background: #00a4e8;
+    color: #fff;
+    font-size: 0;
+    border-radius: 5px;
+    padding: 8px 10px;
+    line-height: 1;
+    max-width: 77px;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="Antabus Flag"]::before{
+    content: "25% dcto";
+    font-size: 13px;
+    display: table;
+    font-weight: 500;
+}
+
+.productHighlightText--flag-coleccion-item[data-highlight-name="Antabus Flag"]::after{
+    content: "en regiones";
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.productHighlightWrapper--bioequivalente::after{
+    content: " Bioequivalente";
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 5px;
+
+}
+.productHighlightWrapper--bioequivalente {
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    color: #545977;
+    justify-content: center;
+}
+
+.productHighlightWrapper--bioequivalentepdp::after{
+    content: " Bioequivalente";
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 5px;
+
+}
+.productHighlightWrapper--bioequivalentepdp {
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    color: #545977; 
+}

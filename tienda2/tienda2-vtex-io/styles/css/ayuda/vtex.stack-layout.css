@@ -1,0 +1,16 @@
+.stackItem--tienda2-plus-img.stackItem--tienda2plusForm.stackItem--tienda2-plus-img--tienda2plusForm {
+      display: flex;
+      width: 25%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      left: 45%;
+  }
+
+  .stackContainer--tienda2-plus-img {
+   /* max-width: 96rem; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+  

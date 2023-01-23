@@ -1,0 +1,22 @@
+{
+  "store.custom#ayuda-preguntas-frecuentes": {
+    "blocks": ["tab-layout#ayuda-preguntas-frecuentes"]
+  },
+  "tab-layout#ayuda-preguntas-frecuentes": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-preguntas-frecuentes"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "preguntas-frecuentes"
+    }
+  },
+  "tab-content#ayuda-preguntas-frecuentes": {
+    "children": [
+      "tab-content.item#preguntas-frecuentes"
+    ]
+  }
+}

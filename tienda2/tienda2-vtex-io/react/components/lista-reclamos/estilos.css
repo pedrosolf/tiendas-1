@@ -1,0 +1,17 @@
+.sugerencia{
+    margin: 40px 0;
+    border-top: 1px solid #b4c6cc;
+    padding: 24px 50px;
+}
+
+.sugerenciafecha, .sugerenciasubject, .sugerenciadescription, .sugerencarespuesta{
+    color: #545977;
+    font-size: .875rem;
+    line-height: 23px;
+    margin: 0 0 10px;
+}
+
+.sugerencarespuesta{
+    margin-top: 28px;
+}
+

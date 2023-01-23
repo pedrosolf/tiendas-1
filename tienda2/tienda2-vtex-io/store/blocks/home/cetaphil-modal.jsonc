@@ -1,0 +1,32 @@
+{
+  "modal-trigger#cetaphil": {
+    "props": {
+      "trigger": "load-session",
+      "blockClass": "modal-trigger-cetaphil"
+    },
+    "children": ["modal-layout#modal-cetaphil"]
+  },
+  "modal-layout#modal-cetaphil": {
+    "props": {
+      "blockClass": "container-modal-cetaphil"
+    },
+    "children": ["modal-header#header-cetaphil", "modal-content#content-cetaphil"]
+  },
+  "modal-header#header-cetaphil": {
+    "props": {
+      "blockClass": "modal-cetaphil"
+    }
+  },
+  "modal-content#content-cetaphil": {
+    "props": {
+      "blockClass": "modal-cetaphil"
+    },
+    "children": ["rich-text#cetaphilImg"]
+  },
+  "rich-text#cetaphilImg": {
+    "props": {
+      "text": "[![alt promoción](assets/home/popup-precyber.png)](/tienda2plus)",
+      "blockClass": "cetaphil"
+    }
+  }
+}

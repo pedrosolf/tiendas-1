@@ -1,0 +1,44 @@
+.freigthScaleContainer {
+    box-shadow: none !important;
+    margin: 20px 0 15px 0 !important;
+    padding: 2px !important;
+}
+
+.barContainer {
+    background: #000 !important;
+}
+
+.text1 {
+    font-size: 0 !important;
+    text-align: center !important;
+}
+
+.text2 , .text4 {
+    font-size: 0 !important;
+    color: #000 !important;
+}
+
+.text1::before {
+    content: "¡Agregá productos para tener ";
+    font-size: 13px;
+}
+
+.text2::before {
+    content: " Envio gratis!";
+    font-size: 13px;
+    color: #000 !important;
+}
+
+.text3 {
+    font-size: 0 !important;
+}
+
+.text3::before {
+    content: "Te faltan ";
+    font-size: 13px!important;
+}
+
+.text4::before {
+    content: "¡Ya tenés el envío gratis!";
+    font-size: 15px;
+}

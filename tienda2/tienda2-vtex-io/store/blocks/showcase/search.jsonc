@@ -1,0 +1,345 @@
+{
+  "store.search": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 16,
+        "hideUnavailableItems": false
+        // "orderByField":"OrderByPriceASC" <-- Para ordenar por precio mas bajo al mas alto
+      }
+    }
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  // VERSION DESKTOP
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#searchbread-desktop",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "hiddenFacets": {
+        "priceRange": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            { "name": "Departamento" },
+            { "name": "Sub-Categoría" },/* 
+            { "name": "Categoría" }, */
+           // { "name": "Marca" },
+            { "name": "Concatenacion" },
+            { "name": "Concentración" },
+            { "name": "Tipo de Piel" },
+            { "name": "Tipo" }//,
+           // { "name": "Principio Activo" }
+          ]
+        }
+      }
+    }
+  },
+
+  // MIGA DE PAN - desktop
+  "flex-layout.row#searchbread-desktop": {
+    "children": ["flex-layout.col#searchbread-desktop"],
+    "props": {
+      "preserveLayoutOnMobile": false,
+      "fullWidth": false,
+      "paddingTop": 3
+    }
+  },
+  "flex-layout.col#searchbread-desktop": {
+    "props": {
+      "blockClass": "breadcrumb-showcase"
+    },
+    "children": ["breadcrumb.search"]
+  },
+  "breadcrumb.search": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
+  // TITULO DESKTOP
+  /* "flex-layout.row#searchtitle": {
+    "children": ["flex-layout.col#searchtitle"]
+  },
+  "flex-layout.col#searchtitle": {
+    "props": {
+      "marginLeft": 9,
+      "blockClass": "searchtitle"
+    },
+    "children": ["search-title.v2"]
+  }, //FIN TITULO
+*/
+  // FILTRO + CONTENIDO DE BUSQUEDA
+  "flex-layout.row#result": {
+    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
+    "props": {
+      "fullWidth": true,
+      "marginBottom": 8,
+      "marginTop": 8
+    }
+  },
+  // FILTRO
+  "flex-layout.col#filter": {
+    "children": ["search-title.v2", "filter-navigator.v3"],
+    "props": {
+      "width": "20%",
+      "blockClass": "filterCol",
+      "preventVerticalStretch": true,
+      "marginLeft": 7
+    }
+  },
+  // CONTENIDO
+  "flex-layout.col#content": {
+    "children": [
+      /* "flex-layout.row#searchtitle", */ //<-- TITULO DE LA CONSULTA
+      "flex-layout.row#searchinfo", //<-- TRAE LA CANTIDAD DE PRODUCT + ORDENAR POR
+      /* "flex-layout.row#fetchprevious", */
+      "flex-layout.row#products", //<-- TRAE LOS PRODUCTOS DE LA CONSULTA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "80%",
+      "preventVerticalStretch": true,
+      "marginRight": 7,
+      "paddingLeft": 3
+    }
+  },
+  // CONTADOR + ORDERNAR POR
+  "flex-layout.row#searchinfo": {
+    "props": {},
+    "children": ["flex-layout.col#productCount", "flex-layout.col#orderby"]
+  },
+  // CONTADOR
+  "flex-layout.col#productCount": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountCol",
+      "horizontalAlign": "left"
+    }
+  },
+  "total-products.v2": {
+    "props": {
+      "blockClass": "total-producto"
+    }
+  },
+  // ORDERNAR POR
+  "flex-layout.col#orderby": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByCol"
+    }
+  },
+
+  // MENOS Y MAS PRODUCTOS
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": ["search-fetch-more"]
+  },
+  "flex-layout.row#products": {
+    "children": ["search-content"],
+    "props": {
+      "marginTop": 7,
+      "preventVerticalStretch": true
+    }
+  },
+  // CONTENIDO GALLERIA DE PRODUCT + VACIO
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+
+  //FIN VERSION DESKTOP
+
+  // VERSION MOBILE
+  "search-result-layout.mobile": {
+    "children": [
+      //"flex-layout.row#searchbread-mobile", //<-- MIGA DE PAN
+      /* "flex-layout.row#searchtitle",*/ //<-- TITULO DE LA CONSULTA
+      /*"flex-layout.row#switcherMobile",*/
+      /* "list-context.image-list#showcase", */
+      "flex-layout.row#banner-showcase-mobile", // <-- BANNER
+      "breadcrumb.search",
+      "flex-layout.row#searchinfomobile", //<-- TRAE ORDENAR POR + FILTRO + Switcher
+      "flex-layout.row#contentmobile", //<-- CONTENIDO DE LA BUSQUEDA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more", //<-- BOTON MOSTRAR MAS / 2.OPC = 'infinite-scroll'
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "preventRouteChange": true
+    }
+  },
+
+  //BANNER
+  "flex-layout.row#banner-showcase-mobile": {
+    "children": ["image#destacadas-showcase-mobile"],
+    "props": {
+      "blockClass": ["banner-showcase"]
+    }
+  },
+
+  "image#destacadas-showcase-mobile": {
+    "props": {
+      "src": "",
+      "blockClass": ""
+    }
+  },
+
+  // contenido
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "marginBottom": 3,
+      "marginTop": 3
+    }
+  },
+
+  // filtros + orderby + switcher
+  "flex-layout.row#searchinfomobile": {
+    "children": [
+      "flex-layout.col#orderByMobile",
+      "flex-layout.col#filterMobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "searchinfomobile",
+      "marginBottom": 5,
+      "colJustify": "around",
+      "marginTop": 3
+    }
+  },
+  // ordenar por
+  "flex-layout.col#orderByMobile": {
+    "children": ["order-by.v2"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "orderByMobileCol"
+    }
+  },
+  // SWITCHER
+  "flex-layout.row#switcherMobile": {
+    "props": {
+      "horizontalAlign": "right",
+      "marginBottom": 3
+    },
+    "children": ["flex-layout.col#switcherMobile"]
+  },
+  "flex-layout.col#switcherMobile": {
+    "children": ["gallery-layout-switcher"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "blockClass": "switcherMobile"
+    }
+  },
+  "gallery-layout-switcher": {
+    "children": [
+      /*
+       * For accessbility to work properly,
+       * It's important to define the options in the same order as the layouts
+       */
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
+    ]
+  },
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "grid"
+    },
+    "children": ["icon-grid"]
+  },
+  "gallery-layout-option#list": {
+    "props": {
+      "name": "list"
+    },
+    "children": ["icon-inline-grid"]
+  },
+
+  // filtro
+  "flex-layout.col#filterMobile": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterMobileCol"
+    }
+  },
+  //FIN VERSION MOBILE
+
+  // FORMATO PARA MOSTRAR PRODUCTOS
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {/* 
+            "(min-width:1536px)": 5, */
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#tienda2",
+      "GridSummary": "product-summary.shelf#tienda2"
+    }
+  },
+
+  //FILTRO NAVIGATOR
+  /* "filter-navigator.v3": {
+    "props": {
+      "closeOnOutsideClick": true
+    }
+  } */
+  "filter-navigator.v3": {
+    "props": {
+      "closeOnOutsideClick": false,
+      "initiallyCollapsed": false,
+      "facetOrdering":[{
+        "key": "talla",
+          "orderBy": "name",
+          "order": "ASC"
+      }], /* ,
+      "specificationFilters": {
+        "hiddenFilters": ["Altura"]
+      } */
+      "maxItemsDepartment": 20,/* 
+      "openFiltersMode": "one", */
+      "scrollToTop": "smooth",
+      "maxItemsCategory": 20,
+      "navigationTypeOnMobile": "collapsible",
+      "totalProductsOnMobile": "hide",
+      "preventRouteChange": true,
+      "updateOnFilterSelectionOnMobile": true
+    }
+  }
+}

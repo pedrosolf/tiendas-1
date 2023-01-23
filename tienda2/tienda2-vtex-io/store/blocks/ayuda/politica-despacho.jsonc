@@ -1,0 +1,99 @@
+{
+  "store.custom#politica-despacho": {
+    "blocks": [
+      "responsive-layout.desktop#politica-despacho",
+      "responsive-layout.tablet#politica-despacho",
+      "responsive-layout.phone#politica-despacho"
+    ]
+  },
+  "responsive-layout.desktop#politica-despacho": {
+    "children": ["flex-layout.row#main-politica-despacho-desk"]
+  },
+  "responsive-layout.tablet#politica-despacho": {
+    "children": ["flex-layout.row#politica-despacho-main-mobile"]
+  },
+  "responsive-layout.phone#politica-despacho": {
+    "children": ["flex-layout.row#politica-despacho-main-mobile"]
+  },
+  "flex-layout.row#politica-despacho-main-mobile": {
+    "children": ["flex-layout.col#politica-despacho-mobile"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#politica-despacho-mobile": {
+    "props": {
+      "width": "95%",
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#politica-despacho-title",
+      "flex-layout.row#politica-despacho-content",
+      "flex-layout.col#tablaHorarios1",
+      "rich-text#politica-despacho-content2",
+      "flex-layout.col#tabla2Horarios1",
+      "rich-text#aclaracionTable2",
+      "rich-text#politica-despacho-content3",
+      "flex-layout.col#tabla3Horarios1",
+      "rich-text#politica-despacho-content4",
+      "rich-text#politica-retiro-content7"
+    ]
+  },
+  "flex-layout.row#main-politica-despacho-desk": {
+    "props": {
+      "blockClass": "main-ayuda",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": [
+      "flex-layout.col#nav-column",
+      "flex-layout.col#politica-despacho"
+    ]
+  },
+
+  "flex-layout.col#politica-despacho": {
+    "props": {
+      "width": "72%",
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#politica-despacho-title",
+      "flex-layout.row#politica-despacho-content",
+      "flex-layout.col#tablaHorarios1",
+      "rich-text#politica-despacho-content2",
+      "flex-layout.col#tabla2Horarios1",
+      "rich-text#aclaracionTable2",
+      "rich-text#politica-despacho-content3",
+      "flex-layout.col#tabla3Horarios1",
+      "rich-text#politica-despacho-content4",
+      "rich-text#politica-retiro-content7"
+    ]
+  },
+
+  "flex-layout.row#politica-despacho-content": {
+    "props": {},
+    "children": ["rich-text#politica-despacho-content"]
+  },
+
+  "rich-text#politica-despacho-title": {
+    "props": {
+      "blockClass": "ayudaTitle",
+      "text": "**Políticas de despacho**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#politica-despacho-content": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "**I. REGIÓN METROPOLITANA**\n - Para las siguientes comunas de la Región Metropolitana, una vez el pedido sale a despacho, el tiempo de entrega es de máximo 4 horas.\n<br/>**COMUNAS:** Santiago - Peñalolén - Conchalí - Providencia - Estación Central - Quinta Normal - Recoleta - Independencia - San Joaquín - La Florida - San Miguel - La Reina - Ñuñoa - Las Condes - Vitacura - Lo Barnechea - La Granja - Macul - La Cisterna - Pedro Aguirre Cerda - San Ramón.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+  
+}

@@ -1,0 +1,67 @@
+{
+  "store.custom#vision": {
+    "blocks": [
+      "responsive-layout.desktop#vision",
+      "responsive-layout.tablet#vision",
+      "responsive-layout.phone#vision"
+    ]
+  },
+  "responsive-layout.desktop#vision": {
+    "children": ["flex-layout.row#main-vision-desk"]
+  },
+  "responsive-layout.tablet#vision": {
+    "children": ["flex-layout.row#vision-main-mobile"]
+  },
+  "responsive-layout.phone#vision": {
+    "children": ["flex-layout.row#vision-main-mobile"]
+  },
+  "flex-layout.row#vision-main-mobile": {
+    "children": ["flex-layout.col#vision"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-vision-desk": {
+    "props": {
+      "blockClass": "main-ayuda",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": ["flex-layout.col#nav-column", "flex-layout.col#vision"]
+  },
+
+  "flex-layout.col#vision": {
+    "props": {
+      "width": "72%",
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#vision-title", "flex-layout.row#vision-content"]
+  },
+
+  "flex-layout.row#vision-content": {
+    "props": {},
+    "children": ["rich-text#vision-content"]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#vision-title": {
+    "props": {
+      "blockClass": "ayudaTitle",
+      "text": "**Visión**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#vision-content": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "Ser la Farmacia de Especialidades líder en la entrega de medicamentos para el tratamiento de enfermedades catastróficas, inusuales y crónicas de baja disponibilidad en el mercado abierto y de alto valor comercial.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+}

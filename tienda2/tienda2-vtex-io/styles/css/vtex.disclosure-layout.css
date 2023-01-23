@@ -1,0 +1,28 @@
+/* Estilos generales del menú desplegable disclosure */
+.content {
+  display: flex;
+  flex-direction: column;
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out,
+    transform 250ms ease-in-out;
+  opacity: 0;
+  height: 0;
+  transform: translate3d(0, -10%, 0);
+}
+
+.content[data-enter] {
+  opacity: 1;
+  height: fit-content;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes animationDisclosure {
+  0% {
+    height: fit-content;
+  }
+  100% {
+    height: 0;
+  }
+}
+.content[data-leave] {
+  animation: animationDisclosure 1s ease-in-out;
+}
+/* Fin de Estilos generales del menú desplegable disclosure */

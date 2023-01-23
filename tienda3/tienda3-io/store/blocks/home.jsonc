@@ -1,0 +1,762 @@
+{
+  "store.home": {
+    "blocks": ["flex-layout.row#home", "sandbox#schemaSearch", "sandbox#schemaOrganizacion"]
+  },
+
+  "flex-layout.row#home": {
+    "title": "Contenedor home",
+    "children": ["flex-layout.col#home"]
+  },
+  "flex-layout.col#home": {
+    "children": [
+      "flex-layout.row#titulosSEO", //bloque oculto para insertar H1 en home
+      "flex-layout.row#sliderPrincipalHome",
+      "flex-layout.row#refuerzos-home",
+      "flex-layout.row#accesos-home",
+      "flex-layout.row#carrusel-1-container",
+      "flex-layout.row#banners-home",
+      "flex-layout.row#carrusel-2-container",
+      "flex-layout.row#video-home",
+      "flex-layout.row#carrusel-3-container",
+      "flex-layout.row#banners-instagram",
+      "flex-layout.row#newsletter-home"
+    ]
+  },
+
+  //Slider
+
+  "flex-layout.row#sliderPrincipalHome": {
+    "title": "Slider principal",
+    "children": ["list-context.image-list#sliderPrincipalHome"],
+    "props": {
+      "fullWidth": false,
+      "horizontalAlign": "center",
+      "blockClass": ["sliderPrincipal"]
+    }
+  },
+
+  "list-context.image-list#sliderPrincipalHome": {
+    "title": "Slider principal imágenes",
+    "children": ["slider-layout#sliderPrincipalHome"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/home/slider-principal.jpg",
+          "mobileImage": "assets/home/slider-principal-mobile.jpg"
+        },
+        {
+          "image": "assets/home/slider-principal.jpg",
+          "mobileImage": "assets/home/slider-principal-mobile.jpg"
+        },
+        {
+          "image": "assets/home/slider-principal.jpg",
+          "mobileImage": "assets/home/slider-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#sliderPrincipalHome": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      //"infinite": true,
+
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      /*  "slideTransition": {
+        "speed": 4000,
+        "delay": 2000
+      },  */
+
+      "fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "carousel-principal"
+    }
+  },
+
+  //Refuerzos de confianza
+
+  "flex-layout.row#refuerzos-home": {
+    "title": "Refuerzos de confianza",
+    "children": ["slider-layout#refuerzos-home"],
+    "props": {
+      "blockClass": "row-refuerzos-home"
+    }
+  },
+  "slider-layout#refuerzos-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "slideTransition": {
+        "speed": 4000
+      },
+      "autoplay": {
+        "timeout": 2000
+      },
+      "fullWidth": false,
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "refuerzos-home",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+      },
+      "centerModeSlidesGap": 0
+    },
+    "children": [
+      "flex-layout.row#refuerzo-home-1",
+      "flex-layout.row#refuerzo-home-2",
+      "flex-layout.row#refuerzo-home-3",
+      "flex-layout.row#refuerzo-home-4"
+    ]
+  },
+  "flex-layout.row#refuerzo-home-1": {
+    "children": ["rich-text#refuerzo-home-1"],
+    "props": {
+      "blockClass": "row-refuerzo"
+    }
+  },
+
+  "rich-text#refuerzo-home-1": {
+    "props": {
+      "text": "100% STANLEY",
+      "blockClass": "texto-refuerzo"
+    }
+  },
+  "flex-layout.row#refuerzo-home-2": {
+    "children": ["rich-text#refuerzo-home-2"],
+    "props": {
+      "blockClass": "row-refuerzo"
+    }
+  },
+
+  "rich-text#refuerzo-home-2": {
+    "props": {
+      "text": "INNOVACIÓN",
+      "blockClass": "texto-refuerzo"
+    }
+  },
+  "flex-layout.row#refuerzo-home-3": {
+    "children": ["rich-text#refuerzo-home-3"],
+    "props": {
+      "blockClass": "row-refuerzo"
+    }
+  },
+
+  "rich-text#refuerzo-home-3": {
+    "props": {
+      "text": "GARANTÍA DE POR VIDA",
+      "blockClass": "texto-refuerzo"
+    }
+  },
+  "flex-layout.row#refuerzo-home-4": {
+    "children": ["rich-text#refuerzo-home-4"],
+    "props": {
+      "blockClass": "row-refuerzo"
+    }
+  },
+
+  "rich-text#refuerzo-home-4": {
+    "props": {
+      "text": "SEGURIDAD",
+      "blockClass": "texto-refuerzo"
+    }
+  },
+  //Accesos
+  "flex-layout.row#accesos-home": {
+    "title": "Links accesos",
+    "children": [
+      "rich-text#acceso-home-1",
+      "rich-text#acceso-home-2",
+      "rich-text#acceso-home-3",
+      "rich-text#acceso-home-4"
+    ],
+    "props": {
+      "blockClass": "accesos-home"
+    }
+  },
+  "rich-text#acceso-home-1": {
+    "props": {
+      "text": "[TERMOS](/termos?_q=termos&map=ft)",
+      "blockClass": "acceso-home"
+    }
+  },
+  "rich-text#acceso-home-2": {
+    "props": {
+      "text": "[MATES](/mates?_q=mates&map=ft)",
+      "blockClass": "acceso-home"
+    }
+  },
+  "rich-text#acceso-home-3": {
+    "props": {
+      "text": "[VASOS](/vasos?_q=vasos&map=ft)",
+      "blockClass": "acceso-home"
+    }
+  },
+  "rich-text#acceso-home-4": {
+    "props": {
+      "text": "[MUGS](/mugs?_q=mugs&map=ft)",
+      "blockClass": ["acceso-home", "mugs"]
+    }
+  },
+
+  //Carrusel 1
+  "flex-layout.row#carrusel-1-container": {
+    "title": "Carrusel 1",
+    "children": ["stack-layout#carrusel-1-imagen", "flex-layout.row#carrusel-1"],
+    "props": {
+      "blockClass": "carrusel-container"
+    }
+  },
+  "stack-layout#carrusel-1-imagen": {
+    "children": ["flex-layout.row#carrusel-1-imagen", "flex-layout.row#texto-carrusel-1"],
+    "props": {
+      "blockClass": "carrusel-1-imagen"
+    }
+  },
+  "flex-layout.row#carrusel-1-imagen": {
+    "children": [
+      "responsive-layout.desktop#carrusel-1-imagen",
+      "responsive-layout.tablet#carrusel-1-imagen",
+      "responsive-layout.phone#carrusel-1-imagen"
+    ],
+    "props": {
+      "preventHorizontalStretch": true
+    }
+  },
+  "responsive-layout.desktop#carrusel-1-imagen": {
+    "title": "Imagen Desktop",
+    "children": ["image#carrusel-1"]
+  },
+  "responsive-layout.tablet#carrusel-1-imagen": {
+    "title": "Imagen Tablet",
+    "children": ["image#carrusel-1"]
+  },
+  "responsive-layout.phone#carrusel-1-imagen": {
+    "title": "Imagen Mobile",
+    "children": ["image#carrusel-1-mobile"]
+  },
+  "image#carrusel-1": {
+    "props": {
+      "src": "assets/home/Vitrina_WEB_+elegidos_Navidad.png",
+      "blockClass": "carrusel-1"
+    }
+  },
+  "image#carrusel-1-mobile": {
+    "props": {
+      "src": "assets/home/Vitrina_MOB_+elegidos_Navidad.png",
+      "blockClass": "carrusel-1"
+    }
+  },
+  "flex-layout.row#texto-carrusel-1": {
+    "children": ["flex-layout.col#titulo-carrusel-1", "rich-text#link-carrusel-1"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "texto-carrusel"
+    }
+  },
+  "flex-layout.col#titulo-carrusel-1": {
+    "children": ["rich-text#titulo-carrusel-1-top", "rich-text#titulo-carrusel-1-bottom"]
+  },
+  "rich-text#titulo-carrusel-1-top": {
+    "props": {
+      "text": "LOS MÁS",
+      "blockClass": "titulo-carrusel"
+    }
+  },
+  "rich-text#titulo-carrusel-1-bottom": {
+    "props": {
+      "text": "ELEGIDOS",
+      "blockClass": "titulo-carrusel"
+    }
+  },
+  "rich-text#link-carrusel-1": {
+    "props": {
+      "text": "[VER PRODUCTOS](141?map=productClusterIds)",
+      "blockClass": "link-carrusel"
+    }
+  },
+  "flex-layout.row#carrusel-1": {
+    "children": ["list-context.product-list#carrusel-1-estandar"],
+    "props": {
+      "blockClass": "row-carrusel"
+    }
+  },
+
+  "list-context.product-list#carrusel-1-estandar": {
+    "title": "Productos carrusel 1",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carrusel-estandar"],
+    "props": {
+      "collection": "141",
+      "skusFilter": "ALL"
+    }
+  },
+  "slider-layout#carrusel-estandar": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "carruselEstandar",
+
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 15
+    }
+  },
+
+  //Banners
+  "flex-layout.row#banners-home": {
+    "title": "Banners",
+    "children": ["slider-layout#banners-home"],
+    "props": {
+      "blockClass": "banners-home"
+    }
+  },
+  "slider-layout#banners-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+
+      "fullWidth": false,
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "banners-home",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 5
+    },
+    "children": ["image#banner-1", "image#banner-2", "image#banner-3"]
+  },
+  "image#banner-1": {
+    "props": {
+      "src": "assets/home/banner-home-1.svg",
+      "link": {
+        "url": "/bar"
+      },
+      "blockClass": "banner-home"
+    }
+  },
+  "image#banner-2": {
+    "props": {
+      "src": "assets/home/banner-home-2.svg",
+      "link": {
+        "url": "/hidratacion"
+      },
+      "blockClass": "banner-home"
+    }
+  },
+  "image#banner-3": {
+    "props": {
+      "src": "assets/home/banner-home-3.svg",
+      "link": {
+        "url": "/mate"
+      },
+      "blockClass": "banner-home"
+    }
+  },
+  //Carrusel 2
+  "flex-layout.row#carrusel-2-container": {
+    "title": "Carrusel 2",
+    "children": ["stack-layout#carrusel-2-imagen", "flex-layout.row#carrusel-2"],
+    "props": {
+      "blockClass": "carrusel-container"
+    }
+  },
+  "stack-layout#carrusel-2-imagen": {
+    "children": ["flex-layout.row#carrusel-2-imagen", "flex-layout.row#texto-carrusel-2"],
+    "props": {
+      "blockClass": "carrusel-2-imagen"
+    }
+  },
+  "flex-layout.row#carrusel-2-imagen": {
+    "children": [
+      "responsive-layout.desktop#carrusel-2-imagen",
+      "responsive-layout.tablet#carrusel-2-imagen",
+      "responsive-layout.phone#carrusel-2-imagen"
+    ],
+    "props": {
+      "preventHorizontalStretch": true
+    }
+  },
+  "responsive-layout.desktop#carrusel-2-imagen": {
+    "title": "Imagen Desktop",
+    "children": ["image#carrusel-2"]
+  },
+  "responsive-layout.tablet#carrusel-2-imagen": {
+    "title": "Imagen Tablet",
+    "children": ["image#carrusel-2"]
+  },
+  "responsive-layout.phone#carrusel-2-imagen": {
+    "title": "Imagen Mobile",
+    "children": ["image#carrusel-2-mobile"]
+  },
+  "image#carrusel-2": {
+    "props": {
+      "src": "assets/home/Vitrina_WEB_BebidasFrias_Navidad.png",
+      "blockClass": "carrusel-2"
+    }
+  },
+  "image#carrusel-2-mobile": {
+    "props": {
+      "src": "assets/home/Vitrina_MOB_BebidasFrias_Navidad.png",
+      "blockClass": "carrusel-2"
+    }
+  },
+  "flex-layout.row#texto-carrusel-2": {
+    "children": ["flex-layout.col#titulo-carrusel-2", "rich-text#link-carrusel-2"],
+    "props": {
+      "blockClass": "texto-carrusel"
+    }
+  },
+  "flex-layout.col#titulo-carrusel-2": {
+    "children": ["rich-text#titulo-carrusel-2-top", "rich-text#titulo-carrusel-2-bottom"]
+  },
+  "rich-text#titulo-carrusel-2-top": {
+    "props": {
+      "text": "BEBIDAS",
+      "blockClass": "titulo-carrusel"
+    }
+  },
+  "rich-text#titulo-carrusel-2-bottom": {
+    "props": {
+      "text": "FRÍAS",
+      "blockClass": "titulo-carrusel"
+    }
+  },
+  "rich-text#link-carrusel-2": {
+    "props": {
+      "text": "[VER PRODUCTOS](/142?map=productClusterIds)",
+      "blockClass": ["link-carrusel", "link-carrusel-2"]
+    }
+  },
+  "flex-layout.row#carrusel-2": {
+    "children": ["list-context.product-list#carrusel-2-estandar"],
+    "props": {
+      "blockClass": "row-carrusel"
+    }
+  },
+
+  "list-context.product-list#carrusel-2-estandar": {
+    "title": "Productos carrusel 2",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carrusel-estandar"],
+    "props": {
+      "collection": "142",
+      "skusFilter": "ALL"
+    }
+  },
+  //VIDEO
+  "flex-layout.row#video-home": {
+    "title": "Video",
+    "children": ["video#home"],
+    "props": {
+      "blockClass": "container-video-home"
+    }
+  },
+  "video#home": {
+    "props": {
+      "width": "100%",
+      "loop": true,
+      "autoPlay": true,
+      "muted": true,
+      "src": "https://www.youtube.com/watch?v=536gZ6Qjk4Q",
+      "blockClass": "videoEl"
+    }
+  },
+
+  //Carrusel 3
+  "flex-layout.row#carrusel-3-container": {
+    "title": "Carrusel 3",
+    "children": ["stack-layout#carrusel-3-imagen", "flex-layout.row#carrusel-3"],
+    "props": {
+      "blockClass": ["carrusel-container", "carrusel-container-3"]
+    }
+  },
+  "stack-layout#carrusel-3-imagen": {
+    "children": ["flex-layout.row#carrusel-3-imagen", "flex-layout.row#texto-carrusel-3"],
+    "props": {
+      "blockClass": "carrusel-3-imagen"
+    }
+  },
+  "flex-layout.row#carrusel-3-imagen": {
+    "children": [
+      "responsive-layout.desktop#carrusel-3-imagen",
+      "responsive-layout.tablet#carrusel-3-imagen",
+      "responsive-layout.phone#carrusel-3-imagen"
+    ],
+    "props": {
+      "preventHorizontalStretch": true
+    }
+  },
+  "responsive-layout.desktop#carrusel-3-imagen": {
+    "title": "Imagen Desktop",
+    "children": ["image#carrusel-3"]
+  },
+  "responsive-layout.tablet#carrusel-3-imagen": {
+    "title": "Imagen Tablet",
+    "children": ["image#carrusel-3"]
+  },
+  "responsive-layout.phone#carrusel-3-imagen": {
+    "title": "Imagen Mobile",
+    "children": ["image#carrusel-3-mobile"]
+  },
+  "image#carrusel-3": {
+    "props": {
+      "src": "assets/home/Vitrina_WEB_MomentoMate_Navidad.png",
+      "blockClass": "carrusel-3"
+    }
+  },
+  "image#carrusel-3-mobile": {
+    "props": {
+      "src": "assets/home/Vitrina_MOB_MomentoMate_Navidad.png",
+      "blockClass": "carrusel-3"
+    }
+  },
+  "flex-layout.row#texto-carrusel-3": {
+    "children": ["flex-layout.col#texto-carrusel-3", "rich-text#link-carrusel-3"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "texto-carrusel"
+    }
+  },
+  "flex-layout.col#texto-carrusel-3": {
+    "children": ["rich-text#titulo-carrusel-3-top", "rich-text#titulo-carrusel-3-bottom"]
+  },
+  "rich-text#titulo-carrusel-3-top": {
+    "props": {
+      "text": "MOMENTO",
+      "blockClass": "titulo-carrusel"
+    }
+  },
+  "rich-text#titulo-carrusel-3-bottom": {
+    "props": {
+      "text": "MATE",
+      "blockClass": "titulo-carrusel"
+    }
+  },
+  "rich-text#link-carrusel-3": {
+    "props": {
+      "text": "[VER PRODUCTOS](/143?map=productClusterIds)",
+      "blockClass": ["link-carrusel", "link-carrusel-3"]
+    }
+  },
+  "flex-layout.row#carrusel-3": {
+    "children": ["list-context.product-list#carrusel-3-estandar"],
+    "props": {
+      "blockClass": ["row-carrusel", "row-carrusel-3"]
+    }
+  },
+
+  "list-context.product-list#carrusel-3-estandar": {
+    "title": "Productos carrusel 3",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#carrusel-3"],
+    "props": {
+      "collection": "143"
+    }
+  },
+  "slider-layout#carrusel-3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "blockClass": ["carruselEstandar", "carrusel-3"],
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 15
+    }
+  },
+  //Instagram
+
+  "flex-layout.row#banners-instagram": {
+    "title": "Sección instagram",
+    "children": ["flex-layout.col#banners-instagram"],
+    "props": {
+      "blockClass": "instagram"
+    }
+  },
+  "flex-layout.col#banners-instagram": {
+    "children": ["link#titulo-instagram", "slider-layout#banners-instagram"]
+  },
+  "link#titulo-instagram": {
+    "props": {
+      "label": "@stanley_arg",
+      "href": "https://www.instagram.com/stanley_arg/",
+      "target": "_blank",
+      "blockClass": "seguinos"
+    }
+  },
+  "slider-layout#banners-instagram": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1.2
+      },
+
+      "fullWidth": false,
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "banners-home"
+    },
+    "children": ["image#banner-instagram-3", "image#banner-instagram-2", "image#banner-instagram-1"]
+  },
+  "image#banner-instagram-1": {
+    "props": {
+      "src": "assets/home/ig01.png",
+      "link": {
+        "url": "https://www.instagram.com/stanley_arg/",
+        "openNewTab": true
+      },
+      "blockClass": "banner-home"
+    }
+  },
+  "image#banner-instagram-2": {
+    "props": {
+      "src": "assets/home/ig02.png",
+      "link": {
+        "url": "https://www.instagram.com/stanley_arg/",
+        "openNewTab": true
+      },
+      "blockClass": "banner-home"
+    }
+  },
+  "image#banner-instagram-3": {
+    "props": {
+      "src": "assets/home/ig03.png",
+      "link": {
+        "url": "https://www.instagram.com/stanley_arg/",
+        "openNewTab": true
+      },
+      "blockClass": "banner-home"
+    }
+  },
+
+  "flex-layout.row#newsletter-home": {
+    "children": [
+      "rich-text#titulo-newsletter",
+      "newsletter-form#home",
+      "rich-text#texto-newsletter"
+    ],
+    "props": {
+      "blockClass": "newsletter-home"
+    }
+  },
+  "rich-text#titulo-newsletter": {
+    "props": {
+      "text": "SUSCRIBITE",
+      "blockClass": "titulo-newsletter"
+    }
+  },
+  "newsletter-form#home": {
+    "children": ["newsletter-input-email", "newsletter-submit"]
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "e-mail"
+    }
+  },
+  "rich-text#texto-newsletter": {
+    "props": {
+      "blockClass": "texto-newsletter",
+      "text": "Recibí información sobre\n **novedades, descuentos y promociones**"
+    }
+  },
+
+  "sandbox#schemaOrganizacion": {
+    "props": {
+      "initialContent": "<script type='application/ld+json'>{'@context': 'https://schema.org','@type': 'Organization','url': 'https://www.stanley-pmi.com.ar/','contactPoint': [{'@type': 'ContactPoint','telephone': '11-39178980','contactType': 'customer service'}]}</script>",
+      "allowCookies": true,
+      "height": "0"
+    }
+  },
+
+  "sandbox#schemaSearch": {
+    "props": {
+      "initialContent": "<script type='application/ld+json'>{'@context': 'https://schema.org','@type': 'WebSite','url': 'https://www.stanley-pmi.com.ar/','potentialAction': {'@type': 'SearchAction','target': {'@type': 'EntryPoint','urlTemplate': 'https://www.stanley-pmi.com.ar/{search_term_string}?_q={search_term_string}'},'query-input': 'required name=search_term_string'}}</script>",
+      "allowCookies": true,
+      "height": "0"
+    }
+  },
+
+  "flex-layout.row#titulosSEO": {
+    "children": [
+      "rich-text#titulosSEOH1",
+      "rich-text#titulosSEOH2-1",
+      "rich-text#titulosSEOH2-2",
+      "rich-text#titulosSEOH2-3"
+    ],
+    "props": {
+      "blockClass": "ocultarTitlesSEO"
+    }
+  },
+
+  "rich-text#titulosSEOH1": {
+    "title": "Título SEO - h1-1",
+    "props": {
+      "text": "# STANLEY CONSERVAMOS TUS BEBIDAS CALIENTES O FRÍAS",
+      "blockClass": "titulos-seo"
+    }
+  },
+
+  "rich-text#titulosSEOH2-1": {
+    "title": "Título SEO - h1-1",
+    "props": {
+      "text": "## TERMOS",
+      "blockClass": "titulos-seo"
+    }
+  },
+
+  "rich-text#titulosSEOH2-2": {
+    "title": "Título SEO - h1-1",
+    "props": {
+      "text": "## MATES",
+      "blockClass": "titulos-seo"
+    }
+  },
+
+  "rich-text#titulosSEOH2-3": {
+    "title": "Título SEO - h1-1",
+    "props": {
+      "text": "## MUGS",
+      "blockClass": "titulos-seo"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "Ingrese con mail y contraseña",
+      "accessCodeTitle": "Por favor, informe su mail",
+      "emailPlaceholder": "Ej: jose@mail.com",/* 
+      "passwordPlaceholder": "", */
+      "hideIconLabel": false,
+      "showIconProfile": true,
+      "showPasswordVerificationIntoTooltip": true,
+      "hasGoogleOneTap": true,
+      "optionsTitle": "Elija una de las opciones para confirmar su identidad",
+      "accountOptionsButtonBehavior": "popover",
+      "iconLabel": "Iniciar Sesión",
+      "acessCodePlaceholder": "accessCodeTitle",
+      "providerPasswordButtonLabel": "Ingresar con mail y contraseña",
+      "identifierPlaceholder": "identifierPlaceholder"
+    }
+  }
+}

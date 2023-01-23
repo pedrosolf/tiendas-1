@@ -1,0 +1,363 @@
+{
+  "store.custom#suscripciones": {
+    "blocks": [
+      "responsive-layout.desktop#suscripciones",
+      "responsive-layout.tablet#suscripciones",
+      "responsive-layout.phone#suscripciones"
+    ]
+  },
+  "responsive-layout.desktop#suscripciones": {
+    "children": ["flex-layout.row#main-suscripciones-desk"]
+  },
+  "responsive-layout.tablet#suscripciones": {
+    "children": ["flex-layout.row#main-suscripciones-desk"]
+  },
+  "responsive-layout.phone#suscripciones": {
+    "children": ["flex-layout.row#suscripciones-main-mobile"]
+  },
+
+  /* VERSIÓN MOBILE */
+  "flex-layout.row#suscripciones-main-mobile": {
+    "children": ["flex-layout.col#suscripciones-mobile"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#suscripciones-mobile": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#suscripciones-mobile",
+
+      "rich-text#suscripciones-title-porque", 
+      "rich-text#paso-porque", 
+     "rich-text#PasoTextPorque1", "rich-text#PasoTextPorque2", "rich-text#PasoTextPorque3","rich-text#PasoTextPorque4",
+
+      "rich-text#suscripciones-title",
+      "rich-text#paso1",
+      "flex-layout.row#paso1Container",
+      "rich-text#paso2",
+      "flex-layout.row#paso2Container",
+      "rich-text#paso3",
+      "flex-layout.row#paso3Container",
+      "rich-text#paso4",
+      "flex-layout.row#paso4Container",
+      "flex-layout.row#suscripcionesLinks"
+    ]
+  },
+  "image#suscripciones-mobile": {
+    "props": {
+      "src": "assets/ayuda/SUBCRIPCIONES_mobile_A.png"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-suscripciones-desk": {
+    "props": {
+      "blockClass": "",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#suscripciones"]
+  },
+  "flex-layout.col#suscripciones": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#suscripciones",
+
+      "rich-text#suscripciones-title-porque", 
+       "rich-text#paso-porque", 
+      "rich-text#PasoTextPorque1", "rich-text#PasoTextPorque2", "rich-text#PasoTextPorque3","rich-text#PasoTextPorque4",
+
+      "rich-text#suscripciones-title",
+      "rich-text#paso1",
+      "flex-layout.row#paso1Container",
+      "rich-text#paso2",
+      "flex-layout.row#paso2Container",
+      "rich-text#paso3",
+      "flex-layout.row#paso3Container",
+      "rich-text#paso4",
+      "flex-layout.row#paso4Container",
+      "flex-layout.row#suscripcionesLinks"
+    ]
+  },
+  "image#suscripciones": {
+    "props": {
+      "blockClass": "imagenBanner", 
+      "src": "assets/ayuda/suscripciones.png"
+    }
+  },
+ 
+
+  "rich-text#suscripciones-title-porque": {
+    "props": {
+      "text": "**¿POR QUÉ SUSCRIBIRME?**",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTitle"
+    }
+  },
+
+
+  "rich-text#suscripciones-title": {
+    "props": {
+      "text": "**¿CÓMO SUSCRIBIRSE?**",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTitle"
+    }
+  },
+  "rich-text#paso-porque": {
+    "props": {
+      "text": "**Cuando suscribes un producto, estarás programando el envío de éste a tu domicilio, obteniendo los siguientes beneficios:**",
+      "textPosition": "Left",
+      "blockClass": "pasosTitle2"
+    }
+  },
+
+
+  "rich-text#PasoTextPorque1": {
+    "props": {
+      "text": "1.Tu primer despacho es gratuito.",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTextPorque"
+    }
+  },
+  "rich-text#PasoTextPorque2": {
+    "props": {
+      "text": "2.Sólo debes ingresar una vez la compra y las siguientes se generan automáticamente.",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTextPorque"
+    }
+  },
+  "rich-text#PasoTextPorque3": {
+    "props": {
+      "text": "3.Accedes a beneficios y descuentos exclusivos por suscripción.",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTextPorque"
+    }
+  },
+  "rich-text#PasoTextPorque4": {
+    "props": {
+      "text": "4.Puedes suscribir cualquier producto disponible en nuestro sitio web.",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTextPorque"
+    }
+  },
+
+  /* Paso 1 */
+  "rich-text#paso1": {
+    "props": {
+      "text": "**Paso 1**",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTitle"
+    }
+  },
+  "flex-layout.row#paso1Container": {
+    "props": {
+      "blockClass": "pasosContainer",
+      "preventVerticalStretch": true
+    },
+    "children": ["flex-layout.col#paso1Img", "flex-layout.col#paso1Text"]
+  },
+  "flex-layout.col#paso1Img": {
+    "props": {
+      "blockClass": "pasosImg",
+      "horizontalAlign": "center",
+      "width": "40%",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#imgPaso1"]
+  },
+  "image#imgPaso1": {
+    "props": {
+      "src": "assets/ayuda/PASO_1.png",
+      "blockClass": "imgPasos"
+    }
+  },
+  "flex-layout.col#paso1Text": {
+    "props": {
+      "blockClass": "pasosText",
+      "width": "60%",
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#Paso1Text"]
+  },
+  "rich-text#Paso1Text": {
+    "props": {
+      "text": "Ingresa a nuestra landing de subscripciones o directamente al producto que quieres suscribir",
+      "textPosition": "CENTER",
+      "blockClass": "pasosText"
+    }
+  },
+
+  /* Paso 2 */
+  "rich-text#paso2": {
+    "props": {
+      "text": "**Paso 2**",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTitle"
+    }
+  },
+  "flex-layout.row#paso2Container": {
+    "props": {
+      "blockClass": ["pasosContainer", "pasosColReverse"],
+      "preventVerticalStretch": true
+    },
+    "children": ["flex-layout.col#paso2Text", "flex-layout.col#paso2Img"]
+  },
+  "flex-layout.col#paso2Img": {
+    "props": {
+      "blockClass": "pasosImg",
+      "horizontalAlign": "center",
+      "width": "40%",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#imgPaso2"]
+  },
+  "image#imgPaso2": {
+    "props": {
+      "src": "assets/ayuda/PASO_2.png",
+      "blockClass": "imgPasos"
+    }
+  },
+  "flex-layout.col#paso2Text": {
+    "props": {
+      "blockClass": "pasosText",
+      "width": "60%",
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#Paso2Text"]
+  },
+  "rich-text#Paso2Text": {
+    "props": {
+      "text": "Si ingresaste a la landing, haz click en el botón 'Ver productos en suscripción'",
+      "textPosition": "CENTER",
+      "blockClass": "pasosText"
+    }
+  },
+
+  /* Paso 3 */
+  "rich-text#paso3": {
+    "props": {
+      "text": "**Paso 3**",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTitle"
+    }
+  },
+  "flex-layout.row#paso3Container": {
+    "props": {
+      "blockClass": "pasosContainer",
+      "preventVerticalStretch": true
+    },
+    "children": ["flex-layout.col#paso3Img", "flex-layout.col#paso3Text"]
+  },
+  "flex-layout.col#paso3Img": {
+    "props": {
+      "blockClass": "pasosImg",
+      "horizontalAlign": "center",
+      "width": "40%",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#imgPaso3"]
+  },
+  "image#imgPaso3": {
+    "props": {
+      "src": "assets/ayuda/PASO_3.png",
+      "blockClass": "imgPasos"
+    }
+  },
+  "flex-layout.col#paso3Text": {
+    "props": {
+      "blockClass": "pasosText",
+      "width": "60%",
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#Paso3Text"]
+  },
+  "rich-text#Paso3Text": {
+    "props": {
+      "text": "Ingresa al producto que desees suscribir y presiona el botón 'Suscribirse'.",
+      "textPosition": "CENTER",
+      "blockClass": "pasosText"
+    }
+  },
+
+
+  /* Paso 4 */
+  "rich-text#paso4": {
+    "props": {
+      "text": "**Paso 4**",
+      "textPosition": "CENTER",
+      "blockClass": "pasosTitle"
+    }
+  },
+  "flex-layout.row#paso4Container": {
+    "props": {
+      "blockClass": ["pasosContainer", "pasosColReverse"],
+      "preventVerticalStretch": true
+    },
+    "children": ["flex-layout.col#paso4Text", "flex-layout.col#paso4Img"]
+  },
+  "flex-layout.col#paso4Img": {
+    "props": {
+      "blockClass": "pasosImg",
+      "horizontalAlign": "center",
+      "width": "40%",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#imgPaso4"]
+  },
+  "image#imgPaso4": {
+    "props": {
+      "src": "assets/ayuda/PASO_4.png",
+      "blockClass": "imgPasos"
+    }
+  },
+  "flex-layout.col#paso4Text": {
+    "props": {
+      "blockClass": "pasosText",
+      "width": "60%",
+      "preventVerticalStretch": true
+    },
+    "children": ["rich-text#Paso4Text"]
+  },
+  "rich-text#Paso4Text": {
+    "props": {
+      "text": "Ingresa la frecuencia con la cual deseas recibir tu pedido y finaliza tu compra ingresando los datos solicitados. Si tienes algún descuento asociado a tu suscripción, como programas de beneficios y cupones, ingresa dicho código en “Sumar cupón de descuento” ¡Y listo! Ya estás suscrito.",
+      "textPosition": "CENTER",
+      "blockClass": "pasosText"
+    }
+  },
+
+  /* Links */
+  "flex-layout.row#suscripcionesLinks": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "suscripcionesButtons",
+      "marginTop": 9,
+      "marginBottom": 8
+    },
+    "children": ["link#ver", "link#politica"]
+  },
+  "link#ver":{
+    "props":{
+      "href": "/busca?fq=H:1187",
+      "label": "VER PRODUCTOS EN SUSCRIPCIÓN",
+      "blockClass": "suscripcionesButtons",
+      "target": "_blank"
+    }
+  },
+  "link#politica":{
+    "props":{
+      "href": "https://www.tienda2.com/arquivos/POLITICAS-SUSCRIPCION-tienda2.pdf?v=637889180502870000",
+      "label": "VER POLÍCTICAS DE SUSCRIPCIONES",
+      "blockClass": "suscripcionesButtons",
+      "target": "_blank"
+    }
+  }
+}

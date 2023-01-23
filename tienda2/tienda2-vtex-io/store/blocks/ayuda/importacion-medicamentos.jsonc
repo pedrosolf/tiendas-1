@@ -1,0 +1,120 @@
+{
+  "store.custom#importacion-medicamentos": {
+    "blocks": [
+      "responsive-layout.desktop#importacion-medicamentos",
+      "responsive-layout.tablet#importacion-medicamentos",
+      "responsive-layout.phone#importacion-medicamentos"
+    ]
+  },
+  "responsive-layout.desktop#importacion-medicamentos": {
+    "children": ["flex-layout.row#main-importacion-medicamentos-desk"]
+  },
+  "responsive-layout.tablet#importacion-medicamentos": {
+    "children": ["flex-layout.row#importacion-medicamentos-main-mobile"]
+  },
+  "responsive-layout.phone#importacion-medicamentos": {
+    "children": ["flex-layout.row#importacion-medicamentos-main-mobile"]
+  },
+  "flex-layout.row#importacion-medicamentos-main-mobile": {
+    "children": ["flex-layout.col#importacion-medicamentos-mobile"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-importacion-medicamentos-desk": {
+    "props": {
+      "blockClass": "main-importacion-medicamentos",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": ["flex-layout.col#importacion-medicamentos"]
+  },
+
+  "flex-layout.col#importacion-medicamentos": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#importacion-medicamentos-image",
+      "rich-text#importacion-medicamentos-title",
+      "flex-layout.row#importacion-medicamentos-content",
+      "rich-text#importacion-medicamentos-content1",
+      "rich-text#importacion-medicamentos-content2"
+    ]
+  },
+  "flex-layout.col#importacion-medicamentos-mobile": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#importacion-medicamentos-mobile",
+      "rich-text#importacion-medicamentos-title",
+      "flex-layout.row#importacion-medicamentos-content",
+      "rich-text#importacion-medicamentos-content1",
+      "rich-text#importacion-medicamentos-content2"
+    ]
+  },
+
+  "flex-layout.row#importacion-medicamentos-image": {
+    "props": {},
+    "children": ["image#importacion-medicamentos"]
+  },
+  "image#importacion-medicamentos": {
+    "props": {
+      "blockClass": "imagenBanner",
+      "src": "assets/ayuda/medicamentos-desktop.png"
+    }
+  },
+  "image#importacion-medicamentos-mobile": {
+    "props": {
+      "blockClass": "imagenBanner",
+      "src": "assets/ayuda/medicamentos-mobile.png"
+    }
+  },
+  "flex-layout.row#importacion-medicamentos-content": {
+    "props": {
+      "marginBottom": 3,
+      "marginTop": 6
+    },
+    "children": ["rich-text#importacion-medicamentos-content"]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#importacion-medicamentos-title": {
+    "props": {
+      "blockClass": ["ayudaTitle", "importacion-medicamentos"],
+      "text": "**En tienda2 importamos tu medicamento**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#importacion-medicamentos-content": {
+    "props": {
+      "blockClass": ["ayudaContent", "importacion-medicamentos-content"],
+      "text": "El medicamento que necesitas de cualquier parte del mundo en tus manos. Nuestro compromiso es entregarte el medicamento que necesitas en un plazo máximo de 15 días.<br/><br/>Gestionamos tu medicamento en 3 simples pasos:",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#importacion-medicamentos-content1": {
+    "props": {
+      "blockClass": ["ayudaContent", "importacion-medicamentos-content"],
+      "text": "![alt img](assets/ayuda/flecha.png)&nbsp; **SOLICITUD Y APROBACIÓN**\nSolicita una cotización y en plazo máximo de 48 horas te enviaremos una propuesta.<br/>\n![alt img](assets/ayuda/flecha.png)&nbsp; **DOCUMENTACIÓN**\nVerificamos la documentación básica para hacer importación según la Ley Vigente.<br/>\n![alt img](assets/ayuda/flecha.png)&nbsp; **IMPORTACIÓN Y ENTREGA**\nImportamos y despachamos el medicamento a domicilio u oficina con la confidencialidad solicitada.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#importacion-medicamentos-content2": {
+    "props": {
+      "blockClass": ["ayudaContent", "importacion-medicamentos-content", "contactos"],
+      "text": "Contáctanos y cotiza tu receta:\n[600 276 0000](tel:6002760000)\n[informaciones@tienda2.com](mailto:informaciones@tienda2.com)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  }
+}

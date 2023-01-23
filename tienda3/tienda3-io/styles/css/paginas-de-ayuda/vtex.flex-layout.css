@@ -1,0 +1,330 @@
+.flexRow--tab-list-ayuda {
+  padding: 30px 30px 50px;
+  border: 1px solid #d9d9d6;
+}
+
+.flexRowContent--guia-de-compras .stretchChildrenWidth:first-child {
+  margin-right: 70px;
+}
+
+.flexRowContent--guia-de-compras .stretchChildrenWidth:last-child {
+  margin-left: 70px;
+}
+
+.flexColChild--guia-de-compras:not(:first-child) {
+  position: relative;
+  right: -20px;
+}
+
+.flexColChild--preguntas-frecuentes {
+  margin-bottom: 4px;
+  border-bottom: 1px solid #d9d9d6;
+}
+
+.flexColChild--preguntas-frecuentes:not(:first-child) {
+  margin-top: 20px;
+}
+
+.flexColChild--preguntas-frecuentes :global(.vtex-disclosure-layout-1-x-trigger) {
+  display: flex;
+}
+
+.flexColChild--preguntas-frecuentes :global(.vtex-store-icons-0-x-caretIcon) {
+  cursor: pointer;
+}
+
+.flexColChild--preguntas-frecuentes :global(.vtex-disclosure-layout-1-x-content--hidden) {
+  display: none;
+}
+
+.flexColChild--cambios-y-devoluciones :global(.vtex-radioGroup__label) {
+  margin-bottom: 20px;
+  color: #222426;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flexColChild--cambios-y-devoluciones :global(.vtex-radioGroup__radioLabel) :global(.vtex-radio) {
+  margin: 0;
+}
+
+.flexColChild--cambios-y-devoluciones
+  :global(.vtex-radioGroup__radioLabel)
+  :global(.vtex-radio__label) {
+  margin-bottom: 20px;
+  color: #222426;
+}
+
+.flexColChild--cambios-y-devoluciones
+  :global(.vtex-radioGroup__radioLabel)
+  :global(.vtex-radio__input),
+.flexColChild--ayuda-contacto :global(.vtex-radioGroup__radioLabel) :global(.vtex-radio__input) {
+  height: 16px !important;
+}
+
+.flexColChild--cambios-y-devoluciones
+  :global(.vtex-radioGroup__radioLabel)
+  :global(.vtex-radio__fakeRadio),
+.flexColChild--ayuda-contacto
+  :global(.vtex-radioGroup__radioLabel)
+  :global(.vtex-radio__fakeRadio) {
+  width: 13px !important;
+  height: 13px !important;
+  margin-top: 3px;
+  border: 1px solid #222426 !important;
+}
+
+.flexColChild--cambios-y-devoluciones
+  :global(.vtex-radioGroup__radioLabel)
+  :global(.vtex-radio__fakeRadioInner),
+.flexColChild--ayuda-contacto
+  :global(.vtex-radioGroup__radioLabel)
+  :global(.vtex-radio__fakeRadioInner) {
+  width: 7px !important;
+  height: 7px !important;
+}
+
+.flexRow--cambios-y-devoluciones-comentarios :global(.vtex-textarea__label) {
+  margin-top: 0 !important;
+}
+
+.flexRow--cambios-y-devoluciones-comentarios :global(.vtex-textarea)::after {
+  content: 'Opcional';
+  display: block;
+  margin-bottom: 20px;
+  color: #545859;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.flexColChild--cambios-y-devoluciones :global(.vtex-input__label),
+.flexColChild--ayuda-contacto :global(.vtex-dropdown__label),
+.flexColChild--ayuda-contacto :global(.vtex-input__label) {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222426;
+}
+
+.flexRow--garantia :global(.vtex-input__label),
+.flexRow--garantia :global(.vtex-dropdown__label) {
+  margin-top: 16px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #222426;
+}
+
+.flexRowContent--cambios-y-devoluciones-datos-personales,
+.flexRowContent--cambios-y-devoluciones-pedido,
+.flexRowContent--cambios-y-devoluciones-datos-direccion,
+.flexRowContent--contacto-datos-personales {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.flexRowContent--garantia-ciudad-cp-provincia,
+.flexRowContent--garantia-fecha-fabricacion-compra {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.flexColChild--cambios-y-devoluciones :global(.vtex-input-prefix__group),
+.flexColChild--ayuda-contacto :global(.vtex-dropdown__container),
+.flexColChild--ayuda-contacto :global(.vtex-input-prefix__group),
+.flexColChild--arrepentimiento :global(.vtex-input-prefix__group),
+.flexRow--garantia :global(.vtex-input-prefix__group),
+.flexRow--garantia :global(.vtex-dropdown__container) {
+  border: 1px solid #d9d9d6;
+  border-radius: 0;
+}
+
+.flexRow--contacto-heading {
+  padding: 25px;
+  background-color: #222426;
+}
+
+.flexCol--contacto-heading-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border-left: 1px solid #fff; */
+  border-right: 1px solid #fff;
+}
+
+.flexColChild--ayuda-contacto :global(.vtex-radioGroup__label) {
+  margin-bottom: 20px;
+  color: #222426;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flexColChild--ayuda-contacto :global(.vtex-radio) {
+  margin: 0;
+}
+
+.flexColChild--ayuda-contacto :global(.vtex-radioGroup__radioLabel) :global(.vtex-radio__label) {
+  font-size: 0;
+}
+
+.flexColChild--ayuda-contacto
+  :global(.vtex-radioGroup__radioLabel):not(:last-child)
+  :global(.vtex-radio__label)::after {
+  content: '¡Sí! Compré y lo recibí.';
+  margin-bottom: 20px;
+  color: #222426;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flexColChild--ayuda-contacto
+  :global(.vtex-radioGroup__radioLabel):last-child
+  :global(.vtex-radio__label)::after {
+  content: '¡Sí! Compré, pero no recibí.';
+  margin-bottom: 20px;
+  color: #222426;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flexColChild--ayuda-contacto :global(.vtex-radioGroup)::after {
+  content: 'Si todavía no compraste y necesitas ayuda con tu compra, buscanos en el CHAT dentro del sitio que tenemos un equipo de agentes esperando para ayudarte con tu proceso de compra.';
+  display: block;
+  color: #222426;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.flexColChild--ayuda-contacto :global(.vtex-styleguide-9-x-dropdown) {
+  max-width: 270px;
+}
+
+.flexRowContent--contacto-numero-pedido .stretchChildrenWidth,
+.flexCol--arrepentimiento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.flexCol--arrepentimiento :global(.vtex-input__label) {
+  margin-bottom: 5px;
+  color: #222426;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.flexRow--garantia-cuil-telefono .flexColChild:first-child :global(.vtex-input__label)::after {
+  content: 'Podes obtenerlo ingresando a https://www.anses.gob.ar/consulta/constancia-de-cuil';
+  display: block;
+  margin-top: 4px;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.flexRow--garantia-cuil-telefono .flexColChild:last-child :global(.vtex-input__label)::after {
+  content: 'Incluyendo código de área';
+  display: block;
+  margin-top: 4px;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.flexRow--garantia-correo-direccion .flexColChild:last-child :global(.vtex-input__label)::after {
+  content: 'Calle y Número';
+  display: block;
+  margin-top: 4px;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.flexRow--garantia-fecha-fabricacion-compra
+  .stretchChildrenWidth
+  :global(.vtex-input__label)::after {
+  content: 'Dos dígitos';
+  display: block;
+  margin-top: 4px;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.flexRow--garantia-fecha-fabricacion-compra
+  .stretchChildrenWidth:first-child
+  :global(.vtex-dropdown__label)::after {
+  content: 'Se encuentra en la base del termo';
+  display: block;
+  margin-top: 4px;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+.flexRow--garantia-fecha-fabricacion-compra
+  .stretchChildrenWidth:last-child
+  :global(.vtex-input__label)::after {
+  content: '-';
+  display: block;
+  margin-top: 4px;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+@media (max-width: 639px) {
+  .flexRow--tab-list-ayuda {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .flexRowContent--cambios-y-devoluciones-datos-personales,
+  .flexRowContent--cambios-y-devoluciones-pedido,
+  .flexRowContent--cambios-y-devoluciones-datos-direccion,
+  .flexRowContent--contacto-datos-personales,
+  .flexRowContent--contacto-numero-pedido .stretchChildrenWidth,
+  .flexCol--arrepentimiento {
+    grid-template-columns: 1fr;
+  }
+
+  .flexRowContent--garantia-ciudad-cp-provincia,
+  .flexRowContent--garantia-fecha-fabricacion-compra {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .flexRowContent--contacto-heading .stretchChildrenWidth .flexCol {
+    align-items: flex-start;
+  }
+
+  .flexRowContent--contacto-heading .stretchChildrenWidth .flexCol--contacto-heading-2 {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .flexCol--contacto-heading-2 {
+    padding: 15px 0;
+    /* margin: 15px 0; */
+    margin: 0 0 15px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    /* border-top: 1px solid #fff; */
+  }
+
+  .flexRowContent--guia-de-compras .stretchChildrenWidth {
+    margin-bottom: 50px;
+  }
+
+  .flexRowContent--guia-de-compras .stretchChildrenWidth:last-child {
+    margin-left: 0;
+  }
+
+  .flexColChild--guia-de-compras:not(:first-child) {
+    position: static;
+  }
+
+  :global(.vtex-store-components-3-x-imageElement--garantia-info-producto-opcional) {
+    margin-top: 30px;
+  }
+}

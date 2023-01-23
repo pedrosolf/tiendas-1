@@ -1,0 +1,64 @@
+.container--calcular-envio {
+  border-left: 1px solid #d9d9d6;
+  border-right: 1px solid #d9d9d6;
+}
+
+.paragraph--medios-de-pago,
+.paragraph--calcular-envio {
+  margin: 10px 0;
+  color: #545859;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.paragraph--product-specifications {
+  color: #222426;
+  font-family: 'Knockout';
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.paragraph--medios-de-pago,
+.paragraph--calcular-envio {
+  cursor: pointer;
+}
+
+.container--texto-envio-gratis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d9d9d6;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.paragraph--texto-envio-gratis {
+  color: #545859;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraph--texto-envio-gratis::before {
+  content: "";
+  background-image: url(/arquivos/logo-camion-envio-gratis.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 12px;
+}
+
+@media (max-width: 639px) {
+  .paragraph--medios-de-pago,
+  .paragraph--calcular-envio {
+    max-width: 10ch;
+    font-size: 16px;
+  }
+
+  .paragraph--product-specifications {
+    margin: 15px 0;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "sandbox#guia-de-tallas": {
+        "props": {
+        "width": "80%",
+        "height": "400px",
+        "initialContent": "",
+        "allowCookies": true
+        }
+    }
+}
+
+

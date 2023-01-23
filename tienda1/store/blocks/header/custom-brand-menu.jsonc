@@ -1,0 +1,94 @@
+{
+    "vtex.menu@2.x:menu#menu-marcas": {
+        "props": {
+            "experimentalOptimizeRendering": true
+        },
+        "children": [
+            // "menu-item#more",
+            "menu-item#marcas"
+        ]
+    },
+    "menu-item#marcas": {
+        "props": {
+            "blockClass": "menu-primer-nivel-header",
+            "id": "menu-item-marcas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": true,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": false,
+                "tagTitle": "MARCAS",
+                "text": "MARCAS"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#marcas"]
+    },
+    "vtex.menu@2.x:submenu#marcas": {
+        "props": {
+            "width": "100%"
+        },
+        "children": [
+            "flex-layout.row#menu-marcas"
+        ]
+    },
+    "flex-layout.row#menu-marcas": {
+        "children": [
+            "image#img-menu-marcas-5",
+            "image#img-menu-marcas-1",
+            "image#img-menu-marcas-2",
+            "image#img-menu-marcas-3",
+            "image#img-menu-marcas-4"            
+        ],
+        "props": {
+            "horizontalAlign": "center",
+            "colGap": 5
+        }
+    },
+    "image#img-menu-marcas-1": {
+        "props": {
+            "src": "assets/logos-marcas/logo-trial.png",
+            "link": {
+                "url": "/trial"
+            },
+            "blockClass": "img-menu-marcas"
+        }
+    },
+    "image#img-menu-marcas-2": {
+        "props": {
+            "src": "assets/logos-marcas/logo-perry-ellis.png",
+            "link": {
+                "url": "/perry-ellis"
+            },
+            "blockClass": "img-menu-marcas"
+        }
+    },
+    "image#img-menu-marcas-3": {
+        "props": {
+            "src": "assets/logos-marcas/logo-canadienne.png",
+            "link": {
+                "url": "/canadienne"
+            },
+            "blockClass": "img-menu-marcas"
+        }
+    },
+    "image#img-menu-marcas-4": {
+        "props": {
+            "src": "assets/logos-marcas/logo-florsheim.png",
+            "link": {
+                "url": "/florsheim"
+            },
+            "blockClass": "img-menu-marcas"
+        }
+    },
+    "image#img-menu-marcas-5": {
+        "props": {
+            "src": "assets/logos-marcas/hugoboss_logo.png",
+            "link": {
+                "url": "/boss"
+            },
+            "blockClass": "img-menu-marcas"
+        }
+    }
+}

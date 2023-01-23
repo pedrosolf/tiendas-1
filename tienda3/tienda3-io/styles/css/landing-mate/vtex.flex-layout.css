@@ -1,0 +1,114 @@
+.flexRow--seccion-video-contenedor{
+    background: #222426;
+}
+.flexRowContent--iconos-landing{
+    display: flex;
+    align-items: center;
+}
+.flexRow--iconos-landing{
+    width: 90%;
+    margin: auto;
+}
+.flexRow--contenedor-video-landing{
+    padding:3rem 1rem;
+}
+.flexRow--contenedor-video-landing :global(.vtex-store-video-1-x-videoElement--video-landing){
+    height: 192px;
+}
+.flexRow--imagen-carrusel-landing{
+    background: url("assets/landing-mate/fondo-carrusel.jpg");
+    background-repeat: no-repeat;
+    height: 786px;
+    margin-top: 0;
+}
+
+.flexRow--landing-mate-container .flexRow--newsletter-home{
+    margin-top: 0;
+}
+.flexRowContent--seccion-video-texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRowContent--seccion-video .stretchChildrenWidth:first-child{
+  order: 1;
+  width: 100% !important;
+}
+.flexRowContent--seccion-video .stretchChildrenWidth:last-child{
+    order: 2;
+    width: 100% !important;
+
+  }
+.flexRowContent--seccion-video .flexRow--iconos-landing .stretchChildrenWidth:first-child{
+    width: auto !important;
+    order: unset;
+}
+.flexRowContent--seccion-video .flexRow--iconos-landing .stretchChildrenWidth:last-child{
+    width: auto !important;
+    order: unset;
+
+}
+.flexRow--landing-mate-container :global(.vtex-store-components-3-x-imageElementLink--carousel-principal){
+    max-height: 384px;
+}
+@media (min-width: 660px){
+    .flexRow--landing-mate-container :global(.vtex-store-components-3-x-imageElementLink--carousel-principal){
+        max-height: 506px;
+    }
+    .flexRow--imagen-carrusel-3{
+        /*background: url("assets/landing-mate/fondo-carrusel-desk.jpg");*/
+        background-repeat: no-repeat;
+        margin-top: 3rem;
+        background-size: cover;
+    }
+  
+    .flexRowContent--seccion-video-contenedor .stretchChildrenWidth:first-child{
+        order: 2;
+
+    }
+    .flexRowContent--seccion-video-contenedor .stretchChildrenWidth:last-child{
+        order: 1;
+
+    }
+    .flexRow--contenedor-video-landing :global(.vtex-store-video-1-x-videoElement--video-landing){
+        height: 325px;
+    }
+    .flexRow--iconos-landing{
+        display: flex;
+        justify-content: center;
+     }
+ 
+    .flexRow--landing-mate-container .flexRowContent--carrusel-container{
+        border-bottom: 1px solid #222426;
+        padding-bottom: 5rem;
+    }
+    .flexRowContent--seccion-video-contenedor .flexRowContent--seccion-video-texto  .stretchChildrenWidth:first-child{
+        order: unset;
+
+    }
+    .flexRowContent--seccion-video-contenedor .flexRowContent--seccion-video-texto  .stretchChildrenWidth:last-child{
+        order: unset;
+
+    }
+    .flexRow--seccion-video-texto .stretchChildrenWidth{
+        width: 100% !important;
+    }
+  .flexRowContent--seccion-video-contenedor{
+    width: 90%;
+    margin: auto;
+    padding: 3rem 0;
+    align-items: center;
+  }
+  .flexRowContent--seccion-video-texto{
+    padding: 1rem;
+  }
+}
+
+@media (min-width:1500px){
+    .flexRow--landing-mate-container :global(.vtex-store-components-3-x-imageElementLink--carousel-principal){
+        max-height: 640px;
+    }
+    .flexRow--contenedor-video-landing :global(.vtex-store-video-1-x-videoElement--video-landing){
+        height: 400px;
+    }
+}

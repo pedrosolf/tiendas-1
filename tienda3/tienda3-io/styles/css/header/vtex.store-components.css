@@ -1,0 +1,191 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right) .searchBarContainer {
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer
+  :global(.vtex-styleguide-9-x-input) {
+  margin-right: -31px;
+  width: 31px;
+  padding: 0;
+  background: transparent;
+  color: transparent;
+  border-bottom: 1px solid !important;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer--opened
+  :global(.vtex-styleguide-9-x-input) {
+  width: 240px;
+  margin-right: 0;
+  color: #000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer
+  :global(.vtex-input__suffix) {
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer
+  .externalSearchButtonWrapper {
+  border: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer
+  .searchBarIcon--external-search {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  padding: 0;
+  background-color: transparent;
+  color: #000;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .compactMode
+  :global(.vtex-input-prefix__group) {
+  border: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer
+  .searchBarIcon--search {
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer
+  .searchIcon {
+  width: 20px;
+  height: 20px;
+  color: #222426;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--header-search-mobile) .container {
+  background: #f9f9f9;
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-search-mobile) .searchBarContainer {
+  padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-search-mobile)
+  .autoCompleteOuterContainer
+  :global(.vtex-input-prefix__group) {
+  position: relative;
+  border: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-search-mobile)
+  .autoCompleteOuterContainer
+  :global(.vtex-styleguide-9-x-input) {
+  padding-left: 40px;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-search-mobile)
+  .autoCompleteOuterContainer
+  :global(.vtex-input__suffix) {
+  background-color: transparent;
+}
+
+.externalSearchButtonWrapper--mobile {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: transparent;
+  border: 0;
+}
+
+.searchBarIcon--mobile--external-search {
+  padding-left: 12px;
+  padding-right: 0;
+  background-color: transparent;
+}
+
+.searchIcon--mobile {
+  color: #545859;
+}
+
+.imageElement--top-header {
+  width: 14px;
+}
+
+@media (max-width: 1440px) {
+  .imageElement--header-logo {
+    max-width: 175px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageElement--top-header {
+    width: 10px;
+  }
+}
+@media (min-width: 1400px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+    .searchBarInnerContainer
+    .searchIcon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.imageElementLink--login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.5rem;
+}
+:global(.vtex-search-2-x-tileList) :global(.vtex-product-summary-2-x-buyButtonContainer) {
+  display: none;
+}
+:global(.vtex-search-2-x-tileList) :global(.vtex-product-summary-2-x-productBrand) {
+  text-align: center;
+}
+:global(.vtex-search-2-x-tileList) :global(.vtex-store-components-3-x-sellingPrice) {
+  color: #222426;
+  font-weight: 700;
+}
+:global(.vtex-search-2-x-tileList) :global(.vtex-product-summary-2-x-price_installmentContainer) {
+  display: none;
+}
+:global(.vtex-search-2-x-itemListTitle),
+:global(.vtex-search-2-x-itemListSubItemLink),
+:global(.vtex-search-2-x-itemListLinkTitle),
+:global(.vtex-search-2-x-itemList--top-search) {
+  font-family: 'klavika-web-display';
+}
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+  border: none;
+}
+:global(.vtex-search-2-x-biggy-autocomplete) {
+  margin-top: 1.8rem;
+}
+:global(.vtex-search-2-x-tileListList) :global(.vtex-product-summary-2-x-imageNormal){
+  max-height: 151.56px;
+}
+
+@media (min-width: 992px) and (max-width: 1299px) { 
+  :global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer--opened
+  :global(.vtex-styleguide-9-x-input) {
+  width: 140px;
+}
+}
+
+@media (min-width: 1300px) and (max-width: 1399px) { 
+  :global(.vtex-flex-layout-0-x-flexRowContent--header-col-right)
+  .searchBarInnerContainer--opened
+  :global(.vtex-styleguide-9-x-input) {
+  width: 210px;
+}
+}
+
+

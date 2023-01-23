@@ -1,0 +1,126 @@
+.productName {
+  display: block;
+  padding-bottom: 5px;
+  color: #222426;
+  font-family: 'Knockout';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.productVariationsItem {
+  color: #545859;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.productPriceCurrency .currencyContainer {
+  color: #545859;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.price {
+  width: fit-content;
+  color: #222426;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quantitySelectorContainer {
+  padding-top: 28px;
+}
+
+.inputContainer {
+  max-width: 50px;
+  padding: 0;
+  border: 0;
+}
+
+.quantitySelectorButton {
+  max-width: 25px;
+  padding: 0;
+  background-color: #fff;
+  border: 0;
+}
+
+.removeButton {
+  padding: 0;
+}
+
+.deleteIcon {
+  color: transparent;
+  width: 20px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='22' viewBox='0 0 20 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.63449 6.15883C2.72905 6.05752 2.86142 6 3 6H17C17.1386 6 17.271 6.05752 17.3655 6.15883C17.4601 6.26013 17.5084 6.39615 17.4988 6.5344L16.4988 21.0344C16.4807 21.2966 16.2628 21.5 16 21.5H4C3.73721 21.5 3.51927 21.2966 3.50119 21.0344L2.50119 6.5344C2.49165 6.39615 2.53993 6.26013 2.63449 6.15883ZM3.53567 7L4.46671 20.5H15.5333L16.4643 7H3.53567Z' fill='%23222426'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.5 18V9H10.5V18H9.5Z' fill='%23222426'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.50073 18.0278L6.00073 9.02776L6.99919 8.97229L7.49919 17.9723L6.50073 18.0278Z' fill='%23222426'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.4993 18.0278L13.9993 9.02776L13.0008 8.97229L12.5008 17.9723L13.4993 18.0278Z' fill='%23222426'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.5 5.5C2.5 4.11929 3.61929 3 5 3H15C16.3807 3 17.5 4.11929 17.5 5.5V6.5C17.5 6.77614 17.2761 7 17 7H3C2.72386 7 2.5 6.77614 2.5 6.5V5.5ZM5 4C4.17157 4 3.5 4.67157 3.5 5.5V6H16.5V5.5C16.5 4.67157 15.8284 4 15 4H5Z' fill='%23222426'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 1.5C9.17157 1.5 8.5 2.17157 8.5 3V3.5H7.5V3C7.5 1.61929 8.61929 0.5 10 0.5C11.3807 0.5 12.5 1.61929 12.5 3V3.5H11.5V3C11.5 2.17157 10.8284 1.5 10 1.5Z' fill='%23222426'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 7H0V6H20V7Z' fill='%23222426'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+.quantitySelectorWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.quantitySelectorIncrease {
+  color: transparent;
+  width: 14px;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.05321 1.81735L1.38996 7.48343L0.505859 6.59977L6.19848 0.904301C6.66488 0.386476 7.44591 0.38737 7.91122 0.906984L13.4943 6.60415L12.6015 7.47905L7.05321 1.81735Z' fill='%23545859'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+.quantitySelectorDecrease {
+  color: transparent;
+  width: 14px;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.94696 6.18268L12.6102 0.516602L13.4943 1.40026L7.80169 7.09573C7.33528 7.61356 6.55426 7.61266 6.08894 7.09305L0.505859 1.39588L1.39864 0.520982L6.94696 6.18268Z' fill='%23545859'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+@media (max-width: 1025px) {
+  .productName {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+}
+:global(.vtex-product-list-0-x-productImageContainer){
+  height: 96px;
+}
+:global(.vtex-product-list-0-x-productImage){
+  object-fit: contain;
+  height: -webkit-fill-available;
+}
+
+
+:global(.vtex-minicart-2-x-minicartProductListContainer)::-webkit-scrollbar {
+  width: 5px;    
+  height: 5px;    
+}
+
+:global(.vtex-minicart-2-x-minicartProductListContainer)::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+
+:global(.vtex-minicart-2-x-minicartProductListContainer)::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+:global(.vtex-minicart-2-x-minicartProductListContainer)::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+:global(.vtex-minicart-2-x-minicartProductListContainer)::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+:global(.vtex-minicart-2-x-minicartProductListContainer)::-webkit-scrollbar-track:hover,
+:global(.vtex-minicart-2-x-minicartProductListContainer)::-webkit-scrollbar-track:active {
+background: #d4d4d4;
+}

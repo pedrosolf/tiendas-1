@@ -1,0 +1,22 @@
+{
+  "store.custom#ayuda-quienes-somos": {
+    "blocks": ["tab-layout#ayuda-quienes-somos"]
+  },
+  "tab-layout#ayuda-quienes-somos": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-quienes-somos"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "quienes-somos"
+    }
+  },
+  "tab-content#ayuda-quienes-somos": {
+    "children": [
+      "tab-content.item#quienes-somos"
+    ]
+  }
+}

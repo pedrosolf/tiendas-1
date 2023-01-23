@@ -1,0 +1,118 @@
+{
+  "flex-layout.row#bottom-header": {
+    "props": {
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "bottom-container-header",
+      "colGap": 5
+    },
+    "children": ["flex-layout.col#nav", "flex-layout.col#search-bar"]
+  },
+
+  /* Mega menú categorías directas */
+  "flex-layout.col#nav": {
+    "props": {
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "width": "60%",
+      "blockClass": "category-container"
+    },
+    "children": ["flex-layout.row#nav"]
+  },
+  "flex-layout.row#nav": {
+    "props": {
+      "verticalAlign": "center",
+      "width": "40%",
+      "preventVerticalStretch": true,
+      "blockClass": "nav-container",
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#megamenu",
+      "flex-layout.col#category-1",
+      "flex-layout.col#category-2",
+      "flex-layout.col#category-3"
+    ]
+  },
+  "flex-layout.col#megamenu": {
+    "props": {
+      "blockClass": "category",
+      "verticalAlign": "center"
+    },
+    "children": ["mega-menu-trigger-btn", "flex-layout.row#mega-menu"]
+  },
+  "mega-menu-trigger-btn": {
+    "props": {
+      "id": "hamburger"
+    }
+  },
+  "flex-layout.row#mega-menu": {
+    "children": ["mega-menu"],
+    "props": {
+      "blockClass": "mega-menu",
+      "width": "5%",
+      "horizontalAlign": "center"
+    }
+  },
+  "mega-menu": {
+    "props": {
+      "title": ""
+    }
+  },
+  "flex-layout.col#category-1": {
+    "props": {
+      "blockClass": "category",
+      "verticalAlign": "center"
+    },
+    "children": ["vtex.menu@2.x:menu#beneficios"]//Se importa desde el archivo 'menu-beneficios.jsonc'
+  },
+
+  "flex-layout.col#category-2": {
+    "props": {
+      "blockClass": "category",
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true
+    },
+    "children": ["rich-text#category-2"]
+  },
+  "rich-text#category-2": {
+    "props": {
+      "text": "[Preparaciones Oncológicas](/Preparados-Oncologicos)",
+      "blockClass": "category"
+    }
+  },
+  "flex-layout.col#category-3": {
+    "props": {
+      "blockClass": "category",
+      "verticalAlign": "center"
+    },
+    "children": ["rich-text#category-3"]
+  },
+  "rich-text#category-3": {
+    "props": {
+      "text": "[Importación de Medicamentos](/tienda2-importaciones)"
+    }
+  },
+
+  /* Buscador */
+  "flex-layout.col#search-bar": {
+    "props": {
+      "verticalAlign": "center",
+      "blockClass": "searchBar-container"
+    },
+    "children": ["search-bar"]
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true /* 
+      "displayMode": "search-and-clear-buttons", */,
+      "blockClass": "",
+      "productLayout": "VERTICAL",
+      "placeholder": "¿Qué estás buscando?",
+      "compactMode": false
+    }
+  }
+}

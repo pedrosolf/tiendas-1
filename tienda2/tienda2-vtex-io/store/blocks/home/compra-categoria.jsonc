@@ -1,0 +1,142 @@
+{
+  "slider-layout#carouselPorCategoria": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "disabled"
+      },
+      "centerModeSlidesGap": 30,
+      "colGap": 30,
+      "blockClass": "compra-categoria"
+    },
+    "children": [
+      "rich-text#antibioticos2",
+      "rich-text#obesidad2",
+      "rich-text#cardiovascular2",
+      "rich-text#coagulacion2",
+      "rich-text#categoria-home",
+      "rich-text#dermatologia2",
+      "rich-text#fiebre2",
+      "rich-text#enfermedades-especificas",
+      "rich-text#gastrointestinal2",
+      "rich-text#articulaciones2",
+      "rich-text#neuropsiquiatria2",
+      "rich-text#oftalmicos2",
+      "rich-text#respiratorio2",
+      "rich-text#salud-femenina2",
+      "rich-text#salud-masculina2",
+      "rich-text#vacunas2",
+      "rich-text#vitaminas2"
+    ]
+  },
+  "rich-text#antibioticos2": {
+    "props": {
+      "text": "[![Categoría antibioticos2](assets/home/Iconos Categorias/antibioticos.png)![Categoría antibioticos2](assets/home/Iconos Categorias/antibioticos2.png)Antibioticos y antivirales](/antibioticos-y-antivirales)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#obesidad2": {
+    "props": {
+      "text": "[![Categoría Antidiabéticos y tiroides](assets/home/Iconos Categorias/obesidad.png)![Categoría obesidad2](assets/home/Iconos Categorias/obesidad2.png)Antidiabéticos y tiroides](/antidiabeticos-y-tiroides)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#cardiovascular2": {
+    "props": {
+      "text": "[![Categoría cardiovascular](assets/home/Iconos Categorias/cardiovascular.png)![Categoría cardiovascular2](assets/home/Iconos Categorias/cardiovascular2.png)Cardiovascular](/cardiovascular)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#coagulacion2": {
+    "props": {
+      "text": "[![Categoría coagulacion](assets/home/Iconos Categorias/coagulacion.png)![Categoría coagulacion2](assets/home/Iconos Categorias/coagulacion2.png)Coagulación](/coagulacion)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#categoria-home": {
+    "props": {
+      "text": "[![Categoría cuidado bucal](assets/home/Iconos Categorias/diente.png)![Categoría categoria-home](assets/home/Iconos Categorias/btn-categoria-home-4.png)Cuidado bucal](/cuidado-bucal)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#dermatologia2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/dermatologia.png)![Categoría dermatologia2](assets/home/Iconos Categorias/dermatologia2.png)Dermatológicos](/dermatologicos)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#fiebre2": {
+    "props": {
+      "text": "[![Categoría de fiebre](assets/home/Iconos Categorias/fiebre.png)![Categoría dermatologia2](assets/home/Iconos Categorias/fiebre2.png)Dolor y Fiebre](/dolor-y-fiebre)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#enfermedades-especificas": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/enfermedades-especificas.png)![Categoría dermatologia2](assets/home/Iconos Categorias/enfermedades-especificas2.png)Enfermedades Especificas](/enfermedades-especificas)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#gastrointestinal2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/gastrointestinal.png)![Categoría dermatologia2](assets/home/Iconos Categorias/gastrointestinal2.png)Gastrointestinal](/Gastrointestinal)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#articulaciones2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/articulaciones.png)![Categoría dermatologia2](assets/home/Iconos Categorias/articulaciones2.png)Huesos y Articulaciones](/huesos-y-articulaciones)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#neuropsiquiatria2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/neuropsiquiatria.png)![Categoría dermatologia2](assets/home/Iconos Categorias/neuropsiquiatria2.png)Neuropsiquiatría](/neuropsiquiatria)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#oftalmicos2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/oftalmicos.png)![Categoría dermatologia2](assets/home/Iconos Categorias/oftalmicos2.png)Oftálmicos y Oídos](/oftalmicos-y-oidos)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#respiratorio2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/respiratorio.png)![Categoría dermatologia2](assets/home/Iconos Categorias/respiratorio2.png)Respiratorios](/respiratorio)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#salud-femenina2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/salud-femenina.png)![Categoría dermatologia2](assets/home/Iconos Categorias/salud-femenina2.png)Salud Femenina](/salud-femenina)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#salud-masculina2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/salud-masculina.png)![Categoría dermatologia2](assets/home/Iconos Categorias/salud-masculina2.png)Salud Masculina](/salud-masculina)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#vacunas2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/vacunas.png)![Categoría dermatologia2](assets/home/Iconos Categorias/vacunas2.png)Vacunas](/vacunas)",
+      "blockClass": "categoryDest"
+    }
+  },
+  "rich-text#vitaminas2": {
+    "props": {
+      "text": "[![Categoría dermatologia2](assets/home/Iconos Categorias/vitaminas.png)![Categoría dermatologia2](assets/home/Iconos Categorias/vitaminas2.png)Vitaminas y Minerales](/vitaminas-y-minerales)",
+      "blockClass": "categoryDest"
+    }
+  }
+}

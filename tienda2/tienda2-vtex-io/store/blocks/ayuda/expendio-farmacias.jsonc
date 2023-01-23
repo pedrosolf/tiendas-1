@@ -1,0 +1,602 @@
+{
+  "store.custom#expendio-farmacias": {
+    "blocks": [
+      "responsive-layout.desktop#expendio-farmacias",
+      "responsive-layout.tablet#expendio-farmacias",
+      "responsive-layout.phone#expendio-farmacias"
+    ]
+  },
+  "responsive-layout.desktop#expendio-farmacias": {
+    "children": ["flex-layout.row#expendio-main"]
+  },
+  "responsive-layout.tablet#expendio-farmacias": {
+    "children": ["flex-layout.row#expendio-main-mobile"]
+  },
+  "responsive-layout.phone#expendio-farmacias": {
+    "children": ["flex-layout.row#expendio-main-mobile"]
+  },
+  "flex-layout.row#expendio-main": {
+    "children": ["flex-layout.col#expendio-main"]
+  },
+  "flex-layout.row#expendio-main-mobile": {
+    "children": ["flex-layout.col#expendio-main-mobile"]
+  },
+  "flex-layout.col#expendio-main": {
+    "children": [
+      "image#expendio-farmacias",
+      "flex-layout.row#expendio-shelf",
+      "flex-layout.row#expendio-shelf2",
+      "flex-layout.row#expendio-shelf3",
+      "flex-layout.row#expendio-shelf4",
+      "flex-layout.row#expendio-shelf5",
+      "flex-layout.row#expendio-shelf6"
+    ]
+  },
+  "flex-layout.col#expendio-main-mobile": {
+    "children": [
+      "image#expendio-farmacias-mobile",
+      "flex-layout.row#expendio-shelf",
+      "flex-layout.row#expendio-shelf2",
+      "flex-layout.row#expendio-shelf3",
+      "flex-layout.row#expendio-shelf4",
+      "flex-layout.row#expendio-shelf5",
+      "flex-layout.row#expendio-shelf6"
+    ]
+  },
+  "image#expendio-farmacias": {
+    "props": {
+      "src": "assets/ayuda/expendio-farmacias.png",
+      "blockClass": "expendio-farmacias-img"
+    }
+  },
+  "image#expendio-farmacias-mobile": {
+    "props": {
+      "src": "assets/ayuda/farmacia-mobile.png",
+      "blockClass": "expendio-farmacias-img"
+    }
+  },
+
+  /* Vitrinas */
+  "flex-layout.row#expendio-shelf": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "blockClass": "expendioShelfContainer"
+    },
+    "children": [
+      "flex-layout.col#product",
+      "flex-layout.col#product2",
+      "flex-layout.col#product3",
+      "flex-layout.col#product4"
+    ]
+  },
+
+  /* Producto 1 */
+  "flex-layout.col#product": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product1", "rich-text#expendioPrice&Name"]
+  },
+  "image#product1": {
+    "props": {
+      "src": "assets/ayuda/product1.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name": {
+    "props": {
+      "text": "KYTRIL 1 MG / 1 ML X 5 AMP\n##### **$ 191.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 2 */
+  "flex-layout.col#product2": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product2", "rich-text#expendioPrice&Name2"]
+  },
+  "image#product2": {
+    "props": {
+      "src": "assets/ayuda/product2.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name2": {
+    "props": {
+      "text": "KYTRIL 1 MG X 2 COMP. REC.\n##### **$ 34.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 3 */
+  "flex-layout.col#product3": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product3", "rich-text#expendioPrice&Name3"]
+  },
+  "image#product3": {
+    "props": {
+      "src": "assets/ayuda/product3.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name3": {
+    "props": {
+      "text": "VESANOID 10 MG X 100 CAP\n##### **$ 3.315.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 4 */
+  "flex-layout.col#product4": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product4", "rich-text#expendioPrice&Name4"]
+  },
+  "image#product4": {
+    "props": {
+      "src": "assets/ayuda/product4.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name4": {
+    "props": {
+      "text": "ELVENIR 37,5MG X 30 COMP.\n##### **$ 22.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Vitrinas 2*/
+  "flex-layout.row#expendio-shelf2": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": "expendioShelfContainer"
+    },
+    "children": [
+      "flex-layout.col#product5",
+      "flex-layout.col#product6",
+      "flex-layout.col#product7",
+      "flex-layout.col#product8"
+    ]
+  },
+  /* Producto 5 */
+  "flex-layout.col#product5": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product5", "rich-text#expendioPrice&Name5"]
+  },
+  "image#product5": {
+    "props": {
+      "src": "assets/ayuda/product5.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name5": {
+    "props": {
+      "text": "SAMEXID 30 MG X 30 CAPS.\n##### **$ 44.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 6 */
+  "flex-layout.col#product6": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product6", "rich-text#expendioPrice&Name6"]
+  },
+  "image#product6": {
+    "props": {
+      "src": "assets/ayuda/product6.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name6": {
+    "props": {
+      "text": "SAMEXID 50 MG X 30 CAPS.\n##### **$ 52.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 7 */
+  "flex-layout.col#product7": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product7", "rich-text#expendioPrice&Name7"]
+  },
+  "image#product7": {
+    "props": {
+      "src": "assets/ayuda/product7.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name7": {
+    "props": {
+      "text": "ARADIX RETARD 20 MG X 30 COMP. LP\n##### **$ 38.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 8 */
+  "flex-layout.col#product8": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product8", "rich-text#expendioPrice&Name8"]
+  },
+  "image#product8": {
+    "props": {
+      "src": "assets/ayuda/product8.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name8": {
+    "props": {
+      "text": "LEPONEX 100 MG X 30 COMP.\n##### **$ 56.290**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Vitrinas 3*/
+  "flex-layout.row#expendio-shelf3": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": "expendioShelfContainer"
+    },
+    "children": [
+      "flex-layout.col#product9",
+      "flex-layout.col#product10",
+      "flex-layout.col#product11",
+      "flex-layout.col#product12"
+    ]
+  },
+  /* Producto 9 */
+  "flex-layout.col#product9": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product9", "rich-text#expendioPrice&Name9"]
+  },
+  "image#product9": {
+    "props": {
+      "src": "assets/ayuda/product9.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name9": {
+    "props": {
+      "text": "LEPONEX 25 MG X 20 COMP.\n##### **$ 17.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 10 */
+  "flex-layout.col#product10": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product10", "rich-text#expendioPrice&Name10"]
+  },
+  "image#product10": {
+    "props": {
+      "src": "assets/ayuda/product10.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name10": {
+    "props": {
+      "text": "LODUX 100 MG X 30 COMP.\n##### **$ 29.490**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 11 */
+  "flex-layout.col#product11": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product11", "rich-text#expendioPrice&Name11"]
+  },
+  "image#product11": {
+    "props": {
+      "src": "assets/ayuda/product11.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name11": {
+    "props": {
+      "text": "ARADIX RETARD 10 MG X 30 COMP. LP\n##### **$ 25.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 12 */
+  "flex-layout.col#product12": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product12", "rich-text#expendioPrice&Name12"]
+  },
+  "image#product12": {
+    "props": {
+      "src": "assets/ayuda/product12.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name12": {
+    "props": {
+      "text": "FINAPET 18,75 MG X 30 CAPS.\n##### **$ 10.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Vitrinas 4*/
+  "flex-layout.row#expendio-shelf4": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": "expendioShelfContainer"
+    },
+    "children": [
+      "flex-layout.col#product13",
+      "flex-layout.col#product14",
+      "flex-layout.col#product15",
+      "flex-layout.col#product16"
+    ]
+  },
+  /* Producto 13 */
+  "flex-layout.col#product13": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product13", "rich-text#expendioPrice&Name13"]
+  },
+  "image#product13": {
+    "props": {
+      "src": "assets/ayuda/product13.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name13": {
+    "props": {
+      "text": "FINAPET 37,5 MG X 30 CAPS.\n##### **$ 18.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 14 */
+  "flex-layout.col#product14": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product14", "rich-text#expendioPrice&Name14"]
+  },
+  "image#product14": {
+    "props": {
+      "src": "assets/ayuda/product14.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name14": {
+    "props": {
+      "text": "BONDRONAT 6 MG / 6 ML X 1 FA\n##### **$ 232.590**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 15 */
+  "flex-layout.col#product15": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product15", "rich-text#expendioPrice&Name15"]
+  },
+  "image#product15": {
+    "props": {
+      "src": "assets/ayuda/product15.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name15": {
+    "props": {
+      "text": "CYMEVENE 500 MG X 1 AMP\n##### **$ 50.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 16 */
+  "flex-layout.col#product16": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product16", "rich-text#expendioPrice&Name16"]
+  },
+  "image#product16": {
+    "props": {
+      "src": "assets/ayuda/product16.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name16": {
+    "props": {
+      "text": "KYTRIL 3 MG / 3 ML X 1 AMP\n##### **$ 43.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Vitrinas 5*/
+  "flex-layout.row#expendio-shelf5": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": "expendioShelfContainer"
+    },
+    "children": [
+      "flex-layout.col#product17",
+      "flex-layout.col#product18",
+      "flex-layout.col#product19",
+      "flex-layout.col#product20"
+    ]
+  },
+  /* Producto 17 */
+  "flex-layout.col#product17": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product17", "rich-text#expendioPrice&Name17"]
+  },
+  "image#product17": {
+    "props": {
+      "src": "assets/ayuda/product17.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name17": {
+    "props": {
+      "text": "LANEXAT 0,5 MG X 5 ML X 5 AMP\n##### **$ 109.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 18 */
+  "flex-layout.col#product18": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product18", "rich-text#expendioPrice&Name18"]
+  },
+  "image#product18": {
+    "props": {
+      "src": "assets/ayuda/product18.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name18": {
+    "props": {
+      "text": "LEXOTANIL 3 MG X 30 COMP.\n##### **$ 12.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 19 */
+  "flex-layout.col#product19": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product19", "rich-text#expendioPrice&Name19"]
+  },
+  "image#product19": {
+    "props": {
+      "src": "assets/ayuda/product19.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name19": {
+    "props": {
+      "text": "LEXOTANIL 6 MG X 30 COMP.\n##### **$ 19.890**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Producto 20 */
+  "flex-layout.col#product20": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product20", "rich-text#expendioPrice&Name20"]
+  },
+  "image#product20": {
+    "props": {
+      "src": "assets/ayuda/product20.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name20": {
+    "props": {
+      "text": "SATIVEX 2,7MG / 2,5MG X 3 FCOS PULVERIZACION BUCAL\n##### **$ 804.990**",
+      "blockClass": "expendioPriceName"
+    }
+  },
+
+  /* Vitrinas 6*/
+  "flex-layout.row#expendio-shelf6": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": "expendioShelfContainer",
+      "marginBottom": 10
+    },
+    "children": ["flex-layout.col#product21"]
+  },
+  /* Producto 21 */
+  "flex-layout.col#product21": {
+    "props": {
+      "blockClass": "expendioShelf"
+    },
+    "children": ["image#product21", "rich-text#expendioPrice&Name21"]
+  },
+  "image#product21": {
+    "props": {
+      "src": "assets/ayuda/product21.png",
+      "blockClass": "expendio-farmacias-img",
+      "height": 178,
+      "width": 178
+    }
+  },
+  "rich-text#expendioPrice&Name21": {
+    "props": {
+      "text": "VIMPAT IV 10MG/ML INY.\n##### **$ 61.290**",
+      "blockClass": "expendioPriceName"
+    }
+  }
+}

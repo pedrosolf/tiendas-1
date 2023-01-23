@@ -1,0 +1,47 @@
+{
+  "store.custom#pago-linea": {
+    "blocks": [
+      "responsive-layout.desktop#pago-linea",
+      "responsive-layout.tablet#pago-linea",
+      "responsive-layout.phone#pago-linea"
+    ]
+  },
+  "responsive-layout.desktop#pago-linea": {
+    "children": ["flex-layout.row#main-pago-linea-desk"]
+  },
+  "responsive-layout.tablet#pago-linea": {
+    "children": ["flex-layout.row#main-pago-linea-desk"]
+  },
+  "responsive-layout.phone#pago-linea": {
+    "children": ["flex-layout.row#main-pago-linea-desk"]
+  },
+  "flex-layout.row#pago-linea-main-mobile": {
+    "children": ["flex-layout.col#pago-linea"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-pago-linea-desk": {
+    "props": {
+      "blockClass": "",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["flex-layout.col#pago-linea"]
+  },
+  "flex-layout.col#pago-linea": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#pago-linea"]
+  },
+  "image#pago-linea":{
+    "props":{
+        "src": "assets/ayuda/venta-telefonica-desktop.png"
+    }
+  }
+}

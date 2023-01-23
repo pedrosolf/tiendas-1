@@ -1,0 +1,22 @@
+{
+  "store.custom#ayuda-politicas-de-envios": {
+    "blocks": ["tab-layout#ayuda-politicas-de-envios"]
+  },
+  "tab-layout#ayuda-politicas-de-envios": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-politicas-de-envios"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "politicas-de-envios"
+    }
+  },
+  "tab-content#ayuda-politicas-de-envios": {
+    "children": [
+      "tab-content.item#politicas-de-envios"
+    ]
+  }
+}

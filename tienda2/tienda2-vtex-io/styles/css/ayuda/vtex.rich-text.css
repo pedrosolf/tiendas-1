@@ -1,0 +1,285 @@
+.wrapper--navLinkInstitucional .paragraph {
+  margin: 0;
+  padding: 0.85rem;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+.wrapper--navLinkInstitucional .link,
+.link--ayudaContent {
+  text-decoration: none;
+  color: #545977;
+}
+
+.wrapper--ayudaTitle .paragraph {
+  font-size: 2rem;
+  color: #545977;
+  margin-bottom: 0.5rem;
+}
+
+.container--ayudaContent {
+  margin-bottom: 1rem;
+}
+
+.wrapper--ayudaContent .paragraph,
+.list--ayudaContent {
+  color: #545977;
+  font-size: 0.875rem;
+  line-height: 1.8rem;
+  margin: 0 0 1rem 0;
+}
+
+/* Bases legales */
+.container--bases-legales {
+  justify-content: center;
+}
+
+.wrapper--bases-legales .image--ayudaContent {
+  width: 130px;
+  margin: 22px;
+  margin: 10px 0;
+}
+
+.wrapper--bases-legales .paragraph {
+  text-align: center;
+  line-height: 1;
+}
+
+.container--bases-legales .paragraph {
+  margin-bottom: 3rem;
+}
+/* Preparado oncologico */
+.container--preparados-oncologicos-content,
+.container--importacion-medicamentos-content {
+  width: min(911px, 95%) !important;
+  margin: 0 auto;
+}
+
+.paragraph--preparados-oncologicos,
+.paragraph--preparados-oncologicos-content,
+.paragraph--convenio-help {
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+}
+/* Importación de medicamentos */
+.paragraph--importacion-medicamentos,
+.paragraph--importacion-medicamentos-content {
+  font-size: 20px !important;
+  line-height: 1.4 !important;
+}
+.paragraph--contactos {
+  font-size: 20px !important;
+  line-height: 1.8 !important;
+}
+.paragraph--preparados-oncologicos-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 720px) {
+  .paragraph--preparados-oncologicos-content {
+    font-size: 16px !important;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    line-height: 1 !important;
+  }
+
+  .paragraph--importacion-medicamentos-content {
+    font-size: 16px !important;
+  }
+}
+/* Expendio solo en local */
+.wrapper--expendioPriceName .paragraph,
+.wrapper--expendioPriceName .headingLevel5 {
+  text-align: center;
+  color: #545977;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+.wrapper--expendioPriceName .headingLevel5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Tabla de Políticas de despacho */
+.--td {
+  border: 1px solid #ddd;
+}
+
+.container--tdCol2 {
+  min-height: 50px;
+}
+
+.container--td .paragraph {
+  margin: 0;
+  padding: 8px;
+  line-height: 1;
+  color: #545977;
+}
+
+.container--thead {
+  text-align: left;
+  background-color: #359bd4;
+}
+
+.container--thead .paragraph {
+  color: white;
+}
+
+.container--row1-3 {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .wrapper--ayudaTitle .paragraph {
+    font-size: 1.2rem;
+  }
+}
+
+/* Convenio help */
+.container--convenio-help-content .paragraph {
+  padding: 20px !important;
+  margin: 0;
+  border-bottom: 1px solid green;
+  font-size: 20px !important;
+  line-height: 1.2 !important;
+  color: #545977;
+}
+
+.headingLevel5--convenio-help {
+  text-align: center;
+  color: #545977;
+}
+
+.listItem--convenio-help {
+  font-size: 18px;
+}
+
+:global(.vtex-radio__label):last-child {
+  display: none;
+}
+
+/* tienda2 plus form */
+.wrapper--formTitle {
+  margin: auto;
+}
+
+ 
+.container--formTitle .paragraph {
+  color: #545977;
+  text-align: center;
+  font-weight: 600; 
+  margin: 0 0rem 0rem;
+} 
+
+/* Suscripciones */
+.paragraph--pasosTitle,
+.paragraph--pasosText {
+  font-size: 1.2rem;
+  color: #545977;
+}
+
+.paragraph--pasosText {
+  padding: 0 1rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .paragraph--pasosTitle,
+  .paragraph--pasosText {
+    font-size: 0.9rem;
+  }
+  /* Retiro en tienda */
+  .wrapper--retiroContent .paragraph {
+    margin-bottom: 4.5rem;
+  }
+
+  .list--retiroContent {
+    margin-bottom: 0;
+  }
+
+  .container--ayudaTitle {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+.paragraph--pasosTitle,
+.paragraph--pasosText {
+  font-size: 20px;
+}
+
+.container--programa-adherencia {
+  width: min(911px, 95%) !important;
+  margin: 0 auto;
+}
+.paragraph--ayudaTitle {
+  margin-bottom: 20px;
+}
+.heading--programa-adherencia {
+  color: #545977;
+}
+.listOrdered--programa-adherencia,
+.paragraph--programa-adherencia {
+  font-size: 1.3rem !important;
+}
+.listOrdered--programa-adherencia {
+  text-align: start;
+}
+
+.container--toTop {
+  position: absolute;
+  top: -20%;
+}
+
+
+@media (min-width: 1026px) and (max-width: 1194px) {
+  .container--formTitle .paragraph {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1360px)  {
+  .container--formTitle .paragraph {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+
+.listItem--pasosTextPorque {
+  color: #545977;
+}
+
+.container--pasosTextPorque {
+     display: flex;
+    justify-content: flex-start;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 93rem;
+}
+
+.paragraph--pasosTextPorque {
+  font-size: 1.1rem;
+  color: #545977;
+  line-height: 1;
+}
+
+.container--pasosTitle2 {
+  font-size: 1.1rem;
+  color: #545977;
+  justify-content: center;
+  font-weight: 200 !important;
+}
+
+@media (max-width: 768px) {
+    .container--pasosTitle2 { 
+      text-align: center;
+    }
+  }

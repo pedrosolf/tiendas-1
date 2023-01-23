@@ -1,0 +1,271 @@
+/* Trigger del meaga menú */
+:global(.vtex-mega-menu-2-x-triggerContainer) {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 0;
+}
+:global(.vtex-mega-menu-2-x-menuContainer) {
+  padding-bottom: 0;
+}
+:global(.vtex-mega-menu-2-x-triggerContainer)::before {
+  content: "CATEGORÍAS";
+  display: block;
+  width: 70px;
+  white-space: pre;
+  color: #545977;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: start;
+  line-height: 1;
+}
+:global(.vtex-mega-menu-2-x-menuContainer)
+  :global(.vtex-mega-menu-2-x-menuItem) {
+  padding: 10px !important;
+  margin-bottom: 0.3rem;
+}
+:global(.vtex-mega-menu-2-x-menuContainer)
+  :global(.vtex-mega-menu-2-x-styledLinkContainer) {
+  margin: 0;
+  padding: 0;
+}
+:global(.vtex-mega-menu-2-x-menuContainer)
+  :global(.vtex-mega-menu-2-x-styledLinkText) {
+  white-space: pre-wrap;
+  font-size: 15px;
+  color: #515a79;
+  font-weight: 600; 
+}
+:global(.vtex-mega-menu-2-x-menuContainer)
+  :global(.vtex-mega-menu-2-x-menuItem):hover {
+  background-color: #eeeeee;
+  color: #5f5f5f;
+}
+
+:global(.vtex-mega-menu-2-x-triggerButtonIcon) {
+  height: 30px;
+  width: 30px;
+  margin-right: 0.5rem;
+}
+:global(.vtex-mega-menu-2-x-submenuContainer) {
+  padding: 1.5rem;
+}
+:global(.vtex-mega-menu-2-x-submenuItem)
+  :global(.vtex-mega-menu-2-x-styledLinkIcon) {
+  display: none;
+}
+/* Menú de beneficios */
+.submenuWrapper--menu-beneficios {
+  height: 115px;
+  width: 170px;
+  top: 8px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #545977;
+  border-radius: 12px;
+  align-items: center;
+}
+.styledLinkContent--beneficios {
+  color: rgb(84, 89, 119);
+  padding-bottom: 9px;
+}
+.styledLinkContainer--beneficios {
+  padding-bottom: 0.6rem !important;
+  margin-right: 0;
+  margin-left: 1.8rem;
+}
+.styledLinkContent--beneficios {
+  font-size: 14px;
+}
+@media (max-width: 640px) {
+  .styledLinkContent--beneficios {
+    font-size: 11px;
+  }
+  .submenuWrapper--menu-beneficios {
+    left: -60px;
+  }
+}
+
+.menuContainer--menu-beneficios {
+  height: 100%;
+  justify-content: space-around;
+}
+
+.menuContainerNav--menu-beneficios,
+.submenu--menu-beneficios {
+  height: 100%;
+}
+
+.submenuWrapper--menu-beneficios .styledLinkContent {
+  justify-content: center;
+  color: #545977;
+  font-size: 15px;
+  white-space: inherit;
+}
+
+.submenuWrapper--menu-beneficios .styledLinkContent:hover {
+  color: #00a4e8;
+}
+
+/* Menú de Documentacion */
+.submenuWrapper--menu-Documentacion {
+  height: 300px;
+  width: 170px;
+  top: 18px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #545977;
+  border-radius: 12px;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .submenuWrapper--menu-Documentacion {
+    left: -60px;
+  }
+}
+
+.menuContainer--menu-Documentacion {
+  height: 100%;
+  justify-content: space-around;
+}
+
+.menuContainerNav--menu-Documentacion,
+.submenu--menu-Documentacion {
+  height: 100%;
+}
+
+.submenuWrapper--menu-Documentacion .styledLinkContent {
+  justify-content: center;
+  color: #545977;
+  font-size: 15px;
+  white-space: inherit;
+}
+
+.submenuWrapper--menu-Documentacion .styledLinkContent:hover,
+.styledLinkContent--beneficios:hover {
+  color: #00a4e8;
+}
+/* Container del mega menú */
+:global(.vtex-mega-menu-2-x-menuContainerNav) {
+  width: min(1040px, 100%) !important;
+  top: 110%;
+  border-radius: 10px;
+  left: 25px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 5px #0001;
+}
+
+@media (min-width: 1280px) and (max-width: 1600px) {
+  :global(.vtex-mega-menu-2-x-menuContainerNav) {
+    width: min(1040px, 100%) !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 1600px) {
+  :global(.vtex-mega-menu-2-x-menuContainerNav) {
+    width: min(1040px, 100%) !important;
+    left: 15%;
+  }
+}
+
+/* Container de categorías del primer nivel */
+:global(.vtex-mega-menu-2-x-menuContainer) {
+  border-right: 1px solid grey;
+  width: 20%;
+  overflow: visible;
+  position: relative;
+}
+
+:global(.vtex-mega-menu-2-x-menuContainer)::before {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  z-index: -1;
+}
+
+:global(.vtex-mega-menu-2-x-accordionIconContainer) {
+  display: none; /* Se desaparecen los icons en forma de flechas de categorías */
+}
+/* Container de cada uno de los items de las categorías del primer nivel */
+:global(.vtex-mega-menu-2-x-menuItem) {
+  background: transparent;
+}
+
+:global(.vtex-mega-menu-2-x-menuItem)
+  :global(.vtex-mega-menu-2-x-styledLink):hover {
+  color: black;
+}
+
+/* Container categorías del segundo y tercer nivel */
+:global(.vtex-mega-menu-2-x-submenuContainer) {
+  width: 80%;
+}
+
+/* Cada uno de los container delas cat de segundo y tercer nivel */
+:global(.vtex-mega-menu-2-x-submenuList) {
+  height: fit-content !important;
+  gap: 1rem;
+}
+
+:global(.vtex-mega-menu-2-x-submenuItem) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Cada uno de los textos de los subItems */
+:global(.vtex-mega-menu-2-x-submenuList)
+  :global(.vtex-mega-menu-2-x-styledLinkText) {
+  font-size: 1rem;
+  font-weight: normal !important;
+}
+
+:global(.vtex-mega-menu-2-x-submenuList)
+  :global(.vtex-mega-menu-2-x-styledLinkText):hover {
+  font-weight: 600 !important;
+}
+
+/* category menu mobile */
+:global(.vtex-category-menu-2-x-sidebarHeader)
+  :global(.vtex-category-menu-2-x-closeIcon) {
+  display: none;
+}
+:global(.vtex-category-menu-2-x-sidebarHeader)::after {
+  content: "";
+  background-image: url("assets/header/logo-header-tienda2.png");
+  background-size: 144px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 144px;
+  height: 66px;
+  margin: 0 auto;
+}
+
+/* Mobile menu */
+.menuItem--menu-item-category .submenuContainer {
+  z-index: 1000;
+}
+.menuItem--menu-item-category .submenuWrapper {
+  position: relative;
+}
+
+:global(.vtex-mega-menu-2-x-submenuList) {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
+  /*grid-template-columns: repeat(5, 1fr) !important;*/
+  grid-template-rows: repeat(6, 1fr);
+  grid-auto-flow: column;
+}
+
+
+:global(.vtex-mega-menu-2-x-submenuItem){
+  max-width: 220px !important;
+}

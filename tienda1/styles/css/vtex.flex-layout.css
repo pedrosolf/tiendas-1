@@ -1,0 +1,220 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+
+.flexRowContent--menu-link {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.flexRowContent--main-header {
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #727273;
+  font-size: 14px;
+}
+.flexRow--deals {
+  background-color: #a7afbd;
+  padding: 14px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+
+.flexCol--switcherMobileCol {
+  width: 20%;
+}
+
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+  overflow-y: auto;
+  height: 66% !important;
+  overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}
+
+/* CUSTOM STYLES tienda1 */
+
+.flexRowContent--top-bar-1 {
+  background-color: #000;
+}
+
+
+.flexRowContent--topbar2-main-container {
+  background-color: #23282e;
+  justify-content: center;
+}
+
+
+.flexRowContent--feature-container-izquierda {
+
+}
+
+.flexRowContent--feature-container-centro {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 20px;
+}
+
+.flexRowContent--feature-container-derecha {
+  margin-left: 40px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .flexRowContent--feature-container-izquierda {
+    padding-right: 10px;
+  }
+
+  .flexRowContent--feature-container-centro {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+  }
+
+  .flexRowContent--feature-container-derecha {
+    padding-left: 10px;
+    margin-left: 0;
+  }
+}
+
+.flexRow--col-nuestras-tiendas {
+  margin: auto 0;
+}
+
+.flexCol--col-izquierda-2cols,
+.flexCol--home-3cols-col1-img1 {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.flexCol--home-3cols-col1-img1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.flexCol--home-3cols-col2-img1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flexCol--col-derecha-2cols {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.flexCol--home-3cols-col3-img1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.flexCol--col-logo {
+  padding-top: 10px;
+}
+
+@media screen and (min-width:1024px) {
+  .flexRow--row-product-main-container {
+    margin: auto 6rem;
+  }
+}
+
+.flexRowContent--barraIconos {
+  justify-content: center;
+}
+
+.flexRowContent--sticky-header-row {
+  background-color: white;
+}
+
+.listPriceValue {
+  color: #1e1e1e;
+}
+
+.sellingPriceValue {
+  color: #ff0049;
+}
+
+.flexRowContent--row-add-to-cart {
+  margin-bottom: 0 !important;
+}
+
+.flexRow--container-footer-3cols {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flexCol--col-footer-2-desktop {
+  border-right: 1px solid #8a8a8a;
+  border-left: 1px solid #8a8a8a;
+}
+
+.flexRow--row-categorias-custom {
+  min-height: 170px;
+}

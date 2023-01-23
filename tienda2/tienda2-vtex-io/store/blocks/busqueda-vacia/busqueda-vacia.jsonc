@@ -1,0 +1,123 @@
+{
+  //BUSQUEDA VACIA
+  "search-not-found-layout": {
+    "children": [
+      "flex-layout.row#notfound",
+      "flex-layout.row#title-similar",
+      "flex-layout.row#similar"
+    ]
+  },
+
+  "flex-layout.row#notfound": {
+    "props": {
+      "marginTop": 5,
+      "paddingTop": 8,
+      "paddingBottom": 8,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "not-found"
+    },
+    "children": [
+      "flex-layout.col#not-found"/* ,
+      "flex-layout.col#col-text-not-found" */
+    ]
+  },
+  "flex-layout.col#not-found": {
+    "props": {
+      "horizontalAlign": "center",
+      "width": "70%",
+      "blockClass": "build-container-search"
+    },
+    "children": ["image#example", "rich-text#text-not-found"]
+  },
+  "image#example": {
+    "props": {
+      "src": "assets/busqueda-vacia/busqueda-vacia.svg"
+    }
+  },
+  "flex-layout.col#col-text-not-found": {
+    "props": {
+      "horizontalAlign": "left",
+      "width": "75%",
+      "paddingLeft": 5,
+      "paddingRight": 5,
+      "blockClass": "text-col"
+    },
+    "children": ["rich-text#text-not-found", "link#back-to-home"]
+  },
+  "rich-text#text-not-found": {
+    "props": {
+      "text": "### ¡Lo sentimos!\n **No encontramos lo que buscas.**<br/><br/> Por favor, asegurate de que la ortografía sea la correcta o volvé a realizar la búsqueda con un término similar. También te sugerimos navegar por las categorías para encontrar productos similares.",
+      "font": "t-heading-4",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "not-fount-text"
+    }
+  },
+  "link#back-to-home": {
+    "props": {
+      "href": "/",
+      "label": "VOLVER",
+      "displayMode": "buttonProps",
+      "buttonProps": { "variant": "primary", "size": "regular" }
+    }
+  },
+
+  // Titulo productos
+  "flex-layout.row#title-similar": {
+    "props": {
+      "blockClass": "title-similar",
+      "paddingTop": 8
+    },
+    "children": ["flex-layout.col#title-similar"]
+  },
+  "flex-layout.col#title-similar": {
+    "props": {
+      "blockClass": "build-container-search-vacio"
+    },
+    "children": ["rich-text#similar"]
+  },
+  "rich-text#similar": {
+    "props": {
+      "text": "¡Quizás te interesen estos productos!",
+      "font": "t-heading-3",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "sugerencia-text"
+    }
+  },
+  // slider de productos
+  "flex-layout.row#similar": {
+    "props": {
+      "horizontalAlign": "center",
+      "marginBottom": 9
+    },
+    "children": ["flex-layout.col#similar"]
+  },
+  "flex-layout.col#similar": {
+    "props": {
+      "blockClass": "build-container-search-vacio-shelf"
+    },
+    "children": ["list-context.product-list#vacia"]
+  },
+
+  "list-context.product-list#vacia": {
+    "blocks": ["product-summary.shelf#tienda2"],
+    "children": ["slider-layout#demo-products"]
+  },
+
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "carousel-busqueda-vacia"
+    }
+  } //FIN BUSQUEDA VACIA
+}

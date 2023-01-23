@@ -1,0 +1,63 @@
+{
+  "vtex.menu@2.x:menu#beneficios": {
+    "children": ["menu-item#beneficios"],
+    "props": {
+      "blockClass": ""
+    }
+  },
+  "menu-item#beneficios": {
+    "props": {
+      "blockClass": "beneficios",
+      "itemProps": {
+        "href": "",
+        "text": "Beneficios"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#benefcios"]
+  },
+  "vtex.menu@2.x:submenu#benefcios": {
+    "children": ["vtex.menu@2.x:menu#submenuBeneficios"],
+    "props": {
+      "blockClass": "menu-beneficios"
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenuBeneficios": {
+    "children": [
+      "menu-item#tienda2plus",
+      "menu-item#conveniohelp",
+      "menu-item#programa-adherencia"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "menu-beneficios"
+    }
+  },
+  "menu-item#tienda2plus": {
+    "props": {
+      "blockClass": "",
+      "itemProps": {
+        "href": "/tienda2plus",
+        "text": "tienda2 Plus"
+      }
+    }
+  },
+  "menu-item#conveniohelp": {
+    "props": {
+      "blockClass": "",
+      "itemProps": {
+        "href": "/convenio-help",
+        "text": "Convenio Help"
+      }
+    }
+  },
+  "menu-item#programa-adherencia": {
+    "props": {
+      "blockClass": "",
+      "itemProps": {
+        "href": "/programa-adherencia",
+        "text": "Programa de adherencia"
+      }
+    }
+  }
+}

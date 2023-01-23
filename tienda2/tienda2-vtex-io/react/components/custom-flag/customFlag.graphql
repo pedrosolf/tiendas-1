@@ -1,0 +1,20 @@
+query customFlag($slug: String) {
+ product(slug: $slug) {
+   productName,
+   categoryId,
+    #Price of product
+     productClusters {
+      id
+    },
+    priceRange{
+      sellingPrice{
+        highPrice,
+        lowPrice
+      }
+    },
+    #Properties of product
+    properties{
+      values
+    }
+  }
+}

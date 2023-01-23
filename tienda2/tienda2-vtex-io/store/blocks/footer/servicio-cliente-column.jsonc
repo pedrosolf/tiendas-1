@@ -1,0 +1,81 @@
+{
+  //COLUMNA DE SERVICIO AL CLIENTE
+  "flex-layout.col#footer-desktop-2": {
+    "props": {
+      "width": "22%"
+    },
+    "children": ["vtex.menu@2.x:menu#About-2"]
+  },
+  "vtex.menu@2.x:menu#About-2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "center-menu"
+    },
+    "children": [
+      "rich-text#servicio-cliente",
+      "link#despacho",
+      "link#politica-retiro",
+      "link#devolucion",
+      "link#reclamos-sugerencias",
+      "link#politica-privacidad",
+      "link#bases-legales",
+      "link#medicamentos-local"
+    ]
+  },
+  "rich-text#servicio-cliente": {
+    "props":{
+      "text": "Servicio al Cliente",
+      "blockClass": "section-title-footer"
+    }
+  },
+  "link#despacho":{
+    "props":{
+      "label": "Políticas de Despacho",
+      "href": "/institucional/politicas-de-despacho",
+      "blockClass": "enlaces-footer"
+    }
+  },
+  "link#politica-retiro":{
+    "props":{
+      "label": "Políticas de retiro en tienda",
+      "href": "/Institucional/retiro-en-tienda",
+      "blockClass": "enlaces-footer"
+    }
+  },
+  "link#devolucion":{
+    "props":{
+      "label": "Condiciones para la devolución de productos",
+      "href": "/Institucional/condiciones-devolucion",
+      "blockClass": "enlaces-footer"
+    }
+  },
+  "link#reclamos-sugerencias":{
+    "props":{
+      "label": "Libro de sugerencias y reclamos",
+      "href": "/Institucional/sugerencias-reclamos",
+      "blockClass": "enlaces-footer"
+    }
+  },
+  "link#politica-privacidad":{
+    "props":{
+      "label": "Política de Privacidad",
+      "href": "/Institucional/politica-privacidad",
+      "blockClass": "enlaces-footer"
+    }
+  },
+  "link#bases-legales":{
+    "props":{
+      "label": "Bases Legales",
+      "href": "/Institucional/bases-legales",
+      "blockClass": "enlaces-footer"
+    }
+  },
+  "link#medicamentos-local":{
+    "props":{
+      "label": "Medicamentos solo en local",
+      "href": "/expendio-unicamanete-en-famacias",
+      "blockClass": "enlaces-footer"
+    }
+  }
+
+}

@@ -1,0 +1,136 @@
+{
+  "store.custom#politica-privacidad": {
+    "blocks": [
+      "responsive-layout.desktop#politica-privacidad",
+      "responsive-layout.tablet#politica-privacidad",
+      "responsive-layout.phone#politica-privacidad"
+    ]
+  },
+  "responsive-layout.desktop#politica-privacidad": {
+    "children": ["flex-layout.row#main-politica-privacidad-desk"]
+  },
+  "responsive-layout.tablet#politica-privacidad": {
+    "children": ["flex-layout.row#politica-privacidad-main-mobile"]
+  },
+  "responsive-layout.phone#politica-privacidad": {
+    "children": ["flex-layout.row#politica-privacidad-main-mobile"]
+  },
+  "flex-layout.row#politica-privacidad-main-mobile": {
+    "children": ["flex-layout.col#politica-privacidad"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-politica-privacidad-desk": {
+    "props": {
+      "blockClass": "main-ayuda",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": [
+      "flex-layout.col#nav-column",
+      "flex-layout.col#politica-privacidad"
+    ]
+  },
+
+  "flex-layout.col#politica-privacidad": {
+    "props": {
+      "width": "72%",
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#politica-privacidad-title",
+      "flex-layout.row#politica-privacidad-content",
+      "rich-text#politica-privacidad-content2",
+      "rich-text#politica-privacidad-content3",
+      "rich-text#politica-privacidad-content4",
+      "rich-text#politica-privacidad-content5",
+      "rich-text#politica-privacidad-content6",
+      "rich-text#politica-privacidad-content7",
+      "rich-text#politica-privacidad-content8"
+    ]
+  },
+
+  "flex-layout.row#politica-privacidad-content": {
+    "props": {},
+    "children": ["rich-text#politica-privacidad-content"]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#politica-privacidad-title": {
+    "props": {
+      "blockClass": "ayudaTitle",
+      "text": "**Política de Privacidad**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#politica-privacidad-content": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "FARMACIA ACCESO S.A., también conocida como “tienda2”, es una sociedad anónima cerrada, Rol Único Tributario número 76.364.849-4, cuya actividad principal es ser una farmacia independiente, de especialidades, dentro de las cuales se encuentra la comercialización y distribución de productos farmacéuticos y terapéuticos, encontrándose autorizada para funcionar como Farmacia y con su Recetario Magistral Estéril mediante Resolución Exenta número 4004 del Instituto de Salud Pública del Ministerio de Salud del 28 de Septiembre 2016.<br/><br/>En atención a nuestro compromiso con la salud de las personas, y el deber de privacidad de los datos de carácter sensible, esto es cuando dicen relación a “aquellos datos personales que se refieren a las características físicas o morales de las personas o a hechos o circunstancias de su vida privada o intimidad, tales como los hábitos personales, el origen racial, las ideologías y opiniones políticas, las creencias o convicciones religiosas, los estados de salud físicos o psíquicos y la vida sexual”, es que hemos tomado el compromiso y por ende las precauciones y resguardos necesarios para proteger la información de los usuarios y/o clientes, mediante la instalación de un sistema informático de alta tecnología que permite asegurar la seguridad y protección de la información de manera eficaz.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-privacidad-content2": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "En consideración a que es primordial para nuestro grupo estar en pleno cumplimiento con el marco legal, es que se informa que los datos de nuestros usuarios y visitantes son tratados únicamente en los siguientes casos:\n1. Se cuenta con la debida autorización del titular de los datos;\n2. Casos expresamente permitidos por Ley; y/o\n3. Cuando el fin del tratamiento de dato es para la determinación u otorgamiento de beneficios de salud que correspondan a los titulares.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-privacidad-content3": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "En consecuencia, la presente Política de Privacidad tiene por objeto informar a los titulares que los datos sensibles son tratados en conformidad a la ley, como asimismo informar que cada usuario al visitar y hacer uso de nuestra página web podrá inscribirse y/o prestar su consentimiento expreso para el tratamiento de su información personal en concordancia a las políticas de privacidad que se describen a continuación.<br/><br/>Asimismo, es de suma importancia, que el usuario y/o visitante tenga el conocimiento que siempre tendrá la facultad de revocar dicha autorización en cualquier tiempo.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-privacidad-content4": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "**I. PASOS PARA SEGUIR PARA REGISTRARSE.**<br/><br/>Lo primero que el usuario debe realizar es ingresar a nuestro sitio web www.tienda2.com.<br/><br/> Una vez que ingrese, deberá registrarse en nuestra plataforma para ser parte de nuestra comunidad y poder disfrutar los servicios que nuestra farmacia brinda.<br/><br/>Cuando el usuario se registre deberá completar los datos solicitados, los cuales serán considerados de índole personal.<br/><br/>Parte de la información requerida es:<br/><br/>Nombre completo, Rut o Pasaporte, número de contacto, domicilio, fecha de nacimiento y correo electrónico.<br/><br/>Una vez inscritos los usuarios tendrán una clave personal para acceder a los servicios. Con dicha clave podrán acceder a su cuenta privada, comprar, entre otras actividades. Esta clave debe mantenerla bajo absoluta confidencialidad y, en ningún caso, deberán revelarla o compartirla con otras personas. El usuario será responsable de todos los actos que tengan lugar mediante el uso de su Clave, aun cuando él tenga la impresión o sospecha de que otra persona haya usado su clave o la conozca. En este caso, se le recomienda su modificación.<br/><br/>En consideración a lo indicado en los párrafos anterior, cuando el usuario esté por registrarse deberá aceptar los términos y condiciones y Políticas de Privacidad descritas en este instrumento. En el momento de aceptar las políticas el usuario habilitará y consentirá expresamente a que la sociedad Farmacia Acceso S.A. pueda confirmar que los datos personales otorgados y descritos sean correctos, pudiendo acudir a entidades públicas, compañías especializadas o centrales de riesgo. La información que tienda2 obtenga de estas entidades será tratada en forma confidencial.<br/><br/>Una vez que el Usuario se encuentre registrado en www.tienda2.com a través de su cuenta personal o ya sea que acceda como invitado, consiente expresamente a Farmacia Acceso S.A. a lo siguiente:\n• Tener acceso, en cualquier momento, a la totalidad de la información contenida en su Cuenta Personal, incluyendo en particular, pero sin limitación, a su Información Personal, información sobre sus intereses, gustos, contactos y cualquier otro contenido alojado en su Cuenta Personal;\n• Incluir en dicha cuenta, mensajes, fotografías, videos y cualquier otro tipo de contenido; y\n• Enviar al correo electrónico del Usuario vinculado a la Cuenta Personal, información o mensajes.<br/><br/>Asimismo, el usuario debe tener presente que en cualquier momento podrá revocar su autorización y por ende dar de baja su cuenta personal y registro en la plataforma de tienda2. Adicionalmente podrá solicitar la eliminación de sus datos personales y de carácter sensible de la base de datos de tienda2. Se hace presente que dicha solicitud deberá formularse por escrito, en atención a lo indicado por ley, de manera que no se produzcan errores en la solicitud del usuario.<br/><br/>Farmacia Acceso S.A. mediante su sistema tecnológico podrá recoger y almacenar automáticamente cierta información sobre la actividad de los usuarios y visitantes dentro de su sitio web. Tal información puede incluir URL, sus direcciones IP, las búsquedas realizadas, las compras, entre otra información que podrá ser almacenada y retenida.<br/><br/>En el caso que los visitantes de nuestra página no sean usuarios registrados de tienda2, no se almacenarán datos de carácter personal como nombres, direcciones postales, datos bancarios, números de cédula de identidad y/o documentos de identidad, ni ninguna otra información que permita identificar o haga identificable a una persona.<br/><br/> Finalmente, es indispensable dejar constancia que únicamente se podrán registrar personas que tengan capacidad de contratar, por ende, si en conformidad a la ley no cumplen con dicha condición no deberán inscribirse ni otorgar su información personal a nuestra sociedad. En el caso que esto fuera necesario para el usuario legalmente incapaz, deberá hacerlo por medio de sus padres o tutores, según la incapacidad legal que presente.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-privacidad-content5": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **INFORMACIÓN DEL USUARIO, RECTIFICACIÓN Y CANCELACIÓN.**\nUna vez que los usuarios se encuentran registrados, en todo momento podrán acceder a la información de sus datos personales, modificarlos en el caso que ya no estén correctos o sufran variaciones, y cancelar los mismos.<br/><br/>Asimismo, y como se indicó precedentemente, en todo momento el usuario podrá cancelar y solicitar que sus datos personales y sensibles no sean objeto de tratamiento por parte Farmacia Acceso S.A.; y al ser informado en el caso que la farmacia ceda, transfiera o transmita dichos datos, lo anterior en conformidad a la Ley número 19.628 sobre Protección de Datos Personales y en conformidad al Decreto Supremo número 466.<br/><br/>Sin perjuicio de lo indicado, al momento en que los usuarios se registren e ingresen sus datos personales, declaran, garantizan y responden, de la veracidad, exactitud, vigencia y autenticidad de la Información Personal escrita y facilitada a Farmacia Acceso S.A. en su página web (www.tienda2.com), y se comprometen a mantenerla debidamente actualizada.<br/><br/>En el caso que algún usuario presente una solicitud de eliminación de su información de datos personales de la página web de Farmacia Acceso S.A., se mantendrán por un tiempo en archivos algunos datos en carácter de Confidencial y Personal de dominio de Farmacia Acceso S.A. La única finalidad que tendrá este archivo es para resolver futuras y potenciales disputas, reclamaciones, y/o problemas, de manera de poder solucionarlos de forma eficiente y expedita. En consecuencia, por motivos legales y técnicos, la información no será eliminada de manera inmediata de nuestros archivos.<br/><br/>Farmacia Acceso S.A. podrá modificar en cualquier momento los términos y condiciones de estas Políticas de Privacidad y Confidencialidad y/o las prácticas de envío de e-mails. En estos casos, la respectiva modificación será publicada de manera inmediata en nuestro sitio web para que esté a plena disposición de los usuario y visitantes.<br/><br/>Sin embargo, en el caso que las modificaciones hicieren relación con la forma de tratar y administrar la información de carácter personal, se notificará vía correo electrónico a cada uno de los usuarios debidamente registrados. En dicho acto, el usuario tendrá el derecho de manifestar si acepta o no las nuevas condiciones y términos. En caso de que el usuario exprese su disconformidad se procederá a disolver el vínculo y registro del usuario en nuestro sitio web.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-privacidad-content6": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **OBJETIVO DEL ALMACENAMIENTO DE LOS DATOS PERSONALES.**\nCon el objeto de dar pleno cumplimiento a la normativa atingente, es que en el presente apartado Farmacia Acceso S.A. informa a los usuarios las razones por las cuales se almacenan los datos solicitados al momento del registro y aceptación expresa del mismo.<br/><br/>El objetivo del almacenamiento dice relación con la facultad de poder brindar un mejor servicio y otorgamiento de información vía correo electrónico, ya sea para informar u otorgar beneficios.<br/><br/>Es así como la obtención de la información de cada uno de nuestros usuarios nos permite ofrecer servicios y funcionalidades que se ajusten de acuerdo con el interés y necesidad de cada uno de ellos, de manera que al ingresar a nuestro sitio web la experiencia y la información sea clara, fácil, expedita y satisfactoria para cada uno de los consumidores y/o usuarios.<br/><br/> A modo de síntesis, la información que se recabará será utilizada para:\n1. Estudios internos sobre los intereses, rango etario y demografía de los usuarios para comprender sus necesidades e intereses y ofrecer mejores servicios o proveerles información relacionada;\n2. Desarrollar actividades comerciales y promocionales y analizar las páginas visitadas las búsquedas realizadas por los usuarios, para mejorar nuestra oferta de contenidos y artículos, personalizar dichos contenidos, su presentación y servicios;\n3. Enviar información por mensajes o por e-mail sobre nuevos servicios, publicidad o promociones, de acuerdo con el interés que muestre nuestros usuarios. En el caso que el usuario no deseare recibir más información o publicidad, podrá comunicarnos de su opción y por tanto puede solicitar que se le excluya de las listas para el envío de información promocional o publicitaria;\n4. En conformidad con el punto 3 anterior, si Farmacia Acceso S.A. decidiere realizar alguna promoción o concurso, los datos personales será utilizados para contactarlos. Asimismo, quienes sean ganadores, mediante la autorización del presente Reglamento de Privacidad, autoriza desde ya a Farmacia Acceso S.A. para difundir nombres, datos e imágenes por los medios y en las formas que Farmacia Acceso S.A. estime conveniente en consideración de la promoción o concurso que se realice. Lo anterior sin derecho a compensación alguna;\n5. Finalmente, la información personal podrá ser compartida con nuestros proveedores de servicios que tengan por objetos mejorar, confeccionar y contribuir con el desarrollo de nuestras operaciones. Farmacia Acceso S.A., declara que velará en todo momento para que se mantengan en carácter confidencial de toda información obtenida, ya sea gestionando la firma de acuerdos o convenios que aseguren la no divulgación de los datos y por ende salvaguardar la vida privada de nuestros usuarios. En el caso que se decidiera compartir información personal de alguno de los usuarios con terceros que no sean empresas relacionadas o proveedores, Farmacia Acceso S.A. tiene el deber de requerir el consentimiento expreso y por escrito del usuario; y\n6. Suministrar la información personal de los usuarios a las entidades que intervengan en la resolución de disputas entre los mismos, tales como: Compañías de Seguros, Amigables Componedores o Tribunales de Arbitraje o tribunales competentes para solucionar tales disputas. Cuando el usuario consiente de manera expresa en las presentes Políticas, y por ende en la entrega de sus datos personales y sensibles para su tratamiento por parte de Farmacia Acceso S.A., consiente en dicho acto que tienda2 podrá transferir dicha información a las empresas relacionadas del grupo.<br/><br/>Asimismo, es necesario que el usuario tenga presente que en atención a la normativa vigente, en el caso que, por alguna orden judicial, regulaciones o leyes, se esté en la necesidad de hacer entrega o revelar la información objeto de esta Política de Privacidad, o en el caso que terceros puedan interceptar o acceder a la información de nuestros datos, Farmacia Acceso S.A. no responderá por la información divulgada.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-privacidad-content7": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **REPRESENTANTE LEGAL.**\nEl representante legal de la sociedad Farmacia Acceso S.A., es don Roberto Andres Wähling P. cédula de identidad número 12.549.764-0.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#politica-privacidad-content8": {
+    "props": {
+      "blockClass": "ayudaContent",
+      "text": "##### **COOKIES.**\nEl usuario y el visitante del sitio Web de tienda2 conoce y acepta que podrá utilizar un sistema de seguimiento mediante la utilización de cookies (las 'Cookies').",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+}

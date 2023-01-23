@@ -1,0 +1,22 @@
+{
+  "store.custom#ayuda-guia-de-compras": {
+    "blocks": ["tab-layout#ayuda-guia-de-compras"]
+  },
+  "tab-layout#ayuda-guia-de-compras": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-guia-de-compras"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "guia-de-compras"
+    }
+  },
+  "tab-content#ayuda-guia-de-compras": {
+    "children": [
+      "tab-content.item#guia-de-compras"
+    ]
+  }
+}

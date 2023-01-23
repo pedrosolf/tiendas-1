@@ -1,0 +1,61 @@
+{
+  //COLUMNA DE CONTACTOS
+  "flex-layout.col#footer-desktop-1": {
+    "props": {
+      "width": "15%"
+    },
+    "children": ["vtex.menu@2.x:menu#About-1"]
+  },
+
+  "vtex.menu@2.x:menu#About-1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "center-menu"
+    },
+    "children": [
+      "flex-layout.col#sucursales-footer",
+      "flex-layout.row#redes-sociales"
+    ]
+  },
+  "flex-layout.col#sucursales-footer": {
+    "children": [
+      "rich-text#empresa",
+      "link#nuestra-empresa",
+      "link#mision",
+      "link#vision"
+    ],
+    "props": {
+      "blockClass": "sucursales-footer"
+    }
+  },
+  "rich-text#empresa": {
+    "props": {
+      "text": "tienda2 Empresa",
+      "blockClass": "section-title-footer"
+    }
+  },
+
+  "link#nuestra-empresa": {
+    "props": {
+      "label": "Nuestra Empresa",
+      "blockClass": "enlaces-footer",
+      "href": "/Institucional/quienes-somos"
+    }
+  },
+
+  "link#mision": {
+    "props": {
+      "label": "Nuestra Misión",
+      "blockClass": "enlaces-footer",
+      "href": "/Institucional/mision"
+    }
+  },
+
+  "link#vision": {
+    "props": {
+      "label": "Nuestra Visión",
+      "blockClass": "enlaces-footer",
+      "href": "/Institucional/vision"
+    }
+  }
+}

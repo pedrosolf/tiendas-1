@@ -1,0 +1,93 @@
+.openIconContainer,
+.openIconContainer :global(.vtex-button__label) {
+  padding: 0;
+}
+
+.openIconContainer :global(.vtex-button) {
+  min-height: unset;
+  background-color: transparent;
+  border: 0;
+}
+
+.minicartContainer {
+  width: 31px;
+}
+
+.overlay--visible {
+  background-color: #000;
+  opacity: 0.25 !important;
+}
+
+.closeIconContainer {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.closeIconButton {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.minicartTitle {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 19px;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d6;
+}
+
+.drawerContent {
+  position: relative;
+  padding: 70px 17px 20px 17px;
+}
+
+.minicartSummary {
+  padding: 0;
+}
+
+.minicartCheckoutButton {
+  padding: 0;
+  margin: 0;
+}
+
+.minicartSideBarContentWrapper {
+  height: auto !important;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  background-color: #222426;
+  border: none;
+  border-radius: 0;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label) {
+  font-size: 0;
+  padding: 18px 10px !important;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::after {
+  content: 'FINALIZAR PEDIDO';
+  font-family: 'Knockout';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.minicartProductListContainer {
+  padding: 0 !important;
+}
+
+.minicartQuantityBadge {
+  background-color: #222426;
+}
+
+@media (max-width: 639px) {
+  .drawer {
+    width: 100% !important;
+  }
+}
+.minicartCheckoutButton{
+  padding-bottom: 5rem;
+}
+

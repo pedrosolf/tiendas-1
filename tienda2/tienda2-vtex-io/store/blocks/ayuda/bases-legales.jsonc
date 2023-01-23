@@ -1,0 +1,226 @@
+{
+  "store.custom#bases-legales": {
+    "blocks": [
+      "responsive-layout.desktop#bases-legales",
+      "responsive-layout.tablet#bases-legales",
+      "responsive-layout.phone#bases-legales"
+    ]
+  },
+  "responsive-layout.desktop#bases-legales": {
+    "children": [ "flex-layout.row#main-bases-legales-desk" ]
+  },
+  "responsive-layout.tablet#bases-legales": {
+    "children": [ "flex-layout.row#main-bases-legales-desk" ]
+  },
+  "responsive-layout.phone#bases-legales": {
+    "children": [ "flex-layout.row#bases-legales-main-mobile" ]
+  },
+  "flex-layout.row#bases-legales-main-mobile": {
+    "children": [ "flex-layout.col#bases-legales" ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-bases-legales-desk": {
+    "props": {
+      "blockClass": "main-ayuda",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#bases-legales"
+    ]
+  },
+
+  "flex-layout.col#bases-legales": {
+    "props": {
+      "width": "72%",
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#bases-legales-title",
+      "flex-layout.row#bases-legales-content",
+      "flex-layout.row#bases-legales-content22",
+      "flex-layout.row#bases-legales-content3"
+    ]
+  },
+
+  "flex-layout.row#bases-legales-content": {
+    "props": {
+      "horizontalAlign": "center",
+      "marginBottom": 9,
+      "marginTop": 5,
+      "blockClass": "bases-legales-content"
+    },
+    "children": [
+      "rich-text#bases-legales-content",
+      "rich-text#bases-legales-content2",
+      "rich-text#bases-legales-content3",
+      "rich-text#bases-legales-content4",
+      "rich-text#bases-legales-content5",
+      "rich-text#bases-legales-content6",
+      "rich-text#bases-legales-content7",
+      "rich-text#bases-legales-content8",
+      "rich-text#bases-legales-content9",
+      "rich-text#bases-legales-content10",
+      "rich-text#bases-legales-content11",
+      "rich-text#bases-legales-content12",
+      "rich-text#bases-legales-content13"
+
+    ]
+  },
+  "rich-text#bases-legales-title": {
+    "props": {
+      "blockClass": ["ayudaTitle", "bases-legales"],
+      "text": "**Bases legales**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "rich-text#bases-legales-content": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nPromoción 30%\n descuento Alcohol Gel](https://www.tienda2.com/arquivos/BASES-PROMOCI%C3%93N-30-DESCUENTO-ALCOHOL-GEL-VF.pdf?v=637889196488370000/?target=_blank)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#bases-legales-content2": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nPrograma de Beneficios\n Artemisa](https://www.tienda2.com/arquivos/beneficios-artemisa.pdf?v=637637144043900000)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#bases-legales-content3": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nBase Promoción\n Regalo Sorpresa](https://www.tienda2.com/arquivos/regalo-sorpresa.pdf?v=637927307097200000)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  "flex-layout.row#bases-legales-content22": {
+    "props": {
+      "horizontalAlign": "center",
+      "marginBottom": 9,
+      "marginTop": 5,
+      "blockClass": "bases-legales-content"
+    },
+    "children": [
+      
+    ]
+  },
+  "rich-text#bases-legales-title2": {
+    "props": {
+      "blockClass": "ayudaTitle",
+      "text": "**Bases legales**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "rich-text#bases-legales-content4": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nBase Programa de\n Beneficios Musa](https://www.tienda2.com/arquivos/BASES-PROMOCI%C3%93N-30-DESCUENTO-MUSA-2305.pdf?v=637889089205730000)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#bases-legales-content5": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nBase Promoción\n Relampago ISDIN](https://www.tienda2.com/arquivos/BASES-PROMOCI%C3%93N-RELAMPAGO-ISDIN-VF.pdf?v=637889196627200000)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#bases-legales-content6": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nBase Promoción Regalo\n Programa Plus](https://www.tienda2.com/arquivos/programa-vf.pdf?v=637927307027430000)",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+
+
+  "flex-layout.row#bases-legales-content3": {
+    "props": {
+      "horizontalAlign": "center",
+      "marginBottom": 9,
+      "blockClass": ["bases-legales-content", "pr0"]      
+    },
+    "children": [
+      
+    ]
+  },
+  "rich-text#bases-legales-content7": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales"],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nBase Promoción 25%\ndescuento ANTABUS\n 500MG x 24 TBS](https://www.tienda2.com/arquivos/BASES-PROMOCI%C3%93N%20_25%20DESCUENTO%20ANTABUS_VF.pdf?v=637922032207400000)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#bases-legales-content8": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nBase Promoción\n Cetaphil](https://www.tienda2.com/arquivos/google-docs.png?v=637618088886770000)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#bases-legales-content9": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nPróximamente\n ...](/)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#bases-legales-content10": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nPróximamente\n ...](/)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#bases-legales-content11": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nPróximamente\n ...](/)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#bases-legales-content12": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nPróximamente\n ...](/)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#bases-legales-content13": {
+    "props": {
+      "blockClass": [ "ayudaContent", "bases-legales" ],
+      "text": "[![promocion](assets/ayuda/bases-legales.png)\nPróximamente\n ...](/)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  }
+}
+
+
+

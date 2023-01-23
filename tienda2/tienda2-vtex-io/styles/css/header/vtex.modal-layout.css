@@ -1,0 +1,32 @@
+.modal--telon .paperScrollContent {
+    width: 100vw;
+    height: 100vh;
+    max-height: unset !important;
+    max-width: unset !important;
+    margin: 0;
+    background: url("assets/header/TelonMobile.png");
+    background-position: center;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-color: #1a123b !important;
+}
+.modal--telon .closeButton {
+  position: absolute;
+  bottom: 0;
+  border: none;
+  background: transparent;
+}
+.modal--telon .closeButtonLabel {
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .modal--telon .paperScrollContent {
+    background: url("assets/header/Telon.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+

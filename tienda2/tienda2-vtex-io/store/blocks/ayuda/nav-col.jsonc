@@ -1,0 +1,103 @@
+{
+    "flex-layout.col#nav-column": {
+      "props": {
+        "width": "28%",
+        "preventVerticalStretch":true,
+        "blockClass":"help-list"
+      },
+      "children": [
+        "rich-text#Nuestra-empresa",
+        "rich-text#nuestra-misión",
+        "rich-text#Nuestra-visión",
+        "rich-text#Políticas-de-despacho",
+        "rich-text#Políticas-de-retiro-en-tienda",
+        "rich-text#Condiciones-para-la-devolución-de-productos",
+        "rich-text#Libro-de-sugerencias-y-reclamos",
+        "rich-text#Política-de-Privacidad",
+        "rich-text#Bases-legales",
+        "rich-text#Médicamentos-sólo-en-local"
+      ]
+    },
+    "rich-text#Nuestra-empresa": {
+      "props": {
+        "text": "[Nuestra empresa](/Institucional/quienes-somos)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass":"navLinkInstitucional"
+      }
+    },
+    "rich-text#nuestra-misión": {
+      "props": {
+        "text": "[Nuestra Misión](/Institucional/mision)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass":"navLinkInstitucional"
+      }
+    },
+    "rich-text#Nuestra-visión": {
+      "props": {
+        "text": "[Nuestra Visión](/Institucional/vision)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass":"navLinkInstitucional"
+      }
+    },
+    "rich-text#Políticas-de-despacho": {
+      "props": {
+        "text": "[Políticas de despacho](/institucional/politicas-de-despacho)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass":"navLinkInstitucional"
+      }
+    },
+    "rich-text#Políticas-de-retiro-en-tienda": {
+      "props": {
+        "text": "[Políticas de retiro en tienda](/Institucional/retiro-en-tienda)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass":"navLinkInstitucional"
+      }
+    },
+    "rich-text#Condiciones-para-la-devolución-de-productos": {
+      "props": {
+        "text": "[Condiciones para la devolución de productos](/Institucional/condiciones-devolucion)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass":"navLinkInstitucional"
+      }
+    },
+    "rich-text#Libro-de-sugerencias-y-reclamos": {
+      "props": {
+        "text": "[Libro de sugerencias y reclamos](Institucional/sugerencias-reclamos)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass": "navLinkInstitucional"
+      }
+    },
+    
+    
+    "rich-text#Política-de-Privacidad": {
+      "props": {
+        "text": "[Política de Privacidad](/Institucional/politica-privacidad)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass":"navLinkInstitucional"
+      }
+    },
+    "rich-text#Bases-legales": {
+      "props": {
+        "text": "[Bases legales](/Institucional/bases-legales)",
+        "font": "t-heading-5",
+        "textAlignment": "LEFT",
+        "blockClass":"navLinkInstitucional"
+      }
+    },
+    "rich-text#Médicamentos-sólo-en-local": {
+        "props": {
+          "text": "[Médicamentos sólo en local](/expendio-unicamanete-en-famacias)",
+          "font": "t-heading-5",
+          "textAlignment": "LEFT",
+          "blockClass":"navLinkInstitucional"
+        }
+      }
+  }

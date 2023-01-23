@@ -1,0 +1,30 @@
+{
+  "flex-layout.row#medios-pagos-footer": {
+    "children": ["flex-layout.col#logo-footer"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#footer-desktop-4": {
+    "props": {
+      "verticalAlign": "top",
+      "blockClass": "medios-footer"
+    },
+    "children": ["rich-text#medios-pagos-footer","image#medios-pagos-footer"]
+  },
+  "rich-text#medios-pagos-footer": {
+    "props": {
+        "text": "Medios de Pago",
+        "blockClass": "section-title-footer"
+    }
+  },
+  "image#medios-pagos-footer": {
+    "props": {
+      "src": "assets/footer/logo-mercadopago.png",
+      "maxHeight": 180,
+      "maxWidth": 177,
+      "alt": "logo",
+      "link": { "url": "#" }
+    }
+  }
+}

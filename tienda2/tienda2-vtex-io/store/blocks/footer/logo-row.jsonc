@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#logo-footer":{
+    "children":["flex-layout.col#logo-footer"],
+    "props":{
+      "fullWidth":true
+    }
+  },
+  //COLUMNA DEL LOGO
+  "flex-layout.col#logo-footer": {
+    "props": {
+      "verticalAlign": "top",
+      "marginLeft": 10,
+      "blockClass": "logo-footer"
+    },
+    "children": ["flex-layout.row#logo-casa-blanca"]
+  },
+  "flex-layout.row#logo-casa-blanca": {
+    "props": {
+      "horizontalAlign": "center",
+      "marginBottom": 5,
+      "marginTop": 7
+    },
+    "children": ["image#logo"]
+  },
+  "image#logo": {
+    "props": {
+      "src": "assets/header/logo-header-tienda2.png",
+      "maxHeight": 280,
+      "maxWidth": 240,
+      "alt": "logo",
+      "link": { "url": "/" }
+    }
+  }
+}

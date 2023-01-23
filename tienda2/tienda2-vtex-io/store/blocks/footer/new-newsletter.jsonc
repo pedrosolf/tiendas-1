@@ -1,0 +1,89 @@
+//Newsletter
+{
+"flex-layout.row#newNewsletter": {
+    "children": [
+      "flex-layout.col#newsletterLegend",
+      "flex-layout.col#newsletter-form"
+    ],
+    "props": {
+      "blockClass": "newslwtterContainer"
+    }
+  },
+  "flex-layout.row#newsletter-text": {
+    "children": [
+      /* "rich-text#title-newsletter-footer",
+      "rich-text#paragraph-newsletter-footer" */
+    ],
+    "props": {
+      "blockClass": "newsletter-text"
+    }
+  },
+  "flex-layout.col#newsletter-form": {
+    "children": ["form#newsletter-new"],
+    "props": {
+      "blockClass": "newsletter-form-footer"
+    }
+  },
+  //NUEVO NEWSLETTER
+  "form#newsletter-new": {
+    "props": {
+        "entity": "NW",
+        "schema": "newsletter",
+        "blockClass": "form-newsletter"
+    },
+    "children": [
+        "flex-layout.row#camposBoton"
+       
+    ],
+    "blocks": [
+        "form-success#newsletter"
+    ]
+},
+
+"flex-layout.row#camposBoton":{
+    "children": [
+        "form-input.text#nombreNL",
+        "form-input.text#emailNL",
+        "form-submit#NL"
+    ],
+    "props": {
+        "colGap": 5
+    }
+},
+
+// mensaje enviado correctamente
+"form-success#newsletter": {
+    "children": [
+        "rich-text#successNewsletter"
+    ]
+},
+"form-submit#NL": {
+    "props": {
+        "label": "Enviar",
+        "blockClass": "botonNL"
+    }
+},
+"rich-text#successNewsletter": {
+    "props": {
+        "text": "Tu suscripción fue un éxito!",
+        "blockClass": "exitoNL"
+    }
+}, //fin mensaje enviado correctamente
+"form-input.text#nombreNL": {
+    "props": {
+        "pointer": "#/properties/name",
+        "placeholder": "Nombre",
+        "blockClass": "emailNl"
+    }
+},
+
+"form-input.text#emailNL": {
+    "props": {
+        "pointer": "#/properties/email",
+        "placeholder": "Email",
+        "blockClass": "emailNl"
+    }
+}
+}
+ 
+//FIN NUEVO NEWSLETTER

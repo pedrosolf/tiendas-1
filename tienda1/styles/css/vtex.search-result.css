@@ -1,0 +1,33 @@
+.searchResultContainer {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.galleryTitle--layout,
+.filterMessage {
+    font-size: 0;
+    display: none;
+}
+
+.filterTitle {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #191919
+}
+
+.categoryItemName {
+    font-size: 1rem;
+}
+
+.categoryItemChildren {
+    font-size: .8rem;
+}
+
+.selectedCategoryName {
+    font-size: .8rem;
+}
+
+.orderByOptionsContainer {
+    z-index: 2;
+}

@@ -1,0 +1,1282 @@
+{
+  "store.product": {
+    "blocks": [
+      "responsive-layout.desktop#product",
+      "responsive-layout.phone#product",
+      "responsive-layout.tablet#product"
+    ]
+  },
+  "responsive-layout.desktop#product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#main",
+     // "product-assembly-options#CompreJunto",
+      "flex-layout.row#similares"
+    ]
+  },
+  "responsive-layout.phone#product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#mainMobile", 
+      "flex-layout.row#similares"
+    ]
+  },
+  "responsive-layout.tablet#product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#main", 
+
+      "flex-layout.row#similares"
+    ]
+  },
+
+  "flex-layout.row#product-breadcrumb": {
+    "children": ["breadcrumb"]
+  },
+  "breadcrumb": {
+    "props": {
+      "blockClass": "breadcrumbsProduct",
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.row#main": {
+    "props": {
+      "marginBottom": 10,
+      "paddingBottom": 1,
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "main",
+      "fullWidth": false,
+      "colGap": 0,
+      "rowGap": 5
+    },
+    "children": ["flex-layout.col#imagen", "condition-layout.product#valir-template" ]
+  },
+
+  "condition-layout.product#valir-template":{
+    "props": {
+      "width": "45%",
+      "conditions": [
+        {
+           "subject": "productClusters",
+           "arguments": {
+            "id": ["1238"]
+          }
+         }
+       ],
+           "Then": "flex-layout.col#datos-editado",
+           "Else": "flex-layout.col#datos"
+         }
+       },
+
+
+  "flex-layout.row#mainMobile": {
+    "props": {
+      "marginBottom": 10,
+      "paddingBottom": 1,
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "main",
+      "fullWidth": false,
+      "colGap": 0
+    },
+    "children": ["condition-layout.product#valir-template-mobile"]
+  },
+
+  "condition-layout.product#valir-template-mobile":{
+    "props": {
+      "conditions": [
+        {
+           "subject": "productClusters",
+           "arguments": {
+            "id": ["1238"]
+          }
+         }
+       ],
+           "Then": "flex-layout.col#datosMobile-editado",
+           "Else": "flex-layout.col#datosMobile"
+         }
+       },
+  // IMAGEN
+  "flex-layout.col#imagen": {
+    "props": {
+      "width": "50%",
+      "horizontalAlign": "left",
+      "blockClass": "colDatos",
+      "fullWidth": false,
+      "preventVerticalStretch": true,
+      "rowGap": 3
+    },
+    "children": ["flex-layout.row#imagen-main"]
+  },
+  "flex-layout.row#imagen-main": {
+    "props": {
+      "blockClass": "imagen-main"
+    },
+    "children": ["flex-layout.col#imagen-mainDerecha"]
+  },
+
+  "flex-layout.col#imagen-mainDerecha": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      //"vtex.product-highlights@2.x:product-highlights#flag-beneficios",
+      "product-price-savings#summary-product-descuentos", 
+      "flex-layout.row#flagsVitrinas",
+      "flex-layout.row#flagsColeccionRow",
+       "product-images"
+    ]
+  },
+  "product-price-savings#summary-product-descuentos": {
+    "props": {
+      "blockClass": "summary-product-descuentos",
+      "message": " -{savingsPercentage}",
+      "markers": [
+        "discount"
+      ]
+    }
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": false,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "blockClass": "galeriaProducto",
+      "showBadge": true,
+      "height": 220
+    }
+  },
+  // FIN IMAGEN PRINCIPAL DEL PRODUCTO
+
+  // DATOS
+  // **********************************************
+  "flex-layout.col#datos": {
+    "props": {
+      "width": "45%",
+      "horizontalAlign": "left",
+      "blockClass": "colDatos",
+      "fullWidth": false,
+      "preventVerticalStretch": true,
+      "rowGap": 5
+    },
+    "children": [/* 
+      "store-badges", */
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "product-separator",
+      "vtex.store-components:product-brand",
+      "flex-layout.col#flags-bioequivalentepdp",
+      "product-specification-badges#tipoVentaProduct",
+      //"product-spot-price",
+      "product-price#product-details",
+      "condition-layout.product#btn-carrito",
+      "flex-layout.row#CondicionesDevolucion",
+      "flex-layout.row#Promociones",
+      "flex-layout.row#Subs",
+      "availability-subscriber", 
+      "flex-layout.row#detalleyTecnica"
+    ]
+  },
+
+  "flex-layout.col#datos-editado": {
+    "props": {
+      "width": "45%",
+      "horizontalAlign": "left",
+      "blockClass": "colDatos",
+      "fullWidth": false,
+      "preventVerticalStretch": true,
+      "rowGap": 5
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "product-separator",
+      "vtex.store-components:product-brand",
+      "flex-layout.col#flags-bioequivalentepdp",
+      "product-specification-badges#tipoVentaProduct",
+      "product-price#product-details",
+      "rich-text#texto-no-comprar"
+      //"condition-layout.product#btn-carrito",
+      //"flex-layout.row#CondicionesDevolucion",
+      //"flex-layout.row#Promociones",
+      //"flex-layout.row#Subs",
+      //"availability-subscriber", 
+      //"flex-layout.row#detalleyTecnica"
+    ]
+  },
+
+  "rich-text#texto-no-comprar": {
+    "props": {
+      "blockClass": "btn-no-comprar",
+      //"text": "Producto disponible sólo en local ubicado en Pérez Valenzuela 1077, \n Providencia, Santiago. Consulta disponibilidad de stock \n en tel: [600 276 0000](tel:6002760000)  o whatsapp [+56 9 69171334](https://wa.me/56969171334)"
+      "text": "Producto disponible sólo en local ubicado en Pérez Valenzuela 1077, \n Providencia, Santiago.\n"
+    }
+  },
+
+  /* "store-badges": {
+    "props": {
+      "numberOfBadges": 1,
+      "text": {
+        "font": "t-heading-5",
+        "textColor": "blue",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "htmlId": "teste1"
+      },
+      "image": {
+        "blockClass": "container",
+        "height": 500,
+        "width": 500,
+        "minWidth": 25,
+        "minHeight": 25,
+        "alt": "teste",
+        "title": "title",
+        "preload": true
+      }
+    }
+  }, */
+
+  "product-price#product-details": {
+    "props": {
+      "showInstallments": false,
+      "blockClass":"price-product-pdp"
+    }
+  },
+
+  "flex-layout.col#datosMobile": {
+    "props": {
+      "width": "50%",
+      "horizontalAlign": "left"
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "vtex.store-components:product-brand",
+      "product-specification-badges#tipoVentaProduct",
+      //"product-spot-price",
+      "product-price#product-details",
+      "flex-layout.row#imagen-main",
+      "condition-layout.product#btn-carritoMobile",
+      "flex-layout.row#CondicionesDevolucion",
+      "flex-layout.row#Promociones",
+      "flex-layout.row#Subs",
+      "flex-layout.row#detalleyTecnica"
+    ]
+  },
+
+  "flex-layout.col#datosMobile-editado": {
+    "props": {
+      "width": "50%",
+      "horizontalAlign": "left"
+    },
+    "children": [
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "vtex.store-components:product-brand",
+      "product-specification-badges#tipoVentaProduct",
+      //"product-spot-price",
+      "product-price#product-details",
+      "flex-layout.row#imagen-main",
+      "rich-text#texto-no-comprar",
+      //"condition-layout.product#btn-carritoMobile",
+      "flex-layout.row#CondicionesDevolucion",
+      "flex-layout.row#Promociones",
+      "flex-layout.row#Subs",
+      "flex-layout.row#detalleyTecnica"
+    ]
+  },
+  "product-spot-price": {
+    "props": {
+      "markers": ["highlight"],
+      "blockClass": "summary",
+      "message": "{spotPriceValue}"
+    }
+  },
+
+  "product-description": {
+    "props": {
+      "collapseContent": false,
+      "showTitle": false
+    }
+  },
+
+  "product-specifications#description": {
+    "props": {
+      "collapsible": "never",
+      "shouldCollapseOnTabChange": false,
+      "blockClass": "prodEspecificacion",
+      "visibleSpecifications": ["Indicaciones"]
+    }
+  },
+  "product-specification-badges#descripcion": {
+    "props": {
+      "blockClass": "prodDescripcion",
+      "specificationGroupName": "allSpecifications",
+      "specificationsOptions": [
+        {
+          "specificationName": "Indicaciones",
+          "displayValue": "SPECIFICATION_VALUE"
+        }
+      ]
+    }
+  },
+  "vtex.store-components:product-brand": {
+    "props": {
+      "blockClass": "productBrand",
+      "displayMode": "text",
+      "withLink": "none"
+    }
+  },
+  "vtex.store-components:product-name": {
+    "props": {
+      "blockClass": "productName"
+    }
+  },
+  "product-specification-badges#tipoVentaProduct": {
+    "props": {
+      "blockClass": "tipoVentaProductPage",
+      "specificationGroupName": "allSpecifications",
+      "specificationsOptions": [
+        {
+          "specificationName": "Condición de Venta",
+          "displayValue": "SPECIFICATION_VALUE"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#btn-carritoMobile": {
+    "props": {
+      "colSizing": "auto",
+      "fullWidth": false,
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "flex-layout.col#boton-CantidadMobile",
+      "flex-layout.col#boton-cartMobile"
+    ]
+  },
+
+  "flex-layout.row#btn-carrito": {
+    "props": {
+      "horizontalAlign": "left",
+      "blockClass": "btnCarrito"
+    },
+    "children": ["flex-layout.col#boton-Cantidad", "flex-layout.col#boton-cart"]
+  },
+  "flex-layout.row#btn-carritoEmpty": {
+    "props": {
+      "horizontalAlign": "left",
+      "blockClass": "btnCarrito"
+    },
+    "children": ["flex-layout.col#boton-cart"]
+  },
+  "flex-layout.col#boton-cart": {
+    "props": {
+      "horizontalAlign": "left",
+      "blockClass": "colDatos",
+      "fullWidth": false,
+      "preventVerticalStretch": true,
+      "rowGap": 3
+    },
+    "children": ["add-to-cart-button#main"]
+  },
+  "flex-layout.col#boton-cartMobile": {
+    "props": {
+      "horizontalAlign": "left",
+      "fullWidth": false,
+      "width": "50%"
+    },
+    "children": ["add-to-cart-button#main"]
+  },
+  "add-to-cart-button#main": {
+    "props": {
+      "blockClass": "addToCartProduct",
+      "text": "AGREGAR A LA BOLSA",
+      "unavailableText": "SIN STOCK"
+    }
+  },
+  "flex-layout.col#boton-Cantidad": {
+    "props": {
+      "fullWidth": false,
+      "width": "50%"
+    },
+    "children": ["product-quantity"]
+  },
+  "flex-layout.col#boton-CantidadMobile": {
+    "props": {
+      "fullWidth": false,
+      "width": "10%"
+    },
+    "children": ["product-quantity"]
+  },
+  "product-quantity": {
+    "props": {
+      "showLabel": false
+    }
+  },
+
+  "condition-layout.product#btn-carrito": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#btn-carrito",
+      "Else": "flex-layout.row#btn-carritoEmpty"
+    }
+  },
+
+  "condition-layout.product#btn-carritoMobile": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#btn-carritoMobile",
+      "Else": "flex-layout.row#btn-carritoEmpty"
+    }
+  },
+
+  "flex-layout.row#Suscripciones": {
+    "props": {
+      "blockClass": "rowSuscripciones"
+    },
+    "children": ["flex-layout.col#Suscripciones"]
+  },
+  "flex-layout.col#Suscripciones": {
+    "props": {
+      "blockClass": "colSuscripciones"
+    },
+    "children": [
+      "assembly-option-input-values" 
+    ]
+  },
+
+  "rich-text#textSuscripciones": {
+    "props": {
+      "text": "¡SUSCRÍBETE AQUÍ!",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "tittleModal"
+    }
+  },
+  "link.product#textSuscripciones": {
+    "props": {
+      "href": "/suscripciones",
+      "label": "¿Cómo funcionan las suscripciones?",
+      "blockClass": "linkSuscripciones"
+    }
+  },
+  "add-to-cart-button#suscripciones": {
+    "props": {
+      "blockClass": "buttonSuscripciones",
+      "text": "Suscribirse",
+      "unavailableText": "SIN STOCK"
+    }
+  },
+
+  "flex-layout.row#CondicionesDevolucion": {
+    "children": ["link.product#CondicionesDevolucion"]
+  },
+  "flex-layout.row#Subs": {
+    "props": {
+      "blockClass": "buttonSuscripcion"
+    },
+    "children": ["flex-layout.col#Subs"]
+  },
+  "flex-layout.col#Subs": {
+    "props": {
+      "blockClass": "buttonSuscripcion"
+    },
+    "children": ["product-assembly-options#SubsTest",
+                   "condition-layout.product#textSuscripciones1",
+                   "condition-layout.product#textSuscripciones2",
+                   "condition-layout.product#textSuscripciones3",
+                   "condition-layout.product#textSuscripciones4",
+                   "condition-layout.product#textSuscripciones5"
+                 // "link.product#textSuscripciones"
+              ]
+  },
+
+  "condition-layout.product#textSuscripciones1": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "NUEVO YO"  
+        }  
+       }
+      ],
+      "Then": "link.product#textSuscripciones"
+    }
+  },
+  "condition-layout.product#textSuscripciones2": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value":  "LATIENDO CONTIGO"  
+        }  
+       }
+      ],
+      "Then": "link.product#textSuscripciones"
+    }
+  },
+  "condition-layout.product#textSuscripciones3": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value":  "CETAPHIL"  
+        }  
+       }
+      ],
+      "Then": "link.product#textSuscripciones"
+    }
+  },
+  "condition-layout.product#textSuscripciones4": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value":  "FREE SHIPPING"  
+        }  
+       }
+      ],
+      "Then": "link.product#textSuscripciones"
+    }
+  },
+  "condition-layout.product#textSuscripciones5": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value":  "Suscripción"  
+        }  
+       }
+      ],
+      "Then": "link.product#textSuscripciones"
+    }
+  },
+
+  "flex-layout.row#Promociones": {
+    "props": {
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "blockClass": "subpromos",
+      "fullWidth": true,
+      "colGap": 0
+    },
+    "children": [
+      "condition-layout.product#SuscripcionesCetaphil",
+      "condition-layout.product#SuscripcionesRybelsusRegalo",
+      "condition-layout.product#SuscripcionesRybelsus3x2",
+      "condition-layout.product#SuscripcionesFreeShipping",
+      "condition-layout.product#SuscripcionesLatiendoContigo",
+      "condition-layout.product#SuscripcionesNuevoYo",
+      "condition-layout.product#ProgramaArtemisa",
+      "condition-layout.product#ProgramaMujerArtemisa",
+      "condition-layout.product#ProgramaMusa"
+    ]
+  },
+
+  "link.product#CondicionesDevolucion": {
+    "props": {
+      "blockClass": "CondicionesDevolucion",
+      "href": "#",
+      "label": "Condiciones para la Devolución de Productos"
+    }
+  },
+  "product-assembly-options#Subs": {
+    "props": {
+      "blockClass": "suscripciones",
+      "initiallyOpened": "always"
+    },
+    "children": [
+      "condition-layout.product#SuscripcionesCetaphil",
+      "condition-layout.product#SuscripcionesRybelsusRegalo",
+      "condition-layout.product#SuscripcionesRybelsus3x2",
+      "condition-layout.product#SuscripcionesFreeShipping",
+      "condition-layout.product#SuscripcionesLatiendoContigo",
+      "condition-layout.product#SuscripcionesNuevoYo",
+      "flex-layout.row#Suscripciones"
+    ]
+  },
+  // modales envio y cuotas
+  "flex-layout.row#envio-cuotas": {
+    "props": {
+      "blockClass": "rowEnvio",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#envio",
+      "flex-layout.col#retiro",
+      "flex-layout.col#cuotas"
+    ]
+  },
+  // envio a domicilio
+  "flex-layout.col#envio": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children": [
+      // "modal-trigger#envio"
+    ]
+  },
+  "flex-layout.col#retiro": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children": ["modal-trigger#retiro"]
+  },
+  "flex-layout.col#cuotas": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children": ["modal-trigger#cuotas"]
+  },
+
+  "modal-trigger#envio": {
+    "props": {
+      "blockClass": "boton-envio",
+      "colGap": 0
+    },
+    "children": ["flex-layout.row#envio", "modal-layout#envioDomicilio"]
+  },
+  "modal-trigger#retiro": {
+    "props": {
+      "blockClass": "boton-retiro",
+      "colGap": 0
+    },
+    "children": ["flex-layout.row#retiro", "modal-layout#envioSucursal"]
+  },
+  "modal-trigger#cuotas": {
+    "children": ["flex-layout.row#cuotas", "modal-layout#cuotas"]
+  },
+  "modal-layout#cuotas": {
+    "children": [
+      "modal-header#cuotas"
+      //"calculador-cuotas"
+    ]
+  },
+
+  "modal-header#cuotas": {
+    "children": ["rich-text#modal-content-tittle-cuotas"],
+
+    "props": {
+      "blockClass": "headerModalGrande"
+    }
+  },
+
+  "rich-text#modal-content-tittle-cuotas": {
+    "props": {
+      "text": "CHEQUEÁ NUESTROS MÉTODOS DE PAGO",
+      "font": "t-heading-5",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "tittleModal"
+    }
+  },
+
+  "flex-layout.row#retiro": {
+    "props": {
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["flex-layout.col#icon-retiro", "flex-layout.col#boton-retiro"]
+  },
+  "flex-layout.row#envio": {
+    "props": {
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["flex-layout.col#icon-envio", "flex-layout.col#boton-envio"]
+  },
+  "flex-layout.row#cuotas": {
+    "props": {
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["flex-layout.col#icon-cuotas", "flex-layout.col#boton-cuotas"]
+  },
+  "flex-layout.col#icon-retiro": {
+    "props": {
+      "blockClass": "icon-retiro",
+      "width": "25%"
+    },
+    "children": ["image#retiro"]
+  },
+  "flex-layout.col#icon-envio": {
+    "props": {
+      "width": "25%",
+      "blockClass": "icon-envio"
+    },
+    "children": ["image#envio"]
+  },
+  "image#envio": {
+    "props": {
+      //"src": "assets/product/envio.svg",
+      "maxHeight": 34,
+      "height": 34
+    }
+  },
+  "image#retiro": {
+    "props": {
+      // "src": "assets/product/retiro.svg",
+      "maxHeight": 34,
+      "height": 34
+    }
+  },
+  "image#cuotas": {
+    "props": {
+      // "src": "assets/product/cuotas.svg",
+      "maxHeight": 34,
+      "height": 34
+    }
+  },
+  "flex-layout.col#boton-envio": {
+    "children": ["rich-text#envio"]
+  },
+  "rich-text#envio": {
+    "props": {
+      "text": "Calculá el Envío",
+      "blockClass": "textoEnvio"
+    }
+  },
+  "flex-layout.col#boton-retiro": {
+    "children": ["rich-text#retiro"]
+  },
+  "rich-text#retiro": {
+    "props": {
+      "text": "ver puntos de retiro",
+      "blockClass": "textoRetiro"
+    }
+  },
+  "flex-layout.col#icon-cuotas": {
+    "props": {
+      "blockClass": "icon-cuotas",
+      "width": "25%"
+    },
+    "children": ["image#cuotas"]
+  },
+  "flex-layout.col#boton-cuotas": {
+    "props": {
+      "width": "80%"
+    },
+    "children": ["rich-text#cuotas"]
+  },
+  "rich-text#cuotas": {
+    "props": {
+      "text": "Ver cuotas",
+      "blockClass": "textoCuotas"
+    }
+  },
+
+  // FIN IMAGEN A LA IZQ - DATOS A LA DERECHA DEL PROD
+  // *********************************************************
+
+  "flex-layout.row#detalleyTecnica": {
+    "children": ["flex-layout.col#detalleyTecnica"]
+  },
+  "flex-layout.col#detalleyTecnica": {
+    "children": ["disclosure-layout-group#detalleyTecnica"]
+  },
+  "disclosure-layout-group#detalleyTecnica": {
+    "children": [
+      "condition-layout.product#Description",
+      "product-separator",
+      "disclosure-layout#fichaTecnica"
+    ]
+  },
+  "disclosure-state-indicator": {
+    "props": {
+      "Show": "image#angle-down",
+      "Hide": "image#angle-up"
+    }
+  },
+  "disclosure-layout#fichaTecnica": {
+    "props": {
+      "initialVisibility": "visible",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#fichaTecnica",
+      "disclosure-content#fichaTecnica"
+    ]
+  },
+  "disclosure-trigger#fichaTecnica": {
+    "props": {
+      "blockClass": "questionDescripcion",
+      "as": "div"
+    },
+    "children": ["flex-layout.row#fichaTecnicaTextos"]
+  },
+  "disclosure-content#fichaTecnica": {
+    "props": {
+      "blockClass": "answerDescripcion"
+    },
+    "children": ["flex-layout.row#especificacion"]
+  },
+  "flex-layout.row#fichaTecnicaTextos": {
+    "children": [
+      "flex-layout.col#fichaTecnicaTextosText",
+      "flex-layout.col#fichaTecnicaTextosImage"
+    ]
+  },
+  "flex-layout.col#fichaTecnicaTextosText": {
+    "props": {
+      "width": "90%"
+    },
+    "children": ["rich-text#fichaTecnica"]
+  },
+  "flex-layout.col#fichaTecnicaTextosImage": {
+    "props": {
+      "width": "10%"
+    },
+    "children": ["disclosure-state-indicator"]
+  },
+
+  "rich-text#fichaTecnica": {
+    "props": {
+      "blockClass": "textDescripcion",
+      "text": "**ESPECIFICACIONES**"
+    }
+  },
+
+  "disclosure-layout#detalles": {
+    "props": {
+      "initialVisibility": "visible",
+      "animated": true
+    },
+    "children": [
+      "product-separator",
+      "disclosure-trigger#detalles",
+      "disclosure-content#detalles"
+    ]
+  },
+  "disclosure-trigger#detalles": {
+    "props": {
+      "blockClass": "questionDescripcion",
+      "as": "div"
+    },
+    "children": ["flex-layout.row#detallesTextos"]
+  },
+  "disclosure-content#detalles": {
+    "props": {
+      "blockClass": ["answerDescripcion", "detalles"]
+    },
+    "children": [
+      "product-description",
+      "product-specification-badges#descripcion"
+    ]
+  },
+
+  "flex-layout.row#detallesTextos": {
+    "children": [
+      "flex-layout.col#detallesTextosText",
+      "flex-layout.col#detallesTextosImage"
+    ]
+  },
+  "flex-layout.col#detallesTextosText": {
+    "props": {
+      "width": "90%"
+    },
+    "children": ["rich-text#detalles"]
+  },
+  "flex-layout.col#detallesTextosImage": {
+    "props": {
+      "width": "10%"
+    },
+    "children": ["disclosure-state-indicator"]
+  },
+  "rich-text#detalles": {
+    "props": {
+      "blockClass": "textDescripcion",
+      "text": "**DESCRIPCIÓN**"
+    }
+  },
+
+  "flex-layout.row#especificacion": {
+    "props": {
+      "fullWidth": false,
+      "blockClass": "especificacion-product"
+    },
+    "children": ["flex-layout.col#especificacion"]
+  },
+  "flex-layout.col#especificacion": {
+    "props": {
+      "paddingLeft": 5,
+      "paddingRight": 5,
+      "blockClass": "prodEspecificacion"
+    },
+    "children": ["product-specifications#Producto"]
+  },
+  "product-specifications#Producto": {
+    "props": {
+      "collapsible": "never",
+      "shouldCollapseOnTabChange": false,
+      "blockClass": "prodEspecificacion",
+      "visibleSpecifications": [
+        "Concentración",
+        "Registro ISP",
+        "Principio Activo",
+        "Tipo",
+        "Tipo de Producto",
+        "Precio Unitario con IVA",
+        "Refrigerado",
+        "Controlado"
+      ]
+    }
+  },
+  "image#angle-down": {
+    "props": {
+      "blockClass": "stateIndicator",
+      "src": "assets/home/angle-down-solid.png"
+    }
+  },
+  "image#angle-up": {
+    "props": {
+      "blockClass": "stateIndicator",
+      "src": "assets/home/angle-up-solid.png"
+    }
+  },
+
+  "condition-layout.product#SuscripcionesCetaphil": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "CETAPHIL"
+          }
+        }
+      ],
+      "Then": "rich-text#SuscripcionesCetaphil"
+    }
+  },
+  "condition-layout.product#SuscripcionesRybelsusRegalo": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "RybelsusRegalo"
+          }
+        }
+      ],
+      "Then": "rich-text#SuscripcionesRybelsusRegalo"
+    }
+  },
+  "rich-text#SuscripcionesRybelsusRegalo": {
+    "props": {
+      "blockClass": "subsDescuentos",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "¡Si compras 1 rybelsus de 3 mg obtendrás 1 Rybelsus de 7 mg GRATIS!"
+    }
+  },
+
+  "condition-layout.product#SuscripcionesRybelsus3x2": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "Rybelsus3x2"
+          }
+        }
+      ],
+      "Then": "rich-text#SuscripcionesRybelsus3x2"
+    }
+  },
+  "rich-text#SuscripcionesRybelsus3x2": {
+    "props": {
+      "blockClass": "subsDescuentos",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "¡Agrega 3 rybelsus de 14mg y obtén 1 GRATIS!"
+    }
+  },
+
+  "condition-layout.product#SuscripcionesFreeShipping": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "FREE SHIPPING"
+          }
+        }
+      ],
+      "Then": "rich-text#SuscripcionesFreeShipping"
+    }
+  },
+  "condition-layout.product#SuscripcionesLatiendoContigo": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "LATIENDO CONTIGO"
+          }
+        }
+      ],
+      "Then": "rich-text#SuscripcionesLatiendoContigo"
+    }
+  },
+  "condition-layout.product#SuscripcionesNuevoYo": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "NUEVO YO"
+          }
+        }
+      ],
+      "Then": "rich-text#SuscripcionesNuevoYo"
+    }
+  },
+
+  "condition-layout.product#ProgramaArtemisa": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": ["148", "161"]
+          }
+        }
+      ],
+      "Then": "rich-text#ProgramaArtemisa"
+    }
+  },
+  "condition-layout.product#ProgramaMujerArtemisa": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": ["161"]
+          }
+        }
+      ],
+      "Then": "rich-text#ProgramaMujerArtemisa"
+    }
+  },
+  "condition-layout.product#ProgramaMusa": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": ["154"]
+          }
+        }
+      ],
+      "Then": "rich-text#ProgramaMusa"
+    }
+  },
+  "rich-text#SuscripcionesCetaphil": {
+    "props": {
+      "blockClass": "subsDescuentos",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "¡Si te suscribes obtendrás un 20% de descuento y despacho gratis en tu primer pedido!"
+    }
+  },
+
+  "rich-text#SuscripcionesFreeShipping": {
+    "props": {
+      "blockClass": "subsDescuentos",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "¡Si te suscribes obtendrás tu primer despacho gratis!"
+    }
+  },
+
+  "rich-text#SuscripcionesLatiendoContigo": {
+    "props": {
+      "blockClass": "subsDescuentos",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "¡Si perteneces al programa \"Latiendo Contigo\" de Laboratorio Pfizer, suscríbete y puedes obtener un descuento de hasta un 30%. Ingresa tu número de enrolamiento en la casilla \"CUPÓN DE DESCUENTO\" en el carrito de compras!"
+    }
+  },
+
+  "rich-text#SuscripcionesNuevoYo": {
+    "props": {
+      "blockClass": "subsDescuentos",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "¡Si perteneces al programa \"Nuevo Yo\" de Laboratorio Novonordisk, suscríbete y puedes obtener un descuento de hasta un 30%. Ingresa tu número de enrolamiento en la casilla \"CUPÓN DE DESCUENTO\" en el carrito de compras!"
+    }
+  },
+
+  "rich-text#ProgramaArtemisa": {
+    "props": {
+      "blockClass": "subsDescuentos",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "30% de descuento presentando cupón adherido a Programa Mujer Artemisa.\n *Para mayor información revisa nuestras bases legales y/o visita\n\n https://mujerartemisa.cl"
+    }
+  },
+
+  "rich-text#ProgramaMujerArtemisa": {
+    "props": {
+      "blockClass": "subsDescuentosLAb",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "30% de descuento presentando cupón adherido a Programa Mujer Artemisa. *Para mayor información revisa nuestras bases legales y/o visita https://mujerartemisa.cl"
+    }
+  },
+
+
+  "rich-text#ProgramaMusa": {
+    "props": {
+      "blockClass": "subsDescuentosLAb",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "text": "30% de descuento para usuarias inscritas en el programa MUSA. Para mayor información revisa nuestras bases legales y/o visita https://www.musachile.cl/ o  https://www.laboratoriochile.cl/"
+    }
+  },
+  "condition-layout.product#Description": {
+    "props": {
+      "matchType": "any",
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "NUEVO YO"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "LATIENDO CONTIGO"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "FREE SHIPPING"
+          }
+        },
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Suscripciones",
+            "value": "CETAPHIL"
+          }
+        }
+      ],
+      "Then": "disclosure-layout#detalles",
+      "Else": "disclosure-layout#detalles"
+    }
+  },
+
+  "flex-layout.row#similares": {
+    "children": ["shelf.relatedProducts#similares"],
+    "props": {
+      "fullWidth": true,
+      "width": "90%",
+      "horizontalAlign": "left",
+      "marginBottom": 10
+    }
+  },
+  "shelf.relatedProducts#similares": {
+    "blocks": ["product-summary.shelf#tienda2"],
+    "props": {
+      "recommendation": "view",
+      "productList": {
+        "itemsPerPage": 5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "¡Quizás te interesen estos productos!"
+      },
+      "blockClass": "vitrinatienda2"
+    }
+  },
+
+
+
+
+
+  "flex-layout.col#flags-bioequivalentepdp": {
+    "props": {},
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#flag-bioequivalentepdp"
+    ]
+  },
+  
+
+  "vtex.product-highlights@2.x:product-highlights#flag-bioequivalentepdp": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Bioequivalentes"]
+      }
+    },
+    "children": ["product-highlight-wrapper#flag-bioequivalentepdp"]
+  },
+
+  "product-highlight-wrapper#flag-bioequivalentepdp": {
+    "props": {
+      "blockClass": "bioequivalentepdp"
+    },
+    "children": ["image#flag-bioequivalente", "product-highlight-text#flag-bioequivalente"]
+  },
+  "image#flag-bioequivalente": {
+    "props": {
+      "src": "assets/home/icono-bioequivalente.png",
+      "blockClass": "bioequivalente"
+    }
+  },
+
+  "product-highlight-text#flag-bioequivalente": {
+    "props": {
+      "message": ""
+    }
+  }
+}

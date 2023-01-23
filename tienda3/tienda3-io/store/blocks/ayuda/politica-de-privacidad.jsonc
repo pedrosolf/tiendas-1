@@ -1,0 +1,22 @@
+{
+  "store.custom#ayuda-politica-de-privacidad": {
+    "blocks": ["tab-layout#ayuda-politica-de-privacidad"]
+  },
+  "tab-layout#ayuda-politica-de-privacidad": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-politica-de-privacidad"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "politica-de-privacidad"
+    }
+  },
+  "tab-content#ayuda-politica-de-privacidad": {
+    "children": [
+      "tab-content.item#politica-de-privacidad"
+    ]
+  }
+}

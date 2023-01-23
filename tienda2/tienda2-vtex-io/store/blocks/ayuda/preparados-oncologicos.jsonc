@@ -1,0 +1,133 @@
+{
+  "store.custom#preparados-oncologicos": {
+    "blocks": [
+      "responsive-layout.desktop#preparados-oncologicos",
+      "responsive-layout.tablet#preparados-oncologicos",
+      "responsive-layout.phone#preparados-oncologicos"
+    ]
+  },
+  "responsive-layout.desktop#preparados-oncologicos": {
+    "children": ["flex-layout.row#main-preparados-oncologicos-desk"]
+  },
+  "responsive-layout.tablet#preparados-oncologicos": {
+    "children": ["flex-layout.row#preparados-oncologicos-main-mobile"]
+  },
+  "responsive-layout.phone#preparados-oncologicos": {
+    "children": ["flex-layout.row#preparados-oncologicos-main-mobile"]
+  },
+  "flex-layout.row#preparados-oncologicos-main-mobile": {
+    "children": ["flex-layout.col#preparados-oncologicos-mobile"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  //VERSION DESKTOP
+  "flex-layout.row#main-preparados-oncologicos-desk": {
+    "props": {
+      "blockClass": "main-preparados-oncologicos",
+      "marginTop": 7,
+      "marginBottom": 9,
+      "preventVerticalStretch": true,
+      "colGap": 7
+    },
+    "children": ["flex-layout.col#preparados-oncologicos"]
+  },
+
+  "flex-layout.col#preparados-oncologicos": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#preparados-oncologicos",
+      "rich-text#preparados-oncologicos-title",
+      "flex-layout.row#preparados-oncologicos-content"
+    ]
+  },
+  "flex-layout.col#preparados-oncologicos-mobile": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#preparados-oncologicos-mobile",
+      "rich-text#preparados-oncologicos-title",
+      "flex-layout.row#preparados-oncologicos-content"
+    ]
+  },
+
+  "image#preparados-oncologicos": {
+    "props": {
+      "blockClass": "imagenBanner",
+      "src": "assets/ayuda/oncologicos-desktop.png"
+    }
+  },
+  "image#preparados-oncologicos-mobile": {
+    "props": {
+      "blockClass": "imagenBanner",
+      "src": "assets/ayuda/oncologicos-mobile.png"
+    }
+  },
+  "flex-layout.row#preparados-oncologicos-content": {
+    "props": {
+      "marginTop": 5,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#preparados-oncologicos-content"
+    ]
+  },
+  "flex-layout.col#preparados-oncologicos-content": {
+    "props": {
+      "width": "60%"
+    },
+    "children": [
+      "rich-text#preparados-oncologicos-content",
+      "rich-text#preparados-oncologicos-content2",
+      "rich-text#preparados-oncologicos-content3",
+      "rich-text#preparados-oncologicos-content4"
+    ]
+  },
+
+  //FIN DE VERSION DESKTOP
+  "rich-text#preparados-oncologicos-title": {
+    "props": {
+      "blockClass": ["ayudaTitle", "preparados-oncologicos"],
+      "text": "**En tienda2 contamos con el servicio de Preparados Oncológicos, Estériles & Biológicos**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#preparados-oncologicos-content": {
+    "props": {
+      "blockClass": ["ayudaContent", "preparados-oncologicos-content"],
+      "text": "![alt img](assets/ayuda/check.png) Tenemos la más moderna tecnología y los más altos estándares internacionales de calidad y seguridad en nuestros procesos.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#preparados-oncologicos-content2": {
+    "props": {
+      "blockClass": ["ayudaContent", "preparados-oncologicos-content"],
+      "text": "![alt img](assets/ayuda/check.png) Contamos con 5 cámaras de flujo laminar para la preparación de oncológicos y biológicos tanto para mercado privado como mercado público (Hospitales, Fuerzas Armadas, Isapres y Clínicas Privadas) con distribución a todo el país.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#preparados-oncologicos-content3": {
+    "props": {
+      "blockClass": ["ayudaContent", "preparados-oncologicos-content"],
+      "text": "![alt img](assets/ayuda/check.png) Nuestra calidad está certificada bajo la norma ISO 9001-2015",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#preparados-oncologicos-content4": {
+    "props": {
+      "blockClass": ["ayudaContent", "preparados-oncologicos-content"],
+      "text": "![alt img](assets/ayuda/check.png) Somos líderes en preparados oncológicos a nivel país.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  }
+}

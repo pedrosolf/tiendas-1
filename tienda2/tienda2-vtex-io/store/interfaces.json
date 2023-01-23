@@ -1,0 +1,11 @@
+{
+    "calculador-cuotas":{
+        "component":"CalculadorCuotas"
+    },
+    "flag-custom":{
+      "component":"CustomFlag"
+  },
+    "lista-reclamos":{
+      "component":"listaReclamos"
+  }
+}

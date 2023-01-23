@@ -1,0 +1,22 @@
+{
+  "store.custom#ayuda-garantia": {
+    "blocks": ["tab-layout#ayuda-garantia"]
+  },
+  "tab-layout#ayuda-garantia": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-garantia"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "garantia"
+    }
+  },
+  "tab-content#ayuda-garantia": {
+    "children": [
+      "tab-content.item#garantia"
+    ]
+  }
+}

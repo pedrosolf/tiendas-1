@@ -1,0 +1,30 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap');
+*/
+@import url("https://use.typekit.net/cfi8myg.css");
+
+.container{
+    padding: 0;
+    
+}
+.imageElement--banner-home{
+    transition: 300ms al ease-in-out;
+    -webkit-transition: 300ms al ease-in-out;
+    -moz-transition: 300ms al ease-in-out;
+    -ms-transition: 300ms al ease-in-out;
+    -o-transition: 300ms al ease-in-out;
+}
+.imageElement--banner-home:hover{
+    transform: scale(1.007);
+    -webkit-transform: scale(1.007);
+    -moz-transform: scale(1.007);
+    -ms-transform: scale(1.007);
+    -o-transform: scale(1.007);
+}
+.productBrand{
+    color: #222426;
+    font-family: "Knockout";
+}
+
+.skuSelectorSubcontainer--capacidad-lts .skuSelectorOptionsList{
+    display: none;
+}

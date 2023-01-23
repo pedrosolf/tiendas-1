@@ -1,0 +1,20 @@
+{
+  "store.custom#ayuda-cambios-y-devoluciones": {
+    "blocks": ["tab-layout#ayuda-cambios-y-devoluciones"]
+  },
+  "tab-layout#ayuda-cambios-y-devoluciones": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-cambios-y-devoluciones"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "cambios-y-devoluciones"
+    }
+  },
+  "tab-content#ayuda-cambios-y-devoluciones": {
+    "children": ["tab-content.item#cambios-y-devoluciones"]
+  }
+}

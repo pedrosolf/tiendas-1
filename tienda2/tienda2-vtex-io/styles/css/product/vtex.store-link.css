@@ -1,0 +1,55 @@
+.link--CondicionesDevolucion {
+    background: 0 0;
+    color: #545977;
+    display: block;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    outline: 0;
+    text-decoration: none;
+}
+
+.label--CondicionesDevolucion {
+    background: 0 0;
+    color: #545977;
+    display: block;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    outline: 0;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .link--CondicionesDevolucion {
+        margin-bottom: 20px;
+    }
+
+    .product-identifier--productId {
+        display: none;
+    }
+
+    :global(.vtex-numeric-stepper__input), :global(.vtex-numeric-stepper__minus-button), :global(.vtex-numeric-stepper__plus-button) {
+        font-size: 1rem !important;       
+    }
+}
+
+.label--linkSuscripciones {
+    font-size: 15px; 
+}
+:global(.vtex-numeric-stepper__input), :global(.vtex-numeric-stepper__minus-button), :global(.vtex-numeric-stepper__plus-button) {
+    font-size: 1.5rem;
+    padding:20px;
+}
+
+.link--linkSuscripciones {
+    color: #545977;
+    text-decoration: none;
+}
+
+.label--linkSuscripciones::after {
+    content: " Ver aquí";
+    font-weight: 600;
+}

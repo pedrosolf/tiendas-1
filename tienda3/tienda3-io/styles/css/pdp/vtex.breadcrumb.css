@@ -1,0 +1,49 @@
+.container--product {
+  display: flex;
+  align-items: center;
+  padding: 25px 50px !important;
+}
+
+.homeLink--product::after {
+  content: 'HOME';
+  color: #222426;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.link--product,
+.term--product {
+  color: #545859 !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.homeIcon--product {
+  display: none;
+}
+
+.arrow--product {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 639px) {
+  .container--product {
+    padding: 12px 16px 25px 16px !important;
+  }
+
+  .homeLink--product::after,
+  .link--product,
+  .term--product {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1400px){
+  .link--product,
+.term--product {
+  font-size: 20px;
+}
+}
+:global(.vtex-breadcrumb-1-x-link--product){
+  white-space: nowrap;
+}

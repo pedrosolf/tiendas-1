@@ -1,0 +1,192 @@
+{
+    "rich-text#shelf-title-boss": {
+        "props": {
+        "text": "PRODUCTOS DESTACADOS HUGO BOSS",
+        "blockClass": "shelfTitle"
+        }
+    },
+    "flex-layout.row#shelf-boss": {
+        "children": ["list-context.product-list#destacados-boss"],
+        "props": {
+            "marginTop": 5,
+            "marginBottom": 5
+        }
+    },
+    "list-context.product-list#destacados-boss": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#destacados-trial"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "slider-layout#destacados-boss": {
+        "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "navigationStep": 1,
+        "autoplay": {
+            "timeout": 4000,
+            "stopOnHover": false
+        },
+        "blockClass": "shelf"
+        }
+    },
+
+    "rich-text#shelf-title-trial": {
+        "props": {
+        "text": "PRODUCTOS DESTACADOS TRIAL",
+        "blockClass": "shelfTitle"
+        }
+    },
+    "flex-layout.row#shelf-trial": {
+        "children": ["list-context.product-list#destacados-trial"],
+        "props": {
+            "marginTop": 5,
+            "marginBottom": 5
+        }
+    },
+    "list-context.product-list#destacados-trial": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#destacados-trial"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "slider-layout#destacados-trial": {
+        "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "navigationStep": 1,
+        "autoplay": {
+            "timeout": 4000,
+            "stopOnHover": false
+        },
+        "blockClass": "shelf"
+        }
+    },
+    
+    "rich-text#shelf-title-perry-ellis": {
+        "props": {
+        "text": "PRODUCTOS DESTACADOS PERRY ELLIS",
+        "blockClass": "shelfTitle"
+        }
+    },
+
+    "flex-layout.row#shelf-perry-ellis": {
+        "children": ["list-context.product-list#destacados-perry-ellis"],
+        "props": {
+            "marginTop": 5,
+            "marginBottom": 5
+        }
+    },
+    "list-context.product-list#destacados-perry-ellis": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#destacados-perry-ellis"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "slider-layout#destacados-perry-ellis": {
+        "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "navigationStep": 1,
+        "autoplay": {
+            "timeout": 4000,
+            "stopOnHover": false
+        },
+        "blockClass": "shelf"
+        }
+    },
+
+    "rich-text#shelf-title-florsheim": {
+        "props": {
+        "text": "PRODUCTOS DESTACADOS FLORSHEIM",
+        "blockClass": "shelfTitle"
+        }
+    },
+    "flex-layout.row#shelf-florsheim": {
+        "children": ["list-context.product-list#destacados-florsheim"],
+        "props": {
+            "marginTop": 5,
+            "marginBottom": 5
+        }
+    },
+    "list-context.product-list#destacados-florsheim": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#destacados-florsheim"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "slider-layout#destacados-florsheim": {
+        "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "navigationStep": 1,
+        "autoplay": {
+            "timeout": 4000,
+            "stopOnHover": false
+        },
+        "blockClass": "shelf"
+        }
+    },
+
+    "rich-text#shelf-title-canadienne": {
+        "props": {
+        "text": "PRODUCTOS DESTACADOS CANADIENNE",
+        "blockClass": "shelfTitle"
+        }
+    },
+    "flex-layout.row#shelf-canadienne": {
+        "children": ["list-context.product-list#destacados-canadienne"],
+        "props": {
+            "marginTop": 5,
+            "marginBottom": 5
+        }
+    },
+    "list-context.product-list#destacados-canadienne": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#destacados-canadienne"],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    "slider-layout#destacados-canadienne": {
+        "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "navigationStep": 1,
+        "autoplay": {
+            "timeout": 4000,
+            "stopOnHover": false
+        },
+        "blockClass": "shelf"
+        }
+    }
+}

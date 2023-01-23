@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Knockout';
+    src: url(assets/fonts/Knockout-Regular.ttf), url(assets/fonts/Knockout-Regular.ttf);
+    font-weight: regular;
+  }
+  @font-face {
+    font-family: 'Klavika';
+    src: url(https://use.typekit.net/cfi8myg.css), url(https://use.typekit.net/cfi8myg.css);
+    font-weight: regular;
+  }
+  
+
+
+  @font-face {
+    font-family:"klavika-web-display";
+    src:url("https://use.typekit.net/af/dccab9/00000000000000007735eeca/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/dccab9/00000000000000007735eeca/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/dccab9/00000000000000007735eeca/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
+    }

@@ -1,0 +1,9 @@
+/* De branch imagenProductoPDP-71 */
+.buttonContainer--btn-add-to-cart {
+    border-radius: 0;
+}
+
+.buttonText--btn-add-to-cart {
+    text-transform: none;
+}
+

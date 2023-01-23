@@ -1,0 +1,59 @@
+.confirmationTitle{
+    text-transform: uppercase;
+}
+.noticesList{
+    background: #fff;
+}
+.orderPlacedWrapper :global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons) :global(.vtex-button){
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: #222426;
+}
+.orderPlacedWrapper :global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons) :global(.vtex-button__label){
+  color: #fff;
+  font-family: "Knockout";
+}
+.cancelOrderButton{
+    display: none;
+}
+.updateOrderButton :global(.vtex-button), .myOrdersButton :global(.vtex-button){
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: 1px solid #222426;
+    background: #fff;
+}
+.updateOrderButton :global(.vtex-button__label), .myOrdersButton :global(.vtex-button__label){
+color: #222426;
+font-family: "Knockout";
+
+}
+.orderNumber{
+color: #222426;
+
+
+}
+.addressContainer, .totalListItem--Items, .productPrice{
+    font-family: "klavika-web";
+}
+.package{
+    flex-direction: column;
+}
+.totalListWrapper{
+    justify-content: flex-start;
+}
+.productName{
+font-family: "Knockout";
+color: #222426;
+text-transform: uppercase;
+
+}
+
+.updateOrderButton  {
+    display: none;
+}

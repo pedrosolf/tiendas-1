@@ -1,0 +1,65 @@
+{
+  //COLUMNA DE SERVICIO AL CLIENTE
+  "flex-layout.col#footer-desktop-3": {
+    "props": {
+      "width": "35%"
+    },
+    "children": ["vtex.menu@2.x:menu#About-3"]
+  },
+  "vtex.menu@2.x:menu#About-3": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "center-menu"
+    },
+    "children": [
+      "rich-text#contactanos",
+      "link#direccion",
+      "rich-text#horarios",
+      "link#telefono",
+      "link#whatsapp",
+      "link#email"
+    ]
+  },
+  "rich-text#contactanos": {
+    "props":{
+      "text": "Contáctanos",
+      "blockClass": "section-title-footer"
+    }
+  },
+  "link#direccion":{
+    "props":{
+      "label": "Pérez Valenzuela 1077, Providencia, Santiago",
+      "href": "https://www.google.cl/maps/place/P%C3%A9rez+Valenzuela+1077,+Providencia,+Regi%C3%B3n+Metropolitana/@-33.4292034,-70.6252107,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5883f9a320f:0x7d87bf94c56e8459!8m2!3d-33.4292034!4d-70.623022",
+      "blockClass": ["enlaces-footer", "direccion"]
+    }
+  },
+  "rich-text#horarios":{
+    "props":{
+      "text": "Lunes a Viernes 09:00 a 19:00",
+      "blockClass": ["enlaces-footer", "horarios"]
+    }
+  },
+  "link#telefono":{
+    "props":{
+      "label": "600 276 0000",
+      "href": "tel:6002760000",
+      "blockClass": ["enlaces-footer", "telefono"]
+    }
+  },
+  "link#whatsapp":{
+    "props":{
+      "label": "+56 9 69171334",
+      "href": "https://wa.me/56969171334",
+      "target": "_blank",
+      "blockClass": ["enlaces-footer", "whatsapp"]
+    }
+  },
+  "link#email":{
+    "props":{
+      "label": "compraonline@tienda2.com",
+      "href": "mailto:compraonline@tienda2.com",
+      "blockClass": ["enlaces-footer", "email"]
+    }
+  }
+
+}

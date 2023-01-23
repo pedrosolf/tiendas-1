@@ -1,0 +1,74 @@
+.imageElement--imgPasos {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Convenio help */
+.imageElement--imagenBanner {
+  width: 100%;
+}
+
+/* Campaña de invierno */
+.imageElementLink--image-banners1,
+.imageElement--image-banners4 {
+  padding: 7px;
+  height: 100%;
+  display: block;
+}
+.imageElement--image-banners4 {
+  height: 97.8%;
+}
+.imageElementLink--image-banners1:hover,
+.imageElement--image-banners4:hover {
+  transform: scale(1.04);
+  transition: 0.6s ease-in-out all;
+  box-shadow: 1px 1px 5px #d0d0d0;
+  z-index: 10;
+}
+
+.imageElementLink--mobile-imgBanners {
+  padding: 7px;
+}
+
+
+.sellingPrice {
+  text-align: left !important;
+}
+
+.price_sellingPriceLabel--price-product-pdp,
+.price_listPriceLabel--price-product-pdp{
+  display: none !important;
+}
+
+
+.sellingPrice .currencyContainer--price-product-pdp,
+.price_listPrice--price-product-pdp{
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0 !important;
+}
+
+.sellingPrice .currencyContainer--price-product-pdp{
+  color: #545977;
+}
+
+
+.price_listPrice--price-product-pdp{
+  color: #8D92A7;
+}
+
+
+.price_className--price-product-pdp{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sellingPrice {
+  margin-bottom: 0 !important;
+  margin-left: 5px;
+  margin-top: -2px;
+}

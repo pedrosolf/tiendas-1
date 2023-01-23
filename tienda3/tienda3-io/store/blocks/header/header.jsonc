@@ -1,0 +1,1074 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  /* DESKTOP */
+  "header-layout.desktop": {
+    "children": ["sticky-layout#desktop"]
+  },
+  "sticky-layout#desktop": {
+    "children": ["flex-layout.row#top-header", "flex-layout.row#header-nav"]
+  },
+  "flex-layout.row#top-header": {
+    "children": ["rich-text#top-header-envio", "image#top-header", "rich-text#top-header-horario"],
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "top-header"
+    }
+  },
+  "rich-text#top-header-envio": {
+    "props": {
+      "text": "ENVÍO EN EL DÍA A CABA Y GBA",
+      "blockClass": "top-header-envio"
+    }
+  },
+  "rich-text#top-header-horario": {
+    "props": {
+      "text": "COMPRANDO ANTES DE LAS 14:00",
+      "blockClass": "top-header-horario"
+    }
+  },
+  "image#top-header": {
+    "props": {
+      "src": "assets/header/right arrow.svg",
+      "blockClass": "top-header"
+    }
+  },
+  "flex-layout.row#header-nav": {
+    "children": [
+      "flex-layout.col#header-col-left",
+      "flex-layout.col#header-col-middle",
+      "flex-layout.col#header-col-right"
+    ],
+    "props": {
+      // "colSizing": "auto",
+      "blockClass": "header-nav"
+    }
+  },
+  "flex-layout.col#header-col-left": {
+    "children": ["image#header-logo"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "blockClass": "header-col-left"
+    }
+  },
+  "image#header-logo": {
+    "props": {
+      "src": "assets/header/logo-header.png",
+      "maxHeight": 39,
+      "link": {
+        "url": "/"
+      },
+      "blockClass": "header-logo"
+    }
+  },
+  "flex-layout.col#header-col-middle": {
+    "children": ["flex-layout.row#header-col-middle"],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "header-col-middle"
+    }
+  },
+  "flex-layout.row#header-col-middle": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu",
+      "rich-text#header-category-link-1",
+      "rich-text#header-category-link-2",
+      "rich-text#header-category-link-3",
+      "rich-text#header-category-link-4"
+      
+
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "header-col-middle"
+    }
+  },
+
+  /* MENU HEADER */
+  "vtex.menu@2.x:menu#category-menu": {
+    "children":[
+        "menu-item#category-productos"
+    ],
+    "props":{
+        "blockClass": "categoties-menu"
+    }
+},
+// PRODUCTOS
+"menu-item#category-productos": {
+  "props": {
+      "blockClass": ["category-cama", "categories"],
+      "itemProps": {
+          "href": "#",
+          "text": "Productos"
+      }
+     /*  "iconProps":{
+          "id": "hamburguer-menu"
+      } */
+  },
+  "blocks": ["vtex.menu@2.x:submenu#shop"] // Defining a submenu
+},
+"vtex.menu@2.x:submenu#shop": {
+  "children": [
+    "vtex.menu@2.x:menu#submenushop"
+  ],
+  "props": {
+      "blockClass": "submenu-category"
+  }
+},
+
+/* Subcategorías de Productos */
+"vtex.menu@2.x:menu#submenushop": {
+  "children": [
+      "menu-item#termos",
+      "menu-item#mate",
+      "menu-item#cafe",
+      "menu-item#bar",
+      "menu-item#hidratacion",
+      "menu-item#camping",
+      "menu-item#ver-todo"
+  ],
+  "props":{
+      "blockClass": "submenu-container"
+  }
+},
+/* TERMOS */
+"menu-item#termos": {
+  "props": {
+      "blockClass": "subcategorias",
+      "itemProps": {
+          "href": "/termos?_q=termos&map=ft",
+          "text": "Termos"
+      }
+  }
+},
+
+/* MATE */
+"menu-item#mate": {
+  "props": {
+      "blockClass": "subcategorias",
+      "itemProps": {
+          "href": "/mate",
+          "text": "Mates"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#mates"]
+},
+"vtex.menu@2.x:submenu#mates": {
+  "children": [
+    "vtex.menu@2.x:menu#mates"
+  ],
+  "props": {
+      "blockClass": "submenu-productos"
+  }
+},
+"vtex.menu@2.x:menu#mates": {
+  "children": [
+      "menu-item#submenu-termos",
+      "menu-item#submenu-mates",
+      "menu-item#submenu-bombillas"
+  ]
+}, 
+
+"menu-item#submenu-termos": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/mate/termos",
+          "text": "Termos"
+      }
+  }
+}, 
+"menu-item#submenu-mates": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/mate/mates",
+          "text": "Mates"
+      }
+  }
+}, 
+"menu-item#submenu-bombillas": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/mate/bombillas",
+          "text": "Bombillas"
+      }
+  }
+}, 
+
+/* CAFE */
+"menu-item#cafe": {
+  "props": {
+      "blockClass": "subcategorias",
+      "itemProps": {
+          "href": "/cafe",
+          "text": "Cáfe"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#cafe"]
+},
+"vtex.menu@2.x:submenu#cafe": {
+  "children": [
+    "vtex.menu@2.x:menu#cafe"
+  ],
+  "props": {
+      "blockClass": "submenu-productos"
+  }
+},
+"vtex.menu@2.x:menu#cafe": {
+  "children": [
+      "menu-item#submenu-mug",
+      "menu-item#submenu-vaso",
+      "menu-item#submenu-neverleak",
+      "menu-item#submenu-camp",
+      "menu-item#submenu-tazas"
+  ]
+}, 
+
+"menu-item#submenu-mug": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/Hidratacion/Mug-Switchback",
+          "text": "Mug switchback"
+      }
+  }
+}, 
+
+"menu-item#submenu-vaso": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/cafe/Vaso-One-Hand",
+          "text": "Vaso one hand"
+      }
+  }
+}, 
+"menu-item#submenu-neverleak": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/cafe/Neverleak-TM-Mug",
+          "text": "Neverleak tm mug"
+      }
+  }
+}, 
+"menu-item#submenu-camp": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/cafe/Camp-Mug",
+          "text": "Camp mug"
+      }
+  }
+}, 
+"menu-item#submenu-tazas": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/cafe/Tazas-de-Cafe",
+          "text": "Tazas de café"
+      }
+  }
+}, 
+
+/* BAR */
+"menu-item#bar": {
+  "props": {
+      "blockClass": "subcategorias",
+      "itemProps": {
+          "href": "/bar",
+          "text": "Bar"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#bar"]
+},
+"vtex.menu@2.x:submenu#bar": {
+  "children": [
+    "vtex.menu@2.x:menu#bar"
+  ],
+  "props": {
+      "blockClass": "submenu-productos"
+  }
+},
+"vtex.menu@2.x:menu#bar": {
+  "children": [
+      "menu-item#submenu-vaso-destapador",
+      "menu-item#submenu-vaso-pinta",
+      "menu-item#submenu-petaca",
+      "menu-item#submenu-chops"
+  ]
+}, 
+
+"menu-item#submenu-vaso-destapador": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/bar/Vaso-con-destapador",
+          "text": "Vaso con destapador"
+      }
+  }
+}, 
+"menu-item#submenu-vaso-pinta": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/bar/Vaso-Pinta",
+          "text": "Vaso pinta"
+      }
+  }
+}, 
+"menu-item#submenu-petaca": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/bar/Petaca",
+          "text": "Petaca"
+      }
+  }
+}, 
+"menu-item#submenu-chops": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/bar/Chops",
+          "text": "Chops"
+      }
+  }
+}, 
+
+/* HIDRATACION */
+"menu-item#hidratacion": {
+  "props": {
+      "blockClass": "subcategorias",
+      "itemProps": {
+          "href": "/Hidratacion",
+          "text": "Hidratación"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#hidratacion"]
+},
+"vtex.menu@2.x:submenu#hidratacion": {
+  "children": [
+    "vtex.menu@2.x:menu#hidratacion"
+  ],
+  "props": {
+      "blockClass": "submenu-productos"
+  }
+},
+"vtex.menu@2.x:menu#hidratacion": {
+  "children": [
+      "menu-item#submenu-vaso-everyday",
+      "menu-item#submenu-flip",
+      "menu-item#submenu-flip-boottle"
+  ]
+}, 
+
+"menu-item#submenu-vaso-everyday": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/Hidratacion/Vaso-Everyday",
+          "text": "Vaso everyday"
+      }
+  }
+}, 
+
+"menu-item#submenu-flip": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/Hidratacion/Flip-Straw-Tumble",
+          "text": "Flip straw tumble"
+      }
+  }
+}, 
+"menu-item#submenu-flip-boottle": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/Hidratacion/Flip-Straw-Bottle",
+          "text": "Flip straw bottle"
+      }
+  }
+}, 
+
+/* CAMPING */
+"menu-item#camping": {
+  "props": {
+      "blockClass": "subcategorias",
+      "itemProps": {
+          "href": "/Camping",
+          "text": "Camping"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#camping"]
+},
+"vtex.menu@2.x:submenu#camping": {
+  "children": [
+    "vtex.menu@2.x:menu#camping"
+  ],
+  "props": {
+      "blockClass": "submenu-productos"
+  }
+},
+"vtex.menu@2.x:menu#camping": {
+  "children": [
+      "menu-item#submenu-termo-para-alimentos",
+      "menu-item#submenu-cooler"
+  ]
+}, 
+
+"menu-item#submenu-termo-para-alimentos": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/Camping/Termo-para-alimentos",
+          "text": "Termo para alimentos"
+      }
+  }
+}, 
+"menu-item#submenu-cooler": {
+  "props": {
+      "blockClass": "submenu-items-productos",
+      "itemProps": {
+          "href": "/Camping/Cooler-Adventure",
+          "text": "Cooler adventure"
+      }
+  }
+}, 
+
+/* VER TODO */
+"menu-item#ver-todo": {
+  "props": {
+      "blockClass": "subcategorias",
+      "itemProps": {
+          "href": "/146?map=productClusterIds",
+          "text": "Ver todo"
+      }
+  }
+},
+
+  "rich-text#header-category-link-1": {
+    "props": {
+      "text": "[Seguí tu pedido](https://www.seguituenvio.com/)",
+      "blockClass": "header-category-link"
+    }
+  },
+  "rich-text#header-category-link-2": {
+    "props": {
+      "text": "[Garantía](/ayuda/garantia)",
+      "blockClass": "header-category-link"
+    }
+  },
+  "rich-text#header-category-link-3": {
+    "props": {
+      "text": "[FAQ](/ayuda/preguntas-frecuentes)",
+      "blockClass": "header-category-link"
+    }
+  },
+  "rich-text#header-category-link-4": {
+    "props": {
+      "text": "[Contacto](https://api.whatsapp.com/send/?phone=5491139178980&text&type=phone_number&app_absent=0)",
+      "blockClass": "header-category-link"
+    }
+  },
+
+  "flex-layout.col#header-col-right": {
+    "children": ["flex-layout.row#header-col-right"],
+    "props": {
+      "horizontalAlign": "right",
+      "verticalAlign": "middle",
+      "blockClass": "header-col-right"
+    }
+  },
+  "flex-layout.row#header-col-right": {
+    "children": ["search-bar", "image#login", "minicart.v2"],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "header-col-right"
+    }
+  },
+  "image#login": {
+    "props": {
+      "blockClass": "login",
+      "src": "assets/header/user.svg",
+      "link": {
+        "url": "/account#/profile"
+      }
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "compactMode": false,
+      "placeholder": "",
+      "displayMode": "search-button"
+    }
+  },
+
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "hideIconLabel": true,
+      "showIconProfile": true,
+      "showPasswordVerificationIntoTooltip": true,
+      "hasGoogleOneTap": true,
+      "blockClass": "custom-login"
+    }
+  },
+
+  /* MOBILE */
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": [
+      "flex-layout.row#top-header",
+      "flex-layout.row#header-nav-mobile",
+      "flex-layout.row#header-search-mobile"
+    ]
+  },
+  "flex-layout.row#header-nav-mobile": {
+    "children": [
+      "flex-layout.col#header-col-left-mobile",
+      "flex-layout.col#header-col-middle-mobile",
+      "flex-layout.col#header-col-right-mobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "paddingTop": 6,
+      "marginTop": 2,
+      "paddingBottom": 6,
+      "marginBottom": 2,
+      "blockClass": "header-nav-mobile"
+    }
+  },
+  "flex-layout.col#header-col-left-mobile": {
+    "children": ["drawer#header-menu-mobile"],
+    "props": {
+      "width": "25%",
+      "verticalAlign": "middle"
+    }
+  },
+  "drawer#header-menu-mobile": {
+    "children": ["menu#drawer"],
+    "blocks": ["drawer-header#header-menu-mobile"],
+    "props": {
+      "backdropMode": "none",
+      "blockClass": "header-menu-mobile"
+    }
+  },
+  "drawer-header#header-menu-mobile": {
+    "props": {
+      "blockClass": "header-menu-mobile"
+    },
+    "children": ["flex-layout.row#header-menu-mobile-header"]
+  },
+  "flex-layout.row#header-menu-mobile-header": {
+    "children": ["rich-text#header-menu-mobile-header", "drawer-close-button"],
+    "props": {
+      "fullWidth": true,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "header-menu-mobile-header"
+    }
+  },
+  "rich-text#header-menu-mobile-header": {
+    "props": {
+      "text": "Menú",
+      "blockClass": "header-menu-mobile-header"
+    }
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-productos-mobile",
+      "menu-item#header-category-link1",
+      "menu-item#header-category-link2",
+      "menu-item#header-category-link3",
+      "menu-item#header-category-link4",
+      "login#mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  // PRODUCTOS MOBILE
+"menu-item#category-productos-mobile": {
+  "props": {
+      "blockClass": ["category-cama-mobile", "categories-mobile"],
+      "itemProps": {
+          "href": "#",
+          "text": "Productos"
+      }
+     /*  "iconProps":{
+          "id": "hamburguer-menu"
+      } */
+  },
+  "blocks": ["vtex.menu@2.x:submenu#shop-mobile"] // Defining a submenu
+},
+"vtex.menu@2.x:submenu#shop-mobile": {
+  "children": [
+    "vtex.menu@2.x:menu#submenushop-mobile"
+  ],
+  "props": {
+      "blockClass": "submenu-category-mobile"
+  }
+},
+
+/* Subcategorías de Productos mobile */
+"vtex.menu@2.x:menu#submenushop-mobile": {
+  "children": [
+      "menu-item#termos-mobile",
+      "menu-item#mate-mobile",
+      "menu-item#cafe-mobile",
+      "menu-item#bar-mobile",
+      "menu-item#hidratacion-mobile",
+      "menu-item#camping-mobile",
+      "menu-item#ver-todo-mobile"
+  ],
+  "props":{
+      "blockClass": "submenu-container-mobile"
+  }
+},
+/* TERMOS MOBILE */
+"menu-item#termos-mobile": {
+  "props": {
+      "blockClass": "subcategorias-mobile",
+      "itemProps": {
+          "href": "/termos?_q=termos&map=ft",
+          "text": "Termos"
+      }
+  }
+},
+
+/* MATE MOBILE */
+"menu-item#mate-mobile": {
+  "props": {
+      "blockClass": "subcategorias-mobile",
+      "itemProps": {
+          "href": "#",
+          "text": "Mates"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#mates-mobile"]
+},
+"vtex.menu@2.x:submenu#mates-mobile": {
+  "children": [
+    "vtex.menu@2.x:menu#mates-mobile"
+  ],
+  "props": {
+      "blockClass": "submenu-productos-mobile"
+  }
+},
+"vtex.menu@2.x:menu#mates-mobile": {
+  "children": [
+      "menu-item#submenu-termos-mobile",
+      "menu-item#submenu-mates-mobile",
+      "menu-item#submenu-bombillas-mobile"
+  ]
+}, 
+
+"menu-item#submenu-termos-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/mate/termos",
+          "text": "Termos"
+      }
+  }
+}, 
+"menu-item#submenu-mates-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/mate/mates",
+          "text": "Mates"
+      }
+  }
+}, 
+"menu-item#submenu-bombillas-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/mate/bombillas",
+          "text": "Bombillas"
+      }
+  }
+}, 
+
+/* CAFE MOBILE */
+"menu-item#cafe-mobile": {
+  "props": {
+      "blockClass": "subcategorias-mobile",
+      "itemProps": {
+          //"href": "/cafe",
+          "text": "Cáfe"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#cafe-mobile"]
+},
+"vtex.menu@2.x:submenu#cafe-mobile": {
+  "children": [
+    "vtex.menu@2.x:menu#cafe-mobile"
+  ],
+  "props": {
+      "blockClass": "submenu-productos-mobile"
+  }
+},
+"vtex.menu@2.x:menu#cafe-mobile": {
+  "children": [
+      "menu-item#submenu-mug-mobile",
+      "menu-item#submenu-vaso-mobile",
+      "menu-item#submenu-neverleak-mobile",
+      "menu-item#submenu-camp-mobile",
+      "menu-item#submenu-tazas-mobile"
+  ]
+}, 
+
+"menu-item#submenu-mug-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/Hidratacion/Mug-Switchback",
+          "text": "Mug switchback"
+      }
+  }
+}, 
+
+"menu-item#submenu-vaso-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/cafe/Vaso-One-Hand",
+          "text": "Vaso one hand"
+      }
+  }
+}, 
+"menu-item#submenu-neverleak-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/cafe/Neverleak-TM-Mug",
+          "text": "Neverleak tm mug"
+      }
+  }
+}, 
+"menu-item#submenu-camp-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/cafe/Camp-Mug",
+          "text": "Camp mug"
+      }
+  }
+}, 
+"menu-item#submenu-tazas-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/cafe/Tazas-de-Cafe",
+          "text": "Tazas de café"
+      }
+  }
+}, 
+
+/* BAR MOBILE */
+"menu-item#bar-mobile": {
+  "props": {
+      "blockClass": "subcategorias-mobile",
+      "itemProps": {
+          //"href": "/bar",
+          "text": "Bar"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#bar-mobile"]
+},
+"vtex.menu@2.x:submenu#bar-mobile": {
+  "children": [
+    "vtex.menu@2.x:menu#bar-mobile"
+  ],
+  "props": {
+      "blockClass": "submenu-productos-mobile"
+  }
+},
+"vtex.menu@2.x:menu#bar-mobile": {
+  "children": [
+      "menu-item#submenu-vaso-destapador-mobile",
+      "menu-item#submenu-vaso-pinta-mobile",
+      "menu-item#submenu-petaca-mobile",
+      "menu-item#submenu-chops-mobile"
+  ]
+}, 
+
+"menu-item#submenu-vaso-destapador-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/bar/Vaso-con-destapador",
+          "text": "Vaso con destapador"
+      }
+  }
+}, 
+"menu-item#submenu-vaso-pinta-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/bar/Vaso-Pinta",
+          "text": "Vaso pinta"
+      }
+  }
+}, 
+"menu-item#submenu-petaca-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/bar/Petaca",
+          "text": "Petaca"
+      }
+  }
+}, 
+"menu-item#submenu-chops-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/bar/Chops",
+          "text": "Chops"
+      }
+  }
+}, 
+
+/* HIDRATACION MOBILE */
+"menu-item#hidratacion-mobile": {
+  "props": {
+      "blockClass": "subcategorias-mobile",
+      "itemProps": {
+          //"href": "/Hidratacion",
+          "text": "Hidratación"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#hidratacion-mobile"]
+},
+"vtex.menu@2.x:submenu#hidratacion-mobile": {
+  "children": [
+    "vtex.menu@2.x:menu#hidratacion-mobile"
+  ],
+  "props": {
+      "blockClass": "submenu-productos-mobile"
+  }
+},
+"vtex.menu@2.x:menu#hidratacion-mobile": {
+  "children": [
+      "menu-item#submenu-vaso-everyday-mobile",
+      "menu-item#submenu-flip-mobile",
+      "menu-item#submenu-flip-boottle-mobile"
+  ]
+}, 
+
+"menu-item#submenu-vaso-everyday-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/Hidratacion/Vaso-Everyday",
+          "text": "Vaso everyday"
+      }
+  }
+}, 
+
+"menu-item#submenu-flip-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/Hidratacion/Flip-Straw-Tumble",
+          "text": "Flip straw tumble"
+      }
+  }
+}, 
+"menu-item#submenu-flip-boottle-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/Hidratacion/Flip-Straw-Bottle",
+          "text": "Flip straw bottle"
+      }
+  }
+}, 
+
+/* CAMPING MOBILE */
+"menu-item#camping-mobile": {
+  "props": {
+      "blockClass": "subcategorias-mobile",
+      "itemProps": {
+          //"href": "/Camping",
+          "text": "Camping"
+      }
+  } ,
+  "blocks": ["vtex.menu@2.x:submenu#camping-mobile"]
+},
+"vtex.menu@2.x:submenu#camping-mobile": {
+  "children": [
+    "vtex.menu@2.x:menu#camping-mobile"
+  ],
+  "props": {
+      "blockClass": "submenu-productos-mobile"
+  }
+},
+"vtex.menu@2.x:menu#camping-mobile": {
+  "children": [
+      "menu-item#submenu-termo-para-alimentos-mobile",
+      "menu-item#submenu-cooler-mobile"
+  ]
+}, 
+
+"menu-item#submenu-termo-para-alimentos-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/Camping/Termo-para-alimentos",
+          "text": "Termo para alimentos"
+      }
+  }
+}, 
+"menu-item#submenu-cooler-mobile": {
+  "props": {
+      "blockClass": "submenu-items-productos-mobile",
+      "itemProps": {
+          "href": "/Camping/Cooler-Adventure",
+          "text": "Cooler adventure"
+      }
+  }
+}, 
+
+/* VER TODO MOBILE */
+"menu-item#ver-todo-mobile": {
+  "props": {
+      "blockClass": "subcategorias-mobile",
+      "itemProps": {
+          "href": "/146?map=productClusterIds",
+          "text": "Ver todo"
+      }
+  }
+},
+
+  "menu-item#header-category-link1": {
+    "props": {
+      "id": "menu-item-mate",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.seguituenvio.com",
+        "noFollow": false,
+        "tagTitle": "segui tu pedido",
+        "text": "Seguí tu pedido"
+      }
+    }
+  },
+  "menu-item#header-category-link2": {
+    "props": {
+      "id": "menu-item-cafe",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ayuda/garantia",
+        "noFollow": false,
+        "tagTitle": "garantia",
+        "text": "Garantía"
+      }
+    }
+  },
+  "menu-item#header-category-link3": {
+    "props": {
+      "id": "menu-item-bar",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ayuda/preguntas-frecuentes",
+        "noFollow": false,
+        "tagTitle": "faq",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#header-category-link4": {
+    "props": {
+      "id": "menu-item-hidratación",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://api.whatsapp.com/send/?phone=5491139178980&text&type=phone_number&app_absent=0",
+        "noFollow": false,
+        "tagTitle": "contacto",
+        "text": "Contacto"
+      }
+    }
+  },
+ 
+  "flex-layout.col#header-col-middle-mobile": {
+    "children": ["image#header-logo-mobile"],
+    "props": {
+      "width": "50%",
+      "horizontalAlign": "center"
+    }
+  },
+  "image#header-logo-mobile": {
+    "props": {
+      "src": "assets/header/logo-header.png",
+      "maxHeight": 24,
+      "link": {
+        "url": "/"
+      },
+      "blockClass": "header-logo"
+    }
+  },
+  "flex-layout.col#header-col-right-mobile": {
+    "children": ["minicart.v2"],
+    "props": {
+      "width": "25%",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.row#header-search-mobile": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "blockClass": "header-search-mobile"
+    }
+  },
+  "search-bar#mobile": {
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "Buscar un producto",
+      "displayMode": "search-and-clear-buttons",
+      "blockClass": "mobile"
+    }
+  },
+  "login#mobile": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "iconLabel": "Mi Cuenta",
+      "showIconProfile": true,
+      "showPasswordVerificationIntoTooltip": true,
+      "hasGoogleOneTap": true,
+      "blockClass": "custom-login-mobile"
+    }
+  }
+}

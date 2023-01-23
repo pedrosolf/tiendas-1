@@ -1,0 +1,56 @@
+{
+  //REDES SOCIALES
+  "flex-layout.row#redes-sociales": {
+    "props": {/* 
+      "preventHorizontalStretch": true, */
+      "blockClass": "redes-sociales",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#redes-container"
+    ]
+  },
+
+  "flex-layout.col#redes-container": {
+    "props": {
+      "blockClass": "redes-sociales"
+    },
+    "children": ["rich-text#redes-sociales-title", "flex-layout.row#redes-icons-container"]
+  },
+  
+  "rich-text#redes-sociales-title": {
+    "props": {
+      "text": "Síguenos",
+      "blockClass": "redes-sociales-title"
+    }
+  },
+  "flex-layout.row#redes-icons-container": {
+    "props": {
+      "blockClass": "redes-icons",
+      "colGap": 3,
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true,
+      "marginBottom": 5
+    },
+    "children": ["rich-text#facebook", "rich-text#iconInstagram", "rich-text#iconYoutube"]
+  },
+
+  "rich-text#facebook": {
+    "props": {
+      "text": "[![logo facebook](assets/footer/facebook.png)](https://www.facebook.com/Farmacia-tienda2-352930192370972/?target=_blank)",
+      "blockClass": "redes-sociales"
+    }
+  },
+  "rich-text#iconInstagram": {
+    "props": {
+      "text": "[![logo instagram](assets/footer/instagram.png)](https://www.instagram.com/farmacia_tienda2/?target=_blank)",
+      "blockClass": "redes-sociales"
+    }
+  },
+  "rich-text#iconYoutube": {
+    "props": {
+      "text": "[![logo youtube](assets/footer/yt.png)](https://www.youtube.com/channel/UC0rIMAZrcrdvwUpOPR47vhw/?target=_blank)",
+      "blockClass": "redes-sociales"
+    }
+  }
+}

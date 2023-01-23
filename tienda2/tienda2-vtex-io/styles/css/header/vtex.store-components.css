@@ -1,0 +1,16 @@
+.logoContainer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.searchBarContainer {
+  padding: 0;
+}
+
+.logoContainer--login {
+  display: flex;
+  justify-content: center;
+  display: block;
+  height: 25px;
+  min-width: fit-content;
+}

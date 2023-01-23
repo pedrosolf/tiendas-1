@@ -1,0 +1,36 @@
+.product-identifier--productReference {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;   
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    -webkit-box-direction: normal;
+    font-size: .75rem;
+    color: #545977;
+    margin: 1rem 0;
+    display: flex;
+}
+
+@media (max-width:750px) {
+    .product-identifier--productId {
+        display: none;
+    }
+}
+
+:global(.vtex-product-customizer-2-x-productAssemblyGroupName--suscripciones) {
+    display:none;
+}
+
+.product-identifier__label{
+    font-size: 0 !important;
+}
+
+.product-identifier__label::after{
+    content: "SKU";
+    font-size: .75rem !important;
+}
+
+.product-identifier__separator{
+    padding-right: 3px;
+}

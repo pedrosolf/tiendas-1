@@ -1,0 +1,44 @@
+{
+  "store.custom#ayuda": {
+    "path": "/ayuda"
+  },
+  "store.custom#ayuda-guia-de-compras": {
+    "path": "/ayuda/guia-de-compras"
+  },
+  "store.custom#ayuda-quienes-somos": {
+    "path": "/ayuda/quienes-somos"
+  },
+  "store.custom#ayuda-preguntas-frecuentes": {
+    "path": "/ayuda/preguntas-frecuentes"
+  },
+  "store.custom#ayuda-terminos-y-condiciones": {
+    "path": "/ayuda/terminos-y-condiciones"
+  },
+  "store.custom#ayuda-medios-de-pago": {
+    "path": "/ayuda/medios-de-pago"
+  },
+  "store.custom#ayuda-politicas-de-envios": {
+    "path": "/ayuda/politicas-de-envios"
+  },
+  "store.custom#ayuda-politica-de-privacidad": {
+    "path": "/ayuda/politica-de-privacidad"
+  },
+  "store.custom#ayuda-cambios-y-devoluciones": {
+    "path": "/ayuda/cambios-y-devoluciones"
+  },
+  "store.custom#ayuda-contacto": {
+    "path": "/ayuda/contacto"
+  },
+  "store.custom#ayuda-arrepentimiento-de-compra": {
+    "path": "/ayuda/arrepentimiento-de-compra"
+  },
+  "store.custom#ayuda-garantia": {
+    "path": "/ayuda/garantia"
+  },
+  "store.custom#ayuda-puntos-de-venta": {
+    "path": "/ayuda/puntos-de-venta"
+  },
+  "store.custom#landing-mate": {
+    "path": "/mate-system"
+  }
+}

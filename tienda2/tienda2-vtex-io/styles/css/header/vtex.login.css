@@ -1,0 +1,484 @@
+.profileIcon {
+  display: none;
+}
+/* 
+.container {
+  background-image: url("assets/header/Login.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+@media (max-width: 640px) {
+  .container {
+    background-size: 30px;
+  }
+} */
+/* El hover al botton se lo pone transparente */
+.container :global(.vtex-button) {
+  background-color: transparent;
+  width: 30px;
+}
+
+.backButton :global(.vtex-button) {
+  background-color: #000;
+}
+
+.backButton :global(.vtex-button__label) {
+  color: #fff;
+}
+
+.sendButton :global(.t-small) {
+  font-weight: 600;
+}
+
+/* Dashboard */
+:global(.vtex-account) > div {
+  padding-top: 1rem;
+}
+:global(.vtex-my-account-1-x-userInfo) {
+  margin-bottom: 12px;
+}
+:global(.vtex-pageHeader__container) {
+  padding: 0rem 1rem 1rem 1rem;
+}
+:global(.vtex-pageHeader__title) {
+  color: #545977;
+}
+:global(.vtex-my-account-1-x-userGreeting) {
+  color: #acacac;
+  font-weight: 100;
+}
+:global(.vtex-my-account-1-x-boxContainerFooter) :global(.vtex-button) {
+  background-color: #00a4e8;
+  color: #fff;
+  border: none !important;
+  border-radius: 0.25rem !important;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: inherit;
+}
+
+:global(.vtex_my-authentication_box_footer) :global(.vtex-button) {
+  background-color: #00a4e8;
+  border: none;
+}
+:global(.vtex-account__page) :global(.vtex-button) {
+  border: none;
+}
+
+/* Direcciones */
+:global(.vtex-pageHeader__children) {
+  display: none;
+}
+:global(.vtex-account__page-body):global(.vtex-my-account-1-x-addressList) {
+  margin-top: 3rem;
+}
+
+/* Ordenamiento del menú de navegación de account */
+:global(.vtex-my-account-1-x-menuLinks) div:nth-child(1) {
+  order: 3;
+}
+:global(.vtex-my-account-1-x-menuLinks) div:nth-child(2) {
+  order: 4;
+}
+:global(.vtex-my-account-1-x-menuLinks) div:nth-child(3) {
+  order: 6;
+}
+:global(.vtex-my-account-1-x-menuLinks) div:nth-child(4) {
+  order: 1;
+}
+:global(.vtex-my-account-1-x-menuLinks) div:nth-child(5) {
+  order: 5;
+}
+:global(.vtex-my-account-1-x-menuLinks) div:nth-child(6) {
+  order: 2;
+}
+
+/* Sección subscripciones */
+:global(.vtex-pageHeader__children)  {
+  display: block;
+}
+:global(.vtex-pageHeader__children) :global(.vtex-button) {
+  background-color: #f71963;
+  border: none;
+}
+:global(.vtex-pageHeader__children) :global(.vtex-button):hover {
+  background-color: #dd1659;
+}
+
+/* Modal de botones para inicio de sesión */
+:global(.vtex-login-2-x-portalWrapper) > div:first-child {
+  left: 59vw !important;
+  top: 12vh !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  width: 400px;
+  max-height: 400px; /* 
+  margin-left: -202px; */
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.39, 0, 0.21, 0.99);
+}
+
+:global(.vtex-login-2-x-portalContainer):before {
+  content: "";
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background: #fff9;
+}
+
+:global(.vtex-login-2-x-arrowUp) {
+  display: none;
+}
+/* Modal de cerrar sesión */
+:global(.vtex-modal__confirmation) :global(.vtex-button) {
+  background-color: #00a4e8 !important;
+}
+:global(.vtex-modal__confirmation) :global(.vtex-button__label) {
+  color: #545977;
+}
+:global(.vtex-modal__confirmation) > :global(.vtex-button):hover {
+  border-color: #1346d8;
+}
+/* Estilos a modal con opciones de inicio */
+.formTitle {
+  color: #333 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.contentContainer {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  background: #fff;
+  box-shadow: 0 5px 0 #ddd;
+  border-bottom: 1px solid #fff;
+  width: 400px;
+  max-height: 400px; /* 
+  margin-left: -202px; */
+  border-radius: 4px;
+  border: 2px solid #eee;
+  transition: all 0.3s cubic-bezier(0.39, 0, 0.21, 0.99);
+}
+/* Opciones de inicio de sesión */
+.optionsList {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.optionsListItem:nth-child(2) {
+  order: 4;
+}
+.optionsListItemContainer {
+  display: none;
+}
+.optionsList :global(.vtex-button) {
+  overflow: hidden;
+  margin-bottom: 0;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 0 rgb(0 0 0 / 20%);
+  position: relative;
+  background-color: #00a4e8;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.optionsList .emailPasswordOptionBtn :global(.vtex-button) {
+  text-shadow: 0 1px 1px rgb(255 255 255 / 75%);
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  color: #333333;
+}
+.optionsList :global(.vtex-button__label) {
+  text-transform: none;
+}
+.accountOptions :global(.vtex-button) {
+  color: #545977;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* Botón de google */
+.googleOptionBtn svg,
+.facebookOptionBtn svg {
+  display: none;
+}
+.googleOptionBtn :global(.vtex-button) {
+  color: #545977;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: #f3f3f3;
+  background-image: linear-gradient(to bottom, #f5f5f5, #f1f1f1);
+  background-repeat: repeat-x;
+  text-shadow: none;
+}
+.googleOptionBtn .oauthLabel {
+  font-size: 0;
+  display: flex;
+}
+.googleOptionBtn .oauthLabel::before {
+  content: "Ingresar con Google";
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+/* Boton de facebook */
+.facebookOptionBtn :global(.vtex-button) {
+  color: #fff;
+  text-shadow: none;
+  border-color: #4960a5;
+  border-top-color: #8d9cbd;
+  background: #4568ad;
+  background: linear-gradient(
+    to bottom,
+    #e1e1ea 0%,
+    #5874b3 1%,
+    #405689 66%,
+    #405689 98%,
+    #5874b3 100%
+  );
+  box-shadow: 0 4px 0 #273b77;
+}
+.facebookOptionBtn .oauthLabel {
+  font-size: 0;
+  display: flex;
+}
+.facebookOptionBtn .oauthLabel::before {
+  content: "Ingresar con Facebook";
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: none;
+}
+/* Formularios de inicio de sesión */
+.contentContainer {
+  margin-top: 0;
+}
+.contentForm {
+  min-width: 100%;
+  padding: 0;
+}
+.content {
+  padding: 0;
+}
+.formTitle {
+  padding: 16px 0 16px 10px;
+  margin: 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eee;
+  font-family: inherit;
+  font-weight: 100 !important;
+  text-align: start;
+  line-height: 20px;
+  font-size: 16px !important;
+  color: #545977 !important;
+}
+.inputContainerEmail,
+.inputContainerPassword {
+  padding: 15px;
+}
+
+.backButton :global(.vtex-button) {
+  background-color: transparent;
+}
+.backButton :global(.vtex-button__label) {
+  background-color: transparent;
+  color: #545977;
+}
+.formFooter {
+  clear: both;
+  overflow: hidden;
+  padding: 14px 15px 20px;
+  margin-bottom: 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 6px 6px;
+  box-shadow: inset 0 1px 0 #ffffff;
+}
+.sendButton :global(.vtex-button) {
+  background-color: #00a4e8;
+  padding: 11px 19px;
+  font-size: 16px;
+  border-radius: 26px;
+  box-shadow: 0 4px 0 rgb(0 0 0 / 20%);
+  border: none;
+}
+/* 
+.contentFormVisible :global(.vtex-button){
+  padding: initial;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  text-transform: uppercase;
+  color: #545977;
+  font-size: .875rem;
+  font-weight: 700;
+  height: auto;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Category menu en mobile */
+:global(.vtex-category-menu-2-x-sidebar) {
+  width: 300px;
+}
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul:first-child
+  > li:first-child {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  color: white;
+  background-color: #31bde9;
+  display: flex;
+  justify-content: center;
+}
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul:first-child
+  > li:first-child
+  span:first-child {
+  font-weight: bold;
+}
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul:first-child
+  > li:first-child
+  span:first-child {
+  flex: 1;
+}
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul:first-child
+  > li:not(:first-child) {
+  font-size: 1rem;
+  width: 100%;
+  text-transform: capitalize;
+  border-bottom: solid 1px #545977;
+}
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul:first-child
+  > li:not(:first-child)
+  > ul
+  > li:not(:first-child) {
+  display: flex;
+  align-items: center;
+}
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul:first-child
+  > li:nth-child(2),
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul:first-child
+  > li:not(:first-child)
+  > ul
+  > li:nth-child(2) {
+  display: none;
+}
+
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul:first-child
+  > li:not(:first-child)
+  > ul
+  > li:not(:first-child):before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #545977;
+  border-radius: 50%;
+  margin-left: 1.4rem;
+}
+
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul
+  > li
+  span:last-child
+  svg {
+  width: 0;
+  height: 0;
+  border-left: 9px solid #545977;
+  border-top: 0px solid transparent;
+  border-bottom: 9px solid transparent;
+}
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul
+  > li
+  span:last-child
+  :global(.vtex-category-menu-2-x-plusIcon) {
+  transform: rotate(134deg);
+}
+:global(.vtex-category-menu-2-x-sidebarContent)
+  > li
+  > ul
+  > li
+  span:last-child
+  :global(.vtex-category-menu-2-x-minusIcon) {
+  transform: rotate(225deg);
+}
+
+/* Mega menú */
+:global(.vtex-mega-menu-2-x-menuContainer) > h3 {
+  display: none;
+}
+:global(.vtex-mega-menu-2-x-menuContainer)
+  :global(.vtex-mega-menu-2-x-styledLinkIcon)
+  svg {
+  height: 22px;
+  width: 22px;
+}
+
+:global(.vtex-mega-menu-2-x-menuContainer) > li:last-child svg {
+  display: none;
+}
+:global(.vtex-mega-menu-2-x-menuContainer)
+  > li:last-child
+  :global(.vtex-mega-menu-2-x-styledLinkIcon) {
+  background-image: url(assets/header/descuento-insuperable.png);
+  background-size: 22px;
+  display: block;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+}
+
+:global(.vtex-search-result-3-x-accordionFilter)
+  > div:not(:global(.vtex-search-result-3-x-accordionFilterContainer))
+  > div
+  > div {
+  padding-left: 0rem !important;
+}
+
+:global(.vtex-mega-menu-2-x-submenuItemVertical--mobile-menu) svg {
+  width: 0;
+  height: 0;
+  border-left: 9px solid #545977;
+  border-top: 0 solid transparent;
+  border-bottom: 9px solid transparent;
+  margin-bottom: 3px;
+}
+:global(.vtex-mega-menu-2-x-submenuItemVertical--mobile-menu--isOpen) svg {  
+  transform: rotate(225deg);
+}
+:global(.vtex-mega-menu-2-x-submenuItemVertical--mobile-menu--isClosed) svg {
+  transform: rotate(134deg);
+}

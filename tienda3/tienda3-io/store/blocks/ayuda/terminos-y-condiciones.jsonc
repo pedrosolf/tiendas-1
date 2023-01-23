@@ -1,0 +1,20 @@
+{
+  "store.custom#ayuda-terminos-y-condiciones": {
+    "blocks": ["tab-layout#ayuda-terminos-y-condiciones"]
+  },
+  "tab-layout#ayuda-terminos-y-condiciones": {
+    "children": [
+      "responsive-layout.desktop#ayuda",
+      "responsive-layout.tablet#ayuda",
+      "responsive-layout.phone#ayuda",
+      "tab-content#ayuda-terminos-y-condiciones"
+    ],
+    "props": {
+      "blockClass": "ayuda",
+      "defaultActiveTabId": "terminos-y-condiciones"
+    }
+  },
+  "tab-content#ayuda-terminos-y-condiciones": {
+    "children": ["tab-content.item#terminos-y-condiciones"]
+  }
+}

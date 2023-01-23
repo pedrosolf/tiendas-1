@@ -1,0 +1,94 @@
+{
+  // FORMULARIO
+  "flex-layout.row#formContainer": {
+    "props": {
+      "blockClass": "formSugerenciaReclamos",
+      "width": "50%"
+    },
+    "children": ["flex-layout.col#colFormSugerencia"]
+  },
+  "flex-layout.col#colFormSugerencia": {
+    "props": {
+      "blockClass": "",
+      "preventVerticalStretch": "fasle"
+    },
+    "children": ["form#sugerencia-reclamo"]
+  },
+  "form#sugerencia-reclamo": {
+    "props": {
+      "entity": "SF",
+      "schema": "sugerencias-y-reclamos-2022",
+      "blockClass": ""
+    },
+    "children": [
+      "form-input.text#nombre-sugerencia",
+      "form-input.text#email-sugerencia",
+      "form-input.text#celular-sugerencia",
+      "form-input.text#fecha",
+      "form-input.text#asunto",
+      "form-input.textarea#description",
+      "form-submit#submitSugerencia"
+    ],
+    "blocks": ["form-success#contacto"]
+  },
+
+  // mensaje enviado correctamente
+  "form-success#contacto": {
+    "children": ["rich-text#successSugerencia"]
+  },
+  "rich-text#successSugerencia": {
+    "props": {
+      "text": "Tu mensaje fue enviado con éxito!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }, //fin mensaje enviado correctamente
+
+  // punteros hacia los campos de master data
+  "form-input.text#nombre-sugerencia": {
+    "props": {
+      "label": "Nombre",
+      "pointer": "#/properties/name",
+      "placeholder": ""
+    }
+  },
+  "form-input.text#email-sugerencia": {
+    "props": {
+      "label": "Correo electrónico",
+      "pointer": "#/properties/email",
+      "placeholder": ""
+    }
+  },
+  "form-input.text#celular-sugerencia": {
+    "props": {
+      "label": "Teléfono (opcional)",
+      "pointer": "#/properties/phone",
+      "placeholder": ""
+    }
+  },
+  "form-input.text#fecha": {
+    "props": {
+      "label": "Fecha",
+      "pointer": "#/properties/fecha",
+      "placeholder": ""
+    }
+  },
+  "form-input.text#asunto": {
+    "props": {
+      "label": "Asunto",
+      "pointer": "#/properties/subject"
+    }
+  },
+  "form-input.textarea#description": {
+    "props": {
+      "label": "Descripción",
+      "pointer": "#/properties/description"
+    }
+  },
+  "form-submit#submitSugerencia": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+  //FIN FORMULARIO
+}

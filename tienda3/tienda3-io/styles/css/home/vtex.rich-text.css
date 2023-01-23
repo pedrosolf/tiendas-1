@@ -1,0 +1,180 @@
+.paragraph--texto-refuerzo{
+    color: #fff;
+    font-size: 20px;
+    font-family: "Knockout";
+}
+.paragraph--texto-refuerzo::before{
+    color: #fff;
+    content: "#";
+    margin-right: 0.2rem;
+}
+.container--acceso-home{
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #222426;
+}
+.container--mugs{
+    border-right: none;
+}
+.container--acceso-home .link{
+   text-decoration: none;
+   color: #222426;
+   font-weight: 900;
+   font-size: 14px;
+   font-family: "klavika-web-display";
+}
+.container--link-carrusel{
+    display: none;
+}
+.paragraph--titulo-carrusel{
+    color: #fff;
+    background: #222426;
+    margin: 0;
+    font-size: 1.8rem;
+    padding: 0.2rem 0.5rem;
+    margin-top: -2px;
+    font-family: "Knockout";
+}
+
+.container--link-carrusel .link{
+    color: #545859;
+    font-family: "Knockout";
+    font-size: 1.2rem;
+
+}
+.container--link-carrusel-2 .link, .container--link-carrusel-3 .link{
+    color: #fff;
+
+}
+@media (min-width: 660px){
+    .container--link-carrusel{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 1rem;
+        padding-right: 1rem;
+    }
+    .container--acceso-home .link{
+        
+        font-size: 20px;
+     }
+
+}
+.container--ver-mas{
+    display: flex;
+    justify-content: center;
+    background: #222426;
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    z-index: 3;
+}
+.paragraph--ver-mas{
+    font-family: "Knockout";
+    line-height: 1;
+    margin: 0;
+    padding: 0.5rem;
+}
+:global(.vtex-store-link-0-x-link--seguinos) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+:global(.vtex-store-link-0-x-link--seguinos)::before {
+    content: 'Seguinos';
+    color: #222426;
+    font-family: "Klavika-web";
+    font-size: 1.8rem;
+}
+:global(.vtex-store-link-0-x-label--seguinos) {
+    color: #222426;
+    font-family: "Knockout";
+    font-size: 1.8rem;
+}
+.container--seguinos{
+    display: flex;
+    justify-content: center;
+    color: #222426;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+.container--seguinos .link{
+    text-decoration: none;
+    color: #222426;
+    font-family: "Knockout";
+}
+.container--link-carrusel-3{
+    justify-content: flex-start;
+}
+.paragraph--titulo-newsletter{
+    font-family: "Knockout";
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.container--titulo-newsletter{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1.7rem;
+    margin-top: 3rem;
+}
+.container--texto-newsletter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media (min-width: 1024px){
+    .container--titulo-newsletter{
+        justify-content: flex-end;
+    }
+    .container--texto-newsletter{
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .container--titulo-newsletter{
+       
+        margin-top: 2rem;
+    }
+}
+.paragraph--texto-newsletter{
+    text-align: left;
+}
+
+.strong--sucursal-text-1 {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.headingLevel1--sucursal-text-1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0;
+    color: #646464;
+}
+
+.headingLevel2--sucursal-text-1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0;
+    color: #646464;
+}
+
+.headingLevel3--sucursal-text-1 {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0;
+    color: #646464;
+}
+
+.headingLevel4--sucursal-text-1 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 15px;
+    color: #646464;
+}

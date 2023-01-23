@@ -1,0 +1,24 @@
+.sellingPrice--vitrinatienda2 {
+    margin-bottom: 10px;
+    font-weight: 700; 
+    color: #545977;      
+    vertical-align: baseline;
+}
+
+.sellingPrice--vitrinatienda2TeProtege {
+    color: #545977;
+    font-size: 19px;
+    vertical-align: baseline;
+    text-align: center;
+    font-weight: 700;
+}
+
+.listPrice--vitrinatienda2TeProtege {
+    color: #545977;
+    font-size: .875rem;
+    vertical-align: baseline;   
+    text-decoration: line-through;
+    height: 14px;
+    text-align: center;
+    font-weight: 700;
+}

@@ -1,0 +1,15 @@
+.imageElement--redes-footer{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.imageElementLink--logo-footer,.imageElementLink--redes-footer{
+    display: flex;
+    justify-content: center;
+}
+.imageElement--logo-stanley{
+    display: flex;
+    margin: auto;
+}

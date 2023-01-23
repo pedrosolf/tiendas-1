@@ -1,0 +1,262 @@
+/* contenedor general */
+.paymentContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  font-family: "Poppins";
+  padding: 2rem;
+  overflow: auto;
+}/* fin contenedor general */
+
+/* scroll vertical */
+.paymentContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.paymentContainer::-webkit-scrollbar:vertical {
+  width:10px;
+}
+.paymentContainer::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+.paymentContainer::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.paymentContainer::-webkit-scrollbar-thumb {
+  background-color: #212121;
+}
+.paymentContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+}/* fin scroll vertical */
+
+/* contenedor */
+.container{
+  display: flex;
+  flex-direction: column;/* 
+  border: double 1.8px transparent; *//* 
+  background-image: linear-gradient(white, white), 
+                    linear-gradient(to bottom, rgba(198, 207, 216, 1), rgba(198, 207, 216, 0)); */
+ /*  background-origin: border-box;
+  background-clip: content-box, border-box; */
+}
+
+/*fin contenedor */
+
+
+/* metodo de pago activo o no */
+.metodoPago:hover{
+  cursor: pointer;
+}
+.paymentMethodActive, .paymentMethodInactive{
+  display: flex;
+  font-weight: 700;
+  padding: .5rem .5rem .5rem 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+
+.paymentMethodInactive{
+  border-bottom: 1.5px solid #C6CFD8;
+  color: #0F283E;
+  font-weight: 400;
+}
+
+
+.paymentMethodActive{
+  border-bottom: 3px solid #000;
+  border-image-slice: 1;
+  color: #000;
+}
+
+/* tarjeta activa o no */
+.opcionTarjeta{
+  display: flex;
+  align-items: center;
+}
+
+.opcionTarjeta:hover{
+  cursor: pointer;
+}
+
+@media (min-width:800px){
+  .paymentMethodActive, .paymentMethodInactive{
+    width: 250px;
+  }
+}
+
+.paymentOptionInactive, .paymentOptionActive{
+  padding: 0.2rem;
+  padding-right: .5rem;
+  margin: 0 0.3rem;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+/* si esta activo o no el metodo */
+
+/* tarjeta activa */
+.paymentOptionActive{
+  border: 1.5px solid #000;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.cardIcon{
+  width: 30px;
+  margin-left: 0.2rem;
+}
+
+/* sin interes */
+.interestZero{
+  color: #000;
+}
+.interest{
+  color: #313131;
+}
+.paymentContainer td{
+  /* text-align: center; */
+  padding: 0.5rem;
+}
+.tableHeaders{
+  font-weight: 600;
+}
+
+.tablaDiv{
+  margin-left: 1rem;
+}
+
+/* .tablaDiv{
+  display: flex;
+  justify-content: center;
+} */
+
+.tablaCuotas{  
+  border-collapse: collapse;
+}
+.tablaHead tr{
+  border-bottom: 2px solid #E3E4E9;
+}
+
+.tablaBody tr{
+  border-bottom: .5px solid #E3E4E9;
+}
+
+.metodoPago img {
+  /* width: 20px;
+  margin-top: 3px; */
+  display: none;
+}
+.metodoPago  input{
+  display: none;
+}
+.metodoPago  {
+  font-size: 14px;
+}
+
+/* Medias querys */
+@media (max-width:800px) and (min-width:540px){
+  .paymentContainer{
+    display: flex;
+    align-items: center;
+  }
+
+}
+@media (min-width: 800px){
+  
+  .spinner {
+    margin-top: 2rem !important;
+  }
+ 
+  .container{
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1003px){
+  .metodoPago{
+    margin-right: 2rem;
+  }
+}
+
+/* spinner de carga */
+.spinner {
+  margin-left: 45%;
+  margin-top: 45%;
+
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #000;
+
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p.pago {
+  padding-left: 20px !important;
+  line-height: 1.5 !important;
+}
+/****************************************** VERSIÓN MOBILE *******************************/
+@media (max-width: 768px){
+  .tablaCuotas{  
+    font-size: 11px;
+  }
+  .paymentContainer{
+    width: 100%;
+    padding: 0 !important;
+  }
+  .list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-x: auto;
+    background: #f3f3f3;
+    padding: .3rem .3rem 0 .3rem;
+  }
+  .paymentMethodInactive{
+    border-bottom: none;
+    color: #0F283E;
+    font-weight: 400;
+    font-size: 9px;
+  }
+  
+  
+  .paymentMethodActive{
+    border-bottom: none;
+    border-image-slice: 1;
+    color: #000;
+    
+  }
+  .metodoPago{
+    text-align: center;
+    font-size: 10px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .metodoPago img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2{
+    font-size: 15px;
+  }
+}
+/****************************************** FIN VERSIÓN MOBILE *******************************/
+

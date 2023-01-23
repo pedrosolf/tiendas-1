@@ -1,0 +1,12 @@
+.styledLinkContent {
+    display: inline-grid;
+    text-align: center;
+}
+
+.styledLinkContent--tienda2 {
+    white-space: break-spaces;
+    color: #545977;
+    font-size: .875rem;   
+    line-height: 1.2rem;
+    font-weight:700;
+}

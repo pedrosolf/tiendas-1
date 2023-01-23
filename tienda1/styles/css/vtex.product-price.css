@@ -1,0 +1,71 @@
+.listPrice {
+  color: #191919;
+  margin-bottom: .25rem;
+  font-size: 1rem;
+  margin-right: .5rem;
+  margin-top: 4px;
+}
+
+.sellingPrice {
+  color: #191919;
+  font-size: 1.25rem;
+}
+
+.sellingPriceValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FF0049;
+}
+
+.installments {
+  color: #727273;
+  margin-bottom: 1rem;
+}
+
+.savings {
+  font-weight: 700;
+  color: white;
+  background-color: #FF0049;
+  padding: 6px;
+}
+
+.sellingPriceValue--summary {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FF0049;
+}
+
+.savings--summary {
+  background: #8BC34A;
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
+}
+
+.savings-discount--summary {
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #FFFFFF;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.listPrice--summary {
+  margin-bottom: 0.25rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.installments--summary {
+  margin-bottom: 2rem;
+  font-size: 16px;
+}
+
+.listPrice--summary {
+  margin-top: 5px;
+}
+
+.listPriceValue--summary {
+  color: #191919;
+}

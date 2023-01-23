@@ -1,0 +1,326 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "newsletter#footer",
+      "flex-layout.row#container-footer",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+  "newsletter#footer": {
+    "props": {
+      "label": "INSCRÍBETE EN NUESTRO NEWSLETTER PARA RECIBIR NOTICIAS \nY PROMOCIONES:",
+      "placeholder": "INGRESE SU EMAIL",
+      "blockClass": "newsletter-footer"
+    }
+  },
+  
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#container-footer"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 10,
+      "colGap": 10,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "colSizing": "equal"
+    }
+  },
+  "flex-layout.col#container-footer": {
+    "children": [
+      "flex-layout.row#container-footer"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#container-footer": {
+    "children": [
+      "vtex.menu@2.x:menu#col-footer-1",
+      "flex-layout.col#col-footer-2",
+      "vtex.menu@2.x:menu#col-footer-3"
+    ],
+    "props": {
+      "colGap": 0,
+      "preventHorizontalStretch": false,
+      "blockClass": "container-footer-3cols"
+    }
+  },
+
+  // INICIO COL FOOTER 1
+  "vtex.menu@2.x:menu#col-footer-1": {
+    "props": {
+      "orientation": "vertical",
+      "horizontalAlign": "center",
+      "blockClass": "col-footer"
+    },
+    "children": [
+      "menu-item#col-footer1-item-1",
+      "menu-item#col-footer1-item-2"
+    ]
+  },
+  "menu-item#col-footer1-item-1": {
+    "props": {
+      "blockClass": "item-link-footer",
+      "id": "col-footer1-item-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Nuestros locales",
+        "text": "Nuestros locales"
+      }
+    }
+  },
+  "menu-item#col-footer1-item-2": {
+    "props": {
+      "blockClass": "item-link-footer",
+      "id": "col-footer1-item-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Mis pedidos",
+        "text": "Mis pedidos"
+      }
+    }
+  },
+  // FIN COL FOOTER 1
+
+  // INICIO COL FOOTER 2
+  "flex-layout.col#col-footer-2": {
+    "children": [
+      "image#col-footer1-item-2-1"
+    ],
+    "props": {
+      "blockClass": "col-footer-2-desktop",
+      "horizontalAlign": "center"
+    }
+  },
+  "image#col-footer1-item-2-1": {
+    "props": {
+      "src": "assets/wp-mp.png",
+      "url": "#",
+      "blockClass": "wp-mp-img"
+    }
+  },
+  // FIN COL FOOTER 2
+
+  // INICIO COL FOOTER 3
+  "vtex.menu@2.x:menu#col-footer-3": {
+    "props": {
+      "orientation": "vertical",
+      "horizontalAlign": "center",
+      "blockClass": "col-footer"
+    },
+    "children": [
+      "menu-item#col-footer3-item-1",
+      "menu-item#col-footer3-item-2",
+      "menu-item#col-footer3-item-3",
+      "menu-item#col-footer3-item-4",
+      "menu-item#col-footer3-item-5",
+      "menu-item#col-footer3-item-6",
+      "menu-item#col-footer3-item-7"
+    ]
+  },
+  "menu-item#col-footer3-item-1": {
+    "props": {
+      "blockClass": "titulo-centro-ayuda-footer",
+      "id": "col-footer3-item-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://brandstheluxe.com/Ticket/Perryellis/Index.html#!/",
+        "noFollow": false,
+        "tagTitle": "CENTRO DE AYUDA",
+        "text": "CENTRO DE AYUDA"
+      }
+    }
+  },
+  "menu-item#col-footer3-item-2": {
+    "props": {
+      "blockClass": "item-link-footer",
+      "id": "col-footer3-item-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://brandstheluxe.com/Ticket/Perryellis/Index.html#!/help/cambios",
+        "noFollow": false,
+        "tagTitle": "Cambios",
+        "text": "Cambios"
+      }
+    }
+  },
+  "menu-item#col-footer3-item-3": {
+    "props": {
+      "blockClass": "item-link-footer",
+      "id": "col-footer3-item-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://brandstheluxe.com/Ticket/Perryellis/Index.html#!/help/devoluciones",
+        "noFollow": false,
+        "tagTitle": "Devoluciones",
+        "text": "Devoluciones"
+      }
+    }
+  },
+  "menu-item#col-footer3-item-4": {
+    "props": {
+      "blockClass": "item-link-footer",
+      "id": "col-footer3-item-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://brandstheluxe.com/Ticket/Perryellis/Index.html#!/help/garantias",
+        "noFollow": false,
+        "tagTitle": "Garantía legal",
+        "text": "Garantía legal"
+      }
+    }
+  },
+  "menu-item#col-footer3-item-5": {
+    "props": {
+      "blockClass": "item-link-footer",
+      "id": "col-footer3-item-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://brandstheluxe.com/Ticket/Perryellis/Index.html#!/help/despachos",
+        "noFollow": false,
+        "tagTitle": "Despachos",
+        "text": "Despachos"
+      }
+    }
+  },
+  "menu-item#col-footer3-item-6": {
+    "props": {
+      "blockClass": "item-link-footer",
+      "id": "col-footer3-item-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://brandstheluxe.com/Ticket/Perryellis/Index.html#!/help/politicas",
+        "noFollow": false,
+        "tagTitle": "Políticas de privacidad",
+        "text": "Políticas de privacidad"
+      }
+    }
+  },
+  "menu-item#col-footer3-item-7": {
+    "props": {
+      "blockClass": "item-link-footer",
+      "id": "col-footer3-item-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://brandstheluxe.com/Ticket/Perryellis/Index.html#!/help/datosempresa",
+        "noFollow": false,
+        "tagTitle": "Datos de empresa",
+        "text": "Datos de empresa"
+      }
+    }
+  },
+  // FIN COL FOOTER 3
+  // FIN ROW FOOTER 1
+
+  // INICIO ROW FOOTER 2
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["flex-layout.row#row-footer-2-desktop"],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "copyright-desktop"
+    }
+  },
+  "flex-layout.row#row-footer-2-desktop": {
+
+  },
+  // FIN ROW FOOTER 2
+
+  // INICIO ROW FOOTER 3
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#footer"],
+    "props": {
+      "blockClass": "row-copyright-desktop",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "**© 2020 tienda1**",
+      "blockClass": "copyright-desktop"
+    }
+  },
+  // FIN ROW FOOTER 3
+  // FIN LAYOUT DESKTOP
+
+  // INICIO LAYOUT MOBILE
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 1
+    },
+    "children": [
+      // "vtex.menu@2.x:menu#footer-mobile",
+      "newsletter#footer"
+    ]
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "props": {
+      "paddingTop": 1,
+      "paddingBottom": 4
+    },
+    "children": [
+      // "vtex.menu@2.x:menu#footer-mobile",
+      "flex-layout.col#footer-1-mobile",
+      "flex-layout.col#footer-2-mobile"
+    ]
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop"
+    ]
+  },
+  "flex-layout.col#footer-2-mobile": {
+    "children": [
+      "flex-layout.row#footer-3-desktop"
+    ]
+  }
+}

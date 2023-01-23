@@ -1,0 +1,543 @@
+{
+    "header": {
+        "blocks": [
+            "header-layout.desktop",
+            "header-layout.mobile"
+        ]
+    },
+    "header.full": {
+        "blocks": [
+            "header-layout.desktop",
+            "header-layout.mobile"
+        ]
+    },
+    "header-layout.desktop": {
+        "children": [
+            "flex-layout.row#1-desktop", // telemarketing
+            "flex-layout.row#2-desktop", // topbar1
+            "flex-layout.row#5-desktop", // topbar2
+            "flex-layout.row#6-desktop", // logo y search
+            "rich-text#desk-top",
+            "sticky-layout#4-desktop", // menu nav sticky
+            "sandbox#custom-css" // Sandbox para llamado de CSS 
+        ]
+    },
+    "rich-text#desk-top": {
+        "props": {
+            "text": "**Same Day** | Despachamos en **24 horas hábiles** desde el momento de tu compra en Gran Santiago",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "blockClass": "top-message-desk"
+        }
+    },
+    // INICIO FLEX LAYOUT 1
+    "flex-layout.row#1-desktop": {
+        "children": [
+            "telemarketing"
+        ],
+        "props": {
+            "fullWidth": true
+        }
+    },
+    // FIN FLEX LAYOUT 1
+    // INICIO FLEX LAYOUT 2
+    "flex-layout.row#2-desktop": {
+        "children": [
+            "rich-text#top-bar-text",
+            "image#top-bar-image"
+        ],
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "center",
+            "blockClass": "top-bar-1"
+        }
+    },
+    "rich-text#top-bar-text": {
+        "props": {
+            "text": "COMPRA TU GIFTCARD Y CANJÉALA EN TODAS NUESTRAS TIENDAS",
+            "textAlignment": "RIGHT",
+            "textPosition": "RIGHT",
+            "textColor": "c-on-action-primary",
+            "blockClass": "top-bar-1-text"
+        }
+    },
+    "image#top-bar-image": {
+        "props": {
+            "src": "assets/img-top-bar.png",
+            "url": "#",
+            "blockClass": "top-bar-1-image"
+        }
+    },
+    // FIN FLEX LAYOUT 2
+    // INICIO FLEX LAYOUT 5
+    "flex-layout.row#5-desktop": {
+        "children": [
+            "flex-layout.row#feature-container1",
+            "flex-layout.row#feature-container2",
+            "flex-layout.row#feature-container3"
+        ],
+        "props": {
+            "blockClass": "topbar2-main-container",
+            "horizontalAlign": "center",
+            "fullWidth": true,
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "colSizing": "auto",
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "flex-layout.row#feature-container1": {
+        "children": [
+            "image#features1",
+            "rich-text#features1"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "right",
+            "blockClass": "feature-container-izquierda",
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "image#features1": {
+        "props": {
+            "src": "assets/icon-entrega.png",
+            "maxHeight": "24px",
+            "blockClass": "top-feature-image"
+        }
+    },
+    "rich-text#features1": {
+        "props": {
+            "text": "[DESPACHO TODO CHILE](https://www.example.com)",
+            "blockClass": "features-text",
+            "textColor": "c-on-action-primary"
+        }
+    },
+    "flex-layout.row#feature-container2": {
+        "children": [
+            "image#features2",
+            "rich-text#features2"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": "feature-container-centro",
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "image#features2": {
+        "props": {
+            "src": "assets/icon-credito.png",
+            "maxHeight": "24px",
+            "blockClass": "top-feature-image"
+        }
+    },
+    "rich-text#features2": {
+        "props": {
+            "text": "[12 CUOTAS SIN INTERÉS](https://www.example.com)",
+            "blockClass": "features-text",
+            "textColor": "c-on-action-primary"
+        }
+    },
+    "flex-layout.row#feature-container3": {
+        "children": [
+            "image#features3",
+            "rich-text#features3"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "left",
+            "blockClass": "feature-container-derecha",
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "image#features3": {
+        "props": {
+            "src": "assets/icon-cambios.png",
+            "maxHeight": "24px",
+            "blockClass": "top-feature-image"
+        }
+    },
+    "rich-text#features3": {
+        "props": {
+            "text": "[CAMBIOS SIN COSTO](https://www.example.com)",
+            "blockClass": "features-text",
+            "textColor": "c-on-action-primary"
+        }
+    },
+    // FIN FLEX LAYOUT 5
+    // INICIO CATEOGORY STICKY LAYOUT 4 DESKTOP
+    "sticky-layout#4-desktop": {
+        "props": {
+            "blockClass": "sticky-header"
+        },
+        "children": [
+            "flex-layout.row#sticky-header-row"
+        ]
+    },
+    "flex-layout.row#sticky-header-row": {
+        "props": {
+            "blockClass": "sticky-header-row",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "vtex.menu@2.x:menu#menu-marcas",
+            // "menu-item#categorias-hombre",
+            "vtex.category-menu@2.x:category-menu#store-menu-hombre",
+            "vtex.category-menu@2.x:category-menu#store-menu-mujer",
+            // "vtex.category-menu@2.x:category-menu#store-menu-categorias",
+            "vtex.menu@2.x:menu#menu-categorias",
+            // "vtex.menu@2.x:menu#menu-sale"
+            "rich-text#rich-text-menu-sale"
+            // "flex-layout.row#row-menu-sale"
+        ]
+    },
+    "flex-layout.row#row-menu-sale": {
+        "children": [
+            "rich-text#rich-text-menu-sale"
+        ],
+        "props": {}
+    },
+    "rich-text#rich-text-menu-sale": {
+        "props": {
+            "blockClass": "rich-text-menu-sale",
+            "text": "<span class='span-menu-sale'>[**SALE**](/sale)</span>",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    // FIN STICKY LAYOUT 4 DESKTOP
+    // INICIO FLEX LAYOUT 4
+    "flex-layout.row#6-desktop": {
+        "children": [
+            "flex-layout.row#1-col",
+            "flex-layout.col#2-col",
+            "flex-layout.col#3-col"
+        ]
+    },
+    "flex-layout.row#1-col": {
+        "children": [
+            "image#icono-nuestras-tiendas",
+            "rich-text#NuestrasTiendas"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "right",
+            "blockClass": "col-nuestras-tiendas",
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "image#icono-nuestras-tiendas": {
+        "props": {
+            "src": "assets/marker.png",
+            "blockClass": "header-marker-image"
+        }
+    },
+    "flex-layout.col#2-col": {
+        "children": [
+            "logo#desktop"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "paddingTop": 8,
+            "blockClass": "col-logo-desktop"
+        }
+    },
+    "flex-layout.col#3-col": {
+        "children": [
+            "flex-layout.row#barra"
+        ],
+        "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "flex-layout.row#barra": {
+        "children": [
+            "flex-layout.col#search-bar",
+            "flex-layout.col#minicart",
+            "flex-layout.col#header-centro-ayuda"
+            // aqui falta icono de centro de ayuda
+            // "flex-layout.col#login"
+        ],
+        "props": {
+            "blockClass": "barraIconos",
+            "colSizing": "auto"
+        }
+    },
+    "flex-layout.col#search-bar": {
+        "children": [
+            "search-bar#searhHeader"
+        ],
+        "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "search-bar": {
+        "props": {
+            "placeholder": "    ",
+            "maxWidth": "100"
+        }
+    },
+    "flex-layout.col#minicart": {
+        "children": [
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": "miniCarro",
+            "verticalAlign": "middle"
+        }
+    },
+    "flex-layout.col#header-centro-ayuda": {
+        "children": [
+            "image#header-centro-ayuda"
+        ],
+        "props": {
+            "blockClass": "headerCentroAyuda",
+            "verticalAlign": "middle"
+        }
+    },
+    "image#header-centro-ayuda": {
+        "props": {
+            "src": "assets/question.png",
+            "blockClass": "icono-centro-de-ayuda",
+            "link": {
+                "url": "https://brandstheluxe.com/Ticket/Perryellis/Index.html#!/",
+                "newTab": true
+            }
+        }
+    },
+    "flex-layout.col#login": {
+        "children": [
+            "login#loginHeader"
+        ],
+        "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "flex-layout.col#textNuestrasTiendas": {
+        "children": [
+            "rich-text#NuestrasTiendas"
+        ],
+        "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "rich-text#NuestrasTiendas": {
+        "props": {
+            "text": "**[NUESTRAS TIENDAS](#)**",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "blockClass": "texto-nuestras-tiendas"
+        }
+    },
+    "logo#desktop": {
+        "props": {
+            "title": "tienda1",
+            "href": "/",
+            "url": "assets/logo.png",
+            "width": "240",
+            "blockClass": "logo-desktop-img"
+        }
+    },
+    "search-bar#searhHeader": {
+        "props": {
+            "displayMode": "search-button",
+            "placeholder": "buscar",
+            "blockClass": "searchHeader"
+        }
+    },
+    "login#loginHeader": {
+        "props": {
+            "emailAndPasswordTitle": "Ingresar",
+            "accessCodeTitle": "Acceder mediante codigo",
+            "emailPraceholder": "e-mail",
+            "passwordPlaceholder": "Contraseña",
+            "showPasswordVerificationIntoTooltip": true,
+            "showIconProfile": "true",
+            "defaultOption": 1,
+            "optionsTitle": "Iniciar Sesion",
+            "iconLabel": "Entrar"
+        }
+    },
+    // FIN FLEX LAYOUT 4
+    // INICIO HEADER LAYOUT MOBILE
+    "header-layout.mobile": {
+        "children": [
+            "flex-layout.row#5-desktop",
+            "sticky-layout#1-mobile",
+            "rich-text#mobile-top"
+        ]
+    },
+    "rich-text#mobile-top": {
+        "props": {
+            "text": "**Same Day** | Despachamos en **24 horas hábiles** desde el momento de tu compra en Gran Santiago",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "blockClass": "top-message-cel"
+        }
+    },
+    // FIN HEADER LAYOUT MOBILE
+    // INICIO STICKY LAYOUT 1 MOBILE
+    "sticky-layout#1-mobile": {
+        "children": [
+            "flex-layout.row#1-mobile"
+        ]
+    },
+    "flex-layout.row#1-mobile": {
+        "children": [
+            "vtex.category-menu@2.x:category-menu#store-menu-mobile-hombre",
+            "flex-layout.col#spacer",
+            "logo#mobile",
+            "flex-layout.col#spacer",
+            // "login",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": "main-header-mobile",
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "drawer": {
+        "children": [
+            "menu#drawer"
+        ]
+    },
+    "menu#drawer": {
+        "children": [
+            "vtex.menu@2.x:menu#menu-marcas",
+            "vtex.category-menu@2.x:category-menu#store-menu-hombre-mobile",
+            "vtex.category-menu@2.x:category-menu#store-menu-mujer",
+            "vtex.menu@2.x:menu#menu-categorias",
+            "rich-text#rich-text-menu-sale",
+            // "vtex.menu@2.x:menu#menu-sale"
+            "menu-item#category-apparel"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "flex-layout.col#spacer": {
+        "props": {
+            "width": "grow"
+        }
+    },
+    "logo#mobile": {
+        "props": {
+            "title": "Logo",
+            "href": "/",
+            "url": "assets/logo.png",
+            "width": "120"
+        }
+    },
+    // FIN STICKY LAYOUT 1 MOBILE
+    // INICIO SANDBOX CUSTOM CSS
+    "sandbox#custom-css": {
+        "props": {
+            "width": "1px",
+            "height": "1px",
+            "initialContent": "<link rel='stylesheet' href='https://crisdev--tienda1.myvtex.com/files/custom-css-tienda1.css' />",
+            "allowCookies": true
+        }
+    }
+    // FIN SANDBOX CUSTOM CSS
+    ,
+    "menu-item#category-apparel": {
+        "props": {
+            "id": "menu-item-category-apparel",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/",
+                "noFollow": false,
+                "tagTitle": "Apparel & Accessories",
+                "text": "Apparel & Accessories"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-apparel"
+        ]
+    },
+    "vtex.menu@2.x:submenu#category-apparel": {
+        "props": {
+            "width": "auto"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-apparel"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-apparel": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#category-apparel-clothing",
+            "menu-item#category-apparel-accessories",
+            "menu-item#category-apparel-eyeglasses"
+        ]
+    },
+    "menu-item#category-apparel-clothing": {
+        "props": {
+            "id": "menu-item-category-apparel-clothing",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/clothing/",
+                "noFollow": false,
+                "tagTitle": "Clothing",
+                "text": "Clothing"
+            }
+        }
+    },
+    "menu-item#category-apparel-accessories": {
+        "props": {
+            "id": "menu-item-category-apparel-accessories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/accessories/",
+                "noFollow": false,
+                "tagTitle": "Accessories",
+                "text": "Accessories"
+            }
+        }
+    },
+    "menu-item#category-apparel-eyeglasses": {
+        "props": {
+            "id": "menu-item-category-apparel-eyeglasses",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/apparel---accessories/eyeglasses/",
+                "noFollow": false,
+                "tagTitle": "Eyeglasses",
+                "text": "Eyeglasses"
+            }
+        }
+    },
+    "menu-item#category-home": {
+        "props": {
+            "id": "menu-item-category-home",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/home---decor/",
+                "noFollow": false,
+                "tagTitle": "Home & Decor",
+                "text": "Home & Decor"
+            }
+        }
+    }
+}

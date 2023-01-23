@@ -1,0 +1,24 @@
+/* .listItem button {
+    color: #8a8a8a;
+    border: none;
+}
+
+.listItemActive button {
+    background-color: #8a8a8a;
+    border: none;
+    color: white;
+} */
+
+.listItem--guia-de-tallas-tab :global(.vtex-button__label) {
+
+}
+
+
+.listItem--guia-de-tallas-tab-inner :global(.vtex-button) {
+    min-height: 1.5rem !important;
+}
+
+.listItem--guia-de-tallas-tab-inner :global(.vtex-button__label) {
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;   
+}

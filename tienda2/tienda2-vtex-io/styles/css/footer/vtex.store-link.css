@@ -1,0 +1,41 @@
+.link--enlaces-footer {
+  text-decoration: none;
+  color: #5f5f5f;
+  font-size: 0.875rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+  margin-top: 1rem;
+}
+.container--enlaces-footer, .link--telefono, .link--telefono, .link--whatsapp, .link--email{
+  margin-top: .2rem;
+}
+.link--direccion{
+  margin-top: .75rem;
+}
+.link--enlaces-footer:hover {
+  color: #00a4e8;
+}
+.link--direccion::before {
+  content: url(assets/footer/ICONO_DIRECCION.png);
+  padding-top: 0.4rem;
+}
+
+.link--horarios::before {
+  content: url(assets/footer/ICONO_HORARIO.png);
+  padding-top: 0.4rem;
+}
+.link--telefono::before {
+  content: url(assets/footer/ICONO_TELEFONO.png);
+  padding-top: 0.4rem;
+}
+.link--whatsapp::before {
+  content: url(assets/footer/ICONO_WHATSAPP.png);
+  padding-top: 0.4rem;
+}
+.link--email::before {
+  content: url(assets/footer/ICONO_EMAIL.png);
+  padding-top: 0.4rem;
+}

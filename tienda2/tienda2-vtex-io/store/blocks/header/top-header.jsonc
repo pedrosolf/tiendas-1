@@ -1,0 +1,166 @@
+{
+  "flex-layout.row#top-header": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "colSizing": "auto",
+      "blockClass": "top-container-header"
+    },
+    "children": [
+      "flex-layout.col#header-contact",
+      "flex-layout.col#header-redessociales",
+      "flex-layout.col#header-cart-login"
+    ]
+  },
+  
+  /* Contactos */
+  "flex-layout.col#header-contact": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "width": "grow",
+      "blockClass": "header-contact"
+    },
+    "children": [
+      "flex-layout.row#header-contact"
+    ]
+  },
+  "flex-layout.row#header-contact": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "colSizing": "auto",
+      "blockClass": "header-contact"
+    },
+    "children": [
+      "rich-text#contact-title",
+      "rich-text#tel",
+      "rich-text#wp"
+    ]
+  },
+  "rich-text#contact-title": {
+    "props": {
+      "text": "Asistencia Telefónica",
+      "blockClass": "contact-title"
+    }
+  },
+  "rich-text#tel": {
+    "props": {
+      "text": "[![alt icono de telefóno](assets/header/tel.png)600 276 0000](tel:6002760000)",
+      "blockClass": "phone-num"
+    }
+  },
+  "rich-text#wp": {
+    "props": {
+      "text": "[![alt icono de whatsapp](assets/header/wp.png)+56 9 69171334](https://wa.me/56969171334)",
+      "blockClass": "phone-num"
+    }
+  },
+
+  /* Redes sociales */
+  "flex-layout.col#header-redessociales": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "header-redessociales"
+    },
+    "children": [
+      "flex-layout.row#header-redessociales"
+    ]
+  },
+  "flex-layout.row#header-redessociales": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "colSizing": "auto",
+      "blockClass": "header-redessociales"
+    },
+    "children": [
+      "rich-text#redes-title",
+      "rich-text#fb",
+      "rich-text#insta",
+      "rich-text#youtube"
+    ]
+  },
+  "rich-text#redes-title": {
+    "props": {
+      "text": "Síguenos"
+    }
+  },
+  "rich-text#fb": {
+    "props": {
+      "text": "[![alt icono de facebook](assets/header/fb.png)](https://www.facebook.com/Farmacia-tienda2-352930192370972/?target=_blank)",
+      "blockClass": "redes-icon"
+    }
+  },
+  "rich-text#insta": {
+    "props": {
+      "text": "[![alt icono de instagram](assets/header/insta.png)](https://www.instagram.com/farmacia_tienda2/?target=_blank)",
+      "blockClass": "redes-icon"
+    }
+  },
+  "rich-text#youtube": {
+    "props": {
+      "text": "[![alt icono de Youtube](assets/header/yt.png)](https://www.youtube.com/channel/UC0rIMAZrcrdvwUpOPR47vhw/?target=_blank)",
+      "blockClass": "redes-icon"
+    }
+  },
+
+  /* Login y cart */
+  "flex-layout.col#header-cart-login": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": ""
+    },
+    "children": [ "flex-layout.row#header-cart-login" ]
+  },
+  "flex-layout.row#header-cart-login": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": ""
+    },
+    "children": [ "flex-layout.col#login", "flex-layout.col#cart" ]
+  },
+  "flex-layout.col#login": {
+    "children": [ "logo#login", "flex-layout.col#login-action" ],
+    "props": {
+      "blockClass": "login"
+    }
+  },
+  "logo#login": {
+    "props": {
+      "width": 26,
+      "height": 26,
+      "mobileWidth": 26,
+      "mobileHeight": 26,
+      "url": "assets/header/Login.svg",
+      "blockClass": "login"
+    }
+  },
+  "flex-layout.col#login-action": {
+    "children": [ "login" ],
+    "props": {
+      "blockClass": "login-action"
+    }
+  },
+
+  "flex-layout.col#cart": {
+    "children": [ "minicart.v2#cart-tienda2" ],
+    "props": {
+      "blockClass": "cart"
+    }
+  }
+}

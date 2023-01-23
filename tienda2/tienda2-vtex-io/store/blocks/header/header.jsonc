@@ -1,0 +1,89 @@
+{
+  "header": {
+    "blocks": [ "header-layout.desktop", "header-layout.mobile" ]
+  },
+  "header.full": {
+    "blocks": [ "header-layout.desktop", "header-layout.mobile" ]
+  },
+  "header-layout.desktop": {
+    "children": [ "image#goWA", "toggle-layout#telon", "sticky-layout#desktop" ]
+  }, 
+  //Telón
+  "toggle-layout#telon": {
+    "title": "Telón",
+    "children": [
+      "modal-trigger#telon"
+    ]
+  },
+  "modal-trigger#telon": {
+    "children": [ "modal-layout#telon" ],
+    "props": {
+      "trigger": "load",
+      "blockClass": "telon"
+    }
+  },
+  "modal-layout#telon": {
+    "children": [ "modal-actions.close" ],
+    "props": {
+      "blockClass": "telon"
+    }
+  },
+  /* Fin de telón */
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [ "flex-layout.row#header-desktop" ]
+  },
+
+  /* Container de header desktop */
+  "flex-layout.row#header-desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "header-container"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#nav-container"
+    ]
+  },
+
+  /* Columna con el logo */
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "15%",
+      "blockClass": "logo-header"
+    },
+    "children": [ "logo#header" ]
+  },
+  "logo#header": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/header/logo-header-tienda2.png" /* ,
+      "width": "80" */
+    }
+  },
+
+  /* Columna con el top header y el bottom header */
+  "flex-layout.col#nav-container": {
+    "props": {
+      "width": "85%"
+    },
+    "children": [
+      "flex-layout.row#top-header",
+      "flex-layout.row#bottom-header"
+    ]
+  },
+  "image#goWA": {
+    "props": {
+      "link": { "url": "https://wa.me/56969171334" },
+      "src": "assets/home/whatsapp2.png",
+      "blockClass": "whatsGo"
+    }
+  }
+}
